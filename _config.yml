@@ -1,0 +1,60 @@
+title: HTZL Motorcycle Club
+tagline: Dealer Sepeda Motor Terpercaya
+description: >-
+  Dealer resmi Kawasaki dan Vixian di Jakarta. Katalog 131 item: unit motor,
+  apparel, sparepart, oli, aksesori touring, dan layanan bengkel dengan harga
+  transparan.
+url: https://xyb3rpunq.github.io
+baseurl: /htzl-motorcycle-club
+lang: id_ID
+author: Daniel Hutajulu
+timezone: Asia/Jakarta
+
+logo: /assets/img/logo.webp
+image: /assets/img/og-image.jpg
+
+social:
+  name: HTZL Motorcycle Club
+  links:
+    - https://www.instagram.com/htzl.mc/
+    - https://www.facebook.com/profile.php?id=100069020175227
+
+# Kontak dipakai di footer, halaman reservasi, dan deep link WhatsApp.
+contact:
+  whatsapp: "6281234567890"          # GANTI dengan nomor WhatsApp asli (format 62..., tanpa +)
+  email: "halo@htzl.mc"
+  phone_display: "+62 812-3456-7890"
+  address: "Jl. Gatot Subroto Kav. 21, Jakarta Selatan 12930"
+  maps: "https://maps.google.com/?q=Jakarta+Selatan"
+  hours: "Senin-Sabtu 09.00-18.00 WIB"
+
+plugins:
+  - jekyll-sitemap
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - README.md
+  - LICENSE
+  - NOTICE.md
+  - lib/
+  - test/
+  - docs/
+  - node_modules/
+  - vendor/
+  - .github/
+  - .claude/
+  - _preview/
+
+include:
+  - .nojekyll
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

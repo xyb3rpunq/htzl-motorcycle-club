@@ -1,0 +1,25 @@
+# Klasifikasi bahasa untuk GitHub Linguist.
+# Tujuannya menampilkan proyek ini sebagai proyek Ruby, karena logika sebenarnya
+# (katalog, filter Liquid, generator halaman, test) memang ditulis dalam Ruby.
+
+# Berkas yang dihasilkan skrip, bukan ditulis tangan.
+_data/catalog.yml        linguist-generated=true
+_data/catalog_meta.yml   linguist-generated=true
+
+# Aset pihak ketiga.
+assets/fonts/*           linguist-vendored=true
+
+# Dokumentasi.
+docs/*                   linguist-documentation=true
+
+# Templat Liquid: berkas ini adalah templat Jekyll, bukan dokumen HTML mandiri.
+_layouts/*.html          linguist-detectable=false
+_includes/*.html         linguist-detectable=false
+
+# Normalisasi akhir baris.
+* text=auto eol=lf
+*.woff2 binary
+*.webp binary
+*.png binary
+*.jpg binary
+*.ico binary

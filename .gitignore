@@ -1,0 +1,24 @@
+# Hasil build Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Bundler
+vendor/
+.bundle/
+
+# Sistem operasi
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.idea/
+.vscode/
+*.swp
+
+# Berkas kerja Photoshop disimpan lokal, tidak perlu masuk repo (11 MB)
+*.psd
+debug.log
+_preview/
