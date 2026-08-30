@@ -9,6 +9,7 @@ category:
   Oli & Perawatan:         { en: Oils & Care,            zh: 机油与保养,  ru: Масла и уход,        ja: オイル・メンテ }
   Aksesori & Touring:      { en: Accessories & Touring,  zh: 配件与旅行,  ru: Аксессуары и туризм, ja: アクセサリー・ツーリング }
   Layanan Bengkel:         { en: Workshop Services,      zh: 维修服务,    ru: Сервис,              ja: 整備サービス }
+  Koleksi Heritage:        { en: Heritage Collection,    zh: 传承典藏,    ru: Коллекция Heritage,  ja: ヘリテージコレクション }
 
 category_blurb:
   Unit kendaraan siap kirim:      { en: Motorcycles ready to ship,      zh: 现车即刻交付,     ru: Мотоциклы готовы к отгрузке,   ja: 即納可能な車両 }
@@ -17,6 +18,7 @@ category_blurb:
   Pelumas dan cairan:             { en: Lubricants and fluids,          zh: 润滑油与油液,     ru: Смазки и жидкости,             ja: 潤滑油と油脂 }
   Penunjang perjalanan jauh:      { en: Built for long journeys,        zh: 长途出行支援,     ru: Для дальних поездок,           ja: 長距離走行の相棒 }
   Servis oleh teknisi resmi:      { en: Work by certified technicians,  zh: 认证技师施工,     ru: Работы сертифицированных механиков, ja: 認定整備士による作業 }
+  Harley-Davidson 1903 sampai kini: { en: Harley-Davidson from 1903 to today, zh: 1903 年至今的 Harley-Davidson, ru: Harley-Davidson с 1903 года до наших дней, ja: 1903年から現在までのHarley-Davidson }
 
 subcategory:
   Adventure:        { en: Adventure,          zh: 探险车,     ru: Эндуро,              ja: アドベンチャー }
@@ -47,6 +49,18 @@ subcategory:
   Servis Rutin:     { en: Routine Service,    zh: 定期保养,   ru: Плановое ТО,         ja: 定期点検 }
   Performa:         { en: Performance,        zh: 性能,       ru: Тюнинг,              ja: パフォーマンス }
   Kaki-kaki:        { en: Chassis & Wheels,   zh: 行走系统,   ru: Ходовая часть,       ja: 足まわり }
+
+  Era Perintis:         { en: Pioneer Era,          zh: 先驱时代,          ru: Эпоха пионеров,          ja: 黎明期 }
+  Era Flathead:         { en: Flathead Era,         zh: Flathead 时代,     ru: Эпоха Flathead,          ja: フラットヘッド期 }
+  Era Knucklehead:      { en: Knucklehead Era,      zh: Knucklehead 时代,  ru: Эпоха Knucklehead,       ja: ナックルヘッド期 }
+  Era Panhead:          { en: Panhead Era,          zh: Panhead 时代,      ru: Эпоха Panhead,           ja: パンヘッド期 }
+  Era Shovelhead:       { en: Shovelhead Era,       zh: Shovelhead 时代,   ru: Эпоха Shovelhead,        ja: ショベルヘッド期 }
+  Era Ironhead:         { en: Ironhead Era,         zh: Ironhead 时代,     ru: Эпоха Ironhead,          ja: アイアンヘッド期 }
+  Era Evolution:        { en: Evolution Era,        zh: Evolution 时代,    ru: Эпоха Evolution,         ja: エボリューション期 }
+  Era Twin Cam:         { en: Twin Cam Era,         zh: Twin Cam 时代,     ru: Эпоха Twin Cam,          ja: ツインカム期 }
+  Era Revolution:       { en: Revolution Era,       zh: Revolution 时代,   ru: Эпоха Revolution,        ja: レボリューション期 }
+  Era Milwaukee-Eight:  { en: Milwaukee-Eight Era,  zh: Milwaukee-Eight 时代, ru: Эпоха Milwaukee-Eight, ja: ミルウォーキーエイト期 }
+  Era Model Ringan:     { en: Lightweight Era,      zh: 轻型车时代,        ru: Эпоха лёгких моделей,    ja: 小排気量期 }
 
 spec_key:
   Abrasi:         { en: Abrasion,          zh: 耐磨,       ru: Истирание,             ja: 耐摩耗 }
@@ -154,3 +168,6 @@ spec_key:
   Visor:          { en: Visor,             zh: 镜片,       ru: Визор,                 ja: シールド }
   Warna:          { en: Colour,            zh: 颜色,       ru: Цвет,                  ja: カラー }
   Zipper:         { en: Zip,               zh: 拉链,       ru: Молния,                ja: ファスナー }
+  Tahun:          { en: Year,              zh: 年份,       ru: Год,                   ja: 年式 }
+  Rangka:         { en: Frame,             zh: 车架,       ru: Рама,                  ja: フレーム }
+  Kelangkaan:     { en: Rarity,            zh: 稀有度,     ru: Редкость,              ja: 希少性 }

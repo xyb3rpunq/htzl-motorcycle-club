@@ -14,7 +14,7 @@ layout: default
     </nav>
     <p class="eyebrow">{{ meta.total }} {{ t.catalog.items }}</p>
     <h1 class="h-sec">{{ t.catalog.title }}</h1>
-    <p style="max-width:64ch;margin-top:.6rem;color:var(--ink-2)">{{ t.catalog.subtitle }}</p>
+    <p style="max-width:64ch;margin-top:.6rem;color:var(--ink-2)">{{ t.catalog.subtitle | fill: 'count', meta.total }}</p>
   </div>
 </section>
 
@@ -103,9 +103,4 @@ layout: default
   </div>
 </section>
 
-<dialog id="product-dialog" aria-labelledby="detail-title">
-  <button class="dialog__close" type="button" data-dialog-close aria-label="{{ t.actions.close }}">
-    <svg aria-hidden="true"><use href="#i-close"/></svg>
-  </button>
-  <div class="dialog__body" data-dialog-body></div>
-</dialog>
+{%- include product-dialog.html t=t -%}

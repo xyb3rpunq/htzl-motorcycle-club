@@ -35,7 +35,7 @@
   brand: Kawasaki
   price: 51500000
   price_old:
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge:
   stock: 6
   rating: 4.6
@@ -61,7 +61,7 @@
   brand: Kawasaki
   price: 57500000
   price_old:
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge: Stok Terbatas
   stock: 1
   rating: 4.9
@@ -88,7 +88,7 @@
   brand: Kawasaki
   price: 55000000
   price_old:
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge: Baru
   stock: 9
   rating: 4.9
@@ -114,7 +114,7 @@
   brand: Kawasaki
   price: 62500000
   price_old:
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge:
   stock: 4
   rating: 4.7
@@ -140,7 +140,7 @@
   brand: Kawasaki
   price: 70500000
   price_old:
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge: Terlaris
   stock: 4
   rating: 4.3
@@ -167,7 +167,7 @@
   brand: Kawasaki
   price: 50000000
   price_old:
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge:
   stock: 5
   rating: 4.6
@@ -193,7 +193,7 @@
   brand: Kawasaki
   price: 57000000
   price_old: 64000000
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge: Diskon
   stock: 3
   rating: 4.9
@@ -219,7 +219,7 @@
   brand: Kawasaki
   price: 64000000
   price_old:
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge: Terlaris
   stock: 7
   rating: 4.4
@@ -272,7 +272,7 @@
   brand: Kawasaki
   price: 50000000
   price_old:
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge: Stok Terbatas
   stock: 2
   rating: 4.7
@@ -298,7 +298,7 @@
   brand: Kawasaki
   price: 56500000
   price_old:
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge:
   stock: 6
   rating: 4.6
@@ -325,7 +325,7 @@
   brand: Kawasaki
   price: 60000000
   price_old:
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge:
   stock: 7
   rating: 4.4
@@ -351,7 +351,7 @@
   brand: Kawasaki
   price: 68500000
   price_old:
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge:
   stock: 1
   rating: 4.4
@@ -377,7 +377,7 @@
   brand: Kawasaki
   price: 77000000
   price_old:
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge:
   stock: 5
   rating: 4.3
@@ -404,7 +404,7 @@
   brand: Kawasaki
   price: 65000000
   price_old:
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge: Terlaris
   stock: 9
   rating: 4.4
@@ -430,7 +430,7 @@
   brand: Kawasaki
   price: 74000000
   price_old:
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge: Terlaris
   stock: 8
   rating: 4.5
@@ -456,7 +456,7 @@
   brand: Kawasaki
   price: 83000000
   price_old:
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge: Stok Terbatas
   stock: 7
   rating: 4.3
@@ -509,7 +509,7 @@
   brand: Vixian
   price: 51500000
   price_old: 57500000
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge: Diskon
   stock: 7
   rating: 4.8
@@ -535,7 +535,7 @@
   brand: Vixian
   price: 57500000
   price_old:
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge: Baru
   stock: 5
   rating: 4.5
@@ -614,7 +614,7 @@
   brand: Vixian
   price: 51000000
   price_old:
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge:
   stock: 9
   rating: 4.2
@@ -667,7 +667,7 @@
   brand: Vixian
   price: 52500000
   price_old: 59000000
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge: Diskon
   stock: 2
   rating: 4.4
@@ -693,7 +693,7 @@
   brand: Vixian
   price: 59000000
   price_old:
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge: Baru
   stock: 7
   rating: 4.8
@@ -720,7 +720,7 @@
   brand: Vixian
   price: 70000000
   price_old:
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge: Stok Terbatas
   stock: 7
   rating: 4.8
@@ -746,7 +746,7 @@
   brand: Vixian
   price: 80000000
   price_old:
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge: Baru
   stock: 3
   rating: 4.5
@@ -772,7 +772,7 @@
   brand: Vixian
   price: 89500000
   price_old:
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge:
   stock: 9
   rating: 4.2
@@ -799,7 +799,7 @@
   brand: Vixian
   price: 65000000
   price_old: 73000000
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge: Diskon
   stock: 7
   rating: 4.2
@@ -825,7 +825,7 @@
   brand: Vixian
   price: 74000000
   price_old:
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge:
   stock: 8
   rating: 4.4
@@ -851,7 +851,7 @@
   brand: Vixian
   price: 83000000
   price_old: 93000000
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge: Diskon
   stock: 3
   rating: 4.6
@@ -878,7 +878,7 @@
   brand: Vixian
   price: 77000000
   price_old:
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge: Terlaris
   stock: 1
   rating: 4.9
@@ -904,7 +904,7 @@
   brand: Vixian
   price: 88000000
   price_old: 98500000
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge: Diskon
   stock: 3
   rating: 4.6
@@ -930,7 +930,7 @@
   brand: Vixian
   price: 98500000
   price_old:
-  price_band: di-atas-50jt
+  price_band: 50jt-500jt
   badge:
   stock: 6
   rating: 4.5
@@ -961,7 +961,7 @@
   badge: Diskon
   stock: 5
   rating: 4.9
-  image:
+  image: "/assets/img/products/helm-full-face-htzl-aero-r1.svg"
   icon: helmet
   blurb_type: generic
   trim:
@@ -985,7 +985,7 @@
   badge:
   stock: 13
   rating: 4.6
-  image:
+  image: "/assets/img/products/helm-full-face-htzl-aero-r1-carbon.svg"
   icon: helmet
   blurb_type: generic
   trim:
@@ -1010,7 +1010,7 @@
   badge: Diskon
   stock: 22
   rating: 4.3
-  image:
+  image: "/assets/img/products/helm-modular-htzl-voyager.svg"
   icon: helmet
   blurb_type: generic
   trim:
@@ -1034,7 +1034,7 @@
   badge:
   stock: 6
   rating: 4.3
-  image:
+  image: "/assets/img/products/helm-retro-htzl-classic-70.svg"
   icon: helmet
   blurb_type: generic
   trim:
@@ -1058,7 +1058,7 @@
   badge: Terlaris
   stock: 7
   rating: 4.8
-  image:
+  image: "/assets/img/products/helm-adventure-htzl-trail-x.svg"
   icon: helmet
   blurb_type: generic
   trim:
@@ -1082,7 +1082,7 @@
   badge: Diskon
   stock: 3
   rating: 4.4
-  image:
+  image: "/assets/img/products/jaket-kulit-htzl-rider-pro.svg"
   icon: jacket
   blurb_type: generic
   trim:
@@ -1107,7 +1107,7 @@
   badge:
   stock: 4
   rating: 4.9
-  image:
+  image: "/assets/img/products/jaket-tekstil-htzl-tourer-4s.svg"
   icon: jacket
   blurb_type: generic
   trim:
@@ -1131,7 +1131,7 @@
   badge:
   stock: 29
   rating: 4.4
-  image:
+  image: "/assets/img/products/jaket-mesh-htzl-urban-air.svg"
   icon: jacket
   blurb_type: generic
   trim:
@@ -1155,7 +1155,7 @@
   badge: Terlaris
   stock: 5
   rating: 4.6
-  image:
+  image: "/assets/img/products/jaket-balap-htzl-track-one.svg"
   icon: jacket
   blurb_type: generic
   trim:
@@ -1179,7 +1179,7 @@
   badge: Diskon
   stock: 20
   rating: 4.8
-  image:
+  image: "/assets/img/products/rompi-airbag-htzl-guardian.svg"
   icon: protector
   blurb_type: generic
   trim:
@@ -1203,7 +1203,7 @@
   badge: Stok Terbatas
   stock: 3
   rating: 4.3
-  image:
+  image: "/assets/img/products/sarung-tangan-kulit-htzl-grip-s.svg"
   icon: gloves
   blurb_type: generic
   trim:
@@ -1227,7 +1227,7 @@
   badge: Diskon
   stock: 3
   rating: 4.8
-  image:
+  image: "/assets/img/products/sarung-tangan-balap-htzl-apex.svg"
   icon: gloves
   blurb_type: generic
   trim:
@@ -1252,7 +1252,7 @@
   badge:
   stock: 31
   rating: 4.4
-  image:
+  image: "/assets/img/products/sarung-tangan-musim-hujan-htzl-aqua.svg"
   icon: gloves
   blurb_type: generic
   trim:
@@ -1277,7 +1277,7 @@
   badge: Stok Terbatas
   stock: 38
   rating: 4.5
-  image:
+  image: "/assets/img/products/sarung-tangan-harian-htzl-daily.svg"
   icon: gloves
   blurb_type: generic
   trim:
@@ -1301,7 +1301,7 @@
   badge:
   stock: 32
   rating: 4.2
-  image:
+  image: "/assets/img/products/sepatu-riding-htzl-boot-gp.svg"
   icon: boots
   blurb_type: generic
   trim:
@@ -1326,7 +1326,7 @@
   badge:
   stock: 19
   rating: 4.8
-  image:
+  image: "/assets/img/products/sepatu-touring-htzl-roadster.svg"
   icon: boots
   blurb_type: generic
   trim:
@@ -1350,7 +1350,7 @@
   badge:
   stock: 13
   rating: 4.8
-  image:
+  image: "/assets/img/products/sepatu-harian-htzl-city-ride.svg"
   icon: boots
   blurb_type: generic
   trim:
@@ -1374,7 +1374,7 @@
   badge: Diskon
   stock: 34
   rating: 4.3
-  image:
+  image: "/assets/img/products/sepatu-adventure-htzl-terra.svg"
   icon: boots
   blurb_type: generic
   trim:
@@ -1399,7 +1399,7 @@
   badge: Diskon
   stock: 15
   rating: 4.1
-  image:
+  image: "/assets/img/products/celana-riding-htzl-kevlar-jeans.svg"
   icon: pants
   blurb_type: generic
   trim:
@@ -1424,7 +1424,7 @@
   badge: Diskon
   stock: 18
   rating: 4.9
-  image:
+  image: "/assets/img/products/celana-touring-htzl-storm-pant.svg"
   icon: pants
   blurb_type: generic
   trim:
@@ -1448,7 +1448,7 @@
   badge:
   stock: 13
   rating: 4.7
-  image:
+  image: "/assets/img/products/celana-balap-htzl-leather-trk.svg"
   icon: pants
   blurb_type: generic
   trim:
@@ -1473,7 +1473,7 @@
   badge:
   stock: 12
   rating: 4.6
-  image:
+  image: "/assets/img/products/body-protector-htzl-shell-vest.svg"
   icon: protector
   blurb_type: generic
   trim:
@@ -1498,7 +1498,7 @@
   badge: Terlaris
   stock: 24
   rating: 4.9
-  image:
+  image: "/assets/img/products/back-protector-htzl-spine-l2.svg"
   icon: protector
   blurb_type: generic
   trim:
@@ -1523,7 +1523,7 @@
   badge: Diskon
   stock: 25
   rating: 4.5
-  image:
+  image: "/assets/img/products/knee-protector-htzl-guard-k2.svg"
   icon: protector
   blurb_type: generic
   trim:
@@ -1548,7 +1548,7 @@
   badge: Terlaris
   stock: 26
   rating: 4.8
-  image:
+  image: "/assets/img/products/balaclava-htzl-coolmax.svg"
   icon: mask
   blurb_type: generic
   trim:
@@ -1573,7 +1573,7 @@
   badge: Terlaris
   stock: 9
   rating: 4.5
-  image:
+  image: "/assets/img/products/masker-riding-htzl-filter-n95.svg"
   icon: mask
   blurb_type: generic
   trim:
@@ -1597,7 +1597,7 @@
   badge: Stok Terbatas
   stock: 10
   rating: 4.5
-  image:
+  image: "/assets/img/products/knalpot-slip-on-htzl-sc-titan.svg"
   icon: exhaust
   blurb_type: generic
   trim:
@@ -1621,7 +1621,7 @@
   badge: Baru
   stock: 18
   rating: 4.4
-  image:
+  image: "/assets/img/products/knalpot-full-system-htzl-raceline.svg"
   icon: exhaust
   blurb_type: generic
   trim:
@@ -1645,7 +1645,7 @@
   badge: Baru
   stock: 26
   rating: 4.1
-  image:
+  image: "/assets/img/products/knalpot-slip-on-htzl-carbon-pro.svg"
   icon: exhaust
   blurb_type: generic
   trim:
@@ -1669,7 +1669,7 @@
   badge: Diskon
   stock: 24
   rating: 4.8
-  image:
+  image: "/assets/img/products/header-pipe-htzl-stainless-2-1.svg"
   icon: exhaust
   blurb_type: generic
   trim:
@@ -1693,7 +1693,7 @@
   badge:
   stock: 40
   rating: 4.3
-  image:
+  image: "/assets/img/products/db-killer-htzl-silent-insert.svg"
   icon: exhaust
   blurb_type: generic
   trim:
@@ -1717,7 +1717,7 @@
   badge:
   stock: 17
   rating: 4.4
-  image:
+  image: "/assets/img/products/ban-depan-htzl-sport-120-70-17.svg"
   icon: tire
   blurb_type: generic
   trim:
@@ -1741,7 +1741,7 @@
   badge: Stok Terbatas
   stock: 10
   rating: 4.3
-  image:
+  image: "/assets/img/products/ban-belakang-htzl-sport-190-55-17.svg"
   icon: tire
   blurb_type: generic
   trim:
@@ -1765,7 +1765,7 @@
   badge:
   stock: 19
   rating: 4.5
-  image:
+  image: "/assets/img/products/ban-depan-htzl-track-120-70-17.svg"
   icon: tire
   blurb_type: generic
   trim:
@@ -1789,7 +1789,7 @@
   badge:
   stock: 27
   rating: 4.6
-  image:
+  image: "/assets/img/products/ban-belakang-htzl-track-200-55-17.svg"
   icon: tire
   blurb_type: generic
   trim:
@@ -1813,7 +1813,7 @@
   badge:
   stock: 21
   rating: 4.8
-  image:
+  image: "/assets/img/products/ban-adventure-htzl-terra-150-70-17.svg"
   icon: tire
   blurb_type: generic
   trim:
@@ -1837,7 +1837,7 @@
   badge:
   stock: 39
   rating: 4.1
-  image:
+  image: "/assets/img/products/ban-hujan-htzl-aqua-180-55-17.svg"
   icon: tire
   blurb_type: generic
   trim:
@@ -1861,7 +1861,7 @@
   badge:
   stock: 10
   rating: 4.7
-  image:
+  image: "/assets/img/products/kampas-rem-depan-htzl-sinter-hh.svg"
   icon: brake
   blurb_type: generic
   trim:
@@ -1885,7 +1885,7 @@
   badge:
   stock: 23
   rating: 4.7
-  image:
+  image: "/assets/img/products/kampas-rem-belakang-htzl-sinter.svg"
   icon: brake
   blurb_type: generic
   trim:
@@ -1909,7 +1909,7 @@
   badge:
   stock: 11
   rating: 4.4
-  image:
+  image: "/assets/img/products/kampas-rem-organik-htzl-street.svg"
   icon: brake
   blurb_type: generic
   trim:
@@ -1933,7 +1933,7 @@
   badge:
   stock: 20
   rating: 4.8
-  image:
+  image: "/assets/img/products/master-rem-radial-htzl-rcs19.svg"
   icon: brake
   blurb_type: generic
   trim:
@@ -1957,7 +1957,7 @@
   badge: Baru
   stock: 22
   rating: 4.2
-  image:
+  image: "/assets/img/products/cakram-depan-htzl-float-330mm.svg"
   icon: disc
   blurb_type: generic
   trim:
@@ -1981,7 +1981,7 @@
   badge: Diskon
   stock: 9
   rating: 4.6
-  image:
+  image: "/assets/img/products/cakram-belakang-htzl-245mm.svg"
   icon: disc
   blurb_type: generic
   trim:
@@ -2005,7 +2005,7 @@
   badge:
   stock: 8
   rating: 4.2
-  image:
+  image: "/assets/img/products/selang-rem-braided-htzl-steel.svg"
   icon: brake
   blurb_type: generic
   trim:
@@ -2029,7 +2029,7 @@
   badge:
   stock: 19
   rating: 4.2
-  image:
+  image: "/assets/img/products/rantai-htzl-x-ring-525.svg"
   icon: chain
   blurb_type: generic
   trim:
@@ -2053,7 +2053,7 @@
   badge: Diskon
   stock: 40
   rating: 4.2
-  image:
+  image: "/assets/img/products/gir-depan-htzl-steel-15t.svg"
   icon: chain
   blurb_type: generic
   trim:
@@ -2077,7 +2077,7 @@
   badge:
   stock: 25
   rating: 4.9
-  image:
+  image: "/assets/img/products/gir-belakang-htzl-alloy-45t.svg"
   icon: chain
   blurb_type: generic
   trim:
@@ -2101,7 +2101,7 @@
   badge:
   stock: 21
   rating: 4.1
-  image:
+  image: "/assets/img/products/filter-udara-htzl-flow-k-n.svg"
   icon: filter
   blurb_type: generic
   trim:
@@ -2125,7 +2125,7 @@
   badge: Stok Terbatas
   stock: 6
   rating: 4.8
-  image:
+  image: "/assets/img/products/filter-oli-htzl-spin-on.svg"
   icon: filter
   blurb_type: generic
   trim:
@@ -2149,7 +2149,7 @@
   badge: Diskon
   stock: 23
   rating: 4.2
-  image:
+  image: "/assets/img/products/filter-bensin-htzl-inline.svg"
   icon: filter
   blurb_type: generic
   trim:
@@ -2173,7 +2173,7 @@
   badge: Stok Terbatas
   stock: 4
   rating: 4.4
-  image:
+  image: "/assets/img/products/filter-udara-htzl-foam-enduro.svg"
   icon: filter
   blurb_type: generic
   trim:
@@ -2197,7 +2197,7 @@
   badge:
   stock: 18
   rating: 4.3
-  image:
+  image: "/assets/img/products/busi-iridium-htzl-spark-ix.svg"
   icon: spark
   blurb_type: generic
   trim:
@@ -2221,7 +2221,7 @@
   badge: Stok Terbatas
   stock: 33
   rating: 4.5
-  image:
+  image: "/assets/img/products/coil-pengapian-htzl-hotspark.svg"
   icon: spark
   blurb_type: generic
   trim:
@@ -2245,7 +2245,7 @@
   badge:
   stock: 12
   rating: 4.8
-  image:
+  image: "/assets/img/products/shock-belakang-htzl-ohlins-ttx.svg"
   icon: suspension
   blurb_type: generic
   trim:
@@ -2270,7 +2270,7 @@
   badge:
   stock: 18
   rating: 4.5
-  image:
+  image: "/assets/img/products/cartridge-depan-htzl-nix30.svg"
   icon: suspension
   blurb_type: generic
   trim:
@@ -2294,7 +2294,7 @@
   badge: Stok Terbatas
   stock: 24
   rating: 4.2
-  image:
+  image: "/assets/img/products/steering-damper-htzl-stabil-sd.svg"
   icon: suspension
   blurb_type: generic
   trim:
@@ -2318,7 +2318,7 @@
   badge: Baru
   stock: 28
   rating: 4.4
-  image:
+  image: "/assets/img/products/oli-mesin-htzl-racing-10w-40-full-sintetik.svg"
   icon: oil
   blurb_type: generic
   trim:
@@ -2342,7 +2342,7 @@
   badge:
   stock: 3
   rating: 4.5
-  image:
+  image: "/assets/img/products/oli-mesin-htzl-street-15w-50-semi-sintetik.svg"
   icon: oil
   blurb_type: generic
   trim:
@@ -2366,7 +2366,7 @@
   badge: Terlaris
   stock: 20
   rating: 4.2
-  image:
+  image: "/assets/img/products/oli-mesin-htzl-track-5w-40-ester.svg"
   icon: oil
   blurb_type: generic
   trim:
@@ -2390,7 +2390,7 @@
   badge:
   stock: 16
   rating: 4.4
-  image:
+  image: "/assets/img/products/paket-oli-mesin-htzl-racing-4-liter.svg"
   icon: oil
   blurb_type: generic
   trim:
@@ -2414,7 +2414,7 @@
   badge: Terlaris
   stock: 33
   rating: 4.4
-  image:
+  image: "/assets/img/products/oli-gardan-htzl-gear-80w-90.svg"
   icon: oil
   blurb_type: generic
   trim:
@@ -2438,7 +2438,7 @@
   badge: Diskon
   stock: 39
   rating: 4.1
-  image:
+  image: "/assets/img/products/minyak-rem-htzl-dot-4-racing.svg"
   icon: fluid
   blurb_type: generic
   trim:
@@ -2462,7 +2462,7 @@
   badge:
   stock: 10
   rating: 4.2
-  image:
+  image: "/assets/img/products/minyak-rem-htzl-dot-5-1.svg"
   icon: fluid
   blurb_type: generic
   trim:
@@ -2486,7 +2486,7 @@
   badge:
   stock: 34
   rating: 4.6
-  image:
+  image: "/assets/img/products/coolant-htzl-cool-blue-siap-pakai.svg"
   icon: fluid
   blurb_type: generic
   trim:
@@ -2511,7 +2511,7 @@
   badge: Baru
   stock: 39
   rating: 4.9
-  image:
+  image: "/assets/img/products/coolant-htzl-track-waterless.svg"
   icon: fluid
   blurb_type: generic
   trim:
@@ -2535,7 +2535,7 @@
   badge:
   stock: 21
   rating: 4.2
-  image:
+  image: "/assets/img/products/chain-lube-htzl-wax-dry.svg"
   icon: lube
   blurb_type: generic
   trim:
@@ -2559,7 +2559,7 @@
   badge:
   stock: 25
   rating: 4.9
-  image:
+  image: "/assets/img/products/chain-cleaner-htzl-degreaser.svg"
   icon: lube
   blurb_type: generic
   trim:
@@ -2583,7 +2583,7 @@
   badge: Diskon
   stock: 21
   rating: 4.1
-  image:
+  image: "/assets/img/products/poles-bodi-htzl-gloss-ceramic.svg"
   icon: polish
   blurb_type: generic
   trim:
@@ -2607,7 +2607,7 @@
   badge:
   stock: 23
   rating: 4.1
-  image:
+  image: "/assets/img/products/pembersih-helm-htzl-visor-clean.svg"
   icon: polish
   blurb_type: generic
   trim:
@@ -2631,7 +2631,7 @@
   badge: Diskon
   stock: 14
   rating: 4.7
-  image:
+  image: "/assets/img/products/shampo-motor-htzl-foam-wash.svg"
   icon: polish
   blurb_type: generic
   trim:
@@ -2655,7 +2655,7 @@
   badge: Baru
   stock: 19
   rating: 4.4
-  image:
+  image: "/assets/img/products/top-box-htzl-trunk-45l.svg"
   icon: topbox
   blurb_type: generic
   trim:
@@ -2679,7 +2679,7 @@
   badge: Terlaris
   stock: 27
   rating: 4.4
-  image:
+  image: "/assets/img/products/side-pannier-htzl-alu-35l-set.svg"
   icon: topbox
   blurb_type: generic
   trim:
@@ -2703,7 +2703,7 @@
   badge: Baru
   stock: 37
   rating: 4.6
-  image:
+  image: "/assets/img/products/tank-bag-htzl-magnet-18l.svg"
   icon: topbox
   blurb_type: generic
   trim:
@@ -2728,7 +2728,7 @@
   badge: Baru
   stock: 30
   rating: 4.7
-  image:
+  image: "/assets/img/products/tail-bag-htzl-roll-25l.svg"
   icon: topbox
   blurb_type: generic
   trim:
@@ -2752,7 +2752,7 @@
   badge: Terlaris
   stock: 14
   rating: 4.8
-  image:
+  image: "/assets/img/products/windshield-htzl-touring-tinggi.svg"
   icon: windshield
   blurb_type: generic
   trim:
@@ -2776,7 +2776,7 @@
   badge:
   stock: 40
   rating: 4.6
-  image:
+  image: "/assets/img/products/windshield-htzl-sport-bubble.svg"
   icon: windshield
   blurb_type: generic
   trim:
@@ -2800,7 +2800,7 @@
   badge: Diskon
   stock: 33
   rating: 4.7
-  image:
+  image: "/assets/img/products/crash-bar-htzl-engine-guard.svg"
   icon: crashbar
   blurb_type: generic
   trim:
@@ -2824,7 +2824,7 @@
   badge: Diskon
   stock: 14
   rating: 4.9
-  image:
+  image: "/assets/img/products/frame-slider-htzl-impact.svg"
   icon: crashbar
   blurb_type: generic
   trim:
@@ -2848,7 +2848,7 @@
   badge: Diskon
   stock: 26
   rating: 4.6
-  image:
+  image: "/assets/img/products/handguard-htzl-storm.svg"
   icon: handguard
   blurb_type: generic
   trim:
@@ -2873,7 +2873,7 @@
   badge:
   stock: 10
   rating: 4.4
-  image:
+  image: "/assets/img/products/radiator-guard-htzl-mesh.svg"
   icon: crashbar
   blurb_type: generic
   trim:
@@ -2897,7 +2897,7 @@
   badge:
   stock: 23
   rating: 4.1
-  image:
+  image: "/assets/img/products/usb-charger-htzl-power-30w.svg"
   icon: usb
   blurb_type: generic
   trim:
@@ -2921,7 +2921,7 @@
   badge: Baru
   stock: 20
   rating: 4.4
-  image:
+  image: "/assets/img/products/phone-holder-htzl-lock-grip.svg"
   icon: phone
   blurb_type: generic
   trim:
@@ -2946,7 +2946,7 @@
   badge:
   stock: 23
   rating: 4.9
-  image:
+  image: "/assets/img/products/action-cam-mount-htzl-rig.svg"
   icon: phone
   blurb_type: generic
   trim:
@@ -2971,7 +2971,7 @@
   badge: Stok Terbatas
   stock: 20
   rating: 4.9
-  image:
+  image: "/assets/img/products/cover-motor-htzl-shield-outdoor.svg"
   icon: cover
   blurb_type: generic
   trim:
@@ -2996,7 +2996,7 @@
   badge:
   stock: 19
   rating: 4.5
-  image:
+  image: "/assets/img/products/gembok-cakram-htzl-alarm-110db.svg"
   icon: cover
   blurb_type: generic
   trim:
@@ -3020,7 +3020,7 @@
   badge:
   stock: 99
   rating: 4.9
-  image:
+  image: "/assets/img/products/servis-berkala-4-000-km.svg"
   icon: wrench
   blurb_type: generic
   trim:
@@ -3044,7 +3044,7 @@
   badge: Stok Terbatas
   stock: 99
   rating: 4.3
-  image:
+  image: "/assets/img/products/servis-berkala-12-000-km.svg"
   icon: wrench
   blurb_type: generic
   trim:
@@ -3069,7 +3069,7 @@
   badge: Terlaris
   stock: 99
   rating: 4.2
-  image:
+  image: "/assets/img/products/servis-besar-24-000-km.svg"
   icon: wrench
   blurb_type: generic
   trim:
@@ -3094,7 +3094,7 @@
   badge: Stok Terbatas
   stock: 99
   rating: 4.9
-  image:
+  image: "/assets/img/products/ganti-oli-ekspres.svg"
   icon: wrench
   blurb_type: generic
   trim:
@@ -3119,7 +3119,7 @@
   badge:
   stock: 99
   rating: 4.2
-  image:
+  image: "/assets/img/products/tune-up-performa-dyno.svg"
   icon: dyno
   blurb_type: generic
   trim:
@@ -3143,7 +3143,7 @@
   badge: Terlaris
   stock: 99
   rating: 4.9
-  image:
+  image: "/assets/img/products/remap-ecu-stage-1.svg"
   icon: dyno
   blurb_type: generic
   trim:
@@ -3167,7 +3167,7 @@
   badge: Terlaris
   stock: 99
   rating: 4.1
-  image:
+  image: "/assets/img/products/balancing-spooring-roda.svg"
   icon: wheel
   blurb_type: generic
   trim:
@@ -3191,7 +3191,7 @@
   badge: Diskon
   stock: 99
   rating: 4.8
-  image:
+  image: "/assets/img/products/pasang-ban-sepasang.svg"
   icon: wheel
   blurb_type: generic
   trim:
@@ -3215,7 +3215,7 @@
   badge:
   stock: 99
   rating: 4.4
-  image:
+  image: "/assets/img/products/setel-suspensi-sesuai-bobot.svg"
   icon: wheel
   blurb_type: generic
   trim:
@@ -3239,7 +3239,7 @@
   badge:
   stock: 99
   rating: 4.4
-  image:
+  image: "/assets/img/products/detailing-keramik-full-body.svg"
   icon: polish
   blurb_type: generic
   trim:
@@ -3251,3 +3251,3294 @@
     Daya Tahan: 12 bulan
     Garansi: Cuci ulang gratis 1x
   sku: HTZ-LAY-131
+- name: Harley-Davidson 1903 Model 1 Serial Number One
+  slug: harley-davidson-1903-model-1-serial-number-one
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Perintis
+  brand: Harley-Davidson
+  price: 4500000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Koleksi Langka
+  stock: 1
+  rating: 4.5
+  image: "/assets/img/heritage/harley-davidson-1903-model-1-serial-number-one.webp"
+  credit:
+    title: Harley-Davidson Museum December 2023 39 (c. 1903 'Serial Number One'--Atmospheric-Valve
+      Single).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_December_2023_39_(c._1903_%27Serial_Number_One%27--Atmospheric-Valve_Single).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 405
+  year: 1903
+  photo_query: Harley-Davidson 1903 Serial Number One
+  blurb: Era Perintis. Harley-Davidson 1903 Model 1 Serial Number One bermesin 405
+    cc.
+  specs:
+    Tahun: '1903'
+    Mesin: 405 cc
+    Tenaga: 3 hp
+    Tipe: Atmospheric IOE
+    Rangka: Rigid loop
+    Kelangkaan: Museum
+  sku: HTZ-HER-132
+- name: Harley-Davidson 1905 Model 2
+  slug: harley-davidson-1905-model-2
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Perintis
+  brand: Harley-Davidson
+  price: 3200000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Koleksi Langka
+  stock: 1
+  rating: 5.0
+  image: "/assets/img/heritage/harley-davidson-1905-model-2.webp"
+  credit:
+    title: Four Lithuanian riflemen in uniforms and policemen behind. Ignas Žiniauskas
+      behind the steering wheel, 1939.jpg
+    author: unknown
+    license: Public domain
+    license_url: ''
+    source: https://commons.wikimedia.org/wiki/File:Four_Lithuanian_riflemen_in_uniforms_and_policemen_behind._Ignas_%C5%BDiniauskas_behind_the_steering_wheel,_1939.jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 440
+  year: 1905
+  photo_query: Harley-Davidson 1905 motorcycle
+  blurb: Era Perintis. Harley-Davidson 1905 Model 2 bermesin 440 cc.
+  specs:
+    Tahun: '1905'
+    Mesin: 440 cc
+    Tenaga: 3 hp
+    Tipe: Atmospheric IOE
+    Rangka: Rigid loop
+    Kelangkaan: Museum
+  sku: HTZ-HER-133
+- name: Harley-Davidson 1906 Model 3 Silent Gray Fellow
+  slug: harley-davidson-1906-model-3-silent-gray-fellow
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Perintis
+  brand: Harley-Davidson
+  price: 2900000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Koleksi Langka
+  stock: 1
+  rating: 4.8
+  image: "/assets/img/heritage/harley-davidson-1906-model-3-silent-gray-fellow.webp"
+  credit:
+    title: 1911HarleyDavidson"SilentGrayFellow".jpg
+    author: DrReload
+    license: CC BY 4.0
+    license_url: https://creativecommons.org/licenses/by/4.0
+    source: https://commons.wikimedia.org/wiki/File:1911HarleyDavidson%22SilentGrayFellow%22.jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 440
+  year: 1906
+  photo_query: Harley-Davidson Silent Gray Fellow
+  blurb: Era Perintis. Harley-Davidson 1906 Model 3 Silent Gray Fellow bermesin 440
+    cc.
+  specs:
+    Tahun: '1906'
+    Mesin: 440 cc
+    Tenaga: 4 hp
+    Tipe: Atmospheric IOE
+    Rangka: Rigid loop
+    Kelangkaan: Museum
+  sku: HTZ-HER-134
+- name: Harley-Davidson 1907 Model 4
+  slug: harley-davidson-1907-model-4
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Perintis
+  brand: Harley-Davidson
+  price: 2600000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Koleksi Langka
+  stock: 1
+  rating: 4.8
+  image: "/assets/img/heritage/harley-davidson-1907-model-4.webp"
+  credit:
+    title: Harley-Davidson Museum December 2023 45 (1907 Model 3--Atmospheric-Valve
+      Single).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_December_2023_45_(1907_Model_3--Atmospheric-Valve_Single).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 440
+  year: 1907
+  photo_query: Harley-Davidson 1907 motorcycle
+  blurb: Era Perintis. Harley-Davidson 1907 Model 4 bermesin 440 cc.
+  specs:
+    Tahun: '1907'
+    Mesin: 440 cc
+    Tenaga: 4 hp
+    Tipe: Atmospheric IOE
+    Rangka: Rigid loop
+    Kelangkaan: Museum
+  sku: HTZ-HER-135
+- name: Harley-Davidson 1908 Model 5
+  slug: harley-davidson-1908-model-5
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Perintis
+  brand: Harley-Davidson
+  price: 2400000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Koleksi Langka
+  stock: 1
+  rating: 4.5
+  image: "/assets/img/heritage/harley-davidson-1908-model-5.webp"
+  credit:
+    title: August Chelini on "Harley-Davison" motorcycle, Race at Tanforan racetrack,
+      JULY 4, 1908.jpg
+    author: The San Francisco call
+    license: Public domain
+    license_url: ''
+    source: https://commons.wikimedia.org/wiki/File:August_Chelini_on_%22Harley-Davison%22_motorcycle,_Race_at_Tanforan_racetrack,_JULY_4,_1908.jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 494
+  year: 1908
+  photo_query: Harley-Davidson 1908 motorcycle
+  blurb: Era Perintis. Harley-Davidson 1908 Model 5 bermesin 494 cc.
+  specs:
+    Tahun: '1908'
+    Mesin: 494 cc
+    Tenaga: 4 hp
+    Tipe: Atmospheric IOE
+    Rangka: Rigid loop
+    Kelangkaan: Museum
+  sku: HTZ-HER-136
+- name: Harley-Davidson 1909 Model 5D V-Twin
+  slug: harley-davidson-1909-model-5d-v-twin
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Perintis
+  brand: Harley-Davidson
+  price: 3800000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Koleksi Langka
+  stock: 1
+  rating: 5.0
+  image: "/assets/img/heritage/harley-davidson-1909-model-5d-v-twin.webp"
+  credit:
+    title: Harley-Davidson Museum December 2023 01 (1911 Model 7-A--Atmospheric-Valve
+      Single and 1909 Model 5-D--Atmospheric-Valve V-Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_December_2023_01_(1911_Model_7-A--Atmospheric-Valve_Single_and_1909_Model_5-D--Atmospheric-Valve_V-Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 811
+  year: 1909
+  photo_query: Harley-Davidson 1909 V-twin
+  blurb: Era Perintis. Harley-Davidson 1909 Model 5D V-Twin bermesin 811 cc.
+  specs:
+    Tahun: '1909'
+    Mesin: 811 cc
+    Tenaga: 7 hp
+    Tipe: F-Head V-Twin
+    Rangka: Rigid loop
+    Kelangkaan: Museum
+  sku: HTZ-HER-137
+- name: Harley-Davidson 1911 Model 7D
+  slug: harley-davidson-1911-model-7d
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Perintis
+  brand: Harley-Davidson
+  price: 1800000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Baru
+  stock: 3
+  rating: 4.6
+  image: "/assets/img/heritage/harley-davidson-1911-model-7d.webp"
+  credit:
+    title: Harley-Davidson Museum December 2023 01 (1911 Model 7-A--Atmospheric-Valve
+      Single and 1909 Model 5-D--Atmospheric-Valve V-Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_December_2023_01_(1911_Model_7-A--Atmospheric-Valve_Single_and_1909_Model_5-D--Atmospheric-Valve_V-Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 811
+  year: 1911
+  photo_query: Harley-Davidson 1911 motorcycle
+  blurb: Era Perintis. Harley-Davidson 1911 Model 7D bermesin 811 cc.
+  specs:
+    Tahun: '1911'
+    Mesin: 811 cc
+    Tenaga: 7 hp
+    Tipe: F-Head V-Twin
+    Rangka: Rigid loop
+    Kelangkaan: Sangat langka
+  sku: HTZ-HER-138
+- name: Harley-Davidson 1912 Model X8A
+  slug: harley-davidson-1912-model-x8a
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Perintis
+  brand: Harley-Davidson
+  price: 1450000000
+  price_old:
+  price_band: di-atas-500jt
+  badge:
+  stock: 1
+  rating: 5.0
+  image: "/assets/img/heritage/harley-davidson-1912-model-x8a.webp"
+  credit:
+    title: Harley-Davidson Museum December 2023 05 (1912 Model X-8-A--Atmospheric-Valve
+      Single).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_December_2023_05_(1912_Model_X-8-A--Atmospheric-Valve_Single).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 494
+  year: 1912
+  photo_query: Harley-Davidson 1912 motorcycle
+  blurb: Era Perintis. Harley-Davidson 1912 Model X8A bermesin 494 cc.
+  specs:
+    Tahun: '1912'
+    Mesin: 494 cc
+    Tenaga: 5 hp
+    Tipe: F-Head Single
+    Rangka: Rigid, Ful-Floteing seat
+    Kelangkaan: Sangat langka
+  sku: HTZ-HER-139
+- name: Harley-Davidson 1913 Model 9A
+  slug: harley-davidson-1913-model-9a
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Perintis
+  brand: Harley-Davidson
+  price: 1300000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Baru
+  stock: 3
+  rating: 4.7
+  image: "/assets/img/heritage/harley-davidson-1913-model-9a.webp"
+  credit:
+    title: Harley-Davidson Museum December 2023 06 (1913 Model 9-E--F-Head V-Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_December_2023_06_(1913_Model_9-E--F-Head_V-Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 565
+  year: 1913
+  photo_query: Harley-Davidson 1913 motorcycle
+  blurb: Era Perintis. Harley-Davidson 1913 Model 9A bermesin 565 cc.
+  specs:
+    Tahun: '1913'
+    Mesin: 565 cc
+    Tenaga: 5 hp
+    Tipe: F-Head Single
+    Rangka: Rigid loop
+    Kelangkaan: Sangat langka
+  sku: HTZ-HER-140
+- name: Harley-Davidson 1914 Model 10F
+  slug: harley-davidson-1914-model-10f
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Perintis
+  brand: Harley-Davidson
+  price: 1500000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Terlaris
+  stock: 3
+  rating: 4.5
+  image: "/assets/img/heritage/harley-davidson-1914-model-10f.webp"
+  credit:
+    title: Harley-Davidson US Mail side-car (circa 1914).jpg
+    author: Ed Bierman
+    license: CC BY 2.0
+    license_url: https://creativecommons.org/licenses/by/2.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_US_Mail_side-car_(circa_1914).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 989
+  year: 1914
+  photo_query: Harley-Davidson 1914 motorcycle
+  blurb: Era Perintis. Harley-Davidson 1914 Model 10F bermesin 989 cc.
+  specs:
+    Tahun: '1914'
+    Mesin: 989 cc
+    Tenaga: 11 hp
+    Tipe: F-Head V-Twin
+    Rangka: Rigid, dua kecepatan
+    Kelangkaan: Sangat langka
+  sku: HTZ-HER-141
+- name: Harley-Davidson 1915 Model 11F
+  slug: harley-davidson-1915-model-11f
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Perintis
+  brand: Harley-Davidson
+  price: 1400000000
+  price_old:
+  price_band: di-atas-500jt
+  badge:
+  stock: 1
+  rating: 4.8
+  image: "/assets/img/heritage/harley-davidson-1915-model-11f.webp"
+  credit:
+    title: Harley-Davidson Museum December 2023 07 (1915 Model 11-J--F-Head V-Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_December_2023_07_(1915_Model_11-J--F-Head_V-Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 989
+  year: 1915
+  photo_query: Harley-Davidson 1915 motorcycle
+  blurb: Era Perintis. Harley-Davidson 1915 Model 11F bermesin 989 cc.
+  specs:
+    Tahun: '1915'
+    Mesin: 989 cc
+    Tenaga: 11 hp
+    Tipe: F-Head V-Twin
+    Rangka: Rigid, tiga kecepatan
+    Kelangkaan: Sangat langka
+  sku: HTZ-HER-142
+- name: Harley-Davidson 1916 Model 16J
+  slug: harley-davidson-1916-model-16j
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Perintis
+  brand: Harley-Davidson
+  price: 1250000000
+  price_old:
+  price_band: di-atas-500jt
+  badge:
+  stock: 3
+  rating: 4.8
+  image: "/assets/img/heritage/harley-davidson-1916-model-16j.webp"
+  credit:
+    title: Harley-Davidson Museum December 2023 53 (1916 Model J with Package Truck--F-Head
+      V-Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_December_2023_53_(1916_Model_J_with_Package_Truck--F-Head_V-Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 989
+  year: 1916
+  photo_query: Harley-Davidson 1916 motorcycle
+  blurb: Era Perintis. Harley-Davidson 1916 Model 16J bermesin 989 cc.
+  specs:
+    Tahun: '1916'
+    Mesin: 989 cc
+    Tenaga: 11 hp
+    Tipe: F-Head V-Twin
+    Rangka: Rigid loop
+    Kelangkaan: Sangat langka
+  sku: HTZ-HER-143
+- name: Harley-Davidson 1917 Model 17F
+  slug: harley-davidson-1917-model-17f
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Perintis
+  brand: Harley-Davidson
+  price: 1200000000
+  price_old:
+  price_band: di-atas-500jt
+  badge:
+  stock: 1
+  rating: 5.0
+  image: "/assets/img/heritage/harley-davidson-1917-model-17f.webp"
+  credit:
+    title: Harley Davidson Modell J, 1917.jpg
+    author: Zweiradmuseum Neckarsulm
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley_Davidson_Modell_J,_1917.jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 989
+  year: 1917
+  photo_query: Harley-Davidson 1917 motorcycle
+  blurb: Era Perintis. Harley-Davidson 1917 Model 17F bermesin 989 cc.
+  specs:
+    Tahun: '1917'
+    Mesin: 989 cc
+    Tenaga: 16 hp
+    Tipe: F-Head V-Twin
+    Rangka: Rigid loop
+    Kelangkaan: Sangat langka
+  sku: HTZ-HER-144
+- name: Harley-Davidson 1918 Model 18J Perang Dunia I
+  slug: harley-davidson-1918-model-18j-perang-dunia-i
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Perintis
+  brand: Harley-Davidson
+  price: 1350000000
+  price_old:
+  price_band: di-atas-500jt
+  badge:
+  stock: 1
+  rating: 4.5
+  image: "/assets/img/heritage/harley-davidson-1918-model-18j-perang-dunia-i.webp"
+  credit:
+    title: Motor Vehicles - In Use - Harley Davidson motorcycles, some with side cars
+      on the road manufactured by the Harley Davidson Co., Milwaukee, Wis. For the
+      War Department - NARA - 45504463.jpg
+    author: Unknown authorUnknown author or not provided
+    license: Public domain
+    license_url: ''
+    source: https://commons.wikimedia.org/wiki/File:Motor_Vehicles_-_In_Use_-_Harley_Davidson_motorcycles,_some_with_side_cars_on_the_road_manufactured_by_the_Harley_Davidson_Co.,_Milwaukee,_Wis._For_the_War_Department_-_NARA_-_45504463.jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 989
+  year: 1918
+  photo_query: Harley-Davidson World War I motorcycle
+  blurb: Era Perintis. Harley-Davidson 1918 Model 18J Perang Dunia I bermesin 989
+    cc.
+  specs:
+    Tahun: '1918'
+    Mesin: 989 cc
+    Tenaga: 16 hp
+    Tipe: F-Head V-Twin
+    Rangka: Rigid loop
+    Kelangkaan: Sangat langka
+  sku: HTZ-HER-145
+- name: Harley-Davidson 1919 Model W Sport Twin
+  slug: harley-davidson-1919-model-w-sport-twin
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Flathead
+  brand: Harley-Davidson
+  price: 1100000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Stok Terbatas
+  stock: 2
+  rating: 4.7
+  image: "/assets/img/heritage/harley-davidson-1919-model-w-sport-twin.webp"
+  credit:
+    title: 1919 Harley-Davidson Model W Sport Twin (1) - The Art of the Motorcycle
+      - Memphis.jpg
+    author: Daniel Hartwig from New Haven, CT, USA
+    license: CC BY 2.0
+    license_url: https://creativecommons.org/licenses/by/2.0
+    source: https://commons.wikimedia.org/wiki/File:1919_Harley-Davidson_Model_W_Sport_Twin_(1)_-_The_Art_of_the_Motorcycle_-_Memphis.jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 584
+  year: 1919
+  photo_query: Harley-Davidson Sport Twin
+  blurb: Era Flathead. Harley-Davidson 1919 Model W Sport Twin bermesin 584 cc.
+  specs:
+    Tahun: '1919'
+    Mesin: 584 cc
+    Tenaga: 6 hp
+    Tipe: Flat Twin
+    Rangka: Rigid, mesin memanjang
+    Kelangkaan: Sangat langka
+  sku: HTZ-HER-146
+- name: Harley-Davidson 1920 Model 20J
+  slug: harley-davidson-1920-model-20j
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Perintis
+  brand: Harley-Davidson
+  price: 950000000
+  price_old:
+  price_band: di-atas-500jt
+  badge:
+  stock: 2
+  rating: 4.7
+  image: "/assets/img/heritage/harley-davidson-1920-model-20j.webp"
+  credit:
+    title: Harley-Davidson Museum December 2023 13 (1920 Sport Model--Opposed Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_December_2023_13_(1920_Sport_Model--Opposed_Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 989
+  year: 1920
+  photo_query: Harley-Davidson 1920 motorcycle
+  blurb: Era Perintis. Harley-Davidson 1920 Model 20J bermesin 989 cc.
+  specs:
+    Tahun: '1920'
+    Mesin: 989 cc
+    Tenaga: 16 hp
+    Tipe: F-Head V-Twin
+    Rangka: Rigid loop
+    Kelangkaan: Langka
+  sku: HTZ-HER-147
+- name: Harley-Davidson 1921 Model 21JD
+  slug: harley-davidson-1921-model-21jd
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Perintis
+  brand: Harley-Davidson
+  price: 1050000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Baru
+  stock: 2
+  rating: 4.5
+  image: "/assets/img/heritage/harley-davidson-1921-model-21jd.webp"
+  credit:
+    title: Harley-Davidson Sport 558 cc 1921.jpg
+    author: Lars-Göran Lindgren Sweden
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Sport_558_cc_1921.jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1213
+  year: 1921
+  photo_query: Harley-Davidson 1921 motorcycle
+  blurb: Era Perintis. Harley-Davidson 1921 Model 21JD bermesin 1.213 cc.
+  specs:
+    Tahun: '1921'
+    Mesin: 1.213 cc
+    Tenaga: 18 hp
+    Tipe: F-Head V-Twin
+    Rangka: Rigid loop
+    Kelangkaan: Langka
+  sku: HTZ-HER-148
+- name: Harley-Davidson 1922 Model 22FD
+  slug: harley-davidson-1922-model-22fd
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Perintis
+  brand: Harley-Davidson
+  price: 900000000
+  price_old:
+  price_band: di-atas-500jt
+  badge:
+  stock: 3
+  rating: 4.8
+  image: "/assets/img/heritage/harley-davidson-1922-model-22fd.webp"
+  credit:
+    title: Jimmy Murphy, winner of 500-mile auto race at Indianapolis, Ind., May 30,
+      1922, and Ernie Olson, mechanic, seated on Harley-Davidson motorcycle and in
+      sidecar LCCN2003671078.jpg
+    author: Miscellaneous Items in High Demand, PPOC, Library of Congress
+    license: Public domain
+    license_url: ''
+    source: https://commons.wikimedia.org/wiki/File:Jimmy_Murphy,_winner_of_500-mile_auto_race_at_Indianapolis,_Ind.,_May_30,_1922,_and_Ernie_Olson,_mechanic,_seated_on_Harley-Davidson_motorcycle_and_in_sidecar_LCCN2003671078.jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1213
+  year: 1922
+  photo_query: Harley-Davidson 1922 motorcycle
+  blurb: Era Perintis. Harley-Davidson 1922 Model 22FD bermesin 1.213 cc.
+  specs:
+    Tahun: '1922'
+    Mesin: 1.213 cc
+    Tenaga: 18 hp
+    Tipe: F-Head V-Twin
+    Rangka: Rigid loop
+    Kelangkaan: Langka
+  sku: HTZ-HER-149
+- name: Harley-Davidson 1923 Model 23JD
+  slug: harley-davidson-1923-model-23jd
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Perintis
+  brand: Harley-Davidson
+  price: 880000000
+  price_old:
+  price_band: di-atas-500jt
+  badge:
+  stock: 2
+  rating: 4.5
+  image: "/assets/img/heritage/harley-davidson-1923-model-23jd.webp"
+  credit:
+    title: Harley-Davidson Museum December 2023 10 (1923 Model JDCA--F-Head V-Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_December_2023_10_(1923_Model_JDCA--F-Head_V-Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1213
+  year: 1923
+  photo_query: Harley-Davidson 1923 motorcycle
+  blurb: Era Perintis. Harley-Davidson 1923 Model 23JD bermesin 1.213 cc.
+  specs:
+    Tahun: '1923'
+    Mesin: 1.213 cc
+    Tenaga: 18 hp
+    Tipe: F-Head V-Twin
+    Rangka: Rigid loop
+    Kelangkaan: Langka
+  sku: HTZ-HER-150
+- name: Harley-Davidson 1924 Model 24FD
+  slug: harley-davidson-1924-model-24fd
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Perintis
+  brand: Harley-Davidson
+  price: 860000000
+  price_old:
+  price_band: di-atas-500jt
+  badge:
+  stock: 1
+  rating: 4.5
+  image: "/assets/img/heritage/harley-davidson-1924-model-24fd.webp"
+  credit:
+    title: Harley-Davidson Museum April 2024 08 (Mama Tried- Bringing it Together--1929
+      FHAC with 1924 FLXI side car).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_April_2024_08_(Mama_Tried-_Bringing_it_Together--1929_FHAC_with_1924_FLXI_side_car).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1213
+  year: 1924
+  photo_query: Harley-Davidson 1924 motorcycle
+  blurb: Era Perintis. Harley-Davidson 1924 Model 24FD bermesin 1.213 cc.
+  specs:
+    Tahun: '1924'
+    Mesin: 1.213 cc
+    Tenaga: 18 hp
+    Tipe: F-Head V-Twin
+    Rangka: Rigid, piston aluminium
+    Kelangkaan: Langka
+  sku: HTZ-HER-151
+- name: Harley-Davidson 1925 Model 25JD
+  slug: harley-davidson-1925-model-25jd
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Perintis
+  brand: Harley-Davidson
+  price: 840000000
+  price_old:
+  price_band: di-atas-500jt
+  badge:
+  stock: 2
+  rating: 4.5
+  image: "/assets/img/heritage/harley-davidson-1925-model-25jd.webp"
+  credit:
+    title: Harley-Davidson Museum December 2023 49 (1925 JDCB--F-Head V-Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_December_2023_49_(1925_JDCB--F-Head_V-Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1213
+  year: 1925
+  photo_query: Harley-Davidson 1925 motorcycle
+  blurb: Era Perintis. Harley-Davidson 1925 Model 25JD bermesin 1.213 cc.
+  specs:
+    Tahun: '1925'
+    Mesin: 1.213 cc
+    Tenaga: 24 hp
+    Tipe: F-Head V-Twin
+    Rangka: Rigid, rangka rendah
+    Kelangkaan: Langka
+  sku: HTZ-HER-152
+- name: Harley-Davidson 1926 Model A Peashooter
+  slug: harley-davidson-1926-model-a-peashooter
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Flathead
+  brand: Harley-Davidson
+  price: 780000000
+  price_old:
+  price_band: di-atas-500jt
+  badge:
+  stock: 1
+  rating: 4.7
+  image: "/assets/img/heritage/harley-davidson-1926-model-a-peashooter.webp"
+  credit:
+    title: Harley-Davidson Pearshooter 1926.jpg
+    author: Lars-Göran Lindgren Sweden
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Pearshooter_1926.jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 346
+  year: 1926
+  photo_query: Harley-Davidson Peashooter
+  blurb: Era Flathead. Harley-Davidson 1926 Model A Peashooter bermesin 346 cc.
+  specs:
+    Tahun: '1926'
+    Mesin: 346 cc
+    Tenaga: 12 hp
+    Tipe: Flathead Single
+    Rangka: Rigid ringan
+    Kelangkaan: Langka
+  sku: HTZ-HER-153
+- name: Harley-Davidson 1927 Model BA
+  slug: harley-davidson-1927-model-ba
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Model Ringan
+  brand: Harley-Davidson
+  price: 720000000
+  price_old:
+  price_band: di-atas-500jt
+  badge:
+  stock: 1
+  rating: 4.5
+  image: "/assets/img/heritage/harley-davidson-1927-model-ba.webp"
+  credit:
+    title: Harley-Davidson Museum February 2024 40 (Clubs and Competition--1927 Model
+      S 'Peashooter'--OHV Single).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_February_2024_40_(Clubs_and_Competition--1927_Model_S_%27Peashooter%27--OHV_Single).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 346
+  year: 1927
+  photo_query: Harley-Davidson 1927 motorcycle
+  blurb: Era Model Ringan. Harley-Davidson 1927 Model BA bermesin 346 cc.
+  specs:
+    Tahun: '1927'
+    Mesin: 346 cc
+    Tenaga: 12 hp
+    Tipe: OHV Single
+    Rangka: Rigid ringan
+    Kelangkaan: Langka
+  sku: HTZ-HER-154
+- name: Harley-Davidson 1928 Model JDH Two-Cam
+  slug: harley-davidson-1928-model-jdh-two-cam
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Perintis
+  brand: Harley-Davidson
+  price: 1600000000
+  price_old:
+  price_band: di-atas-500jt
+  badge:
+  stock: 2
+  rating: 5.0
+  image: "/assets/img/products/harley-davidson-1928-model-jdh-two-cam.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1213
+  year: 1928
+  photo_query: Harley-Davidson JDH Two Cam
+  blurb: Era Perintis. Harley-Davidson 1928 Model JDH Two-Cam bermesin 1.213 cc.
+  specs:
+    Tahun: '1928'
+    Mesin: 1.213 cc
+    Tenaga: 29 hp
+    Tipe: F-Head V-Twin
+    Rangka: Rigid, rem depan
+    Kelangkaan: Sangat langka
+  sku: HTZ-HER-155
+- name: Harley-Davidson 1929 Model D Flathead 45
+  slug: harley-davidson-1929-model-d-flathead-45
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Flathead
+  brand: Harley-Davidson
+  price: 650000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Baru
+  stock: 2
+  rating: 4.6
+  image: "/assets/img/products/harley-davidson-1929-model-d-flathead-45.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 737
+  year: 1929
+  photo_query: Harley-Davidson Model D 1929
+  blurb: Era Flathead. Harley-Davidson 1929 Model D Flathead 45 bermesin 737 cc.
+  specs:
+    Tahun: '1929'
+    Mesin: 737 cc
+    Tenaga: 15 hp
+    Tipe: Flathead V-Twin
+    Rangka: Rigid loop
+    Kelangkaan: Langka
+  sku: HTZ-HER-156
+- name: Harley-Davidson 1930 Model VL
+  slug: harley-davidson-1930-model-vl
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Flathead
+  brand: Harley-Davidson
+  price: 700000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Terlaris
+  stock: 2
+  rating: 4.8
+  image: "/assets/img/products/harley-davidson-1930-model-vl.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1213
+  year: 1930
+  photo_query: Harley-Davidson Model VL
+  blurb: Era Flathead. Harley-Davidson 1930 Model VL bermesin 1.213 cc.
+  specs:
+    Tahun: '1930'
+    Mesin: 1.213 cc
+    Tenaga: 30 hp
+    Tipe: Flathead V-Twin
+    Rangka: Rigid, rangka baru
+    Kelangkaan: Langka
+  sku: HTZ-HER-157
+- name: Harley-Davidson 1932 Model G Servi-Car
+  slug: harley-davidson-1932-model-g-servi-car
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Flathead
+  brand: Harley-Davidson
+  price: 550000000
+  price_old:
+  price_band: di-atas-500jt
+  badge:
+  stock: 3
+  rating: 4.5
+  image: "/assets/img/heritage/harley-davidson-1932-model-g-servi-car.webp"
+  credit:
+    title: Harley-Davidson Museum December 2023 51 (1932 Model G Servi-Car--Side-Valve
+      V-Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_December_2023_51_(1932_Model_G_Servi-Car--Side-Valve_V-Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 737
+  year: 1932
+  photo_query: Harley-Davidson Servi-Car
+  blurb: Era Flathead. Harley-Davidson 1932 Model G Servi-Car bermesin 737 cc.
+  specs:
+    Tahun: '1932'
+    Mesin: 737 cc
+    Tenaga: 15 hp
+    Tipe: Flathead V-Twin
+    Rangka: Roda tiga
+    Kelangkaan: Langka
+  sku: HTZ-HER-158
+- name: Harley-Davidson 1933 Model VLD Art Deco
+  slug: harley-davidson-1933-model-vld-art-deco
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Flathead
+  brand: Harley-Davidson
+  price: 950000000
+  price_old:
+  price_band: di-atas-500jt
+  badge:
+  stock: 1
+  rating: 4.9
+  image: "/assets/img/heritage/harley-davidson-1933-model-vld-art-deco.webp"
+  credit:
+    title: Harley-Davidson Museum December 2023 19 (1933 VLD with 1934 LT Sidecar--Side-Valve
+      V-Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_December_2023_19_(1933_VLD_with_1934_LT_Sidecar--Side-Valve_V-Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1213
+  year: 1933
+  photo_query: Harley-Davidson 1933 motorcycle
+  blurb: Era Flathead. Harley-Davidson 1933 Model VLD Art Deco bermesin 1.213 cc.
+  specs:
+    Tahun: '1933'
+    Mesin: 1.213 cc
+    Tenaga: 36 hp
+    Tipe: Flathead V-Twin
+    Rangka: Rigid, livery Art Deco
+    Kelangkaan: Sangat langka
+  sku: HTZ-HER-159
+- name: Harley-Davidson 1935 Model RL 45
+  slug: harley-davidson-1935-model-rl-45
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Flathead
+  brand: Harley-Davidson
+  price: 580000000
+  price_old:
+  price_band: di-atas-500jt
+  badge:
+  stock: 3
+  rating: 4.6
+  image: "/assets/img/heritage/harley-davidson-1935-model-rl-45.webp"
+  credit:
+    title: Harley-Davidson Museum December 2023 20 (1935 Model R--Side-Valve V-Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_December_2023_20_(1935_Model_R--Side-Valve_V-Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 737
+  year: 1935
+  photo_query: Harley-Davidson 1935 motorcycle
+  blurb: Era Flathead. Harley-Davidson 1935 Model RL 45 bermesin 737 cc.
+  specs:
+    Tahun: '1935'
+    Mesin: 737 cc
+    Tenaga: 18 hp
+    Tipe: Flathead V-Twin
+    Rangka: Rigid loop
+    Kelangkaan: Langka
+  sku: HTZ-HER-160
+- name: Harley-Davidson 1936 Model EL Knucklehead
+  slug: harley-davidson-1936-model-el-knucklehead
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Knucklehead
+  brand: Harley-Davidson
+  price: 2200000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Koleksi Langka
+  stock: 2
+  rating: 4.9
+  image: "/assets/img/products/harley-davidson-1936-model-el-knucklehead.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 989
+  year: 1936
+  photo_query: Harley-Davidson EL Knucklehead 1936
+  blurb: Era Knucklehead. Harley-Davidson 1936 Model EL Knucklehead bermesin 989 cc.
+  specs:
+    Tahun: '1936'
+    Mesin: 989 cc
+    Tenaga: 40 hp
+    Tipe: Knucklehead
+    Rangka: Rigid, tangki teardrop
+    Kelangkaan: Ikonik
+  sku: HTZ-HER-161
+- name: Harley-Davidson 1937 Model ULH
+  slug: harley-davidson-1937-model-ulh
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Flathead
+  brand: Harley-Davidson
+  price: 640000000
+  price_old:
+  price_band: di-atas-500jt
+  badge:
+  stock: 3
+  rating: 5.0
+  image: "/assets/img/heritage/harley-davidson-1937-model-ulh.webp"
+  credit:
+    title: Harley-Davidson Museum December 2023 22 (1937 UH--Side-Valve V-Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_December_2023_22_(1937_UH--Side-Valve_V-Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1311
+  year: 1937
+  photo_query: Harley-Davidson 1937 motorcycle
+  blurb: Era Flathead. Harley-Davidson 1937 Model ULH bermesin 1.311 cc.
+  specs:
+    Tahun: '1937'
+    Mesin: 1.311 cc
+    Tenaga: 34 hp
+    Tipe: Flathead V-Twin
+    Rangka: Rigid loop
+    Kelangkaan: Langka
+  sku: HTZ-HER-162
+- name: Harley-Davidson 1938 Model EL
+  slug: harley-davidson-1938-model-el
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Knucklehead
+  brand: Harley-Davidson
+  price: 1500000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Koleksi Langka
+  stock: 3
+  rating: 5.0
+  image: "/assets/img/products/harley-davidson-1938-model-el.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 989
+  year: 1938
+  photo_query: Harley-Davidson 1938 Knucklehead
+  blurb: Era Knucklehead. Harley-Davidson 1938 Model EL bermesin 989 cc.
+  specs:
+    Tahun: '1938'
+    Mesin: 989 cc
+    Tenaga: 40 hp
+    Tipe: Knucklehead
+    Rangka: Rigid loop
+    Kelangkaan: Ikonik
+  sku: HTZ-HER-163
+- name: Harley-Davidson 1939 Model WLD Sport Solo
+  slug: harley-davidson-1939-model-wld-sport-solo
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Flathead
+  brand: Harley-Davidson
+  price: 520000000
+  price_old:
+  price_band: di-atas-500jt
+  badge:
+  stock: 1
+  rating: 4.5
+  image: "/assets/img/heritage/harley-davidson-1939-model-wld-sport-solo.webp"
+  credit:
+    title: Harley-Davidson Museum December 2023 25 (1938 WLD--Side-Valve V-Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_December_2023_25_(1938_WLD--Side-Valve_V-Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 737
+  year: 1939
+  photo_query: Harley-Davidson WLD
+  blurb: Era Flathead. Harley-Davidson 1939 Model WLD Sport Solo bermesin 737 cc.
+  specs:
+    Tahun: '1939'
+    Mesin: 737 cc
+    Tenaga: 22 hp
+    Tipe: Flathead V-Twin
+    Rangka: Rigid loop
+    Kelangkaan: Langka
+  sku: HTZ-HER-164
+- name: Harley-Davidson 1940 Model WLA Militer
+  slug: harley-davidson-1940-model-wla-militer
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Flathead
+  brand: Harley-Davidson
+  price: 620000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Koleksi Langka
+  stock: 2
+  rating: 5.0
+  image: "/assets/img/heritage/harley-davidson-1940-model-wla-militer.webp"
+  credit:
+    title: Harley-Davidson Museum December 2023 59 (1942 WLA--Side-Valve V-Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_December_2023_59_(1942_WLA--Side-Valve_V-Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 737
+  year: 1940
+  photo_query: Harley-Davidson WLA
+  blurb: Era Flathead. Harley-Davidson 1940 Model WLA Militer bermesin 737 cc.
+  specs:
+    Tahun: '1940'
+    Mesin: 737 cc
+    Tenaga: 23 hp
+    Tipe: Flathead V-Twin
+    Rangka: Rigid, dudukan senapan
+    Kelangkaan: Ikonik
+  sku: HTZ-HER-165
+- name: Harley-Davidson 1941 Model FL Knucklehead 74
+  slug: harley-davidson-1941-model-fl-knucklehead-74
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Knucklehead
+  brand: Harley-Davidson
+  price: 1400000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Koleksi Langka
+  stock: 2
+  rating: 4.9
+  image: "/assets/img/products/harley-davidson-1941-model-fl-knucklehead-74.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1213
+  year: 1941
+  photo_query: Harley-Davidson 1941 FL Knucklehead
+  blurb: Era Knucklehead. Harley-Davidson 1941 Model FL Knucklehead 74 bermesin 1.213
+    cc.
+  specs:
+    Tahun: '1941'
+    Mesin: 1.213 cc
+    Tenaga: 48 hp
+    Tipe: Knucklehead
+    Rangka: Rigid loop
+    Kelangkaan: Ikonik
+  sku: HTZ-HER-166
+- name: Harley-Davidson 1942 Model XA Shaft Drive
+  slug: harley-davidson-1942-model-xa-shaft-drive
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Flathead
+  brand: Harley-Davidson
+  price: 1100000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Terlaris
+  stock: 3
+  rating: 5.0
+  image: "/assets/img/heritage/harley-davidson-1942-model-xa-shaft-drive.webp"
+  credit:
+    title: Harley-Davidson Museum December 2023 32 (1942 XA--Opposed Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_December_2023_32_(1942_XA--Opposed_Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 739
+  year: 1942
+  photo_query: Harley-Davidson XA
+  blurb: Era Flathead. Harley-Davidson 1942 Model XA Shaft Drive bermesin 739 cc.
+  specs:
+    Tahun: '1942'
+    Mesin: 739 cc
+    Tenaga: 23 hp
+    Tipe: Flat Twin
+    Rangka: Rigid, gardan poros
+    Kelangkaan: Sangat langka
+  sku: HTZ-HER-167
+- name: Harley-Davidson 1943 Model WLC Kanada
+  slug: harley-davidson-1943-model-wlc-kanada
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Flathead
+  brand: Harley-Davidson
+  price: 560000000
+  price_old:
+  price_band: di-atas-500jt
+  badge:
+  stock: 2
+  rating: 4.7
+  image: "/assets/img/heritage/harley-davidson-1943-model-wlc-kanada.webp"
+  credit:
+    title: 1942 Harley Davidson WLC Custom (6401211421).jpg
+    author: Tony Hisgett from Birmingham, UK
+    license: CC BY 2.0
+    license_url: https://creativecommons.org/licenses/by/2.0
+    source: https://commons.wikimedia.org/wiki/File:1942_Harley_Davidson_WLC_Custom_(6401211421).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 737
+  year: 1943
+  photo_query: Harley-Davidson WLC
+  blurb: Era Flathead. Harley-Davidson 1943 Model WLC Kanada bermesin 737 cc.
+  specs:
+    Tahun: '1943'
+    Mesin: 737 cc
+    Tenaga: 23 hp
+    Tipe: Flathead V-Twin
+    Rangka: Rigid militer
+    Kelangkaan: Langka
+  sku: HTZ-HER-168
+- name: Harley-Davidson 1945 Model WL Pascaperang
+  slug: harley-davidson-1945-model-wl-pascaperang
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Flathead
+  brand: Harley-Davidson
+  price: 480000000
+  price_old:
+  price_band: 50jt-500jt
+  badge: Terlaris
+  stock: 2
+  rating: 4.9
+  image: "/assets/img/products/harley-davidson-1945-model-wl-pascaperang.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 737
+  year: 1945
+  photo_query: Harley-Davidson WL 1945
+  blurb: Era Flathead. Harley-Davidson 1945 Model WL Pascaperang bermesin 737 cc.
+  specs:
+    Tahun: '1945'
+    Mesin: 737 cc
+    Tenaga: 23 hp
+    Tipe: Flathead V-Twin
+    Rangka: Rigid loop
+    Kelangkaan: Langka
+  sku: HTZ-HER-169
+- name: Harley-Davidson 1946 Model FL
+  slug: harley-davidson-1946-model-fl
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Knucklehead
+  brand: Harley-Davidson
+  price: 1250000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Koleksi Langka
+  stock: 3
+  rating: 4.7
+  image: "/assets/img/heritage/harley-davidson-1946-model-fl.webp"
+  credit:
+    title: 1946 Harley Knucklehead bobber (6842571943).jpg
+    author: Dave_S. from Witney, England
+    license: CC BY 2.0
+    license_url: https://creativecommons.org/licenses/by/2.0
+    source: https://commons.wikimedia.org/wiki/File:1946_Harley_Knucklehead_bobber_(6842571943).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1213
+  year: 1946
+  photo_query: Harley-Davidson 1946 Knucklehead
+  blurb: Era Knucklehead. Harley-Davidson 1946 Model FL bermesin 1.213 cc.
+  specs:
+    Tahun: '1946'
+    Mesin: 1.213 cc
+    Tenaga: 48 hp
+    Tipe: Knucklehead
+    Rangka: Rigid loop
+    Kelangkaan: Ikonik
+  sku: HTZ-HER-170
+- name: Harley-Davidson 1947 Model WL Sport Solo
+  slug: harley-davidson-1947-model-wl-sport-solo
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Flathead
+  brand: Harley-Davidson
+  price: 470000000
+  price_old:
+  price_band: 50jt-500jt
+  badge: Baru
+  stock: 3
+  rating: 4.6
+  image: "/assets/img/heritage/harley-davidson-1947-model-wl-sport-solo.webp"
+  credit:
+    title: Harley-Davidson-WL.jpg
+    author: Liftarn
+    license: CC BY-SA 3.0
+    license_url: http://creativecommons.org/licenses/by-sa/3.0/
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson-WL.jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 737
+  year: 1947
+  photo_query: Harley-Davidson 1947 WL
+  blurb: Era Flathead. Harley-Davidson 1947 Model WL Sport Solo bermesin 737 cc.
+  specs:
+    Tahun: '1947'
+    Mesin: 737 cc
+    Tenaga: 23 hp
+    Tipe: Flathead V-Twin
+    Rangka: Rigid loop
+    Kelangkaan: Langka
+  sku: HTZ-HER-171
+- name: Harley-Davidson 1948 Model FL Panhead
+  slug: harley-davidson-1948-model-fl-panhead
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Panhead
+  brand: Harley-Davidson
+  price: 1100000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Koleksi Langka
+  stock: 1
+  rating: 5.0
+  image: "/assets/img/heritage/harley-davidson-1948-model-fl-panhead.webp"
+  credit:
+    title: Harley-Davidson Museum February 2024 12 (Engine Room--Panhead, 1948-65).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_February_2024_12_(Engine_Room--Panhead,_1948-65).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1213
+  year: 1948
+  photo_query: Harley-Davidson 1948 Panhead
+  blurb: Era Panhead. Harley-Davidson 1948 Model FL Panhead bermesin 1.213 cc.
+  specs:
+    Tahun: '1948'
+    Mesin: 1.213 cc
+    Tenaga: 50 hp
+    Tipe: Panhead
+    Rangka: Rigid, garpu Springer
+    Kelangkaan: Ikonik
+  sku: HTZ-HER-172
+- name: Harley-Davidson 1949 Model FL Hydra-Glide
+  slug: harley-davidson-1949-model-fl-hydra-glide
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Panhead
+  brand: Harley-Davidson
+  price: 980000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Koleksi Langka
+  stock: 3
+  rating: 4.9
+  image: "/assets/img/heritage/harley-davidson-1949-model-fl-hydra-glide.webp"
+  credit:
+    title: Harley-Davidson Museum April 2024 27 (1949 FL Hydra-Glide--OHV V-Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_April_2024_27_(1949_FL_Hydra-Glide--OHV_V-Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1213
+  year: 1949
+  photo_query: Harley-Davidson Hydra-Glide
+  blurb: Era Panhead. Harley-Davidson 1949 Model FL Hydra-Glide bermesin 1.213 cc.
+  specs:
+    Tahun: '1949'
+    Mesin: 1.213 cc
+    Tenaga: 55 hp
+    Tipe: Panhead
+    Rangka: Rigid, garpu teleskopik
+    Kelangkaan: Ikonik
+  sku: HTZ-HER-173
+- name: Harley-Davidson 1950 Model EL Panhead 61
+  slug: harley-davidson-1950-model-el-panhead-61
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Panhead
+  brand: Harley-Davidson
+  price: 850000000
+  price_old:
+  price_band: di-atas-500jt
+  badge:
+  stock: 2
+  rating: 5.0
+  image: "/assets/img/heritage/harley-davidson-1950-model-el-panhead-61.webp"
+  credit:
+    title: Harley Davidson 1200 Panhead 1950 (14130218107).jpg
+    author: order_242 from Chile
+    license: CC BY-SA 2.0
+    license_url: https://creativecommons.org/licenses/by-sa/2.0
+    source: https://commons.wikimedia.org/wiki/File:Harley_Davidson_1200_Panhead_1950_(14130218107).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 989
+  year: 1950
+  photo_query: Harley-Davidson 1950 Panhead
+  blurb: Era Panhead. Harley-Davidson 1950 Model EL Panhead 61 bermesin 989 cc.
+  specs:
+    Tahun: '1950'
+    Mesin: 989 cc
+    Tenaga: 50 hp
+    Tipe: Panhead
+    Rangka: Rigid loop
+    Kelangkaan: Langka
+  sku: HTZ-HER-174
+- name: Harley-Davidson 1952 Model K
+  slug: harley-davidson-1952-model-k
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Flathead
+  brand: Harley-Davidson
+  price: 520000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Stok Terbatas
+  stock: 2
+  rating: 4.9
+  image: "/assets/img/heritage/harley-davidson-1952-model-k.webp"
+  credit:
+    title: Harley-Davidson Museum May 2024 05 (Challenge and Opportunity--1957 XL
+      Sportster--OHV V-Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_May_2024_05_(Challenge_and_Opportunity--1957_XL_Sportster--OHV_V-Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 737
+  year: 1952
+  photo_query: Harley-Davidson Model K
+  blurb: Era Flathead. Harley-Davidson 1952 Model K bermesin 737 cc.
+  specs:
+    Tahun: '1952'
+    Mesin: 737 cc
+    Tenaga: 30 hp
+    Tipe: Flathead V-Twin
+    Rangka: Swingarm, transmisi unit
+    Kelangkaan: Langka
+  sku: HTZ-HER-175
+- name: Harley-Davidson 1953 Model FL 50th Anniversary
+  slug: harley-davidson-1953-model-fl-50th-anniversary
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Panhead
+  brand: Harley-Davidson
+  price: 920000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Koleksi Langka
+  stock: 3
+  rating: 4.5
+  image: "/assets/img/products/harley-davidson-1953-model-fl-50th-anniversary.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1213
+  year: 1953
+  photo_query: Harley-Davidson 1953 Panhead
+  blurb: Era Panhead. Harley-Davidson 1953 Model FL 50th Anniversary bermesin 1.213
+    cc.
+  specs:
+    Tahun: '1953'
+    Mesin: 1.213 cc
+    Tenaga: 55 hp
+    Tipe: Panhead
+    Rangka: Rigid loop
+    Kelangkaan: Ikonik
+  sku: HTZ-HER-176
+- name: Harley-Davidson 1954 Model KH
+  slug: harley-davidson-1954-model-kh
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Flathead
+  brand: Harley-Davidson
+  price: 540000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Terlaris
+  stock: 2
+  rating: 4.6
+  image: "/assets/img/products/harley-davidson-1954-model-kh.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 883
+  year: 1954
+  photo_query: Harley-Davidson Model KH
+  blurb: Era Flathead. Harley-Davidson 1954 Model KH bermesin 883 cc.
+  specs:
+    Tahun: '1954'
+    Mesin: 883 cc
+    Tenaga: 38 hp
+    Tipe: Flathead V-Twin
+    Rangka: Swingarm
+    Kelangkaan: Langka
+  sku: HTZ-HER-177
+- name: Harley-Davidson 1955 Model KHK
+  slug: harley-davidson-1955-model-khk
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Flathead
+  brand: Harley-Davidson
+  price: 580000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Baru
+  stock: 3
+  rating: 4.6
+  image: "/assets/img/products/harley-davidson-1955-model-khk.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 883
+  year: 1955
+  photo_query: Harley-Davidson KHK
+  blurb: Era Flathead. Harley-Davidson 1955 Model KHK bermesin 883 cc.
+  specs:
+    Tahun: '1955'
+    Mesin: 883 cc
+    Tenaga: 42 hp
+    Tipe: Flathead V-Twin
+    Rangka: Swingarm
+    Kelangkaan: Langka
+  sku: HTZ-HER-178
+- name: Harley-Davidson 1956 Model FLH Panhead
+  slug: harley-davidson-1956-model-flh-panhead
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Panhead
+  brand: Harley-Davidson
+  price: 780000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Koleksi Langka
+  stock: 1
+  rating: 4.8
+  image: "/assets/img/products/harley-davidson-1956-model-flh-panhead.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1213
+  year: 1956
+  photo_query: Harley-Davidson 1956 FLH
+  blurb: Era Panhead. Harley-Davidson 1956 Model FLH Panhead bermesin 1.213 cc.
+  specs:
+    Tahun: '1956'
+    Mesin: 1.213 cc
+    Tenaga: 60 hp
+    Tipe: Panhead
+    Rangka: Swingarm
+    Kelangkaan: Ikonik
+  sku: HTZ-HER-179
+- name: Harley-Davidson 1957 Sportster XL
+  slug: harley-davidson-1957-sportster-xl
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Ironhead
+  brand: Harley-Davidson
+  price: 620000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Koleksi Langka
+  stock: 1
+  rating: 4.5
+  image: "/assets/img/heritage/harley-davidson-1957-sportster-xl.webp"
+  credit:
+    title: Harley-Davidson Museum February 2024 23 (Engine Room--Ironhead Sportster,
+      1957-85).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_February_2024_23_(Engine_Room--Ironhead_Sportster,_1957-85).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 883
+  year: 1957
+  photo_query: Harley-Davidson Sportster 1957
+  blurb: Era Ironhead. Harley-Davidson 1957 Sportster XL bermesin 883 cc.
+  specs:
+    Tahun: '1957'
+    Mesin: 883 cc
+    Tenaga: 40 hp
+    Tipe: Ironhead Sportster
+    Rangka: Swingarm
+    Kelangkaan: Ikonik
+  sku: HTZ-HER-180
+- name: Harley-Davidson 1958 Duo-Glide FLH
+  slug: harley-davidson-1958-duo-glide-flh
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Panhead
+  brand: Harley-Davidson
+  price: 720000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Koleksi Langka
+  stock: 1
+  rating: 4.8
+  image: "/assets/img/heritage/harley-davidson-1958-duo-glide-flh.webp"
+  credit:
+    title: 1958 Harley Davidson Duo Glide - Haynes International Motor Museum - Sparkford,
+      Yeovil, Somerset (9649535456).jpg
+    author: Glen Bowman from Newcastle, England
+    license: CC BY 2.0
+    license_url: https://creativecommons.org/licenses/by/2.0
+    source: https://commons.wikimedia.org/wiki/File:1958_Harley_Davidson_Duo_Glide_-_Haynes_International_Motor_Museum_-_Sparkford,_Yeovil,_Somerset_(9649535456).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1213
+  year: 1958
+  photo_query: Harley-Davidson Duo-Glide
+  blurb: Era Panhead. Harley-Davidson 1958 Duo-Glide FLH bermesin 1.213 cc.
+  specs:
+    Tahun: '1958'
+    Mesin: 1.213 cc
+    Tenaga: 60 hp
+    Tipe: Panhead
+    Rangka: Swingarm, suspensi ganda
+    Kelangkaan: Ikonik
+  sku: HTZ-HER-181
+- name: Harley-Davidson 1959 Sportster XLCH
+  slug: harley-davidson-1959-sportster-xlch
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Ironhead
+  brand: Harley-Davidson
+  price: 580000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Koleksi Langka
+  stock: 1
+  rating: 5.0
+  image: "/assets/img/heritage/harley-davidson-1959-sportster-xlch.webp"
+  credit:
+    title: Harley-Davidson XLCH Sportster 1969.jpg
+    author: Dick Thompson
+    license: CC BY-SA 2.0
+    license_url: https://creativecommons.org/licenses/by-sa/2.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_XLCH_Sportster_1969.jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 883
+  year: 1959
+  photo_query: Harley-Davidson XLCH
+  blurb: Era Ironhead. Harley-Davidson 1959 Sportster XLCH bermesin 883 cc.
+  specs:
+    Tahun: '1959'
+    Mesin: 883 cc
+    Tenaga: 45 hp
+    Tipe: Ironhead Sportster
+    Rangka: Swingarm
+    Kelangkaan: Ikonik
+  sku: HTZ-HER-182
+- name: Harley-Davidson 1960 Topper Skuter
+  slug: harley-davidson-1960-topper-skuter
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Model Ringan
+  brand: Harley-Davidson
+  price: 340000000
+  price_old:
+  price_band: 50jt-500jt
+  badge:
+  stock: 3
+  rating: 4.8
+  image: "/assets/img/heritage/harley-davidson-1960-topper-skuter.webp"
+  credit:
+    title: Harley-Davidson Museum May 2024 13 (The AMF Years--1960 Model A Topper--Horizontal
+      Two-Cycle Single).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_May_2024_13_(The_AMF_Years--1960_Model_A_Topper--Horizontal_Two-Cycle_Single).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 165
+  year: 1960
+  photo_query: Harley-Davidson Topper
+  blurb: Era Model Ringan. Harley-Davidson 1960 Topper Skuter bermesin 165 cc.
+  specs:
+    Tahun: '1960'
+    Mesin: 165 cc
+    Tenaga: 9 hp
+    Tipe: Two-Stroke Single
+    Rangka: Rangka skuter
+    Kelangkaan: Sangat langka
+  sku: HTZ-HER-183
+- name: Harley-Davidson 1961 Sprint C
+  slug: harley-davidson-1961-sprint-c
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Model Ringan
+  brand: Harley-Davidson
+  price: 260000000
+  price_old:
+  price_band: 50jt-500jt
+  badge: Terlaris
+  stock: 3
+  rating: 5.0
+  image: "/assets/img/heritage/harley-davidson-1961-sprint-c.webp"
+  credit:
+    title: Harley-Davidson Museum February 2024 20 (Engine Room--Sprint, 1961-72).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_February_2024_20_(Engine_Room--Sprint,_1961-72).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 246
+  year: 1961
+  photo_query: Harley-Davidson Sprint
+  blurb: Era Model Ringan. Harley-Davidson 1961 Sprint C bermesin 246 cc.
+  specs:
+    Tahun: '1961'
+    Mesin: 246 cc
+    Tenaga: 18 hp
+    Tipe: OHV Single
+    Rangka: Swingarm
+    Kelangkaan: Langka
+  sku: HTZ-HER-184
+- name: Harley-Davidson 1962 Duo-Glide FL
+  slug: harley-davidson-1962-duo-glide-fl
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Panhead
+  brand: Harley-Davidson
+  price: 650000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Baru
+  stock: 2
+  rating: 4.8
+  image: "/assets/img/heritage/harley-davidson-1962-duo-glide-fl.webp"
+  credit:
+    title: Harley063.jpg
+    author: Jean-Luc 2005 at German Wikipedia
+    license: CC BY-SA 3.0
+    license_url: http://creativecommons.org/licenses/by-sa/3.0/
+    source: https://commons.wikimedia.org/wiki/File:Harley063.jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1213
+  year: 1962
+  photo_query: Harley-Davidson 1962 Duo-Glide
+  blurb: Era Panhead. Harley-Davidson 1962 Duo-Glide FL bermesin 1.213 cc.
+  specs:
+    Tahun: '1962'
+    Mesin: 1.213 cc
+    Tenaga: 55 hp
+    Tipe: Panhead
+    Rangka: Swingarm
+    Kelangkaan: Langka
+  sku: HTZ-HER-185
+- name: Harley-Davidson 1963 Panhead FLH
+  slug: harley-davidson-1963-panhead-flh
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Panhead
+  brand: Harley-Davidson
+  price: 680000000
+  price_old:
+  price_band: di-atas-500jt
+  badge:
+  stock: 1
+  rating: 4.5
+  image: "/assets/img/products/harley-davidson-1963-panhead-flh.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1213
+  year: 1963
+  photo_query: Harley-Davidson 1963 FLH
+  blurb: Era Panhead. Harley-Davidson 1963 Panhead FLH bermesin 1.213 cc.
+  specs:
+    Tahun: '1963'
+    Mesin: 1.213 cc
+    Tenaga: 60 hp
+    Tipe: Panhead
+    Rangka: Swingarm
+    Kelangkaan: Langka
+  sku: HTZ-HER-186
+- name: Harley-Davidson 1964 Servi-Car GE
+  slug: harley-davidson-1964-servi-car-ge
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Flathead
+  brand: Harley-Davidson
+  price: 380000000
+  price_old:
+  price_band: 50jt-500jt
+  badge:
+  stock: 2
+  rating: 4.5
+  image: "/assets/img/heritage/harley-davidson-1964-servi-car-ge.webp"
+  credit:
+    title: Harley-Davidson Museum April 2024 38 (1971 GE Servi-Car Police--Side-Valve
+      V-Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_April_2024_38_(1971_GE_Servi-Car_Police--Side-Valve_V-Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 737
+  year: 1964
+  photo_query: Harley-Davidson Servi-Car GE
+  blurb: Era Flathead. Harley-Davidson 1964 Servi-Car GE bermesin 737 cc.
+  specs:
+    Tahun: '1964'
+    Mesin: 737 cc
+    Tenaga: 22 hp
+    Tipe: Flathead V-Twin
+    Rangka: Roda tiga
+    Kelangkaan: Langka
+  sku: HTZ-HER-187
+- name: Harley-Davidson 1965 Electra Glide FLH
+  slug: harley-davidson-1965-electra-glide-flh
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Panhead
+  brand: Harley-Davidson
+  price: 850000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Koleksi Langka
+  stock: 3
+  rating: 5.0
+  image: "/assets/img/products/harley-davidson-1965-electra-glide-flh.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1213
+  year: 1965
+  photo_query: Harley-Davidson Electra Glide 1965
+  blurb: Era Panhead. Harley-Davidson 1965 Electra Glide FLH bermesin 1.213 cc.
+  specs:
+    Tahun: '1965'
+    Mesin: 1.213 cc
+    Tenaga: 60 hp
+    Tipe: Panhead
+    Rangka: Swingarm, starter elektrik
+    Kelangkaan: Ikonik
+  sku: HTZ-HER-188
+- name: Harley-Davidson 1966 Electra Glide Shovelhead
+  slug: harley-davidson-1966-electra-glide-shovelhead
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Shovelhead
+  brand: Harley-Davidson
+  price: 620000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Koleksi Langka
+  stock: 1
+  rating: 4.7
+  image: "/assets/img/heritage/harley-davidson-1966-electra-glide-shovelhead.webp"
+  credit:
+    title: Harley-Davidson Museum February 2024 13 (Engine Room--Shovelhead, 1966-84).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_February_2024_13_(Engine_Room--Shovelhead,_1966-84).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1208
+  year: 1966
+  photo_query: Harley-Davidson Shovelhead
+  blurb: Era Shovelhead. Harley-Davidson 1966 Electra Glide Shovelhead bermesin 1.208
+    cc.
+  specs:
+    Tahun: '1966'
+    Mesin: 1.208 cc
+    Tenaga: 60 hp
+    Tipe: Shovelhead
+    Rangka: Swingarm
+    Kelangkaan: Ikonik
+  sku: HTZ-HER-189
+- name: Harley-Davidson 1967 Sportster XLH
+  slug: harley-davidson-1967-sportster-xlh
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Ironhead
+  brand: Harley-Davidson
+  price: 420000000
+  price_old:
+  price_band: 50jt-500jt
+  badge: Stok Terbatas
+  stock: 2
+  rating: 4.8
+  image: "/assets/img/products/harley-davidson-1967-sportster-xlh.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 883
+  year: 1967
+  photo_query: Harley-Davidson XLH 1967
+  blurb: Era Ironhead. Harley-Davidson 1967 Sportster XLH bermesin 883 cc.
+  specs:
+    Tahun: '1967'
+    Mesin: 883 cc
+    Tenaga: 45 hp
+    Tipe: Ironhead Sportster
+    Rangka: Swingarm
+    Kelangkaan: Langka
+  sku: HTZ-HER-190
+- name: Harley-Davidson 1968 Sportster XLCH 900
+  slug: harley-davidson-1968-sportster-xlch-900
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Ironhead
+  brand: Harley-Davidson
+  price: 440000000
+  price_old:
+  price_band: 50jt-500jt
+  badge:
+  stock: 1
+  rating: 4.9
+  image: "/assets/img/products/harley-davidson-1968-sportster-xlch-900.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 883
+  year: 1968
+  photo_query: Harley-Davidson XLCH 1968
+  blurb: Era Ironhead. Harley-Davidson 1968 Sportster XLCH 900 bermesin 883 cc.
+  specs:
+    Tahun: '1968'
+    Mesin: 883 cc
+    Tenaga: 48 hp
+    Tipe: Ironhead Sportster
+    Rangka: Swingarm
+    Kelangkaan: Langka
+  sku: HTZ-HER-191
+- name: Harley-Davidson 1969 Electra Glide FLH Shovelhead
+  slug: harley-davidson-1969-electra-glide-flh-shovelhead
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Shovelhead
+  brand: Harley-Davidson
+  price: 560000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Baru
+  stock: 3
+  rating: 4.7
+  image: "/assets/img/products/harley-davidson-1969-electra-glide-flh-shovelhead.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1208
+  year: 1969
+  photo_query: Harley-Davidson 1969 Electra Glide
+  blurb: Era Shovelhead. Harley-Davidson 1969 Electra Glide FLH Shovelhead bermesin
+    1.208 cc.
+  specs:
+    Tahun: '1969'
+    Mesin: 1.208 cc
+    Tenaga: 65 hp
+    Tipe: Shovelhead
+    Rangka: Swingarm
+    Kelangkaan: Langka
+  sku: HTZ-HER-192
+- name: Harley-Davidson 1970 Sportster XLH 900
+  slug: harley-davidson-1970-sportster-xlh-900
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Ironhead
+  brand: Harley-Davidson
+  price: 400000000
+  price_old:
+  price_band: 50jt-500jt
+  badge: Terlaris
+  stock: 3
+  rating: 4.5
+  image: "/assets/img/products/harley-davidson-1970-sportster-xlh-900.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 883
+  year: 1970
+  photo_query: Harley-Davidson Sportster 1970
+  blurb: Era Ironhead. Harley-Davidson 1970 Sportster XLH 900 bermesin 883 cc.
+  specs:
+    Tahun: '1970'
+    Mesin: 883 cc
+    Tenaga: 50 hp
+    Tipe: Ironhead Sportster
+    Rangka: Swingarm
+    Kelangkaan: Langka
+  sku: HTZ-HER-193
+- name: Harley-Davidson 1971 Super Glide FX
+  slug: harley-davidson-1971-super-glide-fx
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Shovelhead
+  brand: Harley-Davidson
+  price: 580000000
+  price_old:
+  price_band: di-atas-500jt
+  badge: Koleksi Langka
+  stock: 2
+  rating: 4.8
+  image: "/assets/img/heritage/harley-davidson-1971-super-glide-fx.webp"
+  credit:
+    title: Harley-Davidson Museum April 2024 26 (1971 FX Super Glide--OHV V-Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_April_2024_26_(1971_FX_Super_Glide--OHV_V-Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1208
+  year: 1971
+  photo_query: Harley-Davidson Super Glide FX
+  blurb: Era Shovelhead. Harley-Davidson 1971 Super Glide FX bermesin 1.208 cc.
+  specs:
+    Tahun: '1971'
+    Mesin: 1.208 cc
+    Tenaga: 65 hp
+    Tipe: Shovelhead
+    Rangka: Swingarm, buritan boat-tail
+    Kelangkaan: Ikonik
+  sku: HTZ-HER-194
+- name: Harley-Davidson 1972 Sportster XLH 1000
+  slug: harley-davidson-1972-sportster-xlh-1000
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Ironhead
+  brand: Harley-Davidson
+  price: 380000000
+  price_old:
+  price_band: 50jt-500jt
+  badge:
+  stock: 1
+  rating: 4.7
+  image: "/assets/img/products/harley-davidson-1972-sportster-xlh-1000.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 998
+  year: 1972
+  photo_query: Harley-Davidson XLH 1000
+  blurb: Era Ironhead. Harley-Davidson 1972 Sportster XLH 1000 bermesin 998 cc.
+  specs:
+    Tahun: '1972'
+    Mesin: 998 cc
+    Tenaga: 61 hp
+    Tipe: Ironhead Sportster
+    Rangka: Swingarm
+    Kelangkaan: Langka
+  sku: HTZ-HER-195
+- name: Harley-Davidson 1973 Super Glide FX 1200
+  slug: harley-davidson-1973-super-glide-fx-1200
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Shovelhead
+  brand: Harley-Davidson
+  price: 440000000
+  price_old:
+  price_band: 50jt-500jt
+  badge:
+  stock: 1
+  rating: 4.5
+  image: "/assets/img/products/harley-davidson-1973-super-glide-fx-1200.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1208
+  year: 1973
+  photo_query: Harley-Davidson FX 1973
+  blurb: Era Shovelhead. Harley-Davidson 1973 Super Glide FX 1200 bermesin 1.208 cc.
+  specs:
+    Tahun: '1973'
+    Mesin: 1.208 cc
+    Tenaga: 65 hp
+    Tipe: Shovelhead
+    Rangka: Swingarm
+    Kelangkaan: Langka
+  sku: HTZ-HER-196
+- name: Harley-Davidson 1974 Sportster XLCH 1000
+  slug: harley-davidson-1974-sportster-xlch-1000
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Ironhead
+  brand: Harley-Davidson
+  price: 360000000
+  price_old:
+  price_band: 50jt-500jt
+  badge:
+  stock: 1
+  rating: 4.5
+  image: "/assets/img/products/harley-davidson-1974-sportster-xlch-1000.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 998
+  year: 1974
+  photo_query: Harley-Davidson XLCH 1000
+  blurb: Era Ironhead. Harley-Davidson 1974 Sportster XLCH 1000 bermesin 998 cc.
+  specs:
+    Tahun: '1974'
+    Mesin: 998 cc
+    Tenaga: 61 hp
+    Tipe: Ironhead Sportster
+    Rangka: Swingarm
+    Kelangkaan: Langka
+  sku: HTZ-HER-197
+- name: Harley-Davidson 1975 Super Glide FXE
+  slug: harley-davidson-1975-super-glide-fxe
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Shovelhead
+  brand: Harley-Davidson
+  price: 340000000
+  price_old:
+  price_band: 50jt-500jt
+  badge: Terlaris
+  stock: 3
+  rating: 5.0
+  image: "/assets/img/products/harley-davidson-1975-super-glide-fxe.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1208
+  year: 1975
+  photo_query: Harley-Davidson FXE
+  blurb: Era Shovelhead. Harley-Davidson 1975 Super Glide FXE bermesin 1.208 cc.
+  specs:
+    Tahun: '1975'
+    Mesin: 1.208 cc
+    Tenaga: 65 hp
+    Tipe: Shovelhead
+    Rangka: Swingarm, starter elektrik
+    Kelangkaan: Umum
+  sku: HTZ-HER-198
+- name: Harley-Davidson 1976 Liberty Edition FLH
+  slug: harley-davidson-1976-liberty-edition-flh
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Shovelhead
+  brand: Harley-Davidson
+  price: 480000000
+  price_old:
+  price_band: 50jt-500jt
+  badge: Stok Terbatas
+  stock: 3
+  rating: 4.8
+  image: "/assets/img/heritage/harley-davidson-1976-liberty-edition-flh.webp"
+  credit:
+    title: Harley-Davidson Museum April 2024 41 (1976 FLH-1200 Liberty Edition--OHV
+      V-Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_April_2024_41_(1976_FLH-1200_Liberty_Edition--OHV_V-Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1208
+  year: 1976
+  photo_query: Harley-Davidson Liberty Edition
+  blurb: Era Shovelhead. Harley-Davidson 1976 Liberty Edition FLH bermesin 1.208 cc.
+  specs:
+    Tahun: '1976'
+    Mesin: 1.208 cc
+    Tenaga: 65 hp
+    Tipe: Shovelhead
+    Rangka: Swingarm
+    Kelangkaan: Langka
+  sku: HTZ-HER-199
+- name: Harley-Davidson 1977 Low Rider FXS
+  slug: harley-davidson-1977-low-rider-fxs
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Shovelhead
+  brand: Harley-Davidson
+  price: 420000000
+  price_old:
+  price_band: 50jt-500jt
+  badge: Koleksi Langka
+  stock: 1
+  rating: 4.6
+  image: "/assets/img/heritage/harley-davidson-1977-low-rider-fxs.webp"
+  credit:
+    title: Harley-Davidson Museum April 2024 42 (1977 FXS Low Rider--OHV V-Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_April_2024_42_(1977_FXS_Low_Rider--OHV_V-Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1208
+  year: 1977
+  photo_query: Harley-Davidson Low Rider FXS
+  blurb: Era Shovelhead. Harley-Davidson 1977 Low Rider FXS bermesin 1.208 cc.
+  specs:
+    Tahun: '1977'
+    Mesin: 1.208 cc
+    Tenaga: 65 hp
+    Tipe: Shovelhead
+    Rangka: Swingarm, jok rendah
+    Kelangkaan: Ikonik
+  sku: HTZ-HER-200
+- name: Harley-Davidson 1977 Cafe Racer XLCR
+  slug: harley-davidson-1977-cafe-racer-xlcr
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Ironhead
+  brand: Harley-Davidson
+  price: 720000000
+  price_old:
+  price_band: di-atas-500jt
+  badge:
+  stock: 1
+  rating: 4.8
+  image: "/assets/img/heritage/harley-davidson-1977-cafe-racer-xlcr.webp"
+  credit:
+    title: Harley-Davidson Museum April 2024 36 (1977 XLCR-1000 Cafe Racer--OHV V-Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_April_2024_36_(1977_XLCR-1000_Cafe_Racer--OHV_V-Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 998
+  year: 1977
+  photo_query: Harley-Davidson XLCR
+  blurb: Era Ironhead. Harley-Davidson 1977 Cafe Racer XLCR bermesin 998 cc.
+  specs:
+    Tahun: '1977'
+    Mesin: 998 cc
+    Tenaga: 61 hp
+    Tipe: Ironhead Sportster
+    Rangka: Swingarm, fairing cafe
+    Kelangkaan: Sangat langka
+  sku: HTZ-HER-201
+- name: Harley-Davidson 1978 Electra Glide 75th Anniversary
+  slug: harley-davidson-1978-electra-glide-75th-anniversary
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Shovelhead
+  brand: Harley-Davidson
+  price: 460000000
+  price_old:
+  price_band: 50jt-500jt
+  badge: Terlaris
+  stock: 2
+  rating: 4.6
+  image: "/assets/img/products/harley-davidson-1978-electra-glide-75th-anniversary.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1340
+  year: 1978
+  photo_query: Harley-Davidson 1978 Electra Glide
+  blurb: Era Shovelhead. Harley-Davidson 1978 Electra Glide 75th Anniversary bermesin
+    1.340 cc.
+  specs:
+    Tahun: '1978'
+    Mesin: 1.340 cc
+    Tenaga: 65 hp
+    Tipe: Shovelhead
+    Rangka: Swingarm
+    Kelangkaan: Langka
+  sku: HTZ-HER-202
+- name: Harley-Davidson 1979 Fat Bob FXEF
+  slug: harley-davidson-1979-fat-bob-fxef
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Shovelhead
+  brand: Harley-Davidson
+  price: 400000000
+  price_old:
+  price_band: 50jt-500jt
+  badge:
+  stock: 3
+  rating: 4.5
+  image: "/assets/img/products/harley-davidson-1979-fat-bob-fxef.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1340
+  year: 1979
+  photo_query: Harley-Davidson Fat Bob FXEF
+  blurb: Era Shovelhead. Harley-Davidson 1979 Fat Bob FXEF bermesin 1.340 cc.
+  specs:
+    Tahun: '1979'
+    Mesin: 1.340 cc
+    Tenaga: 65 hp
+    Tipe: Shovelhead
+    Rangka: Swingarm, tangki ganda
+    Kelangkaan: Langka
+  sku: HTZ-HER-203
+- name: Harley-Davidson 1980 Sturgis FXB
+  slug: harley-davidson-1980-sturgis-fxb
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Shovelhead
+  brand: Harley-Davidson
+  price: 620000000
+  price_old:
+  price_band: di-atas-500jt
+  badge:
+  stock: 3
+  rating: 4.5
+  image: "/assets/img/products/harley-davidson-1980-sturgis-fxb.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1340
+  year: 1980
+  photo_query: Harley-Davidson FXB Sturgis
+  blurb: Era Shovelhead. Harley-Davidson 1980 Sturgis FXB bermesin 1.340 cc.
+  specs:
+    Tahun: '1980'
+    Mesin: 1.340 cc
+    Tenaga: 65 hp
+    Tipe: Shovelhead
+    Rangka: Swingarm, penggerak sabuk
+    Kelangkaan: Sangat langka
+  sku: HTZ-HER-204
+- name: Harley-Davidson 1980 Wide Glide FXWG
+  slug: harley-davidson-1980-wide-glide-fxwg
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Shovelhead
+  brand: Harley-Davidson
+  price: 440000000
+  price_old:
+  price_band: 50jt-500jt
+  badge: Koleksi Langka
+  stock: 3
+  rating: 4.5
+  image: "/assets/img/heritage/harley-davidson-1980-wide-glide-fxwg.webp"
+  credit:
+    title: Harley-Davidson Museum April 2024 43 (1980 FXWG Wide Glide--OHV V-Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_April_2024_43_(1980_FXWG_Wide_Glide--OHV_V-Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1340
+  year: 1980
+  photo_query: Harley-Davidson Wide Glide
+  blurb: Era Shovelhead. Harley-Davidson 1980 Wide Glide FXWG bermesin 1.340 cc.
+  specs:
+    Tahun: '1980'
+    Mesin: 1.340 cc
+    Tenaga: 65 hp
+    Tipe: Shovelhead
+    Rangka: Swingarm, garpu lebar
+    Kelangkaan: Ikonik
+  sku: HTZ-HER-205
+- name: Harley-Davidson 1980 Tour Glide FLT
+  slug: harley-davidson-1980-tour-glide-flt
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Shovelhead
+  brand: Harley-Davidson
+  price: 380000000
+  price_old:
+  price_band: 50jt-500jt
+  badge:
+  stock: 2
+  rating: 4.7
+  image: "/assets/img/heritage/harley-davidson-1980-tour-glide-flt.webp"
+  credit:
+    title: Harley-Davidson Road Glide (MSP15).JPG
+    author: Jakub "Flyz1" Maciejewski
+    license: CC BY-SA 3.0
+    license_url: https://creativecommons.org/licenses/by-sa/3.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Road_Glide_(MSP15).JPG
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1340
+  year: 1980
+  photo_query: Harley-Davidson Tour Glide
+  blurb: Era Shovelhead. Harley-Davidson 1980 Tour Glide FLT bermesin 1.340 cc.
+  specs:
+    Tahun: '1980'
+    Mesin: 1.340 cc
+    Tenaga: 65 hp
+    Tipe: Shovelhead
+    Rangka: Swingarm, fairing rangka
+    Kelangkaan: Langka
+  sku: HTZ-HER-206
+- name: Harley-Davidson 1983 Low Glide FXRT
+  slug: harley-davidson-1983-low-glide-fxrt
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Shovelhead
+  brand: Harley-Davidson
+  price: 340000000
+  price_old:
+  price_band: 50jt-500jt
+  badge:
+  stock: 3
+  rating: 4.6
+  image: "/assets/img/products/harley-davidson-1983-low-glide-fxrt.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1340
+  year: 1983
+  photo_query: Harley-Davidson FXRT
+  blurb: Era Shovelhead. Harley-Davidson 1983 Low Glide FXRT bermesin 1.340 cc.
+  specs:
+    Tahun: '1983'
+    Mesin: 1.340 cc
+    Tenaga: 65 hp
+    Tipe: Shovelhead
+    Rangka: Rangka FXR
+    Kelangkaan: Langka
+  sku: HTZ-HER-207
+- name: Harley-Davidson 1984 Softail FXST
+  slug: harley-davidson-1984-softail-fxst
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Evolution
+  brand: Harley-Davidson
+  price: 380000000
+  price_old:
+  price_band: 50jt-500jt
+  badge: Koleksi Langka
+  stock: 3
+  rating: 5.0
+  image: "/assets/img/heritage/harley-davidson-1984-softail-fxst.webp"
+  credit:
+    title: Fxstc1998.jpg
+    author: Wikimedia Commons
+    license: Public domain
+    license_url: ''
+    source: https://commons.wikimedia.org/wiki/File:Fxstc1998.jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1340
+  year: 1984
+  photo_query: Harley-Davidson FXST Softail
+  blurb: Era Evolution. Harley-Davidson 1984 Softail FXST bermesin 1.340 cc.
+  specs:
+    Tahun: '1984'
+    Mesin: 1.340 cc
+    Tenaga: 70 hp
+    Tipe: Evolution
+    Rangka: Softail, kesan rigid
+    Kelangkaan: Ikonik
+  sku: HTZ-HER-208
+- name: Harley-Davidson 1985 Low Rider FXSB
+  slug: harley-davidson-1985-low-rider-fxsb
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Evolution
+  brand: Harley-Davidson
+  price: 300000000
+  price_old:
+  price_band: 50jt-500jt
+  badge:
+  stock: 1
+  rating: 5.0
+  image: "/assets/img/heritage/harley-davidson-1985-low-rider-fxsb.webp"
+  credit:
+    title: Harley-Davidson Softail Breakout FXSB103, Motor (2015-08-25 Sp).jpg
+    author: Lothar Spurzem
+    license: CC BY-SA 2.0 de
+    license_url: https://creativecommons.org/licenses/by-sa/2.0/de/deed.en
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Softail_Breakout_FXSB103,_Motor_(2015-08-25_Sp).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1340
+  year: 1985
+  photo_query: Harley-Davidson FXSB
+  blurb: Era Evolution. Harley-Davidson 1985 Low Rider FXSB bermesin 1.340 cc.
+  specs:
+    Tahun: '1985'
+    Mesin: 1.340 cc
+    Tenaga: 70 hp
+    Tipe: Evolution
+    Rangka: Swingarm, penggerak sabuk
+    Kelangkaan: Umum
+  sku: HTZ-HER-209
+- name: Harley-Davidson 1986 Heritage Softail FLST
+  slug: harley-davidson-1986-heritage-softail-flst
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Evolution
+  brand: Harley-Davidson
+  price: 340000000
+  price_old:
+  price_band: 50jt-500jt
+  badge: Koleksi Langka
+  stock: 3
+  rating: 4.9
+  image: "/assets/img/heritage/harley-davidson-1986-heritage-softail-flst.webp"
+  credit:
+    title: Harley-Davidson Museum May 2024 18 (1993 FLSTN Heritage Softail Nostalgia--OHV
+      V-Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_May_2024_18_(1993_FLSTN_Heritage_Softail_Nostalgia--OHV_V-Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1340
+  year: 1986
+  photo_query: Harley-Davidson Heritage Softail
+  blurb: Era Evolution. Harley-Davidson 1986 Heritage Softail FLST bermesin 1.340
+    cc.
+  specs:
+    Tahun: '1986'
+    Mesin: 1.340 cc
+    Tenaga: 70 hp
+    Tipe: Evolution
+    Rangka: Softail retro
+    Kelangkaan: Ikonik
+  sku: HTZ-HER-210
+- name: Harley-Davidson 1986 Sportster XLH 883
+  slug: harley-davidson-1986-sportster-xlh-883
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Evolution
+  brand: Harley-Davidson
+  price: 220000000
+  price_old:
+  price_band: 50jt-500jt
+  badge:
+  stock: 3
+  rating: 4.8
+  image: "/assets/img/heritage/harley-davidson-1986-sportster-xlh-883.webp"
+  credit:
+    title: Harley-Davidson 883 Sportster red.jpg
+    author: Addvisor
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_883_Sportster_red.jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 883
+  year: 1986
+  photo_query: Harley-Davidson Sportster 883
+  blurb: Era Evolution. Harley-Davidson 1986 Sportster XLH 883 bermesin 883 cc.
+  specs:
+    Tahun: '1986'
+    Mesin: 883 cc
+    Tenaga: 53 hp
+    Tipe: Evolution Sportster
+    Rangka: Swingarm
+    Kelangkaan: Umum
+  sku: HTZ-HER-211
+- name: Harley-Davidson 1987 Low Rider Custom FXLR
+  slug: harley-davidson-1987-low-rider-custom-fxlr
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Evolution
+  brand: Harley-Davidson
+  price: 320000000
+  price_old:
+  price_band: 50jt-500jt
+  badge:
+  stock: 3
+  rating: 4.9
+  image: "/assets/img/products/harley-davidson-1987-low-rider-custom-fxlr.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1340
+  year: 1987
+  photo_query: Harley-Davidson FXLR
+  blurb: Era Evolution. Harley-Davidson 1987 Low Rider Custom FXLR bermesin 1.340
+    cc.
+  specs:
+    Tahun: '1987'
+    Mesin: 1.340 cc
+    Tenaga: 70 hp
+    Tipe: Evolution
+    Rangka: Swingarm
+    Kelangkaan: Langka
+  sku: HTZ-HER-212
+- name: Harley-Davidson 1988 Springer Softail FXSTS
+  slug: harley-davidson-1988-springer-softail-fxsts
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Evolution
+  brand: Harley-Davidson
+  price: 400000000
+  price_old:
+  price_band: 50jt-500jt
+  badge: Koleksi Langka
+  stock: 2
+  rating: 4.9
+  image: "/assets/img/heritage/harley-davidson-1988-springer-softail-fxsts.webp"
+  credit:
+    title: 1989 Harley Davidson Softail Springer.jpg
+    author: bluescast
+    license: CC BY 2.0
+    license_url: https://creativecommons.org/licenses/by/2.0
+    source: https://commons.wikimedia.org/wiki/File:1989_Harley_Davidson_Softail_Springer.jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1340
+  year: 1988
+  photo_query: Harley-Davidson Springer Softail
+  blurb: Era Evolution. Harley-Davidson 1988 Springer Softail FXSTS bermesin 1.340
+    cc.
+  specs:
+    Tahun: '1988'
+    Mesin: 1.340 cc
+    Tenaga: 70 hp
+    Tipe: Evolution
+    Rangka: Softail, garpu Springer
+    Kelangkaan: Ikonik
+  sku: HTZ-HER-213
+- name: Harley-Davidson 1988 Electra Glide 85th Anniversary
+  slug: harley-davidson-1988-electra-glide-85th-anniversary
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Evolution
+  brand: Harley-Davidson
+  price: 360000000
+  price_old:
+  price_band: 50jt-500jt
+  badge:
+  stock: 3
+  rating: 4.8
+  image: "/assets/img/products/harley-davidson-1988-electra-glide-85th-anniversary.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1340
+  year: 1988
+  photo_query: Harley-Davidson 1988 Electra Glide
+  blurb: Era Evolution. Harley-Davidson 1988 Electra Glide 85th Anniversary bermesin
+    1.340 cc.
+  specs:
+    Tahun: '1988'
+    Mesin: 1.340 cc
+    Tenaga: 70 hp
+    Tipe: Evolution
+    Rangka: Swingarm
+    Kelangkaan: Langka
+  sku: HTZ-HER-214
+- name: Harley-Davidson 1989 Ultra Classic Electra Glide
+  slug: harley-davidson-1989-ultra-classic-electra-glide
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Evolution
+  brand: Harley-Davidson
+  price: 300000000
+  price_old:
+  price_band: 50jt-500jt
+  badge: Baru
+  stock: 2
+  rating: 4.6
+  image: "/assets/img/heritage/harley-davidson-1989-ultra-classic-electra-glide.webp"
+  credit:
+    title: Harley Davidson Electra Glide Ultra Classic.jpg
+    author: LKM13
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley_Davidson_Electra_Glide_Ultra_Classic.jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1340
+  year: 1989
+  photo_query: Harley-Davidson Ultra Classic
+  blurb: Era Evolution. Harley-Davidson 1989 Ultra Classic Electra Glide bermesin
+    1.340 cc.
+  specs:
+    Tahun: '1989'
+    Mesin: 1.340 cc
+    Tenaga: 70 hp
+    Tipe: Evolution
+    Rangka: Swingarm, tur lengkap
+    Kelangkaan: Umum
+  sku: HTZ-HER-215
+- name: Harley-Davidson 1990 Fat Boy FLSTF
+  slug: harley-davidson-1990-fat-boy-flstf
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Evolution
+  brand: Harley-Davidson
+  price: 460000000
+  price_old:
+  price_band: 50jt-500jt
+  badge: Koleksi Langka
+  stock: 2
+  rating: 5.0
+  image: "/assets/img/heritage/harley-davidson-1990-fat-boy-flstf.webp"
+  credit:
+    title: Harley-Davidson Museum May 2024 17 (1990 FLSTF Fat Boy--OHV V-Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_May_2024_17_(1990_FLSTF_Fat_Boy--OHV_V-Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1340
+  year: 1990
+  photo_query: Harley-Davidson Fat Boy
+  blurb: Era Evolution. Harley-Davidson 1990 Fat Boy FLSTF bermesin 1.340 cc.
+  specs:
+    Tahun: '1990'
+    Mesin: 1.340 cc
+    Tenaga: 70 hp
+    Tipe: Evolution
+    Rangka: Softail, velg solid
+    Kelangkaan: Ikonik
+  sku: HTZ-HER-216
+- name: Harley-Davidson 1991 Dyna Sturgis FXDB
+  slug: harley-davidson-1991-dyna-sturgis-fxdb
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Evolution
+  brand: Harley-Davidson
+  price: 420000000
+  price_old:
+  price_band: 50jt-500jt
+  badge:
+  stock: 2
+  rating: 4.9
+  image: "/assets/img/products/harley-davidson-1991-dyna-sturgis-fxdb.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1340
+  year: 1991
+  photo_query: Harley-Davidson FXDB Sturgis
+  blurb: Era Evolution. Harley-Davidson 1991 Dyna Sturgis FXDB bermesin 1.340 cc.
+  specs:
+    Tahun: '1991'
+    Mesin: 1.340 cc
+    Tenaga: 70 hp
+    Tipe: Evolution
+    Rangka: Rangka Dyna pertama
+    Kelangkaan: Sangat langka
+  sku: HTZ-HER-217
+- name: Harley-Davidson 1992 Bad Boy FXSTSB
+  slug: harley-davidson-1992-bad-boy-fxstsb
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Evolution
+  brand: Harley-Davidson
+  price: 380000000
+  price_old:
+  price_band: 50jt-500jt
+  badge: Baru
+  stock: 1
+  rating: 4.5
+  image: "/assets/img/products/harley-davidson-1992-bad-boy-fxstsb.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1340
+  year: 1992
+  photo_query: Harley-Davidson Bad Boy
+  blurb: Era Evolution. Harley-Davidson 1992 Bad Boy FXSTSB bermesin 1.340 cc.
+  specs:
+    Tahun: '1992'
+    Mesin: 1.340 cc
+    Tenaga: 70 hp
+    Tipe: Evolution
+    Rangka: Softail, garpu Springer
+    Kelangkaan: Langka
+  sku: HTZ-HER-218
+- name: Harley-Davidson 1993 Heritage Nostalgia FLSTN
+  slug: harley-davidson-1993-heritage-nostalgia-flstn
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Evolution
+  brand: Harley-Davidson
+  price: 440000000
+  price_old:
+  price_band: 50jt-500jt
+  badge: Baru
+  stock: 1
+  rating: 4.5
+  image: "/assets/img/heritage/harley-davidson-1993-heritage-nostalgia-flstn.webp"
+  credit:
+    title: Harley-Davidson Museum May 2024 18 (1993 FLSTN Heritage Softail Nostalgia--OHV
+      V-Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_May_2024_18_(1993_FLSTN_Heritage_Softail_Nostalgia--OHV_V-Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1340
+  year: 1993
+  photo_query: Harley-Davidson FLSTN Nostalgia
+  blurb: Era Evolution. Harley-Davidson 1993 Heritage Nostalgia FLSTN bermesin 1.340
+    cc.
+  specs:
+    Tahun: '1993'
+    Mesin: 1.340 cc
+    Tenaga: 70 hp
+    Tipe: Evolution
+    Rangka: Softail, jok kulit sapi
+    Kelangkaan: Sangat langka
+  sku: HTZ-HER-219
+- name: Harley-Davidson 1994 Road King FLHR
+  slug: harley-davidson-1994-road-king-flhr
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Evolution
+  brand: Harley-Davidson
+  price: 320000000
+  price_old:
+  price_band: 50jt-500jt
+  badge: Koleksi Langka
+  stock: 1
+  rating: 4.7
+  image: "/assets/img/heritage/harley-davidson-1994-road-king-flhr.webp"
+  credit:
+    title: Harley-Davidson Museum May 2024 22 (2001 FLHRCI Road King Classic--OHV
+      V-Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_May_2024_22_(2001_FLHRCI_Road_King_Classic--OHV_V-Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1340
+  year: 1994
+  photo_query: Harley-Davidson Road King
+  blurb: Era Evolution. Harley-Davidson 1994 Road King FLHR bermesin 1.340 cc.
+  specs:
+    Tahun: '1994'
+    Mesin: 1.340 cc
+    Tenaga: 70 hp
+    Tipe: Evolution
+    Rangka: Swingarm, tur klasik
+    Kelangkaan: Ikonik
+  sku: HTZ-HER-220
+- name: Harley-Davidson 1995 Electra Glide FLHTCUI
+  slug: harley-davidson-1995-electra-glide-flhtcui
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Evolution
+  brand: Harley-Davidson
+  price: 280000000
+  price_old:
+  price_band: 50jt-500jt
+  badge: Terlaris
+  stock: 3
+  rating: 5.0
+  image: "/assets/img/heritage/harley-davidson-1995-electra-glide-flhtcui.webp"
+  credit:
+    title: Harley-Davidson Electra Glide dashboard.jpg
+    author: Tobias "ToMar" Maier
+    license: CC BY-SA 3.0
+    license_url: https://creativecommons.org/licenses/by-sa/3.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Electra_Glide_dashboard.jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1340
+  year: 1995
+  photo_query: Harley-Davidson Electra Glide Ultra
+  blurb: Era Evolution. Harley-Davidson 1995 Electra Glide FLHTCUI bermesin 1.340
+    cc.
+  specs:
+    Tahun: '1995'
+    Mesin: 1.340 cc
+    Tenaga: 70 hp
+    Tipe: Evolution
+    Rangka: Swingarm, injeksi pertama
+    Kelangkaan: Umum
+  sku: HTZ-HER-221
+- name: Harley-Davidson 1996 Dyna Wide Glide FXDWG
+  slug: harley-davidson-1996-dyna-wide-glide-fxdwg
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Evolution
+  brand: Harley-Davidson
+  price: 290000000
+  price_old:
+  price_band: 50jt-500jt
+  badge: Terlaris
+  stock: 1
+  rating: 4.7
+  image: "/assets/img/heritage/harley-davidson-1996-dyna-wide-glide-fxdwg.webp"
+  credit:
+    title: Harley-Davidson FXDWG Dyna Wide Glide used in ABUDEKA IS BACK and Nissan
+      LEOPARD Ultima V30 TWINCAM TURBO (E-UF31) ver.Minato 302.jpg
+    author: Tokumeigakarinoaoshima
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_FXDWG_Dyna_Wide_Glide_used_in_ABUDEKA_IS_BACK_and_Nissan_LEOPARD_Ultima_V30_TWINCAM_TURBO_(E-UF31)_ver.Minato_302.jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1340
+  year: 1996
+  photo_query: Harley-Davidson Dyna Wide Glide
+  blurb: Era Evolution. Harley-Davidson 1996 Dyna Wide Glide FXDWG bermesin 1.340
+    cc.
+  specs:
+    Tahun: '1996'
+    Mesin: 1.340 cc
+    Tenaga: 70 hp
+    Tipe: Evolution
+    Rangka: Dyna, garpu lebar
+    Kelangkaan: Umum
+  sku: HTZ-HER-222
+- name: Harley-Davidson 1997 Heritage Springer FLSTS
+  slug: harley-davidson-1997-heritage-springer-flsts
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Evolution
+  brand: Harley-Davidson
+  price: 360000000
+  price_old:
+  price_band: 50jt-500jt
+  badge: Terlaris
+  stock: 1
+  rating: 4.7
+  image: "/assets/img/heritage/harley-davidson-1997-heritage-springer-flsts.webp"
+  credit:
+    title: Harley-Davidson Museum May 2024 21 (1997 FLSTS Heritage Springer--OHV V-Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_May_2024_21_(1997_FLSTS_Heritage_Springer--OHV_V-Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1340
+  year: 1997
+  photo_query: Harley-Davidson Heritage Springer
+  blurb: Era Evolution. Harley-Davidson 1997 Heritage Springer FLSTS bermesin 1.340
+    cc.
+  specs:
+    Tahun: '1997'
+    Mesin: 1.340 cc
+    Tenaga: 70 hp
+    Tipe: Evolution
+    Rangka: Softail, garpu Springer
+    Kelangkaan: Langka
+  sku: HTZ-HER-223
+- name: Harley-Davidson 1998 Road Glide FLTR
+  slug: harley-davidson-1998-road-glide-fltr
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Evolution
+  brand: Harley-Davidson
+  price: 300000000
+  price_old:
+  price_band: 50jt-500jt
+  badge:
+  stock: 1
+  rating: 4.8
+  image: "/assets/img/heritage/harley-davidson-1998-road-glide-fltr.webp"
+  credit:
+    title: Harley-Davidson Museum May 2024 20 (1998 FLTRI Road Glide--OHV V-Twin).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_May_2024_20_(1998_FLTRI_Road_Glide--OHV_V-Twin).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1340
+  year: 1998
+  photo_query: Harley-Davidson Road Glide
+  blurb: Era Evolution. Harley-Davidson 1998 Road Glide FLTR bermesin 1.340 cc.
+  specs:
+    Tahun: '1998'
+    Mesin: 1.340 cc
+    Tenaga: 70 hp
+    Tipe: Evolution
+    Rangka: Swingarm, fairing shark-nose
+    Kelangkaan: Umum
+  sku: HTZ-HER-224
+- name: Harley-Davidson 1999 Dyna Super Glide Twin Cam 88
+  slug: harley-davidson-1999-dyna-super-glide-twin-cam-88
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Twin Cam
+  brand: Harley-Davidson
+  price: 260000000
+  price_old:
+  price_band: 50jt-500jt
+  badge: Stok Terbatas
+  stock: 3
+  rating: 4.9
+  image: "/assets/img/heritage/harley-davidson-1999-dyna-super-glide-twin-cam-88.webp"
+  credit:
+    title: Harley-Davidson Museum February 2024 15 (Engine Room--Twin Cam, 1999-2017).jpg
+    author: Michael Barera
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_February_2024_15_(Engine_Room--Twin_Cam,_1999-2017).jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1450
+  year: 1999
+  photo_query: Harley-Davidson Twin Cam 88
+  blurb: Era Twin Cam. Harley-Davidson 1999 Dyna Super Glide Twin Cam 88 bermesin
+    1.450 cc.
+  specs:
+    Tahun: '1999'
+    Mesin: 1.450 cc
+    Tenaga: 76 hp
+    Tipe: Twin Cam 88
+    Rangka: Dyna
+    Kelangkaan: Umum
+  sku: HTZ-HER-225
+- name: Harley-Davidson 2001 V-Rod VRSCA
+  slug: harley-davidson-2001-v-rod-vrsca
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Revolution
+  brand: Harley-Davidson
+  price: 340000000
+  price_old:
+  price_band: 50jt-500jt
+  badge: Koleksi Langka
+  stock: 3
+  rating: 5.0
+  image: "/assets/img/heritage/harley-davidson-2001-v-rod-vrsca.webp"
+  credit:
+    title: Harley-Davidson V-Rod front-right Porsche Museum.jpg
+    author: Morio
+    license: CC BY-SA 3.0
+    license_url: https://creativecommons.org/licenses/by-sa/3.0
+    source: https://commons.wikimedia.org/wiki/File:Harley-Davidson_V-Rod_front-right_Porsche_Museum.jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1130
+  year: 2001
+  photo_query: Harley-Davidson VRSC V-Rod
+  blurb: Era Revolution. Harley-Davidson 2001 V-Rod VRSCA bermesin 1.130 cc.
+  specs:
+    Tahun: '2001'
+    Mesin: 1.130 cc
+    Tenaga: 115 hp
+    Tipe: Revolution
+    Rangka: Rangka perimeter
+    Kelangkaan: Ikonik
+  sku: HTZ-HER-226
+- name: Harley-Davidson 2006 Street Rod VRSCR
+  slug: harley-davidson-2006-street-rod-vrscr
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Revolution
+  brand: Harley-Davidson
+  price: 380000000
+  price_old:
+  price_band: 50jt-500jt
+  badge: Stok Terbatas
+  stock: 3
+  rating: 4.7
+  image: "/assets/img/heritage/harley-davidson-2006-street-rod-vrscr.webp"
+  credit:
+    title: Ms-vrscr.jpg
+    author: Von Mitch
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Ms-vrscr.jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1130
+  year: 2006
+  photo_query: Harley-Davidson Street Rod VRSCR
+  blurb: Era Revolution. Harley-Davidson 2006 Street Rod VRSCR bermesin 1.130 cc.
+  specs:
+    Tahun: '2006'
+    Mesin: 1.130 cc
+    Tenaga: 120 hp
+    Tipe: Revolution
+    Rangka: Rangka perimeter
+    Kelangkaan: Sangat langka
+  sku: HTZ-HER-227
+- name: Harley-Davidson 2008 Rocker C FXCWC
+  slug: harley-davidson-2008-rocker-c-fxcwc
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Twin Cam
+  brand: Harley-Davidson
+  price: 330000000
+  price_old:
+  price_band: 50jt-500jt
+  badge:
+  stock: 3
+  rating: 5.0
+  image: "/assets/img/heritage/harley-davidson-2008-rocker-c-fxcwc.webp"
+  credit:
+    title: 2008 Harley-Davidson Rocker in Athens on 11-14-2023.jpg
+    author: George E. Koronaios
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:2008_Harley-Davidson_Rocker_in_Athens_on_11-14-2023.jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1584
+  year: 2008
+  photo_query: Harley-Davidson Rocker
+  blurb: Era Twin Cam. Harley-Davidson 2008 Rocker C FXCWC bermesin 1.584 cc.
+  specs:
+    Tahun: '2008'
+    Mesin: 1.584 cc
+    Tenaga: 78 hp
+    Tipe: Twin Cam 96
+    Rangka: Softail, ban belakang 240
+    Kelangkaan: Langka
+  sku: HTZ-HER-228
+- name: Harley-Davidson 2011 Blackline FXS
+  slug: harley-davidson-2011-blackline-fxs
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Twin Cam
+  brand: Harley-Davidson
+  price: 310000000
+  price_old:
+  price_band: 50jt-500jt
+  badge: Baru
+  stock: 1
+  rating: 4.7
+  image: "/assets/img/products/harley-davidson-2011-blackline-fxs.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1584
+  year: 2011
+  photo_query: Harley-Davidson Blackline
+  blurb: Era Twin Cam. Harley-Davidson 2011 Blackline FXS bermesin 1.584 cc.
+  specs:
+    Tahun: '2011'
+    Mesin: 1.584 cc
+    Tenaga: 78 hp
+    Tipe: Twin Cam 96
+    Rangka: Softail minimalis
+    Kelangkaan: Langka
+  sku: HTZ-HER-229
+- name: Harley-Davidson 2014 Street 750 XG750
+  slug: harley-davidson-2014-street-750-xg750
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Revolution
+  brand: Harley-Davidson
+  price: 150000000
+  price_old:
+  price_band: 50jt-500jt
+  badge: Terlaris
+  stock: 3
+  rating: 4.9
+  image: "/assets/img/heritage/harley-davidson-2014-street-750-xg750.webp"
+  credit:
+    title: 2014 Harley-Davidson Street 750 front.jpg
+    author: Ryan Urlacher from USA
+    license: CC BY 2.0
+    license_url: https://creativecommons.org/licenses/by/2.0
+    source: https://commons.wikimedia.org/wiki/File:2014_Harley-Davidson_Street_750_front.jpg
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 749
+  year: 2014
+  photo_query: Harley-Davidson Street 750
+  blurb: Era Revolution. Harley-Davidson 2014 Street 750 XG750 bermesin 749 cc.
+  specs:
+    Tahun: '2014'
+    Mesin: 749 cc
+    Tenaga: 60 hp
+    Tipe: Revolution X
+    Rangka: Rangka tubular
+    Kelangkaan: Umum
+  sku: HTZ-HER-230
+- name: Harley-Davidson 2017 Road King Milwaukee-Eight FLHR
+  slug: harley-davidson-2017-road-king-milwaukee-eight-flhr
+  category: heritage
+  category_label: Koleksi Heritage
+  subcategory: Era Milwaukee-Eight
+  brand: Harley-Davidson
+  price: 420000000
+  price_old:
+  price_band: 50jt-500jt
+  badge:
+  stock: 2
+  rating: 4.6
+  image: "/assets/img/products/harley-davidson-2017-road-king-milwaukee-eight-flhr.svg"
+  credit:
+  icon: heritage
+  blurb_type: generic
+  trim:
+  cc: 1745
+  year: 2017
+  photo_query: Harley-Davidson Milwaukee-Eight Road King
+  blurb: Era Milwaukee-Eight. Harley-Davidson 2017 Road King Milwaukee-Eight FLHR
+    bermesin 1.745 cc.
+  specs:
+    Tahun: '2017'
+    Mesin: 1.745 cc
+    Tenaga: 92 hp
+    Tipe: Milwaukee-Eight
+    Rangka: Swingarm, tur klasik
+    Kelangkaan: Umum
+  sku: HTZ-HER-231

@@ -36,6 +36,10 @@ actions:
   search_placeholder: 搜索车款、配件、骑行装备…
   skip: 跳到主要内容
   chat: WhatsApp 咨询
+  copy_link: 复制商品链接
+  copied: 链接已复制
+  qty_less: 减少数量
+  qty_more: 增加数量
 
 home:
   hero:
@@ -62,10 +66,10 @@ home:
     与充足零件库存的经销网络。我们的使命很简单：提供优质的服务与产品，
     让您的每一次骑行都更加舒适。
   stats:
-    - value: "131"
+    - value: "%{count}"
       label: 目录商品
-    - value: "12"
-      label: 车款
+    - value: "100"
+      label: 1903-2017 年典藏车
     - value: "2016"
       label: 成立年份
     - value: "4.8/5"
@@ -91,7 +95,7 @@ home:
 catalog:
   title: 产品目录
   subtitle: >-
-    131 件精选商品，价格公开透明。使用搜索与筛选功能，几秒内找到所需产品。
+    %{count} 件精选商品，价格公开透明。使用搜索与筛选功能，几秒内找到所需产品。
   all: 全部
   search_label: 搜索产品
   sort_label: 排序方式
@@ -107,7 +111,8 @@ catalog:
     500k-2jt: 50 万 - 200 万印尼盾
     2jt-10jt: 200 万 - 1,000 万印尼盾
     10jt-50jt: 1,000 万 - 5,000 万印尼盾
-    di-atas-50jt: 5,000 万印尼盾以上
+    50jt-500jt: 5,000 万 - 5 亿印尼盾
+    di-atas-500jt: 5 亿印尼盾以上
   brand_label: 品牌
   view_grid: 网格视图
   view_list: 列表视图
@@ -123,6 +128,7 @@ catalog:
   always_available: 长期供应
   sku: 编号
   specs: 规格
+  photo_credit: 图片
   category: 类别
   subcategory: 种类
   brand: 品牌
@@ -132,6 +138,7 @@ catalog:
     Terlaris: 热销
     Baru: 新品
     Stok Terbatas: 库存不多
+    Koleksi Langka: 稀有典藏
   blurb_bike: "%{type}，%{cc} cc 发动机，%{trim} 版本。"
   blurb_generic: "HTZL Motorcycle Club 官方%{sub}。"
   trims:
@@ -231,8 +238,8 @@ footer:
 
 meta:
   home_title: 值得信赖的摩托车经销商
-  home_desc: 雅加达 Kawasaki 与 Vixian 官方经销商。131 件目录商品，价格透明，官方保修，快速配送。
-  catalog_desc: 浏览 131 件商品：整车、骑行装备、零配件、机油、旅行配件与维修服务。
+  home_desc: 雅加达 Kawasaki 与 Vixian 官方经销商。%{count} 件目录商品，价格透明，官方保修，快速配送。
+  catalog_desc: 浏览 %{count} 件商品：整车、骑行装备、零配件、机油、旅行配件与维修服务。
   gallery_desc: HTZL Motorcycle Club 的展厅、车展、骑行与馆藏影像记录。
   reserve_desc: 在线预订 Kawasaki 或 Vixian。无需订金，通过 WhatsApp 确认。
   kawasaki_desc: 六款 Kawasaki 车型，提供 Standard、S 与 SP 版本，含完整价格与规格。

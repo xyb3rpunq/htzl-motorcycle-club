@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "yaml"
+require_relative "heritage"
 
 module HTZL
   # Sumber tunggal katalog HTZL Motorcycle Club.
@@ -19,7 +20,8 @@ module HTZL
       "part"     => { label: "Sparepart & Performa", icon: "piston",   blurb: "Komponen dan upgrade" },
       "oli"      => { label: "Oli & Perawatan",    icon: "oil",        blurb: "Pelumas dan cairan" },
       "aksesori" => { label: "Aksesori & Touring", icon: "topbox",     blurb: "Penunjang perjalanan jauh" },
-      "layanan"  => { label: "Layanan Bengkel",    icon: "wrench",     blurb: "Servis oleh teknisi resmi" }
+      "layanan"  => { label: "Layanan Bengkel",    icon: "wrench",     blurb: "Servis oleh teknisi resmi" },
+      "heritage" => { label: "Koleksi Heritage",   icon: "heritage",   blurb: "Harley-Davidson 1903 sampai kini" }
     }.freeze
 
     # --- Model motor dasar (spesifikasi diambil dari situs HTZL versi 2022) ---
@@ -183,6 +185,7 @@ module HTZL
         items.concat(build_simple(OILS,        "oli",      "HTZL Lubricants", rng))
         items.concat(build_simple(ACCESSORIES, "aksesori", "HTZL Touring", rng))
         items.concat(build_simple(SERVICES,    "layanan",  "HTZL Service Center", rng))
+        items.concat(build_heritage(rng))
         items.each_with_index { |item, i| item["sku"] = format("HTZ-%s-%03d", item["category"][0, 3].upcase, i + 1) }
         items
       end
@@ -207,14 +210,33 @@ module HTZL
         specs.to_a.first(limit).map { |k, v| "#{k}: #{v}" }.join(" | ")
       end
 
+      # Artwork hasil lib/generate_art.rb. Nil bila berkasnya belum dibuat,
+      # sehingga kartu jatuh kembali memakai ikon kategori.
+      def art_path(slug)
+        rel = "/assets/img/products/#{slug}.svg"
+        File.exist?(File.expand_path("../..#{rel}", __dir__)) ? rel : nil
+      end
+
+      # Kredit foto hasil lib/fetch_heritage_photos.py, diindeks per slug.
+      # Berkas ini boleh belum ada: unit tanpa foto akan memakai ikon kategori.
+      def photo_credits
+        @photo_credits ||=
+          begin
+            path = File.expand_path("../../_data/photo_credits.yml", __dir__)
+            rows = File.exist?(path) ? (YAML.load_file(path) || []) : []
+            rows.each_with_object({}) { |row, acc| acc[row["slug"]] = row }
+          end
+      end
+
       # Rentang harga dipakai untuk filter cepat di sisi klien.
       def price_band(price)
         case price
-        when 0...500_000            then "under-500k"
-        when 500_000...2_000_000    then "500k-2jt"
-        when 2_000_000...10_000_000 then "2jt-10jt"
-        when 10_000_000...50_000_000 then "10jt-50jt"
-        else "di-atas-50jt"
+        when 0...500_000              then "under-500k"
+        when 500_000...2_000_000      then "500k-2jt"
+        when 2_000_000...10_000_000   then "2jt-10jt"
+        when 10_000_000...50_000_000  then "10jt-50jt"
+        when 50_000_000...500_000_000 then "50jt-500jt"
+        else "di-atas-500jt"
         end
       end
 
@@ -272,12 +294,56 @@ module HTZL
         end
       end
 
+      # Koleksi Harley-Davidson, diurutkan dari unit tertua. Foto diambil dari
+      # Wikimedia Commons oleh lib/fetch_photos.rb; unit tanpa foto berlisensi
+      # bebas memakai artwork yang dibuat lib/generate_art.rb.
+      def build_heritage(rng)
+        HTZL::Heritage::UNITS.map do |year, name, era, cc, hp, frame, rarity, price, query|
+          full_name = "Harley-Davidson #{year} #{name}"
+          slug = slugify(full_name)
+          sub = HTZL::Heritage.subcategory(era)
+          credit = photo_credits[slug]
+          {
+            "name"           => full_name,
+            "slug"           => slug,
+            "category"       => "heritage",
+            "category_label" => CATEGORIES["heritage"][:label],
+            "subcategory"    => sub,
+            "brand"          => "Harley-Davidson",
+            "price"          => price,
+            "price_old"      => nil,
+            "price_band"     => price_band(price),
+            "badge"          => rarity == "Museum" || rarity == "Ikonik" ? "Koleksi Langka" : BADGES[rng.rand(BADGES.length)],
+            "stock"          => rarity == "Museum" ? 1 : rng.rand(1..3),
+            "rating"         => (4.5 + rng.rand(6) / 10.0).round(1),
+            "image"          => (credit && credit["file"]) || art_path(slug),
+            "credit"         => credit && credit.reject { |k, _| %w[slug file].include?(k) },
+            "icon"           => "heritage",
+            "blurb_type"     => "generic",
+            "trim"           => nil,
+            "cc"             => cc,
+            "year"           => year,
+            "photo_query"    => query,
+            "blurb"          => "#{sub}. #{full_name} bermesin #{format_thousand(cc)} cc.",
+            "specs"          => {
+              "Tahun"       => year.to_s,
+              "Mesin"       => "#{format_thousand(cc)} cc",
+              "Tenaga"      => "#{hp} hp",
+              "Tipe"        => era,
+              "Rangka"      => frame,
+              "Kelangkaan"  => rarity
+            }
+          }
+        end
+      end
+
       def build_simple(rows, category, brand, rng)
         rows.map do |name, subcategory, price, icon, specs|
           discount = rng.rand(100) < 25
+          slug = slugify(name)
           {
             "name"           => name,
-            "slug"           => slugify(name),
+            "slug"           => slug,
             "category"       => category,
             "category_label" => CATEGORIES[category][:label],
             "subcategory"    => subcategory,
@@ -288,7 +354,7 @@ module HTZL
             "badge"          => discount ? "Diskon" : BADGES[rng.rand(BADGES.length)],
             "stock"          => category == "layanan" ? 99 : rng.rand(3..40),
             "rating"         => (4.1 + rng.rand(9) / 10.0).round(1),
-            "image"          => nil,
+            "image"          => art_path(slug),
             "icon"           => icon,
             "blurb_type"     => "generic",
             "trim"           => nil,

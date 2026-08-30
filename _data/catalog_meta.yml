@@ -1,8 +1,8 @@
 # DIBUAT OTOMATIS oleh lib/seed_catalog.rb
 ---
-total: 131
+total: 231
 min_price: 75000
-max_price: 98500000
+max_price: 4500000000
 categories:
 - key: motor
   label: Motor
@@ -34,12 +34,18 @@ categories:
   icon: wrench
   blurb: Servis oleh teknisi resmi
   count: 10
+- key: heritage
+  label: Koleksi Heritage
+  icon: heritage
+  blurb: Harley-Davidson 1903 sampai kini
+  count: 100
 brands:
 - HTZL Apparel
 - HTZL Lubricants
 - HTZL Performance
 - HTZL Service Center
 - HTZL Touring
+- Harley-Davidson
 - Kawasaki
 - Vixian
 subcategories:
@@ -50,6 +56,17 @@ subcategories:
 - Cairan
 - Celana
 - Elektronik
+- Era Evolution
+- Era Flathead
+- Era Ironhead
+- Era Knucklehead
+- Era Milwaukee-Eight
+- Era Model Ringan
+- Era Panhead
+- Era Perintis
+- Era Revolution
+- Era Shovelhead
+- Era Twin Cam
 - Filter
 - Helm
 - Jaket

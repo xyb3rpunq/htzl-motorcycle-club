@@ -36,6 +36,10 @@ actions:
   search_placeholder: 車両・パーツ・ウェアを検索…
   skip: 本文へスキップ
   chat: WhatsAppで相談
+  copy_link: 商品リンクをコピー
+  copied: リンクをコピーしました
+  qty_less: 数量を減らす
+  qty_more: 数量を増やす
 
 home:
   hero:
@@ -62,10 +66,10 @@ home:
     充実した部品在庫を備えた販売網へと成長しました。私たちの使命はシンプルです。
     質の高いサービスと製品を届け、お客様のすべての走行をより快適にすることです。
   stats:
-    - value: "131"
+    - value: "%{count}"
       label: カタログ掲載点数
-    - value: "12"
-      label: 車両モデル
+    - value: "100"
+      label: 1903〜2017年の収蔵車
     - value: "2016"
       label: 創業年
     - value: "4.8/5"
@@ -91,7 +95,7 @@ home:
 catalog:
   title: 製品カタログ
   subtitle: >-
-    厳選した131点を、明朗な価格でご用意しています。検索と絞り込みで、
+    厳選した%{count}点を、明朗な価格でご用意しています。検索と絞り込みで、
     必要な一点が数秒で見つかります。
   all: すべて
   search_label: 製品を検索
@@ -108,7 +112,8 @@ catalog:
     500k-2jt: 50万〜200万ルピア
     2jt-10jt: 200万〜1,000万ルピア
     10jt-50jt: 1,000万〜5,000万ルピア
-    di-atas-50jt: 5,000万ルピア超
+    50jt-500jt: 5,000万〜5億ルピア
+    di-atas-500jt: 5億ルピア超
   brand_label: ブランド
   view_grid: グリッド表示
   view_list: リスト表示
@@ -124,6 +129,7 @@ catalog:
   always_available: 常時受付
   sku: 品番
   specs: 仕様
+  photo_credit: 写真
   category: カテゴリー
   subcategory: 種別
   brand: ブランド
@@ -133,6 +139,7 @@ catalog:
     Terlaris: 人気
     Baru: 新着
     Stok Terbatas: 残りわずか
+    Koleksi Langka: 希少コレクション
   blurb_bike: "%{type}、%{cc} ccエンジン、%{trim}仕様。"
   blurb_generic: "HTZL Motorcycle Clubの正規%{sub}。"
   trims:
@@ -233,8 +240,8 @@ footer:
 
 meta:
   home_title: 信頼できるバイク販売店
-  home_desc: ジャカルタのKawasaki・Vixian正規販売店。明朗価格のカタログ131点、正規保証、迅速配送。
-  catalog_desc: 車両、ウェア、パーツ、オイル、ツーリング用品、整備サービスなど131点を掲載。
+  home_desc: ジャカルタのKawasaki・Vixian正規販売店。明朗価格のカタログ%{count}点、正規保証、迅速配送。
+  catalog_desc: 車両、ウェア、パーツ、オイル、ツーリング用品、整備サービスなど%{count}点を掲載。
   gallery_desc: HTZL Motorcycle Clubのショールーム、展示会、ツーリング、収蔵車両の記録。
   reserve_desc: KawasakiまたはVixianをオンラインで予約。頭金不要、WhatsAppで確認します。
   kawasaki_desc: Kawasaki 6モデルのStandard・S・SP仕様を、価格と仕様とともに掲載。

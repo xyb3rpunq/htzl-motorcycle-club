@@ -36,6 +36,10 @@ actions:
   search_placeholder: Search bikes, parts, apparel...
   skip: Skip to main content
   chat: Chat on WhatsApp
+  copy_link: Copy product link
+  copied: Link copied
+  qty_less: Decrease quantity
+  qty_more: Increase quantity
 
 home:
   hero:
@@ -63,10 +67,10 @@ home:
     around. Our mission is simple: deliver quality service and products so every
     ride you take is a better one.
   stats:
-    - value: "131"
+    - value: "%{count}"
       label: Catalogue items
-    - value: "12"
-      label: Motorcycle models
+    - value: "100"
+      label: Heritage units 1903-2017
     - value: "2016"
       label: Founded
     - value: "4.8/5"
@@ -92,7 +96,7 @@ home:
 catalog:
   title: Product Catalogue
   subtitle: >-
-    131 curated items with transparent pricing. Use search and filters to find
+    %{count} curated items with transparent pricing. Use search and filters to find
     exactly what you need in seconds.
   all: All
   search_label: Search products
@@ -109,7 +113,8 @@ catalog:
     500k-2jt: Rp 500k - 2M
     2jt-10jt: Rp 2M - 10M
     10jt-50jt: Rp 10M - 50M
-    di-atas-50jt: Above Rp 50M
+    50jt-500jt: Rp 50M - 500M
+    di-atas-500jt: Above Rp 500M
   brand_label: Brand
   view_grid: Grid view
   view_list: List view
@@ -125,6 +130,7 @@ catalog:
   always_available: Always available
   sku: Code
   specs: Specifications
+  photo_credit: Photo
   category: Category
   subcategory: Type
   brand: Brand
@@ -134,6 +140,7 @@ catalog:
     Terlaris: Best seller
     Baru: New
     Stok Terbatas: Low stock
+    Koleksi Langka: Rare Collectible
   blurb_bike: "%{type} with %{cc} cc engine, %{trim} trim."
   blurb_generic: "Official %{sub} from HTZL Motorcycle Club."
   trims:
@@ -234,8 +241,8 @@ footer:
 
 meta:
   home_title: Trusted Motorcycle Dealership
-  home_desc: Official Kawasaki and Vixian dealer in Jakarta. 131 catalogue items with transparent pricing, official warranty and fast delivery.
-  catalog_desc: "Browse 131 items: motorcycles, apparel, spare parts, lubricants, touring accessories and workshop services."
+  home_desc: Official Kawasaki and Vixian dealer in Jakarta. %{count} catalogue items with transparent pricing, official warranty and fast delivery.
+  catalog_desc: "Browse %{count} items: motorcycles, apparel, spare parts, lubricants, touring accessories and workshop services."
   gallery_desc: Showroom, expo, group ride and museum documentation from HTZL Motorcycle Club.
   reserve_desc: Reserve a Kawasaki or Vixian online. No deposit, confirmed over WhatsApp.
   kawasaki_desc: Six Kawasaki models in Standard, S and SP trim with full pricing and specifications.

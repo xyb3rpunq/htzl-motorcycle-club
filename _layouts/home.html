@@ -3,6 +3,7 @@ layout: default
 ---
 {%- assign t = site.data.i18n[page.lang] -%}
 {%- assign p = t.prefix -%}
+{%- assign catalog_total = site.data.catalog | size -%}
 {%- assign hero_images = "promo,showroom,expo,community,museum" | split: "," -%}
 {%- assign kawasaki = site.data.catalog | where: "category", "motor" | where: "brand", "Kawasaki" | where: "trim", "Standard" -%}
 {%- assign vixian = site.data.catalog | where: "category", "motor" | where: "brand", "Vixian" | where: "trim", "Standard" -%}
@@ -50,7 +51,7 @@ layout: default
     <dl class="stats reveal">
       {%- for stat in t.home.stats %}
       <div>
-        <dt>{{ stat.value }}</dt>
+        <dt>{{ stat.value | fill: 'count', catalog_total }}</dt>
         <dd>{{ stat.label }}</dd>
       </div>
       {%- endfor %}
