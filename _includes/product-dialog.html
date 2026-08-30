@@ -1,0 +1,52 @@
+{%- comment -%}
+  Dialog detail produk. Dipakai bersama oleh halaman katalog dan halaman merek.
+  Isi bagian tengah disalin catalog.js dari <template> pada kartu yang diklik;
+  bar bawah dan navigasi tetap, sehingga tombol pesan selalu terjangkau dan
+  pengunjung bisa berpindah antarproduk tanpa menutup dialog.
+{%- endcomment -%}
+{%- assign t = include.t -%}
+<dialog id="product-dialog" aria-labelledby="detail-title"
+        data-wa="{{ site.contact.whatsapp }}"
+        data-wa-intro="{{ t.reserve.wa_message }}"
+        data-label-qty="{{ t.reserve.summary_qty }}"
+        data-label-total="{{ t.reserve.summary_total }}"
+        data-label-of="{{ t.catalog.of }}"
+        data-label-copied="{{ t.actions.copied }}">
+
+  <div class="dialog__nav">
+    <button class="icon-btn" type="button" data-dialog-prev aria-label="{{ t.actions.prev }}">
+      <svg aria-hidden="true"><use href="#i-chevron-left"/></svg>
+    </button>
+    <button class="icon-btn" type="button" data-dialog-next aria-label="{{ t.actions.next }}">
+      <svg aria-hidden="true"><use href="#i-chevron-right"/></svg>
+    </button>
+
+    <span class="dialog__position" data-dialog-position aria-live="polite"></span>
+
+    <button class="icon-btn" type="button" data-dialog-copy aria-label="{{ t.actions.copy_link }}">
+      <svg aria-hidden="true"><use href="#i-link"/></svg>
+    </button>
+    <button class="dialog__close" type="button" data-dialog-close aria-label="{{ t.actions.close }}">
+      <svg aria-hidden="true"><use href="#i-close"/></svg>
+    </button>
+  </div>
+
+  <div class="dialog__body" data-dialog-body></div>
+
+  <footer class="dialog__bar">
+    <div class="qty">
+      <button type="button" data-qty-step="-1" aria-label="{{ t.actions.qty_less }}">&minus;</button>
+      <input type="number" min="1" max="99" value="1" data-qty aria-label="{{ t.reserve.summary_qty }}">
+      <button type="button" data-qty-step="1" aria-label="{{ t.actions.qty_more }}">+</button>
+    </div>
+
+    <p class="dialog__total">
+      <small>{{ t.reserve.summary_total }}</small>
+      <b data-dialog-total>&mdash;</b>
+    </p>
+
+    <a class="btn btn--wa" data-dialog-order href="#" target="_blank" rel="noopener noreferrer">
+      <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>{{ t.actions.order }}
+    </a>
+  </footer>
+</dialog>

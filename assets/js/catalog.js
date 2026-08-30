@@ -207,32 +207,144 @@
 
   /* ---------------------------------------------------------------- *
    * Dialog detail produk
+   *
+   * Bar bawah (jumlah, total, tombol pesan) dan navigasi antarproduk hidup
+   * di luar isi yang disalin, sehingga tombol pesan selalu terjangkau dan
+   * pengunjung bisa berpindah produk tanpa menutup dialog.
    * ---------------------------------------------------------------- */
   var dialog = $("#product-dialog");
+
   if (dialog && typeof dialog.showModal === "function") {
     var body = $("[data-dialog-body]", dialog);
+    var qtyInput = $("[data-qty]", dialog);
+    var totalEl = $("[data-dialog-total]", dialog);
+    var orderLink = $("[data-dialog-order]", dialog);
+    var positionEl = $("[data-dialog-position]", dialog);
+    var prevBtn = $("[data-dialog-prev]", dialog);
+    var nextBtn = $("[data-dialog-next]", dialog);
+    var copyBtn = $("[data-dialog-copy]", dialog);
+    var dd = dialog.dataset;
+
     var lastTrigger = null;
+    var currentCard = null;
+
+    function rupiah(value) {
+      var n = Math.round(Number(value) || 0);
+      return "Rp " + String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    }
+
+    // Hanya kartu yang lolos saringan yang bisa dijelajahi dengan panah.
+    function visibleCards() {
+      return cards.filter(function (card) { return !card.hidden; });
+    }
+
+    function itemUrl(card) {
+      return window.location.origin + window.location.pathname + "?item=" + encodeURIComponent(card.dataset.sku);
+    }
+
+    function refreshTotals() {
+      if (!currentCard) return;
+      var qty = Math.min(99, Math.max(1, parseInt(qtyInput.value, 10) || 1));
+      qtyInput.value = qty;
+
+      var price = Number(currentCard.dataset.price) || 0;
+      totalEl.textContent = rupiah(price * qty);
+
+      var lines = [
+        dd.waIntro,
+        "",
+        currentCard.dataset.name + " (" + currentCard.dataset.sku + ")",
+        dd.labelQty + ": " + qty,
+        dd.labelTotal + ": " + rupiah(price * qty),
+        "",
+        itemUrl(currentCard)
+      ];
+      orderLink.href = "https://wa.me/" + String(dd.wa).replace(/\D/g, "") +
+                       "?text=" + encodeURIComponent(lines.join("\n"));
+    }
+
+    function show(card) {
+      var template = $("[data-detail-content]", card);
+      if (!template) return;
+
+      currentCard = card;
+      body.replaceChildren(template.content.cloneNode(true));
+      body.scrollTop = 0;
+      qtyInput.value = 1;
+
+      var list = visibleCards();
+      var index = list.indexOf(card);
+      positionEl.textContent = (index + 1) + " " + dd.labelOf + " " + list.length;
+      prevBtn.disabled = index <= 0;
+      nextBtn.disabled = index < 0 || index >= list.length - 1;
+
+      refreshTotals();
+    }
+
+    function step(delta) {
+      var list = visibleCards();
+      var index = list.indexOf(currentCard);
+      var target = list[index + delta];
+      if (target) show(target);
+    }
 
     grid.addEventListener("click", function (event) {
       var button = event.target.closest("[data-detail]");
       if (!button) return;
-
-      var card = button.closest("[data-item]");
-      var template = $("[data-detail-content]", card);
-      if (!template) return;
-
       lastTrigger = button;
-      body.replaceChildren(template.content.cloneNode(true));
+      show(button.closest("[data-item]"));
       dialog.showModal();
-      body.scrollTop = 0;
+    });
+
+    prevBtn.addEventListener("click", function () { step(-1); });
+    nextBtn.addEventListener("click", function () { step(1); });
+
+    dialog.addEventListener("keydown", function (event) {
+      if (event.target === qtyInput) return;
+      if (event.key === "ArrowLeft") { event.preventDefault(); step(-1); }
+      if (event.key === "ArrowRight") { event.preventDefault(); step(1); }
+    });
+
+    $$("[data-qty-step]", dialog).forEach(function (button) {
+      button.addEventListener("click", function () {
+        qtyInput.value = (parseInt(qtyInput.value, 10) || 1) + Number(button.dataset.qtyStep);
+        refreshTotals();
+      });
+    });
+
+    qtyInput.addEventListener("input", refreshTotals);
+
+    copyBtn.addEventListener("click", function () {
+      if (!currentCard) return;
+      var url = itemUrl(currentCard);
+      var done = function () { window.HTZL.toast(dd.labelCopied); };
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(done, function () { window.prompt("", url); });
+      } else {
+        window.prompt("", url);
+      }
     });
 
     dialog.addEventListener("close", function () {
       body.replaceChildren();
+      currentCard = null;
       if (lastTrigger) lastTrigger.focus();
     });
 
     window.HTZL.initDialogDismiss(dialog);
+
+    // Tautan dalam seperti ?item=HTZ-MOT-001 langsung membuka produknya.
+    var deepLink = new URLSearchParams(window.location.search).get("item");
+    if (deepLink) {
+      var target = cards.find(function (card) { return card.dataset.sku === deepLink; });
+      if (target) {
+        window.requestAnimationFrame(function () {
+          show(target);
+          dialog.showModal();
+        });
+      }
+    }
   }
 
   readUrl();

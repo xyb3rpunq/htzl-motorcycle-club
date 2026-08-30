@@ -20,6 +20,7 @@
 
 <article class="card" data-item
          data-name="{{ item.name }}"
+         data-sku="{{ item.sku }}"
          data-search="{{ item | search_blob }} {{ sub | downcase }} {{ cat | downcase }}"
          data-category="{{ item.category }}"
          data-sub="{{ item.subcategory }}"
@@ -98,13 +99,14 @@
         </tbody>
       </table>
 
-      {%- capture wa_message -%}
-{{ t.reserve.wa_message }} {{ item.name }} ({{ item.sku }}) - {{ item.price | rupiah }}
-      {%- endcapture -%}
-      <a class="btn btn--wa btn--block" href="{{ site.contact.whatsapp | whatsapp_link: wa_message }}" target="_blank" rel="noopener noreferrer">
-        <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>
-        {{ t.actions.order }}
-      </a>
+      {%- if item.credit %}
+      <p class="credit">
+        {{ t.catalog.photo_credit }}: <a href="{{ item.credit.source }}" target="_blank" rel="noopener noreferrer">{{ item.credit.title }}</a>
+        &middot; {{ item.credit.author }}
+        &middot; <a href="{{ item.credit.license_url }}" target="_blank" rel="noopener noreferrer">{{ item.credit.license }}</a>
+        &middot; Wikimedia Commons
+      </p>
+      {%- endif %}
     </div>
   </template>
 </article>

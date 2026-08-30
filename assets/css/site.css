@@ -887,8 +887,10 @@ p { text-wrap: pretty; }
 
 /* ----- Dialog detail produk --------------------------------------------- */
 dialog {
-  width: min(100% - 2rem, 720px);
-  max-height: min(90dvh, 800px);
+  display: flex;
+  flex-direction: column;
+  width: min(100% - 2rem, 760px);
+  max-height: min(90dvh, 860px);
   padding: 0;
   border: 1px solid var(--line);
   border-radius: var(--r-xl);
@@ -907,31 +909,142 @@ dialog[open] { animation: dialog-in 0.25s var(--ease); }
   to { opacity: 1; transform: none; }
 }
 
+/* Baris atas: pindah antarproduk tanpa menutup dialog */
+.dialog__nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 0.75rem;
+  border-block-end: 1px solid var(--line);
+  background: var(--surface);
+  flex: none;
+}
+
+.dialog__position {
+  font-size: var(--t-xs);
+  font-weight: 700;
+  color: var(--ink-3);
+  letter-spacing: 0.04em;
+  margin-inline: auto;
+}
+
+.dialog__nav .icon-btn { width: 38px; height: 38px; }
+.dialog__nav .icon-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+.dialog__nav .icon-btn:disabled:hover { color: var(--ink-2); border-color: var(--line); background: var(--surface); }
+
 .dialog__close {
-  position: absolute;
-  inset-block-start: 0.85rem;
-  inset-inline-end: 0.85rem;
-  z-index: 3;
+  position: static;
   display: grid;
   place-items: center;
-  width: 40px; height: 40px;
+  width: 38px; height: 38px;
   border-radius: var(--r-full);
   background: var(--surface);
   border: 1px solid var(--line);
   color: var(--ink-2);
   cursor: pointer;
+  flex: none;
 }
 
 .dialog__close:hover { background: var(--brand); border-color: var(--brand); color: var(--brand-ink); }
 .dialog__close svg { width: 20px; height: 20px; }
 
-.dialog__body { overflow-y: auto; max-height: min(90dvh, 800px); }
+.dialog__body { flex: 1; overflow-y: auto; overscroll-behavior: contain; }
 
 .dialog__media { aspect-ratio: 63 / 34; background: var(--surface-2); display: grid; place-items: center; }
 .dialog__media img { width: 100%; height: 100%; object-fit: contain; padding: 1rem; }
 .dialog__media .thumb svg { width: 96px; height: 96px; }
 
 .dialog__content { padding: clamp(1.25rem, 3vw, 2rem); display: grid; gap: 1rem; }
+
+/* Atribusi foto: wajib untuk gambar berlisensi Creative Commons */
+.credit {
+  font-size: var(--t-xs);
+  line-height: 1.5;
+  color: var(--ink-3);
+  padding-block-start: 0.5rem;
+  border-block-start: 1px solid var(--line);
+}
+
+.credit a { text-decoration: underline; text-underline-offset: 2px; }
+.credit a:hover { color: var(--brand); }
+
+/* Bar aksi menempel di bawah supaya tombol pesan selalu terjangkau */
+.dialog__bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  padding: 0.85rem clamp(1rem, 3vw, 1.5rem);
+  border-block-start: 1px solid var(--line);
+  background: color-mix(in srgb, var(--surface) 94%, var(--brand) 6%);
+  flex: none;
+}
+
+.qty {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid var(--line);
+  border-radius: var(--r-full);
+  background: var(--bg);
+  overflow: hidden;
+  flex: none;
+}
+
+.qty button {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 44px;
+  color: var(--ink-2);
+  cursor: pointer;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.qty button:hover { background: var(--surface-2); color: var(--brand); }
+.qty button:disabled { opacity: 0.3; cursor: not-allowed; }
+
+.qty input {
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: transparent;
+  text-align: center;
+  font-weight: 700;
+  font-size: var(--t-base);
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.qty input::-webkit-outer-spin-button,
+.qty input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+
+.dialog__total { margin-inline-end: auto; line-height: 1.2; }
+.dialog__total small { display: block; font-size: var(--t-xs); color: var(--ink-3); font-weight: 600; }
+.dialog__total b { font-family: var(--font-display); font-size: var(--t-lg); color: var(--brand); }
+
+/* Di ponsel dialog tampil sebagai lembar yang naik dari bawah */
+@media (max-width: 640px) {
+  dialog {
+    width: 100%;
+    max-width: 100%;
+    max-height: 92dvh;
+    margin: auto 0 0;
+    border-radius: var(--r-xl) var(--r-xl) 0 0;
+    border-block-end: 0;
+  }
+
+  dialog[open] { animation: sheet-in 0.28s var(--ease); }
+
+  @keyframes sheet-in {
+    from { transform: translateY(100%); }
+    to { transform: none; }
+  }
+
+  .dialog__bar { padding-block-end: max(0.85rem, env(safe-area-inset-bottom)); }
+  .dialog__bar .btn { flex: 1 1 100%; order: 3; }
+  .dialog__total { order: 2; }
+}
 
 .spec-table { width: 100%; border-collapse: collapse; font-size: var(--t-sm); }
 .spec-table th,

@@ -66,9 +66,4 @@ layout: default
   </div>
 </section>
 
-<dialog id="product-dialog" aria-labelledby="detail-title">
-  <button class="dialog__close" type="button" data-dialog-close aria-label="{{ t.actions.close }}">
-    <svg aria-hidden="true"><use href="#i-close"/></svg>
-  </button>
-  <div class="dialog__body" data-dialog-body></div>
-</dialog>
+{%- include product-dialog.html t=t -%}
