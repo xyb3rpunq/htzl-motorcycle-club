@@ -1,0 +1,3253 @@
+# DIBUAT OTOMATIS oleh lib/seed_catalog.rb - jangan diedit manual.
+# Ubah sumbernya di lib/htzl/catalog.rb lalu jalankan: rake seed
+---
+- name: Kawasaki x56
+  slug: kawasaki-x56
+  category: motor
+  category_label: Motor
+  subcategory: Superbike
+  brand: Kawasaki
+  price: 45000000
+  price_old:
+  price_band: 10jt-50jt
+  badge:
+  stock: 1
+  rating: 4.4
+  image: "/assets/img/bikes/kawasaki-x56.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: Standard
+  cc: 1362
+  blurb: Superbike 1362 cc. Trim dasar dengan fitur harian lengkap.
+  specs:
+    Mesin: 1.362 cc
+    Tenaga: 165 hp
+    Torsi: 194 Nm
+    Tinggi Jok: 785 mm
+    Trim: Standard
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White, Matte Grey, Racing Blue
+  sku: HTZ-MOT-001
+- name: Kawasaki x56 S
+  slug: kawasaki-x56-s
+  category: motor
+  category_label: Motor
+  subcategory: Superbike
+  brand: Kawasaki
+  price: 51500000
+  price_old:
+  price_band: di-atas-50jt
+  badge:
+  stock: 6
+  rating: 4.6
+  image: "/assets/img/bikes/kawasaki-x56.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: S
+  cc: 1362
+  blurb: Superbike 1362 cc. Suspensi Ohlins, quickshifter dua arah, dan velg forged.
+  specs:
+    Mesin: 1.362 cc
+    Tenaga: 173 hp
+    Torsi: 194 Nm
+    Tinggi Jok: 785 mm
+    Trim: S
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White, Matte Grey
+  sku: HTZ-MOT-002
+- name: Kawasaki x56 SP
+  slug: kawasaki-x56-sp
+  category: motor
+  category_label: Motor
+  subcategory: Superbike
+  brand: Kawasaki
+  price: 57500000
+  price_old:
+  price_band: di-atas-50jt
+  badge: Stok Terbatas
+  stock: 1
+  rating: 4.9
+  image: "/assets/img/bikes/kawasaki-x56.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: SP
+  cc: 1362
+  blurb: 'Superbike 1362 cc. Paket balap: rem Brembo Stylema, bodi serat karbon, mode
+    Track.'
+  specs:
+    Mesin: 1.362 cc
+    Tenaga: 180 hp
+    Torsi: 194 Nm
+    Tinggi Jok: 785 mm
+    Trim: SP
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White
+  sku: HTZ-MOT-003
+- name: Kawasaki x57
+  slug: kawasaki-x57
+  category: motor
+  category_label: Motor
+  subcategory: Sport Naked
+  brand: Kawasaki
+  price: 55000000
+  price_old:
+  price_band: di-atas-50jt
+  badge: Baru
+  stock: 9
+  rating: 4.9
+  image: "/assets/img/bikes/kawasaki-x57.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: Standard
+  cc: 1367
+  blurb: Sport Naked 1367 cc. Trim dasar dengan fitur harian lengkap.
+  specs:
+    Mesin: 1.367 cc
+    Tenaga: 168 hp
+    Torsi: 187 Nm
+    Tinggi Jok: 790 mm
+    Trim: Standard
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White, Matte Grey, Racing Blue
+  sku: HTZ-MOT-004
+- name: Kawasaki x57 S
+  slug: kawasaki-x57-s
+  category: motor
+  category_label: Motor
+  subcategory: Sport Naked
+  brand: Kawasaki
+  price: 62500000
+  price_old:
+  price_band: di-atas-50jt
+  badge:
+  stock: 4
+  rating: 4.7
+  image: "/assets/img/bikes/kawasaki-x57.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: S
+  cc: 1367
+  blurb: Sport Naked 1367 cc. Suspensi Ohlins, quickshifter dua arah, dan velg forged.
+  specs:
+    Mesin: 1.367 cc
+    Tenaga: 176 hp
+    Torsi: 187 Nm
+    Tinggi Jok: 790 mm
+    Trim: S
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White, Matte Grey, Racing Blue
+  sku: HTZ-MOT-005
+- name: Kawasaki x57 SP
+  slug: kawasaki-x57-sp
+  category: motor
+  category_label: Motor
+  subcategory: Sport Naked
+  brand: Kawasaki
+  price: 70500000
+  price_old:
+  price_band: di-atas-50jt
+  badge: Terlaris
+  stock: 4
+  rating: 4.3
+  image: "/assets/img/bikes/kawasaki-x57.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: SP
+  cc: 1367
+  blurb: 'Sport Naked 1367 cc. Paket balap: rem Brembo Stylema, bodi serat karbon,
+    mode Track.'
+  specs:
+    Mesin: 1.367 cc
+    Tenaga: 183 hp
+    Torsi: 187 Nm
+    Tinggi Jok: 790 mm
+    Trim: SP
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White
+  sku: HTZ-MOT-006
+- name: Kawasaki Black Sun
+  slug: kawasaki-black-sun
+  category: motor
+  category_label: Motor
+  subcategory: Sport Naked
+  brand: Kawasaki
+  price: 50000000
+  price_old:
+  price_band: di-atas-50jt
+  badge:
+  stock: 5
+  rating: 4.6
+  image: "/assets/img/bikes/kawasaki-black-sun.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: Standard
+  cc: 1300
+  blurb: Sport Naked 1300 cc. Trim dasar dengan fitur harian lengkap.
+  specs:
+    Mesin: 1.300 cc
+    Tenaga: 160 hp
+    Torsi: 127 Nm
+    Tinggi Jok: 755 mm
+    Trim: Standard
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White, Matte Grey
+  sku: HTZ-MOT-007
+- name: Kawasaki Black Sun S
+  slug: kawasaki-black-sun-s
+  category: motor
+  category_label: Motor
+  subcategory: Sport Naked
+  brand: Kawasaki
+  price: 57000000
+  price_old: 64000000
+  price_band: di-atas-50jt
+  badge: Diskon
+  stock: 3
+  rating: 4.9
+  image: "/assets/img/bikes/kawasaki-black-sun.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: S
+  cc: 1300
+  blurb: Sport Naked 1300 cc. Suspensi Ohlins, quickshifter dua arah, dan velg forged.
+  specs:
+    Mesin: 1.300 cc
+    Tenaga: 168 hp
+    Torsi: 127 Nm
+    Tinggi Jok: 755 mm
+    Trim: S
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White
+  sku: HTZ-MOT-008
+- name: Kawasaki Black Sun SP
+  slug: kawasaki-black-sun-sp
+  category: motor
+  category_label: Motor
+  subcategory: Sport Naked
+  brand: Kawasaki
+  price: 64000000
+  price_old:
+  price_band: di-atas-50jt
+  badge: Terlaris
+  stock: 7
+  rating: 4.4
+  image: "/assets/img/bikes/kawasaki-black-sun.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: SP
+  cc: 1300
+  blurb: 'Sport Naked 1300 cc. Paket balap: rem Brembo Stylema, bodi serat karbon,
+    mode Track.'
+  specs:
+    Mesin: 1.300 cc
+    Tenaga: 175 hp
+    Torsi: 127 Nm
+    Tinggi Jok: 755 mm
+    Trim: SP
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White
+  sku: HTZ-MOT-009
+- name: Kawasaki Cross950
+  slug: kawasaki-cross950
+  category: motor
+  category_label: Motor
+  subcategory: Supermoto
+  brand: Kawasaki
+  price: 44000000
+  price_old:
+  price_band: 10jt-50jt
+  badge: Stok Terbatas
+  stock: 7
+  rating: 4.5
+  image: "/assets/img/bikes/kawasaki-cross950.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: Standard
+  cc: 937
+  blurb: Supermoto 937 cc. Trim dasar dengan fitur harian lengkap.
+  specs:
+    Mesin: 937 cc
+    Tenaga: 114 hp
+    Torsi: 96 Nm
+    Tinggi Jok: 870 mm
+    Trim: Standard
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White, Matte Grey, Racing Blue
+  sku: HTZ-MOT-010
+- name: Kawasaki Cross950 S
+  slug: kawasaki-cross950-s
+  category: motor
+  category_label: Motor
+  subcategory: Supermoto
+  brand: Kawasaki
+  price: 50000000
+  price_old:
+  price_band: di-atas-50jt
+  badge: Stok Terbatas
+  stock: 2
+  rating: 4.7
+  image: "/assets/img/bikes/kawasaki-cross950.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: S
+  cc: 937
+  blurb: Supermoto 937 cc. Suspensi Ohlins, quickshifter dua arah, dan velg forged.
+  specs:
+    Mesin: 937 cc
+    Tenaga: 122 hp
+    Torsi: 96 Nm
+    Tinggi Jok: 870 mm
+    Trim: S
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White, Matte Grey, Racing Blue
+  sku: HTZ-MOT-011
+- name: Kawasaki Cross950 SP
+  slug: kawasaki-cross950-sp
+  category: motor
+  category_label: Motor
+  subcategory: Supermoto
+  brand: Kawasaki
+  price: 56500000
+  price_old:
+  price_band: di-atas-50jt
+  badge:
+  stock: 6
+  rating: 4.6
+  image: "/assets/img/bikes/kawasaki-cross950.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: SP
+  cc: 937
+  blurb: 'Supermoto 937 cc. Paket balap: rem Brembo Stylema, bodi serat karbon, mode
+    Track.'
+  specs:
+    Mesin: 937 cc
+    Tenaga: 129 hp
+    Torsi: 96 Nm
+    Tinggi Jok: 870 mm
+    Trim: SP
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White, Matte Grey, Racing Blue
+  sku: HTZ-MOT-012
+- name: Kawasaki Monster-21
+  slug: kawasaki-monster-21
+  category: motor
+  category_label: Motor
+  subcategory: Sport Naked
+  brand: Kawasaki
+  price: 60000000
+  price_old:
+  price_band: di-atas-50jt
+  badge:
+  stock: 7
+  rating: 4.4
+  image: "/assets/img/bikes/kawasaki-monster21.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: Standard
+  cc: 1262
+  blurb: Sport Naked 1262 cc. Trim dasar dengan fitur harian lengkap.
+  specs:
+    Mesin: 1.262 cc
+    Tenaga: 162 hp
+    Torsi: 192 Nm
+    Tinggi Jok: 780 mm
+    Trim: Standard
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White, Matte Grey
+  sku: HTZ-MOT-013
+- name: Kawasaki Monster-21 S
+  slug: kawasaki-monster-21-s
+  category: motor
+  category_label: Motor
+  subcategory: Sport Naked
+  brand: Kawasaki
+  price: 68500000
+  price_old:
+  price_band: di-atas-50jt
+  badge:
+  stock: 1
+  rating: 4.4
+  image: "/assets/img/bikes/kawasaki-monster21.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: S
+  cc: 1262
+  blurb: Sport Naked 1262 cc. Suspensi Ohlins, quickshifter dua arah, dan velg forged.
+  specs:
+    Mesin: 1.262 cc
+    Tenaga: 170 hp
+    Torsi: 192 Nm
+    Tinggi Jok: 780 mm
+    Trim: S
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White, Matte Grey, Racing Blue
+  sku: HTZ-MOT-014
+- name: Kawasaki Monster-21 SP
+  slug: kawasaki-monster-21-sp
+  category: motor
+  category_label: Motor
+  subcategory: Sport Naked
+  brand: Kawasaki
+  price: 77000000
+  price_old:
+  price_band: di-atas-50jt
+  badge:
+  stock: 5
+  rating: 4.3
+  image: "/assets/img/bikes/kawasaki-monster21.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: SP
+  cc: 1262
+  blurb: 'Sport Naked 1262 cc. Paket balap: rem Brembo Stylema, bodi serat karbon,
+    mode Track.'
+  specs:
+    Mesin: 1.262 cc
+    Tenaga: 177 hp
+    Torsi: 192 Nm
+    Tinggi Jok: 780 mm
+    Trim: SP
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White
+  sku: HTZ-MOT-015
+- name: Kawasaki 21SF
+  slug: kawasaki-21sf
+  category: motor
+  category_label: Motor
+  subcategory: Sport Naked
+  brand: Kawasaki
+  price: 65000000
+  price_old:
+  price_band: di-atas-50jt
+  badge: Terlaris
+  stock: 9
+  rating: 4.4
+  image: "/assets/img/bikes/kawasaki-21sf.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: Standard
+  cc: 1300
+  blurb: Sport Naked 1300 cc. Trim dasar dengan fitur harian lengkap.
+  specs:
+    Mesin: 1.300 cc
+    Tenaga: 165 hp
+    Torsi: 190 Nm
+    Tinggi Jok: 820 mm
+    Trim: Standard
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White, Matte Grey, Racing Blue
+  sku: HTZ-MOT-016
+- name: Kawasaki 21SF S
+  slug: kawasaki-21sf-s
+  category: motor
+  category_label: Motor
+  subcategory: Sport Naked
+  brand: Kawasaki
+  price: 74000000
+  price_old:
+  price_band: di-atas-50jt
+  badge: Terlaris
+  stock: 8
+  rating: 4.5
+  image: "/assets/img/bikes/kawasaki-21sf.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: S
+  cc: 1300
+  blurb: Sport Naked 1300 cc. Suspensi Ohlins, quickshifter dua arah, dan velg forged.
+  specs:
+    Mesin: 1.300 cc
+    Tenaga: 173 hp
+    Torsi: 190 Nm
+    Tinggi Jok: 820 mm
+    Trim: S
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White, Matte Grey, Racing Blue
+  sku: HTZ-MOT-017
+- name: Kawasaki 21SF SP
+  slug: kawasaki-21sf-sp
+  category: motor
+  category_label: Motor
+  subcategory: Sport Naked
+  brand: Kawasaki
+  price: 83000000
+  price_old:
+  price_band: di-atas-50jt
+  badge: Stok Terbatas
+  stock: 7
+  rating: 4.3
+  image: "/assets/img/bikes/kawasaki-21sf.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: SP
+  cc: 1300
+  blurb: 'Sport Naked 1300 cc. Paket balap: rem Brembo Stylema, bodi serat karbon,
+    mode Track.'
+  specs:
+    Mesin: 1.300 cc
+    Tenaga: 180 hp
+    Torsi: 190 Nm
+    Tinggi Jok: 820 mm
+    Trim: SP
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White, Matte Grey
+  sku: HTZ-MOT-018
+- name: Vixian XF262
+  slug: vixian-xf262
+  category: motor
+  category_label: Motor
+  subcategory: Sport Naked
+  brand: Vixian
+  price: 45000000
+  price_old:
+  price_band: 10jt-50jt
+  badge: Terlaris
+  stock: 6
+  rating: 4.3
+  image: "/assets/img/bikes/vixian-xf262.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: Standard
+  cc: 1113
+  blurb: Sport Naked 1113 cc. Trim dasar dengan fitur harian lengkap.
+  specs:
+    Mesin: 1.113 cc
+    Tenaga: 214 hp
+    Torsi: 124 Nm
+    Tinggi Jok: 835 mm
+    Trim: Standard
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White
+  sku: HTZ-MOT-019
+- name: Vixian XF262 S
+  slug: vixian-xf262-s
+  category: motor
+  category_label: Motor
+  subcategory: Sport Naked
+  brand: Vixian
+  price: 51500000
+  price_old: 57500000
+  price_band: di-atas-50jt
+  badge: Diskon
+  stock: 7
+  rating: 4.8
+  image: "/assets/img/bikes/vixian-xf262.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: S
+  cc: 1113
+  blurb: Sport Naked 1113 cc. Suspensi Ohlins, quickshifter dua arah, dan velg forged.
+  specs:
+    Mesin: 1.113 cc
+    Tenaga: 222 hp
+    Torsi: 124 Nm
+    Tinggi Jok: 835 mm
+    Trim: S
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White, Matte Grey
+  sku: HTZ-MOT-020
+- name: Vixian XF262 SP
+  slug: vixian-xf262-sp
+  category: motor
+  category_label: Motor
+  subcategory: Sport Naked
+  brand: Vixian
+  price: 57500000
+  price_old:
+  price_band: di-atas-50jt
+  badge: Baru
+  stock: 5
+  rating: 4.5
+  image: "/assets/img/bikes/vixian-xf262.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: SP
+  cc: 1113
+  blurb: 'Sport Naked 1113 cc. Paket balap: rem Brembo Stylema, bodi serat karbon,
+    mode Track.'
+  specs:
+    Mesin: 1.113 cc
+    Tenaga: 229 hp
+    Torsi: 124 Nm
+    Tinggi Jok: 835 mm
+    Trim: SP
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White, Matte Grey, Racing Blue
+  sku: HTZ-MOT-021
+- name: Vixian CF300
+  slug: vixian-cf300
+  category: motor
+  category_label: Motor
+  subcategory: Supermoto
+  brand: Vixian
+  price: 40000000
+  price_old:
+  price_band: 10jt-50jt
+  badge:
+  stock: 9
+  rating: 4.6
+  image: "/assets/img/bikes/vixian-cf300.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: Standard
+  cc: 1158
+  blurb: Supermoto 1158 cc. Trim dasar dengan fitur harian lengkap.
+  specs:
+    Mesin: 1.158 cc
+    Tenaga: 170 hp
+    Torsi: 208 Nm
+    Tinggi Jok: 860 mm
+    Trim: Standard
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White, Matte Grey
+  sku: HTZ-MOT-022
+- name: Vixian CF300 S
+  slug: vixian-cf300-s
+  category: motor
+  category_label: Motor
+  subcategory: Supermoto
+  brand: Vixian
+  price: 45500000
+  price_old:
+  price_band: 10jt-50jt
+  badge: Terlaris
+  stock: 8
+  rating: 4.6
+  image: "/assets/img/bikes/vixian-cf300.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: S
+  cc: 1158
+  blurb: Supermoto 1158 cc. Suspensi Ohlins, quickshifter dua arah, dan velg forged.
+  specs:
+    Mesin: 1.158 cc
+    Tenaga: 178 hp
+    Torsi: 208 Nm
+    Tinggi Jok: 860 mm
+    Trim: S
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White
+  sku: HTZ-MOT-023
+- name: Vixian CF300 SP
+  slug: vixian-cf300-sp
+  category: motor
+  category_label: Motor
+  subcategory: Supermoto
+  brand: Vixian
+  price: 51000000
+  price_old:
+  price_band: di-atas-50jt
+  badge:
+  stock: 9
+  rating: 4.2
+  image: "/assets/img/bikes/vixian-cf300.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: SP
+  cc: 1158
+  blurb: 'Supermoto 1158 cc. Paket balap: rem Brembo Stylema, bodi serat karbon, mode
+    Track.'
+  specs:
+    Mesin: 1.158 cc
+    Tenaga: 185 hp
+    Torsi: 208 Nm
+    Tinggi Jok: 860 mm
+    Trim: SP
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White
+  sku: HTZ-MOT-024
+- name: Vixian Lumiere160
+  slug: vixian-lumiere160
+  category: motor
+  category_label: Motor
+  subcategory: Sport Naked
+  brand: Vixian
+  price: 46000000
+  price_old:
+  price_band: 10jt-50jt
+  badge:
+  stock: 5
+  rating: 4.3
+  image: "/assets/img/bikes/vixian-lumiere160.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: Standard
+  cc: 1154
+  blurb: Sport Naked 1154 cc. Trim dasar dengan fitur harian lengkap.
+  specs:
+    Mesin: 1.154 cc
+    Tenaga: 168 hp
+    Torsi: 130 Nm
+    Tinggi Jok: 836 mm
+    Trim: Standard
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White
+  sku: HTZ-MOT-025
+- name: Vixian Lumiere160 S
+  slug: vixian-lumiere160-s
+  category: motor
+  category_label: Motor
+  subcategory: Sport Naked
+  brand: Vixian
+  price: 52500000
+  price_old: 59000000
+  price_band: di-atas-50jt
+  badge: Diskon
+  stock: 2
+  rating: 4.4
+  image: "/assets/img/bikes/vixian-lumiere160.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: S
+  cc: 1154
+  blurb: Sport Naked 1154 cc. Suspensi Ohlins, quickshifter dua arah, dan velg forged.
+  specs:
+    Mesin: 1.154 cc
+    Tenaga: 176 hp
+    Torsi: 130 Nm
+    Tinggi Jok: 836 mm
+    Trim: S
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White, Matte Grey
+  sku: HTZ-MOT-026
+- name: Vixian Lumiere160 SP
+  slug: vixian-lumiere160-sp
+  category: motor
+  category_label: Motor
+  subcategory: Sport Naked
+  brand: Vixian
+  price: 59000000
+  price_old:
+  price_band: di-atas-50jt
+  badge: Baru
+  stock: 7
+  rating: 4.8
+  image: "/assets/img/bikes/vixian-lumiere160.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: SP
+  cc: 1154
+  blurb: 'Sport Naked 1154 cc. Paket balap: rem Brembo Stylema, bodi serat karbon,
+    mode Track.'
+  specs:
+    Mesin: 1.154 cc
+    Tenaga: 183 hp
+    Torsi: 130 Nm
+    Tinggi Jok: 836 mm
+    Trim: SP
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White, Matte Grey, Racing Blue
+  sku: HTZ-MOT-027
+- name: Vixian MT-1260
+  slug: vixian-mt-1260
+  category: motor
+  category_label: Motor
+  subcategory: Adventure
+  brand: Vixian
+  price: 70000000
+  price_old:
+  price_band: di-atas-50jt
+  badge: Stok Terbatas
+  stock: 7
+  rating: 4.8
+  image: "/assets/img/bikes/vixian-mt1260.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: Standard
+  cc: 1260
+  blurb: Adventure 1260 cc. Trim dasar dengan fitur harian lengkap.
+  specs:
+    Mesin: 1.260 cc
+    Tenaga: 170 hp
+    Torsi: 200 Nm
+    Tinggi Jok: 830 mm
+    Trim: Standard
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White
+  sku: HTZ-MOT-028
+- name: Vixian MT-1260 S
+  slug: vixian-mt-1260-s
+  category: motor
+  category_label: Motor
+  subcategory: Adventure
+  brand: Vixian
+  price: 80000000
+  price_old:
+  price_band: di-atas-50jt
+  badge: Baru
+  stock: 3
+  rating: 4.5
+  image: "/assets/img/bikes/vixian-mt1260.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: S
+  cc: 1260
+  blurb: Adventure 1260 cc. Suspensi Ohlins, quickshifter dua arah, dan velg forged.
+  specs:
+    Mesin: 1.260 cc
+    Tenaga: 178 hp
+    Torsi: 200 Nm
+    Tinggi Jok: 830 mm
+    Trim: S
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White, Matte Grey
+  sku: HTZ-MOT-029
+- name: Vixian MT-1260 SP
+  slug: vixian-mt-1260-sp
+  category: motor
+  category_label: Motor
+  subcategory: Adventure
+  brand: Vixian
+  price: 89500000
+  price_old:
+  price_band: di-atas-50jt
+  badge:
+  stock: 9
+  rating: 4.2
+  image: "/assets/img/bikes/vixian-mt1260.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: SP
+  cc: 1260
+  blurb: 'Adventure 1260 cc. Paket balap: rem Brembo Stylema, bodi serat karbon, mode
+    Track.'
+  specs:
+    Mesin: 1.260 cc
+    Tenaga: 185 hp
+    Torsi: 200 Nm
+    Tinggi Jok: 830 mm
+    Trim: SP
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White
+  sku: HTZ-MOT-030
+- name: Vixian MT-V4
+  slug: vixian-mt-v4
+  category: motor
+  category_label: Motor
+  subcategory: Adventure
+  brand: Vixian
+  price: 65000000
+  price_old: 73000000
+  price_band: di-atas-50jt
+  badge: Diskon
+  stock: 7
+  rating: 4.2
+  image: "/assets/img/bikes/vixian-mtv4.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: Standard
+  cc: 1200
+  blurb: Adventure 1200 cc. Trim dasar dengan fitur harian lengkap.
+  specs:
+    Mesin: 1.200 cc
+    Tenaga: 170 hp
+    Torsi: 198 Nm
+    Tinggi Jok: 840 mm
+    Trim: Standard
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White, Matte Grey, Racing Blue
+  sku: HTZ-MOT-031
+- name: Vixian MT-V4 S
+  slug: vixian-mt-v4-s
+  category: motor
+  category_label: Motor
+  subcategory: Adventure
+  brand: Vixian
+  price: 74000000
+  price_old:
+  price_band: di-atas-50jt
+  badge:
+  stock: 8
+  rating: 4.4
+  image: "/assets/img/bikes/vixian-mtv4.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: S
+  cc: 1200
+  blurb: Adventure 1200 cc. Suspensi Ohlins, quickshifter dua arah, dan velg forged.
+  specs:
+    Mesin: 1.200 cc
+    Tenaga: 178 hp
+    Torsi: 198 Nm
+    Tinggi Jok: 840 mm
+    Trim: S
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White
+  sku: HTZ-MOT-032
+- name: Vixian MT-V4 SP
+  slug: vixian-mt-v4-sp
+  category: motor
+  category_label: Motor
+  subcategory: Adventure
+  brand: Vixian
+  price: 83000000
+  price_old: 93000000
+  price_band: di-atas-50jt
+  badge: Diskon
+  stock: 3
+  rating: 4.6
+  image: "/assets/img/bikes/vixian-mtv4.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: SP
+  cc: 1200
+  blurb: 'Adventure 1200 cc. Paket balap: rem Brembo Stylema, bodi serat karbon, mode
+    Track.'
+  specs:
+    Mesin: 1.200 cc
+    Tenaga: 185 hp
+    Torsi: 198 Nm
+    Tinggi Jok: 840 mm
+    Trim: SP
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White, Matte Grey, Racing Blue
+  sku: HTZ-MOT-033
+- name: Vixian SP01
+  slug: vixian-sp01
+  category: motor
+  category_label: Motor
+  subcategory: Superbike
+  brand: Vixian
+  price: 77000000
+  price_old:
+  price_band: di-atas-50jt
+  badge: Terlaris
+  stock: 1
+  rating: 4.9
+  image: "/assets/img/bikes/vixian-sp01.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: Standard
+  cc: 1345
+  blurb: Superbike 1345 cc. Trim dasar dengan fitur harian lengkap.
+  specs:
+    Mesin: 1.345 cc
+    Tenaga: 180 hp
+    Torsi: 200 Nm
+    Tinggi Jok: 850 mm
+    Trim: Standard
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White, Matte Grey
+  sku: HTZ-MOT-034
+- name: Vixian SP01 S
+  slug: vixian-sp01-s
+  category: motor
+  category_label: Motor
+  subcategory: Superbike
+  brand: Vixian
+  price: 88000000
+  price_old: 98500000
+  price_band: di-atas-50jt
+  badge: Diskon
+  stock: 3
+  rating: 4.6
+  image: "/assets/img/bikes/vixian-sp01.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: S
+  cc: 1345
+  blurb: Superbike 1345 cc. Suspensi Ohlins, quickshifter dua arah, dan velg forged.
+  specs:
+    Mesin: 1.345 cc
+    Tenaga: 188 hp
+    Torsi: 200 Nm
+    Tinggi Jok: 850 mm
+    Trim: S
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White, Matte Grey, Racing Blue
+  sku: HTZ-MOT-035
+- name: Vixian SP01 SP
+  slug: vixian-sp01-sp
+  category: motor
+  category_label: Motor
+  subcategory: Superbike
+  brand: Vixian
+  price: 98500000
+  price_old:
+  price_band: di-atas-50jt
+  badge:
+  stock: 6
+  rating: 4.5
+  image: "/assets/img/bikes/vixian-sp01.webp"
+  icon: motorcycle
+  blurb_type: bike
+  trim: SP
+  cc: 1345
+  blurb: 'Superbike 1345 cc. Paket balap: rem Brembo Stylema, bodi serat karbon, mode
+    Track.'
+  specs:
+    Mesin: 1.345 cc
+    Tenaga: 195 hp
+    Torsi: 200 Nm
+    Tinggi Jok: 850 mm
+    Trim: SP
+    Pilihan Warna: Midnight Black, Racing Red, Pearl White, Matte Grey, Racing Blue
+  sku: HTZ-MOT-036
+- name: Helm Full Face HTZL Aero R1
+  slug: helm-full-face-htzl-aero-r1
+  category: apparel
+  category_label: Apparel & Gear
+  subcategory: Helm
+  brand: HTZL Apparel
+  price: 3450000
+  price_old: 4070000
+  price_band: 2jt-10jt
+  badge: Diskon
+  stock: 5
+  rating: 4.9
+  image:
+  icon: helmet
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Helm resmi HTZL. Sertifikasi: SNI, DOT, ECE 22.06 | Bahan: Fiberglass komposit.'
+  specs:
+    Sertifikasi: SNI, DOT, ECE 22.06
+    Bahan: Fiberglass komposit
+    Berat: 1.450 g
+    Visor: Pinlock anti-embun
+  sku: HTZ-APP-037
+- name: Helm Full Face HTZL Aero R1 Carbon
+  slug: helm-full-face-htzl-aero-r1-carbon
+  category: apparel
+  category_label: Apparel & Gear
+  subcategory: Helm
+  brand: HTZL Apparel
+  price: 6200000
+  price_old:
+  price_band: 2jt-10jt
+  badge:
+  stock: 13
+  rating: 4.6
+  image:
+  icon: helmet
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Helm resmi HTZL. Sertifikasi: DOT, ECE 22.06, FIM | Bahan: Serat karbon
+    3K.'
+  specs:
+    Sertifikasi: DOT, ECE 22.06, FIM
+    Bahan: Serat karbon 3K
+    Berat: 1.180 g
+    Visor: Photochromic
+  sku: HTZ-APP-038
+- name: Helm Modular HTZL Voyager
+  slug: helm-modular-htzl-voyager
+  category: apparel
+  category_label: Apparel & Gear
+  subcategory: Helm
+  brand: HTZL Apparel
+  price: 4100000
+  price_old: 4840000
+  price_band: 2jt-10jt
+  badge: Diskon
+  stock: 22
+  rating: 4.3
+  image:
+  icon: helmet
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Helm resmi HTZL. Sertifikasi: SNI, ECE 22.06 | Bahan: Polikarbonat.'
+  specs:
+    Sertifikasi: SNI, ECE 22.06
+    Bahan: Polikarbonat
+    Berat: 1.680 g
+    Fitur: Sun visor internal
+  sku: HTZ-APP-039
+- name: Helm Retro HTZL Classic 70
+  slug: helm-retro-htzl-classic-70
+  category: apparel
+  category_label: Apparel & Gear
+  subcategory: Helm
+  brand: HTZL Apparel
+  price: 1750000
+  price_old:
+  price_band: 500k-2jt
+  badge:
+  stock: 6
+  rating: 4.3
+  image:
+  icon: helmet
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Helm resmi HTZL. Sertifikasi: SNI | Bahan: ABS injeksi.'
+  specs:
+    Sertifikasi: SNI
+    Bahan: ABS injeksi
+    Berat: 1.150 g
+    Fitur: Bubble visor lepas-pasang
+  sku: HTZ-APP-040
+- name: Helm Adventure HTZL Trail X
+  slug: helm-adventure-htzl-trail-x
+  category: apparel
+  category_label: Apparel & Gear
+  subcategory: Helm
+  brand: HTZL Apparel
+  price: 4850000
+  price_old:
+  price_band: 2jt-10jt
+  badge: Terlaris
+  stock: 7
+  rating: 4.8
+  image:
+  icon: helmet
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Helm resmi HTZL. Sertifikasi: DOT, ECE 22.06 | Bahan: Tri-composite.'
+  specs:
+    Sertifikasi: DOT, ECE 22.06
+    Bahan: Tri-composite
+    Berat: 1.520 g
+    Fitur: Peak visor aerodinamis
+  sku: HTZ-APP-041
+- name: Jaket Kulit HTZL Rider Pro
+  slug: jaket-kulit-htzl-rider-pro
+  category: apparel
+  category_label: Apparel & Gear
+  subcategory: Jaket
+  brand: HTZL Apparel
+  price: 4900000
+  price_old: 5780000
+  price_band: 2jt-10jt
+  badge: Diskon
+  stock: 3
+  rating: 4.4
+  image:
+  icon: jacket
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Jaket resmi HTZL. Bahan: Kulit sapi 1,2 mm | Protektor: CE Level 2 bahu,
+    siku, punggung.'
+  specs:
+    Bahan: Kulit sapi 1,2 mm
+    Protektor: CE Level 2 bahu, siku, punggung
+    Ventilasi: Perforasi dada
+    Ukuran: S sampai 3XL
+  sku: HTZ-APP-042
+- name: Jaket Tekstil HTZL Tourer 4S
+  slug: jaket-tekstil-htzl-tourer-4s
+  category: apparel
+  category_label: Apparel & Gear
+  subcategory: Jaket
+  brand: HTZL Apparel
+  price: 3250000
+  price_old:
+  price_band: 2jt-10jt
+  badge:
+  stock: 4
+  rating: 4.9
+  image:
+  icon: jacket
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Jaket resmi HTZL. Bahan: Cordura 600D | Protektor: CE Level 1.'
+  specs:
+    Bahan: Cordura 600D
+    Protektor: CE Level 1
+    Cuaca: Waterproof 10.000 mm
+    Lapisan: Thermal lepas-pasang
+  sku: HTZ-APP-043
+- name: Jaket Mesh HTZL Urban Air
+  slug: jaket-mesh-htzl-urban-air
+  category: apparel
+  category_label: Apparel & Gear
+  subcategory: Jaket
+  brand: HTZL Apparel
+  price: 1890000
+  price_old:
+  price_band: 500k-2jt
+  badge:
+  stock: 29
+  rating: 4.4
+  image:
+  icon: jacket
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Jaket resmi HTZL. Bahan: Mesh poliester | Protektor: CE Level 1 bahu & siku.'
+  specs:
+    Bahan: Mesh poliester
+    Protektor: CE Level 1 bahu & siku
+    Ventilasi: Full mesh panel
+    Ukuran: S sampai 2XL
+  sku: HTZ-APP-044
+- name: Jaket Balap HTZL Track One
+  slug: jaket-balap-htzl-track-one
+  category: apparel
+  category_label: Apparel & Gear
+  subcategory: Jaket
+  brand: HTZL Apparel
+  price: 7400000
+  price_old:
+  price_band: 2jt-10jt
+  badge: Terlaris
+  stock: 5
+  rating: 4.6
+  image:
+  icon: jacket
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Jaket resmi HTZL. Bahan: Kulit kanguru | Protektor: CE Level 2 + speed hump.'
+  specs:
+    Bahan: Kulit kanguru
+    Protektor: CE Level 2 + speed hump
+    Fitur: Slider bahu titanium
+    Jahitan: Triple stitch aramid
+  sku: HTZ-APP-045
+- name: Rompi Airbag HTZL Guardian
+  slug: rompi-airbag-htzl-guardian
+  category: apparel
+  category_label: Apparel & Gear
+  subcategory: Jaket
+  brand: HTZL Apparel
+  price: 11500000
+  price_old: 13570000
+  price_band: 10jt-50jt
+  badge: Diskon
+  stock: 20
+  rating: 4.8
+  image:
+  icon: protector
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Jaket resmi HTZL. Sistem: Airbag elektronik | Sensor: 9 sumbu, 1.000 Hz.'
+  specs:
+    Sistem: Airbag elektronik
+    Sensor: 9 sumbu, 1.000 Hz
+    Baterai: 25 jam pakai
+    Reload: Bisa dipakai ulang
+  sku: HTZ-APP-046
+- name: Sarung Tangan Kulit HTZL Grip S
+  slug: sarung-tangan-kulit-htzl-grip-s
+  category: apparel
+  category_label: Apparel & Gear
+  subcategory: Sarung Tangan
+  brand: HTZL Apparel
+  price: 890000
+  price_old:
+  price_band: 500k-2jt
+  badge: Stok Terbatas
+  stock: 3
+  rating: 4.3
+  image:
+  icon: gloves
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Sarung Tangan resmi HTZL. Bahan: Kulit kambing | Protektor: Knuckle TPU.'
+  specs:
+    Bahan: Kulit kambing
+    Protektor: Knuckle TPU
+    Fitur: Touchscreen ready
+    Ukuran: S sampai XXL
+  sku: HTZ-APP-047
+- name: Sarung Tangan Balap HTZL Apex
+  slug: sarung-tangan-balap-htzl-apex
+  category: apparel
+  category_label: Apparel & Gear
+  subcategory: Sarung Tangan
+  brand: HTZL Apparel
+  price: 1950000
+  price_old: 2300000
+  price_band: 500k-2jt
+  badge: Diskon
+  stock: 3
+  rating: 4.8
+  image:
+  icon: gloves
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Sarung Tangan resmi HTZL. Bahan: Kulit kanguru | Protektor: Carbon knuckle
+    + palm slider.'
+  specs:
+    Bahan: Kulit kanguru
+    Protektor: Carbon knuckle + palm slider
+    Sertifikasi: CE KP2
+    Manset: Gauntlet panjang
+  sku: HTZ-APP-048
+- name: Sarung Tangan Musim Hujan HTZL Aqua
+  slug: sarung-tangan-musim-hujan-htzl-aqua
+  category: apparel
+  category_label: Apparel & Gear
+  subcategory: Sarung Tangan
+  brand: HTZL Apparel
+  price: 720000
+  price_old:
+  price_band: 500k-2jt
+  badge:
+  stock: 31
+  rating: 4.4
+  image:
+  icon: gloves
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Sarung Tangan resmi HTZL. Bahan: Softshell laminasi | Cuaca: Waterproof
+    + windproof.'
+  specs:
+    Bahan: Softshell laminasi
+    Cuaca: Waterproof + windproof
+    Fitur: Wiper visor di jempol
+    Ukuran: M sampai XL
+  sku: HTZ-APP-049
+- name: Sarung Tangan Harian HTZL Daily
+  slug: sarung-tangan-harian-htzl-daily
+  category: apparel
+  category_label: Apparel & Gear
+  subcategory: Sarung Tangan
+  brand: HTZL Apparel
+  price: 385000
+  price_old:
+  price_band: under-500k
+  badge: Stok Terbatas
+  stock: 38
+  rating: 4.5
+  image:
+  icon: gloves
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Sarung Tangan resmi HTZL. Bahan: Sintetis + mesh | Protektor: Padding EVA.'
+  specs:
+    Bahan: Sintetis + mesh
+    Protektor: Padding EVA
+    Fitur: Touchscreen ready
+    Ukuran: S sampai XL
+  sku: HTZ-APP-050
+- name: Sepatu Riding HTZL Boot GP
+  slug: sepatu-riding-htzl-boot-gp
+  category: apparel
+  category_label: Apparel & Gear
+  subcategory: Sepatu
+  brand: HTZL Apparel
+  price: 3700000
+  price_old:
+  price_band: 2jt-10jt
+  badge:
+  stock: 32
+  rating: 4.2
+  image:
+  icon: boots
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Sepatu resmi HTZL. Bahan: Microfiber + TPU | Protektor: Ankle brace, toe
+    slider.'
+  specs:
+    Bahan: Microfiber + TPU
+    Protektor: Ankle brace, toe slider
+    Sertifikasi: CE EN 13634
+    Sol: Anti-slip racing
+  sku: HTZ-APP-051
+- name: Sepatu Touring HTZL Roadster
+  slug: sepatu-touring-htzl-roadster
+  category: apparel
+  category_label: Apparel & Gear
+  subcategory: Sepatu
+  brand: HTZL Apparel
+  price: 2450000
+  price_old:
+  price_band: 2jt-10jt
+  badge:
+  stock: 19
+  rating: 4.8
+  image:
+  icon: boots
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Sepatu resmi HTZL. Bahan: Kulit full grain | Cuaca: Membran waterproof.'
+  specs:
+    Bahan: Kulit full grain
+    Cuaca: Membran waterproof
+    Protektor: Shin plate
+    Sol: Vibram
+  sku: HTZ-APP-052
+- name: Sepatu Harian HTZL City Ride
+  slug: sepatu-harian-htzl-city-ride
+  category: apparel
+  category_label: Apparel & Gear
+  subcategory: Sepatu
+  brand: HTZL Apparel
+  price: 1150000
+  price_old:
+  price_band: 500k-2jt
+  badge:
+  stock: 13
+  rating: 4.8
+  image:
+  icon: boots
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Sepatu resmi HTZL. Bahan: Suede + kanvas | Protektor: Ankle padding.'
+  specs:
+    Bahan: Suede + kanvas
+    Protektor: Ankle padding
+    Gaya: Sneaker riding
+    Sol: Karet gum
+  sku: HTZ-APP-053
+- name: Sepatu Adventure HTZL Terra
+  slug: sepatu-adventure-htzl-terra
+  category: apparel
+  category_label: Apparel & Gear
+  subcategory: Sepatu
+  brand: HTZL Apparel
+  price: 4300000
+  price_old: 5075000
+  price_band: 2jt-10jt
+  badge: Diskon
+  stock: 34
+  rating: 4.3
+  image:
+  icon: boots
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Sepatu resmi HTZL. Bahan: Kulit + poliuretan | Protektor: Buckle aluminium
+    4 titik.'
+  specs:
+    Bahan: Kulit + poliuretan
+    Protektor: Buckle aluminium 4 titik
+    Tinggi: Mid-calf
+    Sol: Enduro block
+  sku: HTZ-APP-054
+- name: Celana Riding HTZL Kevlar Jeans
+  slug: celana-riding-htzl-kevlar-jeans
+  category: apparel
+  category_label: Apparel & Gear
+  subcategory: Celana
+  brand: HTZL Apparel
+  price: 1680000
+  price_old: 1980000
+  price_band: 500k-2jt
+  badge: Diskon
+  stock: 15
+  rating: 4.1
+  image:
+  icon: pants
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Celana resmi HTZL. Bahan: Denim 13 oz + aramid | Protektor: CE Level 1 lutut
+    & pinggul.'
+  specs:
+    Bahan: Denim 13 oz + aramid
+    Protektor: CE Level 1 lutut & pinggul
+    Abrasi: 4,2 detik AA
+    Ukuran: 28 sampai 40
+  sku: HTZ-APP-055
+- name: Celana Touring HTZL Storm Pant
+  slug: celana-touring-htzl-storm-pant
+  category: apparel
+  category_label: Apparel & Gear
+  subcategory: Celana
+  brand: HTZL Apparel
+  price: 2150000
+  price_old: 2535000
+  price_band: 2jt-10jt
+  badge: Diskon
+  stock: 18
+  rating: 4.9
+  image:
+  icon: pants
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Celana resmi HTZL. Bahan: Cordura 500D | Cuaca: Waterproof + thermal liner.'
+  specs:
+    Bahan: Cordura 500D
+    Cuaca: Waterproof + thermal liner
+    Protektor: CE Level 1
+    Ventilasi: Zip paha
+  sku: HTZ-APP-056
+- name: Celana Balap HTZL Leather Trk
+  slug: celana-balap-htzl-leather-trk
+  category: apparel
+  category_label: Apparel & Gear
+  subcategory: Celana
+  brand: HTZL Apparel
+  price: 3900000
+  price_old:
+  price_band: 2jt-10jt
+  badge:
+  stock: 13
+  rating: 4.7
+  image:
+  icon: pants
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Celana resmi HTZL. Bahan: Kulit sapi 1,3 mm | Protektor: CE Level 2 + knee
+    slider.'
+  specs:
+    Bahan: Kulit sapi 1,3 mm
+    Protektor: CE Level 2 + knee slider
+    Fitur: Panel stretch aksordion
+    Zipper: Sambung ke jaket
+  sku: HTZ-APP-057
+- name: Body Protector HTZL Shell Vest
+  slug: body-protector-htzl-shell-vest
+  category: apparel
+  category_label: Apparel & Gear
+  subcategory: Protektor
+  brand: HTZL Apparel
+  price: 1450000
+  price_old:
+  price_band: 500k-2jt
+  badge:
+  stock: 12
+  rating: 4.6
+  image:
+  icon: protector
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Protektor resmi HTZL. Cakupan: Dada, punggung, bahu | Sertifikasi: CE Level
+    2.'
+  specs:
+    Cakupan: Dada, punggung, bahu
+    Sertifikasi: CE Level 2
+    Bahan: Poliuretan ventilasi
+    Berat: 980 g
+  sku: HTZ-APP-058
+- name: Back Protector HTZL Spine L2
+  slug: back-protector-htzl-spine-l2
+  category: apparel
+  category_label: Apparel & Gear
+  subcategory: Protektor
+  brand: HTZL Apparel
+  price: 980000
+  price_old:
+  price_band: 500k-2jt
+  badge: Terlaris
+  stock: 24
+  rating: 4.9
+  image:
+  icon: protector
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Protektor resmi HTZL. Cakupan: Tulang belakang penuh | Sertifikasi: CE Level
+    2.'
+  specs:
+    Cakupan: Tulang belakang penuh
+    Sertifikasi: CE Level 2
+    Bahan: Memory foam
+    Fitur: Sabuk pinggang elastis
+  sku: HTZ-APP-059
+- name: Knee Protector HTZL Guard K2
+  slug: knee-protector-htzl-guard-k2
+  category: apparel
+  category_label: Apparel & Gear
+  subcategory: Protektor
+  brand: HTZL Apparel
+  price: 540000
+  price_old: 635000
+  price_band: 500k-2jt
+  badge: Diskon
+  stock: 25
+  rating: 4.5
+  image:
+  icon: protector
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Protektor resmi HTZL. Cakupan: Lutut & tulang kering | Sertifikasi: CE Level
+    1.'
+  specs:
+    Cakupan: Lutut & tulang kering
+    Sertifikasi: CE Level 1
+    Bahan: TPU + EVA
+    Pengikat: Dua strap velcro
+  sku: HTZ-APP-060
+- name: Balaclava HTZL Coolmax
+  slug: balaclava-htzl-coolmax
+  category: apparel
+  category_label: Apparel & Gear
+  subcategory: Aksesori Diri
+  brand: HTZL Apparel
+  price: 165000
+  price_old:
+  price_band: under-500k
+  badge: Terlaris
+  stock: 26
+  rating: 4.8
+  image:
+  icon: mask
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Aksesori Diri resmi HTZL. Bahan: Coolmax breathable | Fitur: Anti-bau, cepat
+    kering.'
+  specs:
+    Bahan: Coolmax breathable
+    Fitur: Anti-bau, cepat kering
+    Ukuran: All size
+    Isi: 2 pcs
+  sku: HTZ-APP-061
+- name: Masker Riding HTZL Filter N95
+  slug: masker-riding-htzl-filter-n95
+  category: apparel
+  category_label: Apparel & Gear
+  subcategory: Aksesori Diri
+  brand: HTZL Apparel
+  price: 210000
+  price_old:
+  price_band: under-500k
+  badge: Terlaris
+  stock: 9
+  rating: 4.5
+  image:
+  icon: mask
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Aksesori Diri resmi HTZL. Filter: N95 lima lapis | Fitur: Katup buang udara.'
+  specs:
+    Filter: N95 lima lapis
+    Fitur: Katup buang udara
+    Isi: 1 masker + 5 filter
+    Ukuran: M dan L
+  sku: HTZ-APP-062
+- name: Knalpot Slip-on HTZL SC Titan
+  slug: knalpot-slip-on-htzl-sc-titan
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Knalpot
+  brand: HTZL Performance
+  price: 6800000
+  price_old:
+  price_band: 2jt-10jt
+  badge: Stok Terbatas
+  stock: 10
+  rating: 4.5
+  image:
+  icon: exhaust
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Knalpot resmi HTZL. Bahan: Titanium grade 2 | Bobot: Turun 2,4 kg.'
+  specs:
+    Bahan: Titanium grade 2
+    Bobot: Turun 2,4 kg
+    Suara: 98 dB
+    Kompatibel: Sport 1.000-1.400 cc
+  sku: HTZ-PAR-063
+- name: Knalpot Full System HTZL RaceLine
+  slug: knalpot-full-system-htzl-raceline
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Knalpot
+  brand: HTZL Performance
+  price: 14500000
+  price_old:
+  price_band: 10jt-50jt
+  badge: Baru
+  stock: 18
+  rating: 4.4
+  image:
+  icon: exhaust
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Knalpot resmi HTZL. Bahan: Titanium + end cap karbon | Gain: +7,5 hp.'
+  specs:
+    Bahan: Titanium + end cap karbon
+    Gain: "+7,5 hp"
+    Bobot: Turun 5,1 kg
+    Catatan: Khusus sirkuit
+  sku: HTZ-PAR-064
+- name: Knalpot Slip-on HTZL Carbon Pro
+  slug: knalpot-slip-on-htzl-carbon-pro
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Knalpot
+  brand: HTZL Performance
+  price: 8900000
+  price_old:
+  price_band: 2jt-10jt
+  badge: Baru
+  stock: 26
+  rating: 4.1
+  image:
+  icon: exhaust
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Knalpot resmi HTZL. Bahan: Serat karbon | Bobot: Turun 3,0 kg.'
+  specs:
+    Bahan: Serat karbon
+    Bobot: Turun 3,0 kg
+    Suara: 101 dB
+    Fitur: DB killer lepas-pasang
+  sku: HTZ-PAR-065
+- name: Header Pipe HTZL Stainless 2-1
+  slug: header-pipe-htzl-stainless-2-1
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Knalpot
+  brand: HTZL Performance
+  price: 4200000
+  price_old: 4955000
+  price_band: 2jt-10jt
+  badge: Diskon
+  stock: 24
+  rating: 4.8
+  image:
+  icon: exhaust
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Knalpot resmi HTZL. Bahan: Stainless 304 | Diameter: 51 mm.'
+  specs:
+    Bahan: Stainless 304
+    Diameter: 51 mm
+    Gain: "+3,2 hp"
+    Finishing: Heat-treated
+  sku: HTZ-PAR-066
+- name: DB Killer HTZL Silent Insert
+  slug: db-killer-htzl-silent-insert
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Knalpot
+  brand: HTZL Performance
+  price: 450000
+  price_old:
+  price_band: under-500k
+  badge:
+  stock: 40
+  rating: 4.3
+  image:
+  icon: exhaust
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Knalpot resmi HTZL. Bahan: Stainless | Reduksi: -8 dB.'
+  specs:
+    Bahan: Stainless
+    Reduksi: "-8 dB"
+    Pasang: Baut tunggal
+    Kompatibel: Slip-on HTZL
+  sku: HTZ-PAR-067
+- name: Ban Depan HTZL Sport 120/70-17
+  slug: ban-depan-htzl-sport-120-70-17
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Ban
+  brand: HTZL Performance
+  price: 1650000
+  price_old:
+  price_band: 500k-2jt
+  badge:
+  stock: 17
+  rating: 4.4
+  image:
+  icon: tire
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Ban resmi HTZL. Ukuran: 120/70 ZR17 | Kompon: Dual compound.'
+  specs:
+    Ukuran: 120/70 ZR17
+    Kompon: Dual compound
+    Pola: Sport touring
+    Indeks: 58W
+  sku: HTZ-PAR-068
+- name: Ban Belakang HTZL Sport 190/55-17
+  slug: ban-belakang-htzl-sport-190-55-17
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Ban
+  brand: HTZL Performance
+  price: 2450000
+  price_old:
+  price_band: 2jt-10jt
+  badge: Stok Terbatas
+  stock: 10
+  rating: 4.3
+  image:
+  icon: tire
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Ban resmi HTZL. Ukuran: 190/55 ZR17 | Kompon: Dual compound.'
+  specs:
+    Ukuran: 190/55 ZR17
+    Kompon: Dual compound
+    Pola: Sport touring
+    Indeks: 75W
+  sku: HTZ-PAR-069
+- name: Ban Depan HTZL Track 120/70-17
+  slug: ban-depan-htzl-track-120-70-17
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Ban
+  brand: HTZL Performance
+  price: 2100000
+  price_old:
+  price_band: 2jt-10jt
+  badge:
+  stock: 19
+  rating: 4.5
+  image:
+  icon: tire
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Ban resmi HTZL. Ukuran: 120/70 ZR17 | Kompon: Soft racing.'
+  specs:
+    Ukuran: 120/70 ZR17
+    Kompon: Soft racing
+    Pola: Slick beralur
+    Catatan: Butuh tyre warmer
+  sku: HTZ-PAR-070
+- name: Ban Belakang HTZL Track 200/55-17
+  slug: ban-belakang-htzl-track-200-55-17
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Ban
+  brand: HTZL Performance
+  price: 3150000
+  price_old:
+  price_band: 2jt-10jt
+  badge:
+  stock: 27
+  rating: 4.6
+  image:
+  icon: tire
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Ban resmi HTZL. Ukuran: 200/55 ZR17 | Kompon: Soft racing.'
+  specs:
+    Ukuran: 200/55 ZR17
+    Kompon: Soft racing
+    Pola: Slick beralur
+    Catatan: Khusus sirkuit
+  sku: HTZ-PAR-071
+- name: Ban Adventure HTZL Terra 150/70-17
+  slug: ban-adventure-htzl-terra-150-70-17
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Ban
+  brand: HTZL Performance
+  price: 2050000
+  price_old:
+  price_band: 2jt-10jt
+  badge:
+  stock: 21
+  rating: 4.8
+  image:
+  icon: tire
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Ban resmi HTZL. Ukuran: 150/70 R17 | Rasio: 50 aspal / 50 tanah.'
+  specs:
+    Ukuran: 150/70 R17
+    Rasio: 50 aspal / 50 tanah
+    Konstruksi: Radial
+    Indeks: 69V
+  sku: HTZ-PAR-072
+- name: Ban Hujan HTZL Aqua 180/55-17
+  slug: ban-hujan-htzl-aqua-180-55-17
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Ban
+  brand: HTZL Performance
+  price: 2300000
+  price_old:
+  price_band: 2jt-10jt
+  badge:
+  stock: 39
+  rating: 4.1
+  image:
+  icon: tire
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Ban resmi HTZL. Ukuran: 180/55 ZR17 | Kompon: Wet racing.'
+  specs:
+    Ukuran: 180/55 ZR17
+    Kompon: Wet racing
+    Alur: Buang air 32 l/detik
+    Indeks: 73W
+  sku: HTZ-PAR-073
+- name: Kampas Rem Depan HTZL Sinter HH
+  slug: kampas-rem-depan-htzl-sinter-hh
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Rem
+  brand: HTZL Performance
+  price: 720000
+  price_old:
+  price_band: 500k-2jt
+  badge:
+  stock: 10
+  rating: 4.7
+  image:
+  icon: brake
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Rem resmi HTZL. Material: Sintered HH | Suhu Kerja: sampai 700 C.'
+  specs:
+    Material: Sintered HH
+    Suhu Kerja: sampai 700 C
+    Isi: Sepasang (2 kaliper)
+    Kompatibel: Brembo M4/M50
+  sku: HTZ-PAR-074
+- name: Kampas Rem Belakang HTZL Sinter
+  slug: kampas-rem-belakang-htzl-sinter
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Rem
+  brand: HTZL Performance
+  price: 380000
+  price_old:
+  price_band: under-500k
+  badge:
+  stock: 23
+  rating: 4.7
+  image:
+  icon: brake
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Rem resmi HTZL. Material: Sintered | Suhu Kerja: sampai 600 C.'
+  specs:
+    Material: Sintered
+    Suhu Kerja: sampai 600 C
+    Isi: 1 set
+    Kompatibel: Kaliper 1 piston
+  sku: HTZ-PAR-075
+- name: Kampas Rem Organik HTZL Street
+  slug: kampas-rem-organik-htzl-street
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Rem
+  brand: HTZL Performance
+  price: 295000
+  price_old:
+  price_band: under-500k
+  badge:
+  stock: 11
+  rating: 4.4
+  image:
+  icon: brake
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Rem resmi HTZL. Material: Organik | Karakter: Senyap, minim debu.'
+  specs:
+    Material: Organik
+    Karakter: Senyap, minim debu
+    Isi: 1 set
+    Pemakaian: Harian
+  sku: HTZ-PAR-076
+- name: Master Rem Radial HTZL RCS19
+  slug: master-rem-radial-htzl-rcs19
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Rem
+  brand: HTZL Performance
+  price: 5400000
+  price_old:
+  price_band: 2jt-10jt
+  badge:
+  stock: 20
+  rating: 4.8
+  image:
+  icon: brake
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Rem resmi HTZL. Tipe: Radial 19 mm | Fitur: Rasio bisa disetel.'
+  specs:
+    Tipe: Radial 19 mm
+    Fitur: Rasio bisa disetel
+    Bahan: Aluminium CNC
+    Selang: Braided ikut
+  sku: HTZ-PAR-077
+- name: Cakram Depan HTZL Float 330mm
+  slug: cakram-depan-htzl-float-330mm
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Rem
+  brand: HTZL Performance
+  price: 3850000
+  price_old:
+  price_band: 2jt-10jt
+  badge: Baru
+  stock: 22
+  rating: 4.2
+  image:
+  icon: disc
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Rem resmi HTZL. Diameter: 330 mm | Tipe: Floating dua bagian.'
+  specs:
+    Diameter: 330 mm
+    Tipe: Floating dua bagian
+    Bahan: Stainless + carrier aluminium
+    Isi: 1 pcs
+  sku: HTZ-PAR-078
+- name: Cakram Belakang HTZL 245mm
+  slug: cakram-belakang-htzl-245mm
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Rem
+  brand: HTZL Performance
+  price: 1250000
+  price_old: 1475000
+  price_band: 500k-2jt
+  badge: Diskon
+  stock: 9
+  rating: 4.6
+  image:
+  icon: disc
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Rem resmi HTZL. Diameter: 245 mm | Tipe: Fixed.'
+  specs:
+    Diameter: 245 mm
+    Tipe: Fixed
+    Bahan: Stainless 420
+    Isi: 1 pcs
+  sku: HTZ-PAR-079
+- name: Selang Rem Braided HTZL Steel
+  slug: selang-rem-braided-htzl-steel
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Rem
+  brand: HTZL Performance
+  price: 980000
+  price_old:
+  price_band: 500k-2jt
+  badge:
+  stock: 8
+  rating: 4.2
+  image:
+  icon: brake
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Rem resmi HTZL. Bahan: Teflon + jalinan baja | Panjang: Custom per model.'
+  specs:
+    Bahan: Teflon + jalinan baja
+    Panjang: Custom per model
+    Fitting: Aluminium anodize
+    Isi: Set depan
+  sku: HTZ-PAR-080
+- name: Rantai HTZL X-Ring 525
+  slug: rantai-htzl-x-ring-525
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Rantai & Gir
+  brand: HTZL Performance
+  price: 1150000
+  price_old:
+  price_band: 500k-2jt
+  badge:
+  stock: 19
+  rating: 4.2
+  image:
+  icon: chain
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Rantai & Gir resmi HTZL. Tipe: X-Ring | Ukuran: 525.'
+  specs:
+    Tipe: X-Ring
+    Ukuran: '525'
+    Sambungan: 120 mata
+    Beban Putus: 4.100 kgf
+  sku: HTZ-PAR-081
+- name: Gir Depan HTZL Steel 15T
+  slug: gir-depan-htzl-steel-15t
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Rantai & Gir
+  brand: HTZL Performance
+  price: 285000
+  price_old: 335000
+  price_band: under-500k
+  badge: Diskon
+  stock: 40
+  rating: 4.2
+  image:
+  icon: chain
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Rantai & Gir resmi HTZL. Bahan: Baja karbon | Mata Gigi: 15T.'
+  specs:
+    Bahan: Baja karbon
+    Mata Gigi: 15T
+    Ukuran: '525'
+    Finishing: Nikel
+  sku: HTZ-PAR-082
+- name: Gir Belakang HTZL Alloy 45T
+  slug: gir-belakang-htzl-alloy-45t
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Rantai & Gir
+  brand: HTZL Performance
+  price: 690000
+  price_old:
+  price_band: 500k-2jt
+  badge:
+  stock: 25
+  rating: 4.9
+  image:
+  icon: chain
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Rantai & Gir resmi HTZL. Bahan: Aluminium 7075 | Mata Gigi: 45T.'
+  specs:
+    Bahan: Aluminium 7075
+    Mata Gigi: 45T
+    Ukuran: '525'
+    Bobot: 480 g
+  sku: HTZ-PAR-083
+- name: Filter Udara HTZL Flow K&N
+  slug: filter-udara-htzl-flow-k-n
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Filter
+  brand: HTZL Performance
+  price: 890000
+  price_old:
+  price_band: 500k-2jt
+  badge:
+  stock: 21
+  rating: 4.1
+  image:
+  icon: filter
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Filter resmi HTZL. Tipe: Cotton gauze | Umur: Cuci ulang, 80.000 km.'
+  specs:
+    Tipe: Cotton gauze
+    Umur: Cuci ulang, 80.000 km
+    Gain: "+2,1 hp"
+    Isi: 1 pcs
+  sku: HTZ-PAR-084
+- name: Filter Oli HTZL Spin-on
+  slug: filter-oli-htzl-spin-on
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Filter
+  brand: HTZL Performance
+  price: 145000
+  price_old:
+  price_band: under-500k
+  badge: Stok Terbatas
+  stock: 6
+  rating: 4.8
+  image:
+  icon: filter
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Filter resmi HTZL. Tipe: Spin-on | Filtrasi: 20 mikron.'
+  specs:
+    Tipe: Spin-on
+    Filtrasi: 20 mikron
+    Bypass: Katup 1,0 bar
+    Isi: 1 pcs
+  sku: HTZ-PAR-085
+- name: Filter Bensin HTZL Inline
+  slug: filter-bensin-htzl-inline
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Filter
+  brand: HTZL Performance
+  price: 210000
+  price_old: 250000
+  price_band: under-500k
+  badge: Diskon
+  stock: 23
+  rating: 4.2
+  image:
+  icon: filter
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Filter resmi HTZL. Tipe: Inline | Filtrasi: 10 mikron.'
+  specs:
+    Tipe: Inline
+    Filtrasi: 10 mikron
+    Bahan: Aluminium
+    Isi: 1 pcs
+  sku: HTZ-PAR-086
+- name: Filter Udara HTZL Foam Enduro
+  slug: filter-udara-htzl-foam-enduro
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Filter
+  brand: HTZL Performance
+  price: 320000
+  price_old:
+  price_band: under-500k
+  badge: Stok Terbatas
+  stock: 4
+  rating: 4.4
+  image:
+  icon: filter
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Filter resmi HTZL. Tipe: Foam dua lapis | Pemakaian: Off-road berdebu.'
+  specs:
+    Tipe: Foam dua lapis
+    Pemakaian: Off-road berdebu
+    Umur: Cuci ulang
+    Isi: 2 pcs
+  sku: HTZ-PAR-087
+- name: Busi Iridium HTZL Spark IX
+  slug: busi-iridium-htzl-spark-ix
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Pengapian
+  brand: HTZL Performance
+  price: 165000
+  price_old:
+  price_band: under-500k
+  badge:
+  stock: 18
+  rating: 4.3
+  image:
+  icon: spark
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Pengapian resmi HTZL. Elektroda: Iridium 0,6 mm | Umur: 40.000 km.'
+  specs:
+    Elektroda: Iridium 0,6 mm
+    Umur: 40.000 km
+    Isi: 1 pcs
+    Gap: 0,8 mm
+  sku: HTZ-PAR-088
+- name: Coil Pengapian HTZL HotSpark
+  slug: coil-pengapian-htzl-hotspark
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Pengapian
+  brand: HTZL Performance
+  price: 850000
+  price_old:
+  price_band: 500k-2jt
+  badge: Stok Terbatas
+  stock: 33
+  rating: 4.5
+  image:
+  icon: spark
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Pengapian resmi HTZL. Output: 45 kV | Bahan: Epoxy tahan panas.'
+  specs:
+    Output: 45 kV
+    Bahan: Epoxy tahan panas
+    Isi: 1 pcs
+    Kompatibel: Mesin 2 dan 4 silinder
+  sku: HTZ-PAR-089
+- name: Shock Belakang HTZL Ohlins TTX
+  slug: shock-belakang-htzl-ohlins-ttx
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Suspensi
+  brand: HTZL Performance
+  price: 12800000
+  price_old:
+  price_band: 10jt-50jt
+  badge:
+  stock: 12
+  rating: 4.8
+  image:
+  icon: suspension
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Suspensi resmi HTZL. Tipe: Twin tube TTX36 | Setelan: Preload, rebound,
+    compression.'
+  specs:
+    Tipe: Twin tube TTX36
+    Setelan: Preload, rebound, compression
+    Per: Bisa ganti rate
+    Reservoir: Piggyback
+  sku: HTZ-PAR-090
+- name: Cartridge Depan HTZL NIX30
+  slug: cartridge-depan-htzl-nix30
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Suspensi
+  brand: HTZL Performance
+  price: 14200000
+  price_old:
+  price_band: 10jt-50jt
+  badge:
+  stock: 18
+  rating: 4.5
+  image:
+  icon: suspension
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Suspensi resmi HTZL. Tipe: Cartridge kit | Diameter: 30 mm piston.'
+  specs:
+    Tipe: Cartridge kit
+    Diameter: 30 mm piston
+    Setelan: Compression & rebound terpisah
+    Isi: Sepasang
+  sku: HTZ-PAR-091
+- name: Steering Damper HTZL Stabil SD
+  slug: steering-damper-htzl-stabil-sd
+  category: part
+  category_label: Sparepart & Performa
+  subcategory: Suspensi
+  brand: HTZL Performance
+  price: 4600000
+  price_old:
+  price_band: 2jt-10jt
+  badge: Stok Terbatas
+  stock: 24
+  rating: 4.2
+  image:
+  icon: suspension
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Suspensi resmi HTZL. Tipe: Rotary | Setelan: 18 klik.'
+  specs:
+    Tipe: Rotary
+    Setelan: 18 klik
+    Bahan: Aluminium CNC
+    Bracket: Model spesifik
+  sku: HTZ-PAR-092
+- name: Oli Mesin HTZL Racing 10W-40 Full Sintetik
+  slug: oli-mesin-htzl-racing-10w-40-full-sintetik
+  category: oli
+  category_label: Oli & Perawatan
+  subcategory: Oli Mesin
+  brand: HTZL Lubricants
+  price: 285000
+  price_old:
+  price_band: under-500k
+  badge: Baru
+  stock: 28
+  rating: 4.4
+  image:
+  icon: oil
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Oli Mesin resmi HTZL. Viskositas: 10W-40 | Standar: JASO MA2, API SN.'
+  specs:
+    Viskositas: 10W-40
+    Standar: JASO MA2, API SN
+    Isi: 1 liter
+    Interval: 6.000 km
+  sku: HTZ-OLI-093
+- name: Oli Mesin HTZL Street 15W-50 Semi Sintetik
+  slug: oli-mesin-htzl-street-15w-50-semi-sintetik
+  category: oli
+  category_label: Oli & Perawatan
+  subcategory: Oli Mesin
+  brand: HTZL Lubricants
+  price: 165000
+  price_old:
+  price_band: under-500k
+  badge:
+  stock: 3
+  rating: 4.5
+  image:
+  icon: oil
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Oli Mesin resmi HTZL. Viskositas: 15W-50 | Standar: JASO MA2, API SL.'
+  specs:
+    Viskositas: 15W-50
+    Standar: JASO MA2, API SL
+    Isi: 1 liter
+    Interval: 4.000 km
+  sku: HTZ-OLI-094
+- name: Oli Mesin HTZL Track 5W-40 Ester
+  slug: oli-mesin-htzl-track-5w-40-ester
+  category: oli
+  category_label: Oli & Perawatan
+  subcategory: Oli Mesin
+  brand: HTZL Lubricants
+  price: 425000
+  price_old:
+  price_band: under-500k
+  badge: Terlaris
+  stock: 20
+  rating: 4.2
+  image:
+  icon: oil
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Oli Mesin resmi HTZL. Viskositas: 5W-40 | Basis: Ester racing.'
+  specs:
+    Viskositas: 5W-40
+    Basis: Ester racing
+    Isi: 1 liter
+    Interval: 2.500 km
+  sku: HTZ-OLI-095
+- name: Paket Oli Mesin HTZL Racing 4 Liter
+  slug: paket-oli-mesin-htzl-racing-4-liter
+  category: oli
+  category_label: Oli & Perawatan
+  subcategory: Oli Mesin
+  brand: HTZL Lubricants
+  price: 1050000
+  price_old:
+  price_band: 500k-2jt
+  badge:
+  stock: 16
+  rating: 4.4
+  image:
+  icon: oil
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Oli Mesin resmi HTZL. Viskositas: 10W-40 | Isi: 4 liter.'
+  specs:
+    Viskositas: 10W-40
+    Isi: 4 liter
+    Bonus: Filter oli
+    Hemat: Rp 190.000
+  sku: HTZ-OLI-096
+- name: Oli Gardan HTZL Gear 80W-90
+  slug: oli-gardan-htzl-gear-80w-90
+  category: oli
+  category_label: Oli & Perawatan
+  subcategory: Oli Mesin
+  brand: HTZL Lubricants
+  price: 95000
+  price_old:
+  price_band: under-500k
+  badge: Terlaris
+  stock: 33
+  rating: 4.4
+  image:
+  icon: oil
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Oli Mesin resmi HTZL. Viskositas: 80W-90 | Standar: API GL-5.'
+  specs:
+    Viskositas: 80W-90
+    Standar: API GL-5
+    Isi: 120 ml
+    Interval: 10.000 km
+  sku: HTZ-OLI-097
+- name: Minyak Rem HTZL DOT 4 Racing
+  slug: minyak-rem-htzl-dot-4-racing
+  category: oli
+  category_label: Oli & Perawatan
+  subcategory: Cairan
+  brand: HTZL Lubricants
+  price: 135000
+  price_old: 160000
+  price_band: under-500k
+  badge: Diskon
+  stock: 39
+  rating: 4.1
+  image:
+  icon: fluid
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Cairan resmi HTZL. Spesifikasi: DOT 4 | Titik Didih: 310 C kering.'
+  specs:
+    Spesifikasi: DOT 4
+    Titik Didih: 310 C kering
+    Isi: 500 ml
+    Interval: 2 tahun
+  sku: HTZ-OLI-098
+- name: Minyak Rem HTZL DOT 5.1
+  slug: minyak-rem-htzl-dot-5-1
+  category: oli
+  category_label: Oli & Perawatan
+  subcategory: Cairan
+  brand: HTZL Lubricants
+  price: 175000
+  price_old:
+  price_band: under-500k
+  badge:
+  stock: 10
+  rating: 4.2
+  image:
+  icon: fluid
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Cairan resmi HTZL. Spesifikasi: DOT 5.1 | Titik Didih: 270 C basah.'
+  specs:
+    Spesifikasi: DOT 5.1
+    Titik Didih: 270 C basah
+    Isi: 500 ml
+    Catatan: Aman untuk ABS
+  sku: HTZ-OLI-099
+- name: Coolant HTZL Cool Blue Siap Pakai
+  slug: coolant-htzl-cool-blue-siap-pakai
+  category: oli
+  category_label: Oli & Perawatan
+  subcategory: Cairan
+  brand: HTZL Lubricants
+  price: 95000
+  price_old:
+  price_band: under-500k
+  badge:
+  stock: 34
+  rating: 4.6
+  image:
+  icon: fluid
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Cairan resmi HTZL. Tipe: Ethylene glycol pra-campur | Proteksi: -15 C sampai
+    129 C.'
+  specs:
+    Tipe: Ethylene glycol pra-campur
+    Proteksi: "-15 C sampai 129 C"
+    Isi: 1 liter
+    Interval: 2 tahun
+  sku: HTZ-OLI-100
+- name: Coolant HTZL Track Waterless
+  slug: coolant-htzl-track-waterless
+  category: oli
+  category_label: Oli & Perawatan
+  subcategory: Cairan
+  brand: HTZL Lubricants
+  price: 320000
+  price_old:
+  price_band: under-500k
+  badge: Baru
+  stock: 39
+  rating: 4.9
+  image:
+  icon: fluid
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Cairan resmi HTZL. Tipe: Waterless | Proteksi: Titik didih 180 C.'
+  specs:
+    Tipe: Waterless
+    Proteksi: Titik didih 180 C
+    Isi: 1 liter
+    Catatan: Nol korosi
+  sku: HTZ-OLI-101
+- name: Chain Lube HTZL Wax Dry
+  slug: chain-lube-htzl-wax-dry
+  category: oli
+  category_label: Oli & Perawatan
+  subcategory: Perawatan
+  brand: HTZL Lubricants
+  price: 125000
+  price_old:
+  price_band: under-500k
+  badge:
+  stock: 21
+  rating: 4.2
+  image:
+  icon: lube
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Perawatan resmi HTZL. Tipe: Wax kering | Cocok: O/X-ring.'
+  specs:
+    Tipe: Wax kering
+    Cocok: O/X-ring
+    Isi: 400 ml
+    Kelebihan: Tidak menarik debu
+  sku: HTZ-OLI-102
+- name: Chain Cleaner HTZL Degreaser
+  slug: chain-cleaner-htzl-degreaser
+  category: oli
+  category_label: Oli & Perawatan
+  subcategory: Perawatan
+  brand: HTZL Lubricants
+  price: 98000
+  price_old:
+  price_band: under-500k
+  badge:
+  stock: 25
+  rating: 4.9
+  image:
+  icon: lube
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Perawatan resmi HTZL. Tipe: Pelarut cepat kering | Cocok: Semua rantai.'
+  specs:
+    Tipe: Pelarut cepat kering
+    Cocok: Semua rantai
+    Isi: 500 ml
+    Bonus: Sikat 3 sisi
+  sku: HTZ-OLI-103
+- name: Poles Bodi HTZL Gloss Ceramic
+  slug: poles-bodi-htzl-gloss-ceramic
+  category: oli
+  category_label: Oli & Perawatan
+  subcategory: Perawatan
+  brand: HTZL Lubricants
+  price: 245000
+  price_old: 290000
+  price_band: under-500k
+  badge: Diskon
+  stock: 21
+  rating: 4.1
+  image:
+  icon: polish
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Perawatan resmi HTZL. Tipe: Sealant keramik | Daya Tahan: 6 bulan.'
+  specs:
+    Tipe: Sealant keramik
+    Daya Tahan: 6 bulan
+    Isi: 250 ml
+    Aplikasi: Lap aplikator ikut
+  sku: HTZ-OLI-104
+- name: Pembersih Helm HTZL Visor Clean
+  slug: pembersih-helm-htzl-visor-clean
+  category: oli
+  category_label: Oli & Perawatan
+  subcategory: Perawatan
+  brand: HTZL Lubricants
+  price: 75000
+  price_old:
+  price_band: under-500k
+  badge:
+  stock: 23
+  rating: 4.1
+  image:
+  icon: polish
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Perawatan resmi HTZL. Tipe: Busa anti-kabut | Aman: Untuk visor berlapis.'
+  specs:
+    Tipe: Busa anti-kabut
+    Aman: Untuk visor berlapis
+    Isi: 200 ml
+    Bonus: Microfiber
+  sku: HTZ-OLI-105
+- name: Shampo Motor HTZL Foam Wash
+  slug: shampo-motor-htzl-foam-wash
+  category: oli
+  category_label: Oli & Perawatan
+  subcategory: Perawatan
+  brand: HTZL Lubricants
+  price: 88000
+  price_old: 105000
+  price_band: under-500k
+  badge: Diskon
+  stock: 14
+  rating: 4.7
+  image:
+  icon: polish
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Perawatan resmi HTZL. Tipe: pH netral | Busa: Cocok snow foam.'
+  specs:
+    Tipe: pH netral
+    Busa: Cocok snow foam
+    Isi: 1 liter
+    Takaran: 1:100
+  sku: HTZ-OLI-106
+- name: Top Box HTZL Trunk 45L
+  slug: top-box-htzl-trunk-45l
+  category: aksesori
+  category_label: Aksesori & Touring
+  subcategory: Bagasi
+  brand: HTZL Touring
+  price: 3200000
+  price_old:
+  price_band: 2jt-10jt
+  badge: Baru
+  stock: 19
+  rating: 4.4
+  image:
+  icon: topbox
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Bagasi resmi HTZL. Kapasitas: 45 liter | Bahan: Poliuretan cetak.'
+  specs:
+    Kapasitas: 45 liter
+    Bahan: Poliuretan cetak
+    Muat: Dua helm full face
+    Kunci: Satu kunci dengan motor
+  sku: HTZ-AKS-107
+- name: Side Pannier HTZL Alu 35L Set
+  slug: side-pannier-htzl-alu-35l-set
+  category: aksesori
+  category_label: Aksesori & Touring
+  subcategory: Bagasi
+  brand: HTZL Touring
+  price: 7800000
+  price_old:
+  price_band: 2jt-10jt
+  badge: Terlaris
+  stock: 27
+  rating: 4.4
+  image:
+  icon: topbox
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Bagasi resmi HTZL. Kapasitas: 35 liter per sisi | Bahan: Aluminium 1,5 mm.'
+  specs:
+    Kapasitas: 35 liter per sisi
+    Bahan: Aluminium 1,5 mm
+    Kunci: Silinder anti-bor
+    Isi: Sepasang + bracket
+  sku: HTZ-AKS-108
+- name: Tank Bag HTZL Magnet 18L
+  slug: tank-bag-htzl-magnet-18l
+  category: aksesori
+  category_label: Aksesori & Touring
+  subcategory: Bagasi
+  brand: HTZL Touring
+  price: 1450000
+  price_old:
+  price_band: 500k-2jt
+  badge: Baru
+  stock: 37
+  rating: 4.6
+  image:
+  icon: topbox
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Bagasi resmi HTZL. Kapasitas: 18 liter, bisa mengembang | Pemasangan: Magnet
+    + strap.'
+  specs:
+    Kapasitas: 18 liter, bisa mengembang
+    Pemasangan: Magnet + strap
+    Fitur: Jendela peta, rain cover
+    Bahan: Cordura 1680D
+  sku: HTZ-AKS-109
+- name: Tail Bag HTZL Roll 25L
+  slug: tail-bag-htzl-roll-25l
+  category: aksesori
+  category_label: Aksesori & Touring
+  subcategory: Bagasi
+  brand: HTZL Touring
+  price: 890000
+  price_old:
+  price_band: 500k-2jt
+  badge: Baru
+  stock: 30
+  rating: 4.7
+  image:
+  icon: topbox
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Bagasi resmi HTZL. Kapasitas: 25 liter | Tipe: Roll-top waterproof.'
+  specs:
+    Kapasitas: 25 liter
+    Tipe: Roll-top waterproof
+    Pemasangan: Empat strap
+    Bahan: Tarpaulin TPU
+  sku: HTZ-AKS-110
+- name: Windshield HTZL Touring Tinggi
+  slug: windshield-htzl-touring-tinggi
+  category: aksesori
+  category_label: Aksesori & Touring
+  subcategory: Pelindung
+  brand: HTZL Touring
+  price: 1950000
+  price_old:
+  price_band: 500k-2jt
+  badge: Terlaris
+  stock: 14
+  rating: 4.8
+  image:
+  icon: windshield
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Pelindung resmi HTZL. Bahan: Akrilik 4 mm | Tinggi: +120 mm dari standar.'
+  specs:
+    Bahan: Akrilik 4 mm
+    Tinggi: "+120 mm dari standar"
+    Setelan: Tiga posisi
+    Efek: Turbulensi berkurang
+  sku: HTZ-AKS-111
+- name: Windshield HTZL Sport Bubble
+  slug: windshield-htzl-sport-bubble
+  category: aksesori
+  category_label: Aksesori & Touring
+  subcategory: Pelindung
+  brand: HTZL Touring
+  price: 1150000
+  price_old:
+  price_band: 500k-2jt
+  badge:
+  stock: 40
+  rating: 4.6
+  image:
+  icon: windshield
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Pelindung resmi HTZL. Bahan: Polikarbonat 3 mm | Model: Double bubble.'
+  specs:
+    Bahan: Polikarbonat 3 mm
+    Model: Double bubble
+    Warna: Smoke gelap
+    Efek: Aerodinamis tunduk
+  sku: HTZ-AKS-112
+- name: Crash Bar HTZL Engine Guard
+  slug: crash-bar-htzl-engine-guard
+  category: aksesori
+  category_label: Aksesori & Touring
+  subcategory: Pelindung
+  brand: HTZL Touring
+  price: 2650000
+  price_old: 3125000
+  price_band: 2jt-10jt
+  badge: Diskon
+  stock: 33
+  rating: 4.7
+  image:
+  icon: crashbar
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Pelindung resmi HTZL. Bahan: Pipa baja 25 mm | Finishing: Powder coat hitam.'
+  specs:
+    Bahan: Pipa baja 25 mm
+    Finishing: Powder coat hitam
+    Proteksi: Blok mesin & radiator
+    Isi: Sepasang
+  sku: HTZ-AKS-113
+- name: Frame Slider HTZL Impact
+  slug: frame-slider-htzl-impact
+  category: aksesori
+  category_label: Aksesori & Touring
+  subcategory: Pelindung
+  brand: HTZL Touring
+  price: 950000
+  price_old: 1120000
+  price_band: 500k-2jt
+  badge: Diskon
+  stock: 14
+  rating: 4.9
+  image:
+  icon: crashbar
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Pelindung resmi HTZL. Bahan: Delrin + baut baja | Proteksi: Rangka & fairing.'
+  specs:
+    Bahan: Delrin + baut baja
+    Proteksi: Rangka & fairing
+    Pemasangan: Baut mesin bawaan
+    Isi: Sepasang
+  sku: HTZ-AKS-114
+- name: Handguard HTZL Storm
+  slug: handguard-htzl-storm
+  category: aksesori
+  category_label: Aksesori & Touring
+  subcategory: Pelindung
+  brand: HTZL Touring
+  price: 780000
+  price_old: 920000
+  price_band: 500k-2jt
+  badge: Diskon
+  stock: 26
+  rating: 4.6
+  image:
+  icon: handguard
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Pelindung resmi HTZL. Bahan: Aluminium + plastik | Proteksi: Angin, hujan,
+    benturan.'
+  specs:
+    Bahan: Aluminium + plastik
+    Proteksi: Angin, hujan, benturan
+    Pemasangan: Bar-end + clamp
+    Isi: Sepasang
+  sku: HTZ-AKS-115
+- name: Radiator Guard HTZL Mesh
+  slug: radiator-guard-htzl-mesh
+  category: aksesori
+  category_label: Aksesori & Touring
+  subcategory: Pelindung
+  brand: HTZL Touring
+  price: 620000
+  price_old:
+  price_band: 500k-2jt
+  badge:
+  stock: 10
+  rating: 4.4
+  image:
+  icon: crashbar
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Pelindung resmi HTZL. Bahan: Aluminium laser cut | Fungsi: Tahan kerikil.'
+  specs:
+    Bahan: Aluminium laser cut
+    Fungsi: Tahan kerikil
+    Aliran Udara: Turun kurang dari 3 persen
+    Isi: 1 pcs
+  sku: HTZ-AKS-116
+- name: USB Charger HTZL Power 30W
+  slug: usb-charger-htzl-power-30w
+  category: aksesori
+  category_label: Aksesori & Touring
+  subcategory: Elektronik
+  brand: HTZL Touring
+  price: 350000
+  price_old:
+  price_band: under-500k
+  badge:
+  stock: 23
+  rating: 4.1
+  image:
+  icon: usb
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Elektronik resmi HTZL. Output: USB-C 30W PD + USB-A 18W | Tahan Air: IP67.'
+  specs:
+    Output: USB-C 30W PD + USB-A 18W
+    Tahan Air: IP67
+    Pemasangan: Stang atau dashboard
+    Proteksi: Cut-off tegangan rendah
+  sku: HTZ-AKS-117
+- name: Phone Holder HTZL Lock Grip
+  slug: phone-holder-htzl-lock-grip
+  category: aksesori
+  category_label: Aksesori & Touring
+  subcategory: Elektronik
+  brand: HTZL Touring
+  price: 425000
+  price_old:
+  price_band: under-500k
+  badge: Baru
+  stock: 20
+  rating: 4.4
+  image:
+  icon: phone
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Elektronik resmi HTZL. Ukuran HP: 4,7 sampai 7 inci | Peredam: Anti-getar
+    bola karet.'
+  specs:
+    Ukuran HP: 4,7 sampai 7 inci
+    Peredam: Anti-getar bola karet
+    Pemasangan: Stang 22-32 mm
+    Kunci: Latch pengaman
+  sku: HTZ-AKS-118
+- name: Action Cam Mount HTZL Rig
+  slug: action-cam-mount-htzl-rig
+  category: aksesori
+  category_label: Aksesori & Touring
+  subcategory: Elektronik
+  brand: HTZL Touring
+  price: 295000
+  price_old:
+  price_band: under-500k
+  badge:
+  stock: 23
+  rating: 4.9
+  image:
+  icon: phone
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Elektronik resmi HTZL. Kompatibel: GoPro dan sejenis | Titik Pasang: Helm,
+    stang, spion.'
+  specs:
+    Kompatibel: GoPro dan sejenis
+    Titik Pasang: Helm, stang, spion
+    Bahan: Aluminium + karet
+    Isi: 3 adaptor
+  sku: HTZ-AKS-119
+- name: Cover Motor HTZL Shield Outdoor
+  slug: cover-motor-htzl-shield-outdoor
+  category: aksesori
+  category_label: Aksesori & Touring
+  subcategory: Perlindungan
+  brand: HTZL Touring
+  price: 465000
+  price_old:
+  price_band: under-500k
+  badge: Stok Terbatas
+  stock: 20
+  rating: 4.9
+  image:
+  icon: cover
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Perlindungan resmi HTZL. Bahan: Poliester 210D lapis PU | Cuaca: Anti-UV
+    & anti-air.'
+  specs:
+    Bahan: Poliester 210D lapis PU
+    Cuaca: Anti-UV & anti-air
+    Ukuran: L dan XL
+    Fitur: Lubang kunci gembok
+  sku: HTZ-AKS-120
+- name: Gembok Cakram HTZL Alarm 110dB
+  slug: gembok-cakram-htzl-alarm-110db
+  category: aksesori
+  category_label: Aksesori & Touring
+  subcategory: Perlindungan
+  brand: HTZL Touring
+  price: 585000
+  price_old:
+  price_band: 500k-2jt
+  badge:
+  stock: 19
+  rating: 4.5
+  image:
+  icon: cover
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Perlindungan resmi HTZL. Alarm: 110 dB, sensor getar | Pin: Diameter 7 mm.'
+  specs:
+    Alarm: 110 dB, sensor getar
+    Pin: Diameter 7 mm
+    Baterai: CR2 tahan 1 tahun
+    Bonus: Kabel pengingat
+  sku: HTZ-AKS-121
+- name: Servis Berkala 4.000 km
+  slug: servis-berkala-4-000-km
+  category: layanan
+  category_label: Layanan Bengkel
+  subcategory: Servis Rutin
+  brand: HTZL Service Center
+  price: 450000
+  price_old:
+  price_band: under-500k
+  badge:
+  stock: 99
+  rating: 4.9
+  image:
+  icon: wrench
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Servis Rutin resmi HTZL. Durasi: 90 menit | Cakupan: Ganti oli, cek 32 titik.'
+  specs:
+    Durasi: 90 menit
+    Cakupan: Ganti oli, cek 32 titik
+    Garansi: 30 hari
+    Suku Cadang: Oli HTZL Street
+  sku: HTZ-LAY-122
+- name: Servis Berkala 12.000 km
+  slug: servis-berkala-12-000-km
+  category: layanan
+  category_label: Layanan Bengkel
+  subcategory: Servis Rutin
+  brand: HTZL Service Center
+  price: 950000
+  price_old:
+  price_band: 500k-2jt
+  badge: Stok Terbatas
+  stock: 99
+  rating: 4.3
+  image:
+  icon: wrench
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Servis Rutin resmi HTZL. Durasi: 3 jam | Cakupan: Oli, filter, busi, sinkronisasi
+    throttle.'
+  specs:
+    Durasi: 3 jam
+    Cakupan: Oli, filter, busi, sinkronisasi throttle
+    Garansi: 30 hari
+    Suku Cadang: Termasuk
+  sku: HTZ-LAY-123
+- name: Servis Besar 24.000 km
+  slug: servis-besar-24-000-km
+  category: layanan
+  category_label: Layanan Bengkel
+  subcategory: Servis Rutin
+  brand: HTZL Service Center
+  price: 2450000
+  price_old:
+  price_band: 2jt-10jt
+  badge: Terlaris
+  stock: 99
+  rating: 4.2
+  image:
+  icon: wrench
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Servis Rutin resmi HTZL. Durasi: 6 jam | Cakupan: Setel klep, ganti coolant,
+    rantai keteng.'
+  specs:
+    Durasi: 6 jam
+    Cakupan: Setel klep, ganti coolant, rantai keteng
+    Garansi: 60 hari
+    Booking: Wajib janji temu
+  sku: HTZ-LAY-124
+- name: Ganti Oli Ekspres
+  slug: ganti-oli-ekspres
+  category: layanan
+  category_label: Layanan Bengkel
+  subcategory: Servis Rutin
+  brand: HTZL Service Center
+  price: 185000
+  price_old:
+  price_band: under-500k
+  badge: Stok Terbatas
+  stock: 99
+  rating: 4.9
+  image:
+  icon: wrench
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Servis Rutin resmi HTZL. Durasi: 30 menit | Cakupan: Oli + filter, jasa
+    saja.'
+  specs:
+    Durasi: 30 menit
+    Cakupan: Oli + filter, jasa saja
+    Antre: Tanpa janji temu
+    Catatan: Oli beli terpisah
+  sku: HTZ-LAY-125
+- name: Tune-up Performa Dyno
+  slug: tune-up-performa-dyno
+  category: layanan
+  category_label: Layanan Bengkel
+  subcategory: Performa
+  brand: HTZL Service Center
+  price: 1850000
+  price_old:
+  price_band: 500k-2jt
+  badge:
+  stock: 99
+  rating: 4.2
+  image:
+  icon: dyno
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Performa resmi HTZL. Durasi: 4 jam | Cakupan: 3 run dyno + laporan grafik.'
+  specs:
+    Durasi: 4 jam
+    Cakupan: 3 run dyno + laporan grafik
+    Hasil: Peta AFR optimal
+    Garansi: Cek ulang 1x gratis
+  sku: HTZ-LAY-126
+- name: Remap ECU Stage 1
+  slug: remap-ecu-stage-1
+  category: layanan
+  category_label: Layanan Bengkel
+  subcategory: Performa
+  brand: HTZL Service Center
+  price: 3400000
+  price_old:
+  price_band: 2jt-10jt
+  badge: Terlaris
+  stock: 99
+  rating: 4.9
+  image:
+  icon: dyno
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Performa resmi HTZL. Durasi: 5 jam | Gain: +8 sampai 12 hp.'
+  specs:
+    Durasi: 5 jam
+    Gain: "+8 sampai 12 hp"
+    Cakupan: Flash ECU + validasi dyno
+    Catatan: Knalpot aftermarket disarankan
+  sku: HTZ-LAY-127
+- name: Balancing & Spooring Roda
+  slug: balancing-spooring-roda
+  category: layanan
+  category_label: Layanan Bengkel
+  subcategory: Kaki-kaki
+  brand: HTZL Service Center
+  price: 325000
+  price_old:
+  price_band: under-500k
+  badge: Terlaris
+  stock: 99
+  rating: 4.1
+  image:
+  icon: wheel
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Kaki-kaki resmi HTZL. Durasi: 60 menit | Cakupan: Dua roda + cek run-out.'
+  specs:
+    Durasi: 60 menit
+    Cakupan: Dua roda + cek run-out
+    Alat: Balancer statis presisi
+    Garansi: 14 hari
+  sku: HTZ-LAY-128
+- name: Pasang Ban (Sepasang)
+  slug: pasang-ban-sepasang
+  category: layanan
+  category_label: Layanan Bengkel
+  subcategory: Kaki-kaki
+  brand: HTZL Service Center
+  price: 285000
+  price_old: 335000
+  price_band: under-500k
+  badge: Diskon
+  stock: 99
+  rating: 4.8
+  image:
+  icon: wheel
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Kaki-kaki resmi HTZL. Durasi: 75 menit | Cakupan: Bongkar, pasang, balancing.'
+  specs:
+    Durasi: 75 menit
+    Cakupan: Bongkar, pasang, balancing
+    Catatan: Ban beli terpisah
+    Bonus: Cek tekanan gratis
+  sku: HTZ-LAY-129
+- name: Setel Suspensi Sesuai Bobot
+  slug: setel-suspensi-sesuai-bobot
+  category: layanan
+  category_label: Layanan Bengkel
+  subcategory: Kaki-kaki
+  brand: HTZL Service Center
+  price: 650000
+  price_old:
+  price_band: 500k-2jt
+  badge:
+  stock: 99
+  rating: 4.4
+  image:
+  icon: wheel
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Kaki-kaki resmi HTZL. Durasi: 2 jam | Cakupan: Sag depan-belakang, damping.'
+  specs:
+    Durasi: 2 jam
+    Cakupan: Sag depan-belakang, damping
+    Hasil: Lembar setelan tertulis
+    Garansi: Revisi 1x gratis
+  sku: HTZ-LAY-130
+- name: Detailing Keramik Full Body
+  slug: detailing-keramik-full-body
+  category: layanan
+  category_label: Layanan Bengkel
+  subcategory: Perawatan
+  brand: HTZL Service Center
+  price: 1650000
+  price_old:
+  price_band: 500k-2jt
+  badge:
+  stock: 99
+  rating: 4.4
+  image:
+  icon: polish
+  blurb_type: generic
+  trim:
+  cc:
+  blurb: 'Perawatan resmi HTZL. Durasi: 8 jam | Cakupan: Dekontaminasi, poles, coating.'
+  specs:
+    Durasi: 8 jam
+    Cakupan: Dekontaminasi, poles, coating
+    Daya Tahan: 12 bulan
+    Garansi: Cuci ulang gratis 1x
+  sku: HTZ-LAY-131

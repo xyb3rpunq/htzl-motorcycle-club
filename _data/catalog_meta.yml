@@ -1,0 +1,73 @@
+# DIBUAT OTOMATIS oleh lib/seed_catalog.rb
+---
+total: 131
+min_price: 75000
+max_price: 98500000
+categories:
+- key: motor
+  label: Motor
+  icon: motorcycle
+  blurb: Unit kendaraan siap kirim
+  count: 36
+- key: apparel
+  label: Apparel & Gear
+  icon: helmet
+  blurb: Perlengkapan berkendara
+  count: 26
+- key: part
+  label: Sparepart & Performa
+  icon: piston
+  blurb: Komponen dan upgrade
+  count: 30
+- key: oli
+  label: Oli & Perawatan
+  icon: oil
+  blurb: Pelumas dan cairan
+  count: 14
+- key: aksesori
+  label: Aksesori & Touring
+  icon: topbox
+  blurb: Penunjang perjalanan jauh
+  count: 15
+- key: layanan
+  label: Layanan Bengkel
+  icon: wrench
+  blurb: Servis oleh teknisi resmi
+  count: 10
+brands:
+- HTZL Apparel
+- HTZL Lubricants
+- HTZL Performance
+- HTZL Service Center
+- HTZL Touring
+- Kawasaki
+- Vixian
+subcategories:
+- Adventure
+- Aksesori Diri
+- Bagasi
+- Ban
+- Cairan
+- Celana
+- Elektronik
+- Filter
+- Helm
+- Jaket
+- Kaki-kaki
+- Knalpot
+- Oli Mesin
+- Pelindung
+- Pengapian
+- Perawatan
+- Performa
+- Perlindungan
+- Protektor
+- Rantai & Gir
+- Rem
+- Sarung Tangan
+- Sepatu
+- Servis Rutin
+- Sport Naked
+- Superbike
+- Supermoto
+- Suspensi
