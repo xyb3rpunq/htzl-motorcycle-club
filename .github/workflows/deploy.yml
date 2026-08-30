@@ -1,0 +1,70 @@
+name: Build dan Deploy
+
+# Setiap dorongan ke main akan menjalankan test lalu menerbitkan situs.
+# Pull request hanya diuji, tidak diterbitkan.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Cukup satu penerbitan berjalan pada satu waktu.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Seed, build, dan uji
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ambil kode
+        uses: actions/checkout@v4
+
+      - name: Siapkan Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+
+      - name: Siapkan GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Bangun katalog dari sumber Ruby
+        run: bundle exec rake seed
+
+      - name: Pastikan katalog hasil seed tidak berubah
+        run: git diff --exit-code _data/catalog.yml _data/catalog_meta.yml
+
+      - name: Build situs
+        run: bundle exec jekyll build --trace
+        env:
+          JEKYLL_ENV: production
+
+      - name: Jalankan seluruh test
+        run: bundle exec rake test
+
+      - name: Unggah artefak
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    name: Terbitkan ke GitHub Pages
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
