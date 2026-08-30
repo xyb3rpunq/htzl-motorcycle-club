@@ -10,15 +10,21 @@
         </div>
         <p>{{ t.footer.about_text }}</p>
         <div class="socials">
-          <a href="https://www.instagram.com/htzl.mc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          {%- if site.social.instagram != "" %}
+          <a href="{{ site.social.instagram }}" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <svg aria-hidden="true"><use href="#i-instagram"/></svg>
           </a>
-          <a href="https://www.facebook.com/profile.php?id=100069020175227" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-            <svg aria-hidden="true"><use href="#i-facebook"/></svg>
-          </a>
-          <a href="https://twitter.com/htzl_mc" target="_blank" rel="noopener noreferrer" aria-label="X">
+          {%- endif %}
+          {%- if site.social.x != "" %}
+          <a href="{{ site.social.x }}" target="_blank" rel="noopener noreferrer" aria-label="X">
             <svg aria-hidden="true"><use href="#i-x"/></svg>
           </a>
+          {%- endif %}
+          {%- if site.social.linkedin != "" %}
+          <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg aria-hidden="true"><use href="#i-linkedin"/></svg>
+          </a>
+          {%- endif %}
         </div>
       </div>
 

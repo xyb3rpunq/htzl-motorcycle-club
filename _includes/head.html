@@ -1,4 +1,14 @@
 {%- assign t = site.data.i18n[page.lang] -%}
+{%- assign catalog_total = site.data.catalog | size -%}
+{%- assign page_desc = page.description | fill: 'count', catalog_total -%}
+{%- assign price_min = site.data.catalog_meta.min_price | rupiah -%}
+{%- assign price_max = site.data.catalog_meta.max_price | rupiah -%}
+{%- assign price_range = price_min | append: ' - ' | append: price_max -%}
+{%- assign social_raw = '' -%}
+{%- if site.social.instagram != '' %}{% assign social_raw = social_raw | append: site.social.instagram | append: '|' %}{% endif -%}
+{%- if site.social.x != '' %}{% assign social_raw = social_raw | append: site.social.x | append: '|' %}{% endif -%}
+{%- if site.social.linkedin != '' %}{% assign social_raw = social_raw | append: site.social.linkedin %}{% endif -%}
+{%- assign social_links = social_raw | split: '|' -%}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
@@ -6,7 +16,7 @@
 <meta name="theme-color" content="#0e0d0c" media="(prefers-color-scheme: dark)">
 
 <title>{{ page.title }} | {{ site.title }}</title>
-<meta name="description" content="{{ page.description | strip_newlines | strip }}">
+<meta name="description" content="{{ page_desc | strip_newlines | strip }}">
 <meta name="author" content="{{ site.author }}">
 <meta name="robots" content="index, follow, max-image-preview:large">
 
@@ -24,14 +34,14 @@
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:locale" content="{{ t.html_lang | replace: '-', '_' }}">
 <meta property="og:title" content="{{ page.title }} | {{ site.title }}">
-<meta property="og:description" content="{{ page.description | strip_newlines | strip }}">
+<meta property="og:description" content="{{ page_desc | strip_newlines | strip }}">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
 <meta property="og:image" content="{{ site.image | absolute_url }}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ page.title }} | {{ site.title }}">
-<meta name="twitter:description" content="{{ page.description | strip_newlines | strip }}">
+<meta name="twitter:description" content="{{ page_desc | strip_newlines | strip }}">
 <meta name="twitter:image" content="{{ site.image | absolute_url }}">
 
 {%- comment -%} Ikon {%- endcomment -%}
@@ -65,13 +75,13 @@
   "@context": "https://schema.org",
   "@type": "AutoDealer",
   "name": {{ site.title | jsonify }},
-  "description": {{ page.description | strip_newlines | strip | jsonify }},
+  "description": {{ page_desc | strip_newlines | strip | jsonify }},
   "url": {{ page.url | absolute_url | jsonify }},
   "logo": {{ site.logo | absolute_url | jsonify }},
   "image": {{ site.image | absolute_url | jsonify }},
   "telephone": {{ site.contact.phone_display | jsonify }},
   "email": {{ site.contact.email | jsonify }},
-  "priceRange": "Rp 75.000 - Rp 98.500.000",
+  "priceRange": {{ price_range | jsonify }},
   "address": {
     "@type": "PostalAddress",
     "streetAddress": {{ site.contact.address | jsonify }},
@@ -79,7 +89,7 @@
     "addressCountry": "ID"
   },
   "openingHours": "Mo-Sa 09:00-18:00",
-  "sameAs": {{ site.social.links | jsonify }}
+  "sameAs": {{ social_links | jsonify }}
 }
 </script>
 {%- if page.page_id == "catalog" %}

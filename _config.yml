@@ -13,17 +13,18 @@ timezone: Asia/Jakarta
 logo: /assets/img/logo.webp
 image: /assets/img/og-image.jpg
 
+# Tautan sosial. Kosongkan nilainya untuk menyembunyikan ikonnya dari footer.
 social:
   name: HTZL Motorcycle Club
-  links:
-    - https://www.instagram.com/htzl.mc/
-    - https://www.facebook.com/profile.php?id=100069020175227
+  instagram: "https://www.instagram.com/danielxyz_/"
+  x: "https://x.com/xyb3rpunk"
+  linkedin: "https://www.linkedin.com/in/daniel-hutajulu23/"
 
 # Kontak dipakai di footer, halaman reservasi, dan deep link WhatsApp.
 contact:
-  whatsapp: "6281234567890"          # GANTI dengan nomor WhatsApp asli (format 62..., tanpa +)
+  whatsapp: "6281386159080"
   email: "halo@htzl.mc"
-  phone_display: "+62 812-3456-7890"
+  phone_display: "+62 813-8615-9080"
   address: "Jl. Gatot Subroto Kav. 21, Jakarta Selatan 12930"
   maps: "https://maps.google.com/?q=Jakarta+Selatan"
   hours: "Senin-Sabtu 09.00-18.00 WIB"
