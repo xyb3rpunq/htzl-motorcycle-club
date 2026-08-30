@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 390" width="630" height="390" role="img" aria-label="USB Charger HTZL Power 30W">
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(39)">
+      <stop offset="0%" stop-color="#11554f"/>
+      <stop offset="100%" stop-color="#2b9c93"/>
+    </linearGradient>
+  </defs>
+  <rect width="630" height="390" fill="url(#bg)"/>
+  <circle cx="474" cy="254" r="238" fill="#ffffff" opacity="0.06"/>
+  <circle cx="393" cy="306" r="119" fill="#000000" opacity="0.08"/>
+  <g transform="translate(249 62) scale(5.5)" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <path d="M12 22V5"/><path d="m8.5 8.5 3.5-4 3.5 4"/><circle cx="12" cy="22" r="0.6"/>
+    <path d="M12 14l4-2.5V9"/><circle cx="16" cy="8" r="1.6"/><path d="M12 17l-4-2.5v-3"/><rect x="6.4" y="10" width="3.2" height="2.4" rx="0.5"/>
+  </g>
+  <g font-family="system-ui, 'Segoe UI', Roboto, Arial, sans-serif" fill="#ffffff">
+    <text x="40" y="316" font-size="25" font-weight="700">USB Charger HTZL Power 30W</text>
+    <text x="40" y="352" font-size="15" font-weight="600" opacity="0.72" letter-spacing="1.5">HTZ-AKS-117</text>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 390" width="630" height="390" role="img" aria-label="Harley-Davidson 1941 Model FL Knucklehead 74">
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(16)">
+      <stop offset="0%" stop-color="#3a2d26"/>
+      <stop offset="100%" stop-color="#8a6a4f"/>
+    </linearGradient>
+  </defs>
+  <rect width="630" height="390" fill="url(#bg)"/>
+  <circle cx="451" cy="251" r="230" fill="#ffffff" opacity="0.06"/>
+  <circle cx="405" cy="307" r="115" fill="#000000" opacity="0.08"/>
+  <g transform="translate(249 62) scale(5.5)" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/>
+    <path d="M12 3v1.4M12 19.6V21M21 12h-1.4M4.4 12H3"/>
+  </g>
+  <g font-family="system-ui, 'Segoe UI', Roboto, Arial, sans-serif" fill="#ffffff">
+    <text x="40" y="300" font-size="25" font-weight="700">Harley-Davidson 1941 Model FL</text>
+    <text x="40" y="330" font-size="25" font-weight="700">Knucklehead 74</text>
+    <text x="40" y="366" font-size="15" font-weight="600" opacity="0.72" letter-spacing="1.5">HTZ-HER-166</text>
+  </g>
+</svg>

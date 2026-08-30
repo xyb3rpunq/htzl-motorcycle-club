@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 390" width="630" height="390" role="img" aria-label="Jaket Balap HTZL Track One">
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(42)">
+      <stop offset="0%" stop-color="#3b2f73"/>
+      <stop offset="100%" stop-color="#6d5cc0"/>
+    </linearGradient>
+  </defs>
+  <rect width="630" height="390" fill="url(#bg)"/>
+  <circle cx="297" cy="69" r="179" fill="#ffffff" opacity="0.06"/>
+  <circle cx="482" cy="367" r="89" fill="#000000" opacity="0.08"/>
+  <g transform="translate(249 62) scale(5.5)" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <path d="M9 3 6 5 3.5 8l2 2.5V21h13V10.5l2-2.5L18 5l-3-2"/><path d="M9 3v3l3 2.5L15 6V3"/><path d="M12 12v9"/>
+  </g>
+  <g font-family="system-ui, 'Segoe UI', Roboto, Arial, sans-serif" fill="#ffffff">
+    <text x="40" y="316" font-size="25" font-weight="700">Jaket Balap HTZL Track One</text>
+    <text x="40" y="352" font-size="15" font-weight="600" opacity="0.72" letter-spacing="1.5">HTZ-APP-045</text>
+  </g>
+</svg>

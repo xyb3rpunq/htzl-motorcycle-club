@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 390" width="630" height="390" role="img" aria-label="Helm Modular HTZL Voyager">
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(24)">
+      <stop offset="0%" stop-color="#3b2f73"/>
+      <stop offset="100%" stop-color="#6d5cc0"/>
+    </linearGradient>
+  </defs>
+  <rect width="630" height="390" fill="url(#bg)"/>
+  <circle cx="339" cy="135" r="173" fill="#ffffff" opacity="0.06"/>
+  <circle cx="461" cy="345" r="86" fill="#000000" opacity="0.08"/>
+  <g transform="translate(249 62) scale(5.5)" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <path d="M3.5 15a8.5 8.5 0 1 1 17 0v1.5a2 2 0 0 1-2 2H6a2.5 2.5 0 0 1-2.5-2.5Z"/>
+    <path d="M8 13h11.8"/><path d="M8 13a4 4 0 0 1 4-4h6"/>
+  </g>
+  <g font-family="system-ui, 'Segoe UI', Roboto, Arial, sans-serif" fill="#ffffff">
+    <text x="40" y="316" font-size="25" font-weight="700">Helm Modular HTZL Voyager</text>
+    <text x="40" y="352" font-size="15" font-weight="600" opacity="0.72" letter-spacing="1.5">HTZ-APP-039</text>
+  </g>
+</svg>

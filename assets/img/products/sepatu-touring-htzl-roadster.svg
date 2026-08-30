@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 390" width="630" height="390" role="img" aria-label="Sepatu Touring HTZL Roadster">
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(68)">
+      <stop offset="0%" stop-color="#3b2f73"/>
+      <stop offset="100%" stop-color="#6d5cc0"/>
+    </linearGradient>
+  </defs>
+  <rect width="630" height="390" fill="url(#bg)"/>
+  <circle cx="203" cy="276" r="267" fill="#ffffff" opacity="0.06"/>
+  <circle cx="529" cy="298" r="133" fill="#000000" opacity="0.08"/>
+  <g transform="translate(249 62) scale(5.5)" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <path d="M8 3h5v10l5.5 3.2a2 2 0 0 1 1 1.7V21H8Z"/><path d="M8 3v18"/><path d="M13 8h-5"/>
+  </g>
+  <g font-family="system-ui, 'Segoe UI', Roboto, Arial, sans-serif" fill="#ffffff">
+    <text x="40" y="316" font-size="25" font-weight="700">Sepatu Touring HTZL Roadster</text>
+    <text x="40" y="352" font-size="15" font-weight="600" opacity="0.72" letter-spacing="1.5">HTZ-APP-052</text>
+  </g>
+</svg>

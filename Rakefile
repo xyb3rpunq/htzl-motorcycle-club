@@ -65,3 +65,21 @@ namespace :i18n do
 end
 
 task default: :ci
+
+desc "Ambil foto Harley berlisensi bebas dari Wikimedia Commons (butuh Python + Pillow)"
+task :photos do
+  require "json"
+  require_relative "lib/htzl/catalog"
+
+  units = HTZL::Catalog.build
+                       .select { |i| i["category"] == "heritage" }
+                       .map { |i| { slug: i["slug"], year: i["year"], name: i["name"], query: i["photo_query"] } }
+
+  ENV["HTZL_UNITS"] = JSON.generate(units)
+  sh "python lib/fetch_heritage_photos.py"
+end
+
+desc "Buat artwork SVG untuk produk tanpa foto"
+task :art do
+  ruby "lib/generate_art.rb"
+end

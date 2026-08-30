@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 390" width="630" height="390" role="img" aria-label="Cartridge Depan HTZL NIX30">
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(70)">
+      <stop offset="0%" stop-color="#1e4560"/>
+      <stop offset="100%" stop-color="#3d82ad"/>
+    </linearGradient>
+  </defs>
+  <rect width="630" height="390" fill="url(#bg)"/>
+  <circle cx="385" cy="102" r="168" fill="#ffffff" opacity="0.06"/>
+  <circle cx="438" cy="356" r="84" fill="#000000" opacity="0.08"/>
+  <g transform="translate(249 62) scale(5.5)" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <path d="M12 2v3"/><path d="M12 19v3"/>
+    <path d="M8 6h8l-8 2.6h8l-8 2.6h8l-8 2.6h8L8 16.4h8"/>
+  </g>
+  <g font-family="system-ui, 'Segoe UI', Roboto, Arial, sans-serif" fill="#ffffff">
+    <text x="40" y="316" font-size="25" font-weight="700">Cartridge Depan HTZL NIX30</text>
+    <text x="40" y="352" font-size="15" font-weight="600" opacity="0.72" letter-spacing="1.5">HTZ-PAR-091</text>
+  </g>
+</svg>

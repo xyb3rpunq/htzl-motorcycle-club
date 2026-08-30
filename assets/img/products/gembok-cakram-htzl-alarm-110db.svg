@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 390" width="630" height="390" role="img" aria-label="Gembok Cakram HTZL Alarm 110dB">
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(52)">
+      <stop offset="0%" stop-color="#11554f"/>
+      <stop offset="100%" stop-color="#2b9c93"/>
+    </linearGradient>
+  </defs>
+  <rect width="630" height="390" fill="url(#bg)"/>
+  <circle cx="427" cy="68" r="222" fill="#ffffff" opacity="0.06"/>
+  <circle cx="417" cy="368" r="111" fill="#000000" opacity="0.08"/>
+  <g transform="translate(249 62) scale(5.5)" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <path d="M3 19c0-6 4-11 9-11s9 5 9 11"/><path d="M3 19h18"/><path d="M8 19c0-4 1.8-7 4-7s4 3 4 7"/>
+  </g>
+  <g font-family="system-ui, 'Segoe UI', Roboto, Arial, sans-serif" fill="#ffffff">
+    <text x="40" y="316" font-size="25" font-weight="700">Gembok Cakram HTZL Alarm 110dB</text>
+    <text x="40" y="352" font-size="15" font-weight="600" opacity="0.72" letter-spacing="1.5">HTZ-AKS-121</text>
+  </g>
+</svg>

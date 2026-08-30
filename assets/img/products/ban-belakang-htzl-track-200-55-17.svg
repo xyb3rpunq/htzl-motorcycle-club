@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 390" width="630" height="390" role="img" aria-label="Ban Belakang HTZL Track 200/55-17">
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(38)">
+      <stop offset="0%" stop-color="#1e4560"/>
+      <stop offset="100%" stop-color="#3d82ad"/>
+    </linearGradient>
+  </defs>
+  <rect width="630" height="390" fill="url(#bg)"/>
+  <circle cx="473" cy="234" r="237" fill="#ffffff" opacity="0.06"/>
+  <circle cx="394" cy="312" r="118" fill="#000000" opacity="0.08"/>
+  <g transform="translate(249 62) scale(5.5)" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/>
+    <path d="M12 3v3M12 18v3M3 12h3M18 12h3"/>
+  </g>
+  <g font-family="system-ui, 'Segoe UI', Roboto, Arial, sans-serif" fill="#ffffff">
+    <text x="40" y="300" font-size="25" font-weight="700">Ban Belakang HTZL Track</text>
+    <text x="40" y="330" font-size="25" font-weight="700">200/55-17</text>
+    <text x="40" y="366" font-size="15" font-weight="600" opacity="0.72" letter-spacing="1.5">HTZ-PAR-071</text>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 390" width="630" height="390" role="img" aria-label="Rompi Airbag HTZL Guardian">
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(47)">
+      <stop offset="0%" stop-color="#3b2f73"/>
+      <stop offset="100%" stop-color="#6d5cc0"/>
+    </linearGradient>
+  </defs>
+  <rect width="630" height="390" fill="url(#bg)"/>
+  <circle cx="422" cy="267" r="200" fill="#ffffff" opacity="0.06"/>
+  <circle cx="419" cy="301" r="100" fill="#000000" opacity="0.08"/>
+  <g transform="translate(249 62) scale(5.5)" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <path d="M12 2.5 4.5 5.5v6c0 5 3.2 8.6 7.5 10 4.3-1.4 7.5-5 7.5-10v-6Z"/><path d="M8.5 8.5h7"/><path d="M8.5 12.5h7"/>
+  </g>
+  <g font-family="system-ui, 'Segoe UI', Roboto, Arial, sans-serif" fill="#ffffff">
+    <text x="40" y="316" font-size="25" font-weight="700">Rompi Airbag HTZL Guardian</text>
+    <text x="40" y="352" font-size="15" font-weight="600" opacity="0.72" letter-spacing="1.5">HTZ-APP-046</text>
+  </g>
+</svg>

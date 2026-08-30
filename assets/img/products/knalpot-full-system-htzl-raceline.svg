@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 390" width="630" height="390" role="img" aria-label="Knalpot Full System HTZL RaceLine">
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(57)">
+      <stop offset="0%" stop-color="#1e4560"/>
+      <stop offset="100%" stop-color="#3d82ad"/>
+    </linearGradient>
+  </defs>
+  <rect width="630" height="390" fill="url(#bg)"/>
+  <circle cx="492" cy="117" r="164" fill="#ffffff" opacity="0.06"/>
+  <circle cx="384" cy="351" r="82" fill="#000000" opacity="0.08"/>
+  <g transform="translate(249 62) scale(5.5)" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <rect x="8" y="8" width="13" height="8" rx="4"/><path d="M8 12H5a2 2 0 0 0-2 2v3"/><path d="M13 8v8"/>
+  </g>
+  <g font-family="system-ui, 'Segoe UI', Roboto, Arial, sans-serif" fill="#ffffff">
+    <text x="40" y="300" font-size="25" font-weight="700">Knalpot Full System HTZL</text>
+    <text x="40" y="330" font-size="25" font-weight="700">RaceLine</text>
+    <text x="40" y="366" font-size="15" font-weight="600" opacity="0.72" letter-spacing="1.5">HTZ-PAR-064</text>
+  </g>
+</svg>

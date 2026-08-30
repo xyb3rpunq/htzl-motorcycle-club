@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 390" width="630" height="390" role="img" aria-label="Handguard HTZL Storm">
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(31)">
+      <stop offset="0%" stop-color="#11554f"/>
+      <stop offset="100%" stop-color="#2b9c93"/>
+    </linearGradient>
+  </defs>
+  <rect width="630" height="390" fill="url(#bg)"/>
+  <circle cx="166" cy="190" r="255" fill="#ffffff" opacity="0.06"/>
+  <circle cx="547" cy="327" r="127" fill="#000000" opacity="0.08"/>
+  <g transform="translate(249 62) scale(5.5)" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <path d="M3 12h18"/><path d="M6 12c0-4 3-6 7-6s5 2 5 6-1 6-5 6-7-2-7-6Z"/>
+  </g>
+  <g font-family="system-ui, 'Segoe UI', Roboto, Arial, sans-serif" fill="#ffffff">
+    <text x="40" y="316" font-size="25" font-weight="700">Handguard HTZL Storm</text>
+    <text x="40" y="352" font-size="15" font-weight="600" opacity="0.72" letter-spacing="1.5">HTZ-AKS-115</text>
+  </g>
+</svg>

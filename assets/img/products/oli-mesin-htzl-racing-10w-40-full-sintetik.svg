@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 390" width="630" height="390" role="img" aria-label="Oli Mesin HTZL Racing 10W-40 Full Sintetik">
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(37)">
+      <stop offset="0%" stop-color="#7d4f0e"/>
+      <stop offset="100%" stop-color="#cf9333"/>
+    </linearGradient>
+  </defs>
+  <rect width="630" height="390" fill="url(#bg)"/>
+  <circle cx="172" cy="91" r="237" fill="#ffffff" opacity="0.06"/>
+  <circle cx="544" cy="360" r="118" fill="#000000" opacity="0.08"/>
+  <g transform="translate(249 62) scale(5.5)" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <path d="M9 2h6v3l2.5 2.5V21a1 1 0 0 1-1 1H7.5a1 1 0 0 1-1-1V7.5L9 5Z"/><path d="M6.5 11h11"/>
+  </g>
+  <g font-family="system-ui, 'Segoe UI', Roboto, Arial, sans-serif" fill="#ffffff">
+    <text x="40" y="300" font-size="25" font-weight="700">Oli Mesin HTZL Racing 10W-40</text>
+    <text x="40" y="330" font-size="25" font-weight="700">Full Sintetik</text>
+    <text x="40" y="366" font-size="15" font-weight="600" opacity="0.72" letter-spacing="1.5">HTZ-OLI-093</text>
+  </g>
+</svg>
