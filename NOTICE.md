@@ -3,6 +3,11 @@
 Repositori ini memakai beberapa aset yang tidak dilindungi lisensi MIT proyek.
 Berkas ini merinci asal dan status lisensinya.
 
+> Lisensi MIT di [LICENSE](LICENSE) berlaku untuk **kode** dalam repositori ini:
+> seluruh berkas Ruby, CSS, JavaScript, templat Liquid, konfigurasi, dan test.
+> Lisensi itu **tidak** berlaku untuk aset pihak ketiga (font dan gambar), yang
+> dirinci di bawah.
+
 ## Ringkasan
 
 | Komponen | Lisensi | Berlaku untuk |

@@ -19,11 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-Lisensi MIT di atas berlaku untuk KODE dalam repositori ini: seluruh berkas
-Ruby, CSS, JavaScript, templat Liquid, konfigurasi, dan test.
-
-Lisensi ini TIDAK berlaku untuk aset pihak ketiga (font dan gambar). Rincian
-lisensi masing-masing aset ada di NOTICE.md.
