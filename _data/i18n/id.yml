@@ -1,0 +1,247 @@
+# Bahasa Indonesia (locale dasar)
+locale: id
+code: id
+html_lang: id
+name: Bahasa Indonesia
+short: ID
+flag: "🇮🇩"
+prefix: ""
+
+nav:
+  home: Beranda
+  products: Produk
+  catalog: Katalog
+  gallery: Galeri
+  reserve: Reservasi
+  kawasaki: Kawasaki
+  vixian: Vixian
+  kawasaki_sub: Superbike dan sport naked
+  vixian_sub: Adventure dan supermoto
+  menu: Menu
+  language: Bahasa
+  theme: Ganti tema terang/gelap
+
+actions:
+  detail: Lihat detail
+  order: Pesan via WhatsApp
+  order_short: Pesan
+  view_catalog: Lihat katalog lengkap
+  browse: Jelajahi semua produk
+  close: Tutup
+  prev: Sebelumnya
+  next: Berikutnya
+  clear: Bersihkan
+  reset: Atur ulang filter
+  back_home: Kembali ke beranda
+  search_placeholder: Cari motor, sparepart, apparel...
+  skip: Lompat ke konten utama
+  chat: Chat WhatsApp
+
+home:
+  hero:
+    - eyebrow: Promo Terbatas
+      title: Mega Sale Akhir Tahun
+      text: Potongan sampai Rp 12 juta untuk unit terpilih plus paket servis gratis satu tahun.
+    - eyebrow: Showroom
+      title: Lihat Langsung Sebelum Membeli
+      text: Ratusan unit siap kirim, dipajang rapi dan boleh dicoba duduk kapan saja.
+    - eyebrow: Komunitas
+      title: Gabung Ratusan Rider HTZL
+      text: Touring bulanan, kelas berkendara aman, dan diskon servis khusus anggota.
+    - eyebrow: Event
+      title: Malam Peluncuran Model Baru
+      text: Jadilah yang pertama menjajal deretan model terbaru Kawasaki dan Vixian.
+    - eyebrow: Warisan
+      title: Museum Mesin Legendaris
+      text: Koleksi motor bersejarah yang merawat semangat berkendara sejak 2016.
+  intro_eyebrow: Tentang Kami
+  intro_title: Dealer motor yang benar-benar mengerti rider
+  intro_text: >-
+    HTZL Motorcycle Club adalah dealer sepeda motor khusus Kawasaki dan Vixian.
+    Berdiri 30 Desember 2016 di Jakarta, kami tumbuh dari bengkel kecil menjadi
+    jaringan dealer dengan teknisi bersertifikat dan stok suku cadang terlengkap.
+    Misi kami sederhana: memberi layanan dan produk berkualitas supaya setiap
+    perjalanan Anda lebih nyaman.
+  stats:
+    - value: "131"
+      label: Item di katalog
+    - value: "12"
+      label: Model motor
+    - value: "2016"
+      label: Tahun berdiri
+    - value: "4.8/5"
+      label: Rating pelanggan
+  kawasaki_title: Model Kawasaki 2022
+  kawasaki_sub: Temukan model Kawasaki yang paling pas dengan gaya berkendara Anda.
+  vixian_title: Model Vixian 2022
+  vixian_sub: Deretan Vixian terbaru, dari supermoto harian sampai adventure lintas provinsi.
+  catalog_title: Semua Kebutuhan Berkendara
+  catalog_sub: Motor, apparel, sparepart, oli, aksesori touring, sampai layanan bengkel.
+  news_title: Berita Terbaru
+  news_sub: Kabar dari lintasan balap, pabrik, dan komunitas HTZL.
+  cta_title: Siap membawa pulang motor impian Anda?
+  cta_text: Isi formulir reservasi atau langsung chat tim kami. Balasan rata-rata di bawah 10 menit.
+  features:
+    - title: Pengiriman cepat
+      text: Unit dikirim ke seluruh Jabodetabek dalam 3 hari kerja, luar kota 7 hari.
+    - title: Garansi resmi
+      text: Garansi mesin 3 tahun dan perlindungan tambahan gratis tanpa biaya tersembunyi.
+    - title: Dukungan penuh
+      text: Tim kami siap membantu lewat WhatsApp setiap hari selama jam operasional.
+
+catalog:
+  title: Katalog Produk
+  subtitle: >-
+    131 item terkurasi lengkap dengan harga transparan. Gunakan pencarian dan
+    filter untuk menemukan yang Anda butuhkan dalam hitungan detik.
+  all: Semua
+  search_label: Cari produk
+  sort_label: Urutkan
+  sort:
+    relevant: Paling relevan
+    price_asc: Harga terendah
+    price_desc: Harga tertinggi
+    name: Nama A sampai Z
+    rating: Rating tertinggi
+  price_label: Rentang harga
+  price_bands:
+    under-500k: Di bawah Rp 500 rb
+    500k-2jt: Rp 500 rb - 2 jt
+    2jt-10jt: Rp 2 jt - 10 jt
+    10jt-50jt: Rp 10 jt - 50 jt
+    di-atas-50jt: Di atas Rp 50 jt
+  brand_label: Merek
+  view_grid: Tampilan kisi
+  view_list: Tampilan daftar
+  showing: Menampilkan
+  of: dari
+  items: item
+  no_results_title: Tidak ada produk yang cocok
+  no_results_text: Coba kata kunci lain atau atur ulang filter yang aktif.
+  stock: Stok
+  in_stock: Tersedia
+  low_stock: Stok menipis
+  service: Layanan
+  always_available: Selalu tersedia
+  sku: Kode
+  specs: Spesifikasi
+  category: Kategori
+  subcategory: Jenis
+  brand: Merek
+  rating: Rating
+  badges:
+    Diskon: Diskon
+    Terlaris: Terlaris
+    Baru: Baru
+    Stok Terbatas: Stok Terbatas
+  blurb_bike: "%{type} %{cc} cc dengan trim %{trim}."
+  blurb_generic: "%{sub} resmi HTZL Motorcycle Club."
+  trims:
+    Standard: Trim dasar dengan fitur harian lengkap.
+    S: Suspensi Ohlins, quickshifter dua arah, dan velg forged.
+    SP: Paket balap dengan rem Brembo, bodi serat karbon, dan mode Track.
+
+gallery:
+  title: Galeri
+  subtitle: Momen dari showroom, pameran, touring, dan museum koleksi kami.
+  open: Buka gambar ukuran penuh
+  captions:
+    goma-preview: Pratinjau media pameran The Motorcycle
+    norden: Adventure bike siap jelajah lintas benua
+    custom-build: Motor custom garapan bengkel rekanan
+    showcase-id: Showcase komunitas motor Indonesia
+    italian-two-wheel: Pameran seni roda dua Italia
+    goma-install: Instalasi pameran di galeri seni modern
+    cake-electric: Motor listrik generasi terbaru
+    expo-floor: Lantai pameran otomotif internasional
+    night-ride: Sesi berkendara malam bersama komunitas
+    museum-hall: Aula museum motor bersejarah
+    museum-closed: Koleksi museum yang jarang dibuka umum
+    sydney-show: Panggung Sydney Motorcycle Show
+
+brand:
+  kawasaki:
+    tagline: Desain elegan hanya untuk Anda
+    intro: Enam model Kawasaki, masing-masing tersedia dalam trim Standard, S, dan SP.
+  vixian:
+    tagline: Jangan pernah takut melambat
+    intro: Enam model Vixian, dari supermoto lincah sampai adventure jarak jauh.
+  models: model
+  variants: varian tersedia
+  from: Mulai dari
+
+reserve:
+  title: Reservasi Kendaraan
+  subtitle: Isi data Anda, kami siapkan unitnya. Tanpa uang muka, tanpa biaya tersembunyi.
+  benefits:
+    - title: Pengiriman cepat dan mudah
+      text: Unit sampai di rumah Anda tanpa perlu antre di dealer.
+    - title: Perlindungan ekstra gratis
+      text: Termasuk asuransi pengiriman dan pemeriksaan menyeluruh sebelum serah terima.
+    - title: Dukungan online penuh
+      text: Pantau status pesanan lewat WhatsApp sampai unit tiba.
+  form_title: Masukkan informasi kontak Anda
+  name: Nama lengkap
+  name_hint: Minimal dua kata, sesuai kartu identitas.
+  phone: Nomor WhatsApp
+  phone_hint: Hanya angka, contoh 081234567890.
+  address: Alamat pengiriman
+  address_hint: Sertakan kecamatan dan kode pos.
+  brand: Pilih merek
+  brand_placeholder: "-- Pilih merek --"
+  model: Pilih model
+  model_placeholder: "-- Pilih model --"
+  qty: Jumlah unit
+  color: Pilih warna
+  colors:
+    black: Hitam
+    blue: Biru
+    red: Merah
+  submit: Kirim reservasi
+  summary_title: Ringkasan pesanan
+  summary_model: Model
+  summary_qty: Jumlah
+  summary_color: Warna
+  summary_price: Harga satuan
+  summary_total: Estimasi total
+  summary_empty: Belum ada model dipilih
+  errors:
+    required: Kolom ini wajib diisi.
+    name_words: Tulis nama lengkap minimal dua kata.
+    phone_digits: Nomor telepon hanya boleh berisi angka.
+    phone_length: Nomor telepon terlalu pendek.
+    color: Pilih salah satu warna.
+    qty: Jumlah harus antara 1 sampai 10.
+  success_title: Reservasi tersimpan
+  success_text: Lanjutkan ke WhatsApp untuk konfirmasi cepat dengan tim kami.
+  wa_button: Lanjut ke WhatsApp
+  wa_message: "Halo HTZL, saya ingin memesan:"
+
+footer:
+  about_title: Tentang
+  about_text: Dealer resmi Kawasaki dan Vixian di Jakarta sejak 2016.
+  quick_title: Tautan cepat
+  contact_title: Kontak
+  follow_title: Ikuti kami
+  hours: Jam operasional
+  rights: Seluruh hak cipta dilindungi.
+  built: Dibangun dengan Ruby dan Jekyll
+  source: Kode sumber
+  disclaimer: >-
+    Situs ini adalah proyek portofolio fiktif untuk keperluan belajar. HTZL
+    Motorcycle Club bukan perusahaan sungguhan, dan nama merek serta gambar yang
+    dipakai adalah milik pemegang hak masing-masing tanpa afiliasi apa pun.
+
+meta:
+  home_title: Dealer Sepeda Motor Terpercaya
+  home_desc: Dealer resmi Kawasaki dan Vixian di Jakarta. 131 item katalog dengan harga transparan, garansi resmi, dan pengiriman cepat.
+  catalog_desc: "Jelajahi 131 item: motor, apparel, sparepart, oli, aksesori touring, dan layanan bengkel HTZL Motorcycle Club."
+  gallery_desc: Dokumentasi showroom, pameran, touring, dan museum koleksi HTZL Motorcycle Club.
+  reserve_desc: Pesan motor Kawasaki atau Vixian secara online. Tanpa uang muka, konfirmasi lewat WhatsApp.
+  kawasaki_desc: Enam model Kawasaki dalam trim Standard, S, dan SP lengkap dengan harga dan spesifikasi.
+  vixian_desc: Enam model Vixian dari supermoto sampai adventure lengkap dengan harga dan spesifikasi.
+
+notfound:
+  title: Halaman tidak ditemukan
+  text: Alamat yang Anda tuju sudah dipindahkan atau tidak pernah ada.
+  cta: Kembali ke beranda

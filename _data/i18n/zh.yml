@@ -1,0 +1,244 @@
+# 简体中文
+locale: zh
+code: zh
+html_lang: zh-Hans
+name: 简体中文
+short: 中文
+flag: "🇨🇳"
+prefix: "/zh"
+
+nav:
+  home: 首页
+  products: 产品
+  catalog: 产品目录
+  gallery: 图库
+  reserve: 预订
+  kawasaki: Kawasaki
+  vixian: Vixian
+  kawasaki_sub: 超级跑车与街车
+  vixian_sub: 探险车与超级摩托
+  menu: 菜单
+  language: 语言
+  theme: 切换浅色或深色主题
+
+actions:
+  detail: 查看详情
+  order: 通过 WhatsApp 订购
+  order_short: 订购
+  view_catalog: 浏览完整目录
+  browse: 探索全部产品
+  close: 关闭
+  prev: 上一个
+  next: 下一个
+  clear: 清除
+  reset: 重置筛选
+  back_home: 返回首页
+  search_placeholder: 搜索车款、配件、骑行装备…
+  skip: 跳到主要内容
+  chat: WhatsApp 咨询
+
+home:
+  hero:
+    - eyebrow: 限时优惠
+      title: 年终大促销
+      text: 指定车款最高立减 1,200 万印尼盾，另赠一年免费保养套餐。
+    - eyebrow: 展厅
+      title: 买之前先亲眼看看
+      text: 数百台现车随时可交付，陈列整齐，随时欢迎试坐。
+    - eyebrow: 车友会
+      title: 加入数百名 HTZL 车手
+      text: 每月骑行、安全驾驶课程，以及会员专属保养折扣。
+    - eyebrow: 活动
+      title: 新车发布之夜
+      text: 抢先试驾 Kawasaki 与 Vixian 的最新车系。
+    - eyebrow: 传承
+      title: 传奇发动机博物馆
+      text: 自 2016 年起延续骑行精神的历史车款收藏。
+  intro_eyebrow: 关于我们
+  intro_title: 真正懂骑士的摩托车经销商
+  intro_text: >-
+    HTZL Motorcycle Club 是专营 Kawasaki 与 Vixian 的摩托车经销商。
+    我们于 2016 年 12 月 30 日在雅加达成立，从一间小型修理厂成长为拥有认证技师
+    与充足零件库存的经销网络。我们的使命很简单：提供优质的服务与产品，
+    让您的每一次骑行都更加舒适。
+  stats:
+    - value: "131"
+      label: 目录商品
+    - value: "12"
+      label: 车款
+    - value: "2016"
+      label: 成立年份
+    - value: "4.8/5"
+      label: 客户评分
+  kawasaki_title: Kawasaki 2022 车款
+  kawasaki_sub: 找到最契合您骑行风格的 Kawasaki。
+  vixian_title: Vixian 2022 车款
+  vixian_sub: 最新 Vixian 车系，从日常超级摩托到长途探险车。
+  catalog_title: 骑行所需，一应俱全
+  catalog_sub: 整车、骑行装备、零配件、机油、旅行配件，以及维修服务。
+  news_title: 最新消息
+  news_sub: 来自赛道、工厂与 HTZL 车友会的动态。
+  cta_title: 准备好把梦想座驾带回家了吗？
+  cta_text: 填写预订表单，或直接联系我们的团队。平均 10 分钟内回复。
+  features:
+    - title: 快速配送
+      text: 大雅加达地区 3 个工作日送达，其他城市 7 天。
+    - title: 官方保修
+      text: 三年发动机保修并赠送额外保障，无任何隐藏费用。
+    - title: 全程支持
+      text: 营业时间内，我们的团队每天都在 WhatsApp 上待命。
+
+catalog:
+  title: 产品目录
+  subtitle: >-
+    131 件精选商品，价格公开透明。使用搜索与筛选功能，几秒内找到所需产品。
+  all: 全部
+  search_label: 搜索产品
+  sort_label: 排序方式
+  sort:
+    relevant: 最相关
+    price_asc: 价格由低到高
+    price_desc: 价格由高到低
+    name: 名称 A 至 Z
+    rating: 评分最高
+  price_label: 价格区间
+  price_bands:
+    under-500k: 50 万印尼盾以下
+    500k-2jt: 50 万 - 200 万印尼盾
+    2jt-10jt: 200 万 - 1,000 万印尼盾
+    10jt-50jt: 1,000 万 - 5,000 万印尼盾
+    di-atas-50jt: 5,000 万印尼盾以上
+  brand_label: 品牌
+  view_grid: 网格视图
+  view_list: 列表视图
+  showing: 显示
+  of: 共
+  items: 件商品
+  no_results_title: 没有符合条件的产品
+  no_results_text: 请尝试其他关键词，或重置当前筛选条件。
+  stock: 库存
+  in_stock: 现货
+  low_stock: 库存不多
+  service: 服务
+  always_available: 长期供应
+  sku: 编号
+  specs: 规格
+  category: 类别
+  subcategory: 种类
+  brand: 品牌
+  rating: 评分
+  badges:
+    Diskon: 促销
+    Terlaris: 热销
+    Baru: 新品
+    Stok Terbatas: 库存不多
+  blurb_bike: "%{type}，%{cc} cc 发动机，%{trim} 版本。"
+  blurb_generic: "HTZL Motorcycle Club 官方%{sub}。"
+  trims:
+    Standard: 基础版本，日常所需配置齐全。
+    S: 配备 Ohlins 悬挂、双向快速换挡与锻造轮圈。
+    SP: 赛道套件，含 Brembo 刹车、碳纤维车身与 Track 模式。
+
+gallery:
+  title: 图库
+  subtitle: 来自展厅、车展、骑行活动与馆藏的精彩瞬间。
+  open: 查看大图
+  captions:
+    goma-preview: The Motorcycle 展览媒体预览
+    norden: 为跨洲旅行而生的探险车
+    custom-build: 合作车间打造的改装车
+    showcase-id: 印尼摩托车友会展示
+    italian-two-wheel: 意大利两轮艺术展
+    goma-install: 现代艺术馆的展览布置
+    cake-electric: 最新一代电动摩托车
+    expo-floor: 国际车展展区
+    night-ride: 车友会夜骑活动
+    museum-hall: 历史摩托车博物馆主厅
+    museum-closed: 极少对外展出的馆藏
+    sydney-show: 悉尼摩托车展舞台
+
+brand:
+  kawasaki:
+    tagline: 优雅设计，只为您而生
+    intro: 六款 Kawasaki 车型，每款均提供 Standard、S 与 SP 三种版本。
+  vixian:
+    tagline: 慢下来，也无需畏惧
+    intro: 六款 Vixian 车型，从灵巧的超级摩托到长途探险车。
+  models: 款车型
+  variants: 个可选版本
+  from: 起售价
+
+reserve:
+  title: 预订车辆
+  subtitle: 留下您的信息，我们为您备车。无需订金，没有隐藏费用。
+  benefits:
+    - title: 快速便捷配送
+      text: 车辆直送到府，无需在门店排队等候。
+    - title: 免费额外保障
+      text: 含运输保险，交车前进行全面检查。
+    - title: 全程线上支持
+      text: 通过 WhatsApp 追踪订单，直到车辆送达。
+  form_title: 请填写您的联系方式
+  name: 姓名全称
+  name_hint: 至少两个词，须与证件一致。
+  phone: WhatsApp 号码
+  phone_hint: 仅限数字，例如 081234567890。
+  address: 收货地址
+  address_hint: 请包含区名与邮政编码。
+  brand: 选择品牌
+  brand_placeholder: "-- 请选择品牌 --"
+  model: 选择车型
+  model_placeholder: "-- 请选择车型 --"
+  qty: 数量
+  color: 选择颜色
+  colors:
+    black: 黑色
+    blue: 蓝色
+    red: 红色
+  submit: 提交预订
+  summary_title: 订单摘要
+  summary_model: 车型
+  summary_qty: 数量
+  summary_color: 颜色
+  summary_price: 单价
+  summary_total: 预估总价
+  summary_empty: 尚未选择车型
+  errors:
+    required: 此栏为必填项。
+    name_words: 请填写完整姓名，至少两个词。
+    phone_digits: 电话号码只能包含数字。
+    phone_length: 电话号码位数不足。
+    color: 请选择一种颜色。
+    qty: 数量须介于 1 至 10 之间。
+  success_title: 预订已保存
+  success_text: 请前往 WhatsApp，我们的团队会尽快为您确认。
+  wa_button: 前往 WhatsApp
+  wa_message: "您好 HTZL，我想订购："
+
+footer:
+  about_title: 关于
+  about_text: 自 2016 年起在雅加达经营的 Kawasaki 与 Vixian 官方经销商。
+  quick_title: 快速链接
+  contact_title: 联系方式
+  follow_title: 关注我们
+  hours: 营业时间
+  rights: 版权所有。
+  built: 使用 Ruby 与 Jekyll 构建
+  source: 源代码
+  disclaimer: >-
+    本网站是出于学习目的制作的虚构作品集项目。HTZL Motorcycle Club 并非真实公司，
+    所使用的品牌名称与图片均归各自权利人所有，不存在任何关联关系。
+
+meta:
+  home_title: 值得信赖的摩托车经销商
+  home_desc: 雅加达 Kawasaki 与 Vixian 官方经销商。131 件目录商品，价格透明，官方保修，快速配送。
+  catalog_desc: 浏览 131 件商品：整车、骑行装备、零配件、机油、旅行配件与维修服务。
+  gallery_desc: HTZL Motorcycle Club 的展厅、车展、骑行与馆藏影像记录。
+  reserve_desc: 在线预订 Kawasaki 或 Vixian。无需订金，通过 WhatsApp 确认。
+  kawasaki_desc: 六款 Kawasaki 车型，提供 Standard、S 与 SP 版本，含完整价格与规格。
+  vixian_desc: 六款 Vixian 车型，从超级摩托到探险车，含完整价格与规格。
+
+notfound:
+  title: 找不到页面
+  text: 您访问的地址已迁移，或从未存在。
+  cta: 返回首页

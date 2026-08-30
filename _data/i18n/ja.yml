@@ -1,0 +1,246 @@
+# 日本語
+locale: ja
+code: ja
+html_lang: ja
+name: 日本語
+short: 日本語
+flag: "🇯🇵"
+prefix: "/ja"
+
+nav:
+  home: ホーム
+  products: 製品
+  catalog: カタログ
+  gallery: ギャラリー
+  reserve: 予約
+  kawasaki: Kawasaki
+  vixian: Vixian
+  kawasaki_sub: スーパーバイクとネイキッド
+  vixian_sub: アドベンチャーとスーパーモト
+  menu: メニュー
+  language: 言語
+  theme: ライト・ダークテーマの切り替え
+
+actions:
+  detail: 詳細を見る
+  order: WhatsAppで注文
+  order_short: 注文
+  view_catalog: カタログ全体を見る
+  browse: すべての製品を見る
+  close: 閉じる
+  prev: 前へ
+  next: 次へ
+  clear: クリア
+  reset: 絞り込みをリセット
+  back_home: ホームに戻る
+  search_placeholder: 車両・パーツ・ウェアを検索…
+  skip: 本文へスキップ
+  chat: WhatsAppで相談
+
+home:
+  hero:
+    - eyebrow: 期間限定
+      title: 年末メガセール
+      text: 対象車両が最大1,200万ルピア引き。さらに1年間の無料点検パックが付きます。
+    - eyebrow: ショールーム
+      title: 買う前に、実車を確かめる
+      text: 即納可能な車両を数百台展示。いつでもまたがってご確認いただけます。
+    - eyebrow: コミュニティ
+      title: 数百人のHTZLライダーの仲間へ
+      text: 毎月のツーリング、安全運転講習、会員限定の整備割引をご用意。
+    - eyebrow: イベント
+      title: ニューモデル発表ナイト
+      text: KawasakiとVixianの最新ラインナップを、誰よりも先に体感してください。
+    - eyebrow: 伝統
+      title: 名機を集めたミュージアム
+      text: 2016年から走る歓びを受け継いできた、歴史的車両のコレクション。
+  intro_eyebrow: 私たちについて
+  intro_title: ライダーを本当に理解している販売店
+  intro_text: >-
+    HTZL Motorcycle Clubは、KawasakiとVixianを専門に扱うバイク販売店です。
+    2016年12月30日にジャカルタで創業し、小さな整備工場から、認定整備士と
+    充実した部品在庫を備えた販売網へと成長しました。私たちの使命はシンプルです。
+    質の高いサービスと製品を届け、お客様のすべての走行をより快適にすることです。
+  stats:
+    - value: "131"
+      label: カタログ掲載点数
+    - value: "12"
+      label: 車両モデル
+    - value: "2016"
+      label: 創業年
+    - value: "4.8/5"
+      label: お客様評価
+  kawasaki_title: Kawasaki 2022年モデル
+  kawasaki_sub: あなたの走り方に合うKawasakiを見つけてください。
+  vixian_title: Vixian 2022年モデル
+  vixian_sub: 街乗りスーパーモトから長距離アドベンチャーまで、最新のVixianラインナップ。
+  catalog_title: 走りに必要なすべて
+  catalog_sub: 車両、ウェア、パーツ、オイル、ツーリング用品、そして整備サービス。
+  news_title: 最新ニュース
+  news_sub: サーキット、工場、そしてHTZLコミュニティからのお知らせ。
+  cta_title: 憧れの一台を迎える準備はできましたか。
+  cta_text: 予約フォームからでも、直接ご連絡いただいても構いません。平均10分以内に返信します。
+  features:
+    - title: 迅速な配送
+      text: ジャカルタ首都圏は3営業日、その他の都市は7日でお届けします。
+    - title: 正規保証
+      text: エンジン3年保証に加え、追加保護を無料付帯。隠れた費用はありません。
+    - title: 手厚いサポート
+      text: 営業時間内であれば、WhatsAppで毎日ご相談を承ります。
+
+catalog:
+  title: 製品カタログ
+  subtitle: >-
+    厳選した131点を、明朗な価格でご用意しています。検索と絞り込みで、
+    必要な一点が数秒で見つかります。
+  all: すべて
+  search_label: 製品を検索
+  sort_label: 並び替え
+  sort:
+    relevant: おすすめ順
+    price_asc: 価格の安い順
+    price_desc: 価格の高い順
+    name: 名前順
+    rating: 評価の高い順
+  price_label: 価格帯
+  price_bands:
+    under-500k: 50万ルピア未満
+    500k-2jt: 50万〜200万ルピア
+    2jt-10jt: 200万〜1,000万ルピア
+    10jt-50jt: 1,000万〜5,000万ルピア
+    di-atas-50jt: 5,000万ルピア超
+  brand_label: ブランド
+  view_grid: グリッド表示
+  view_list: リスト表示
+  showing: 表示中
+  of: 件中
+  items: 件
+  no_results_title: 該当する製品がありません
+  no_results_text: 別のキーワードをお試しいただくか、絞り込みをリセットしてください。
+  stock: 在庫
+  in_stock: 在庫あり
+  low_stock: 残りわずか
+  service: サービス
+  always_available: 常時受付
+  sku: 品番
+  specs: 仕様
+  category: カテゴリー
+  subcategory: 種別
+  brand: ブランド
+  rating: 評価
+  badges:
+    Diskon: セール
+    Terlaris: 人気
+    Baru: 新着
+    Stok Terbatas: 残りわずか
+  blurb_bike: "%{type}、%{cc} ccエンジン、%{trim}仕様。"
+  blurb_generic: "HTZL Motorcycle Clubの正規%{sub}。"
+  trims:
+    Standard: 日常使いに必要な装備をひと通り備えたベース仕様。
+    S: Ohlins製サスペンション、双方向クイックシフター、鍛造ホイールを装備。
+    SP: Brembo製ブレーキ、カーボンボディ、Trackモードを備えたレースパッケージ。
+
+gallery:
+  title: ギャラリー
+  subtitle: ショールーム、展示会、ツーリング、ミュージアムコレクションの記録。
+  open: 原寸の画像を開く
+  captions:
+    goma-preview: 展示会The Motorcycleのメディア内覧
+    norden: 大陸横断を想定したアドベンチャーバイク
+    custom-build: 提携工房が手がけたカスタム車両
+    showcase-id: インドネシアのバイクコミュニティ展示
+    italian-two-wheel: イタリア二輪の造形美を集めた展示
+    goma-install: 現代美術館での展示設営
+    cake-electric: 最新世代の電動バイク
+    expo-floor: 国際モーターショーの展示フロア
+    night-ride: コミュニティによるナイトラン
+    museum-hall: 歴史的名車を収めたミュージアムの大広間
+    museum-closed: 一般公開されることが少ない収蔵車両
+    sydney-show: シドニー・モーターサイクルショーのステージ
+
+brand:
+  kawasaki:
+    tagline: あなたのためだけの、洗練されたデザイン
+    intro: Kawasakiの6モデル。それぞれStandard、S、SPの3仕様をご用意しています。
+  vixian:
+    tagline: ゆっくり走ることを、恐れない
+    intro: Vixianの6モデル。軽快なスーパーモトから長距離アドベンチャーまで。
+  models: モデル
+  variants: 仕様を用意
+  from: 価格
+
+reserve:
+  title: 車両のご予約
+  subtitle: ご記入いただければ、車両をご用意します。頭金も、隠れた費用もありません。
+  benefits:
+    - title: 迅速で手軽な配送
+      text: 販売店に並ぶ必要はありません。ご自宅までお届けします。
+    - title: 追加保護を無料付帯
+      text: 輸送保険と、引き渡し前の全体点検が含まれます。
+    - title: 充実のオンラインサポート
+      text: 車両が届くまで、WhatsAppでご注文状況を確認できます。
+  form_title: ご連絡先をご記入ください
+  name: お名前
+  name_hint: 身分証のとおり、2語以上でご記入ください。
+  phone: WhatsApp番号
+  phone_hint: 数字のみ。例：081234567890
+  address: お届け先住所
+  address_hint: 郡名と郵便番号もご記入ください。
+  brand: ブランドを選択
+  brand_placeholder: "-- ブランドを選択 --"
+  model: モデルを選択
+  model_placeholder: "-- モデルを選択 --"
+  qty: 台数
+  color: カラーを選択
+  colors:
+    black: ブラック
+    blue: ブルー
+    red: レッド
+  submit: 予約を送信
+  summary_title: ご注文内容
+  summary_model: モデル
+  summary_qty: 台数
+  summary_color: カラー
+  summary_price: 単価
+  summary_total: 合計見込み
+  summary_empty: モデルが未選択です
+  errors:
+    required: この項目は必須です。
+    name_words: お名前を2語以上でご記入ください。
+    phone_digits: 電話番号は数字のみでご入力ください。
+    phone_length: 電話番号の桁数が足りません。
+    color: カラーをお選びください。
+    qty: 台数は1〜10でご指定ください。
+  success_title: 予約を保存しました
+  success_text: WhatsAppにお進みください。担当者がすぐに確認いたします。
+  wa_button: WhatsAppへ進む
+  wa_message: "HTZLさん、こんにちは。次の内容で注文したいです："
+
+footer:
+  about_title: 会社概要
+  about_text: 2016年からジャカルタで営業する、KawasakiとVixianの正規販売店です。
+  quick_title: クイックリンク
+  contact_title: お問い合わせ
+  follow_title: フォローする
+  hours: 営業時間
+  rights: 無断転載を禁じます。
+  built: RubyとJekyllで構築
+  source: ソースコード
+  disclaimer: >-
+    本サイトは学習目的で制作した架空のポートフォリオ作品です。HTZL Motorcycle Club
+    は実在の企業ではなく、使用しているブランド名および画像の権利は各権利者に帰属します。
+    いかなる提携関係もありません。
+
+meta:
+  home_title: 信頼できるバイク販売店
+  home_desc: ジャカルタのKawasaki・Vixian正規販売店。明朗価格のカタログ131点、正規保証、迅速配送。
+  catalog_desc: 車両、ウェア、パーツ、オイル、ツーリング用品、整備サービスなど131点を掲載。
+  gallery_desc: HTZL Motorcycle Clubのショールーム、展示会、ツーリング、収蔵車両の記録。
+  reserve_desc: KawasakiまたはVixianをオンラインで予約。頭金不要、WhatsAppで確認します。
+  kawasaki_desc: Kawasaki 6モデルのStandard・S・SP仕様を、価格と仕様とともに掲載。
+  vixian_desc: スーパーモトからアドベンチャーまで、Vixian 6モデルを価格と仕様とともに掲載。
+
+notfound:
+  title: ページが見つかりません
+  text: お探しのアドレスは移動したか、もともと存在しません。
+  cta: ホームに戻る

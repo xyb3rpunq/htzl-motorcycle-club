@@ -1,0 +1,156 @@
+# Kamus istilah katalog. Kunci = teks Bahasa Indonesia dari lib/htzl/catalog.rb.
+# Filter Liquid `term` mencari di sini dan otomatis jatuh kembali ke teks asli
+# bila terjemahan belum ada. Jalankan `rake i18n:report` untuk melihat cakupan.
+
+category:
+  Motor:                   { en: Motorcycles,            zh: 整车,        ru: Мотоциклы,           ja: 車両 }
+  Apparel & Gear:          { en: Apparel & Gear,         zh: 骑行装备,    ru: Экипировка,          ja: ウェア・装備 }
+  Sparepart & Performa:    { en: Parts & Performance,    zh: 零件与性能,  ru: Запчасти и тюнинг,   ja: パーツ・性能 }
+  Oli & Perawatan:         { en: Oils & Care,            zh: 机油与保养,  ru: Масла и уход,        ja: オイル・メンテ }
+  Aksesori & Touring:      { en: Accessories & Touring,  zh: 配件与旅行,  ru: Аксессуары и туризм, ja: アクセサリー・ツーリング }
+  Layanan Bengkel:         { en: Workshop Services,      zh: 维修服务,    ru: Сервис,              ja: 整備サービス }
+
+category_blurb:
+  Unit kendaraan siap kirim:      { en: Motorcycles ready to ship,      zh: 现车即刻交付,     ru: Мотоциклы готовы к отгрузке,   ja: 即納可能な車両 }
+  Perlengkapan berkendara:        { en: Gear for every ride,            zh: 骑行所需装备,     ru: Экипировка для езды,           ja: 走りを支える装備 }
+  Komponen dan upgrade:           { en: Components and upgrades,        zh: 零件与升级件,     ru: Компоненты и апгрейды,         ja: 部品とアップグレード }
+  Pelumas dan cairan:             { en: Lubricants and fluids,          zh: 润滑油与油液,     ru: Смазки и жидкости,             ja: 潤滑油と油脂 }
+  Penunjang perjalanan jauh:      { en: Built for long journeys,        zh: 长途出行支援,     ru: Для дальних поездок,           ja: 長距離走行の相棒 }
+  Servis oleh teknisi resmi:      { en: Work by certified technicians,  zh: 认证技师施工,     ru: Работы сертифицированных механиков, ja: 認定整備士による作業 }
+
+subcategory:
+  Adventure:        { en: Adventure,          zh: 探险车,     ru: Эндуро,              ja: アドベンチャー }
+  Sport Naked:      { en: Naked Sport,        zh: 街车,       ru: Нейкед,              ja: ネイキッド }
+  Superbike:        { en: Superbike,          zh: 超级跑车,   ru: Супербайк,           ja: スーパーバイク }
+  Supermoto:        { en: Supermoto,          zh: 超级摩托,   ru: Супермото,           ja: スーパーモタード }
+  Helm:             { en: Helmets,            zh: 头盔,       ru: Шлемы,               ja: ヘルメット }
+  Jaket:            { en: Jackets,            zh: 骑行服,     ru: Куртки,              ja: ジャケット }
+  Sarung Tangan:    { en: Gloves,             zh: 手套,       ru: Перчатки,            ja: グローブ }
+  Sepatu:           { en: Boots,              zh: 骑行靴,     ru: Ботинки,             ja: ブーツ }
+  Celana:           { en: Trousers,           zh: 骑行裤,     ru: Брюки,               ja: パンツ }
+  Protektor:        { en: Body Armour,        zh: 护具,       ru: Защита тела,         ja: プロテクター }
+  Aksesori Diri:    { en: Personal Gear,      zh: 随身配件,   ru: Личная экипировка,   ja: 身につける小物 }
+  Knalpot:          { en: Exhaust,            zh: 排气,       ru: Выхлоп,              ja: マフラー }
+  Ban:              { en: Tyres,              zh: 轮胎,       ru: Шины,                ja: タイヤ }
+  Rem:              { en: Brakes,             zh: 制动,       ru: Тормоза,             ja: ブレーキ }
+  Rantai & Gir:     { en: Chain & Sprockets,  zh: 链条与齿盘, ru: Цепь и звёзды,       ja: チェーン・スプロケット }
+  Filter:           { en: Filters,            zh: 滤清器,     ru: Фильтры,             ja: フィルター }
+  Pengapian:        { en: Ignition,           zh: 点火系统,   ru: Зажигание,           ja: 点火系 }
+  Suspensi:         { en: Suspension,         zh: 悬挂,       ru: Подвеска,            ja: サスペンション }
+  Oli Mesin:        { en: Engine Oil,         zh: 机油,       ru: Моторное масло,      ja: エンジンオイル }
+  Cairan:           { en: Fluids,             zh: 油液,       ru: Жидкости,            ja: 油脂類 }
+  Perawatan:        { en: Care Products,      zh: 保养用品,   ru: Уход,                ja: メンテナンス用品 }
+  Bagasi:           { en: Luggage,            zh: 行李箱包,   ru: Багаж,               ja: 積載 }
+  Pelindung:        { en: Guards,             zh: 防护件,     ru: Защита,              ja: プロテクションパーツ }
+  Elektronik:       { en: Electronics,        zh: 电子配件,   ru: Электроника,         ja: 電装品 }
+  Perlindungan:     { en: Security,           zh: 安全防护,   ru: Охрана,              ja: 盗難・保護 }
+  Servis Rutin:     { en: Routine Service,    zh: 定期保养,   ru: Плановое ТО,         ja: 定期点検 }
+  Performa:         { en: Performance,        zh: 性能,       ru: Тюнинг,              ja: パフォーマンス }
+  Kaki-kaki:        { en: Chassis & Wheels,   zh: 行走系统,   ru: Ходовая часть,       ja: 足まわり }
+
+spec_key:
+  Abrasi:         { en: Abrasion,          zh: 耐磨,       ru: Истирание,             ja: 耐摩耗 }
+  Alarm:          { en: Alarm,             zh: 警报,       ru: Сигнализация,          ja: アラーム }
+  Alat:           { en: Equipment,         zh: 设备,       ru: Оборудование,          ja: 使用機材 }
+  Aliran Udara:   { en: Airflow,           zh: 进气量,     ru: Воздушный поток,       ja: 吸気量 }
+  Alur:           { en: Tread grooves,     zh: 排水沟槽,   ru: Канавки,               ja: 溝 }
+  Aman:           { en: Safe for,          zh: 适用于,     ru: Безопасно для,         ja: 対応 }
+  Antre:          { en: Queue,             zh: 排队,       ru: Очередь,               ja: 待ち時間 }
+  Aplikasi:       { en: Application,       zh: 施工方式,   ru: Нанесение,             ja: 施工 }
+  Bahan:          { en: Material,          zh: 材质,       ru: Материал,              ja: 素材 }
+  Basis:          { en: Base,              zh: 基础油,     ru: Основа,                ja: ベース }
+  Baterai:        { en: Battery,           zh: 电池,       ru: Батарея,               ja: バッテリー }
+  Beban Putus:    { en: Tensile strength,  zh: 抗拉强度,   ru: Разрывная нагрузка,    ja: 引張強度 }
+  Berat:          { en: Weight,            zh: 重量,       ru: Вес,                   ja: 重量 }
+  Bobot:          { en: Weight change,     zh: 减重,       ru: Масса,                 ja: 重量 }
+  Bonus:          { en: Included,          zh: 赠品,       ru: В комплекте,           ja: 付属 }
+  Booking:        { en: Booking,           zh: 预约,       ru: Запись,                ja: 予約 }
+  Bracket:        { en: Bracket,           zh: 支架,       ru: Кронштейн,             ja: ブラケット }
+  Busa:           { en: Foam,              zh: 泡沫,       ru: Пена,                  ja: 泡 }
+  Bypass:         { en: Bypass valve,      zh: 旁通阀,     ru: Перепускной клапан,    ja: バイパス弁 }
+  Cakupan:        { en: Coverage,          zh: 涵盖范围,   ru: Объём работ,           ja: 対象範囲 }
+  Catatan:        { en: Note,              zh: 备注,       ru: Примечание,            ja: 備考 }
+  Cocok:          { en: Suitable for,      zh: 适用,       ru: Подходит для,          ja: 適合 }
+  Cuaca:          { en: Weather,           zh: 天候适应,   ru: Погода,                ja: 全天候性能 }
+  Daya Tahan:     { en: Durability,        zh: 耐久,       ru: Стойкость,             ja: 持続性 }
+  Diameter:       { en: Diameter,          zh: 直径,       ru: Диаметр,               ja: 直径 }
+  Durasi:         { en: Duration,          zh: 时长,       ru: Длительность,          ja: 所要時間 }
+  Efek:           { en: Effect,            zh: 效果,       ru: Эффект,                ja: 効果 }
+  Elektroda:      { en: Electrode,         zh: 电极,       ru: Электрод,              ja: 電極 }
+  Filter:         { en: Filter,            zh: 滤芯,       ru: Фильтр,                ja: フィルター }
+  Filtrasi:       { en: Filtration,        zh: 过滤精度,   ru: Фильтрация,            ja: ろ過精度 }
+  Finishing:      { en: Finish,            zh: 表面处理,   ru: Покрытие,              ja: 仕上げ }
+  Fitting:        { en: Fitting,           zh: 接头,       ru: Фитинг,                ja: フィッティング }
+  Fitur:          { en: Features,          zh: 功能,       ru: Особенности,           ja: 機能 }
+  Fungsi:         { en: Function,          zh: 功能,       ru: Назначение,            ja: 用途 }
+  Gain:           { en: Power gain,        zh: 动力提升,   ru: Прирост мощности,      ja: 出力向上 }
+  Gap:            { en: Gap,               zh: 间隙,       ru: Зазор,                 ja: ギャップ }
+  Garansi:        { en: Warranty,          zh: 保修,       ru: Гарантия,              ja: 保証 }
+  Gaya:           { en: Style,             zh: 风格,       ru: Стиль,                 ja: スタイル }
+  Hasil:          { en: Result,            zh: 成果,       ru: Результат,             ja: 成果 }
+  Hemat:          { en: You save,          zh: 节省,       ru: Экономия,              ja: 割引額 }
+  Indeks:         { en: Load index,        zh: 负荷指数,   ru: Индекс нагрузки,       ja: 荷重指数 }
+  Interval:       { en: Interval,          zh: 更换周期,   ru: Интервал,              ja: 交換時期 }
+  Isi:            { en: Contents,          zh: 内容量,     ru: Объём,                 ja: 内容 }
+  Jahitan:        { en: Stitching,         zh: 缝线,       ru: Строчка,               ja: 縫製 }
+  Kapasitas:      { en: Capacity,          zh: 容量,       ru: Объём,                 ja: 容量 }
+  Karakter:       { en: Character,         zh: 特性,       ru: Характер,              ja: 特性 }
+  Kelebihan:      { en: Advantage,         zh: 优点,       ru: Преимущество,          ja: 利点 }
+  Kompatibel:     { en: Compatible with,   zh: 兼容,       ru: Совместимость,         ja: 適合 }
+  Kompon:         { en: Compound,          zh: 胎胶配方,   ru: Состав,                ja: コンパウンド }
+  Konstruksi:     { en: Construction,      zh: 结构,       ru: Конструкция,           ja: 構造 }
+  Kunci:          { en: Lock,              zh: 锁具,       ru: Замок,                 ja: ロック }
+  Lapisan:        { en: Lining,            zh: 内衬,       ru: Подкладка,             ja: ライナー }
+  Manset:         { en: Cuff,              zh: 袖口,       ru: Манжета,               ja: カフ }
+  Mata Gigi:      { en: Teeth,             zh: 齿数,       ru: Зубья,                 ja: 丁数 }
+  Material:       { en: Material,          zh: 材质,       ru: Материал,              ja: 材質 }
+  Mesin:          { en: Engine,            zh: 发动机,     ru: Двигатель,             ja: エンジン }
+  Model:          { en: Model,             zh: 型号,       ru: Модель,                ja: モデル }
+  Muat:           { en: Fits,              zh: 可容纳,     ru: Вмещает,               ja: 収納 }
+  Output:         { en: Output,            zh: 输出,       ru: Выход,                 ja: 出力 }
+  Panjang:        { en: Length,            zh: 长度,       ru: Длина,                 ja: 長さ }
+  Pasang:         { en: Mounting,          zh: 安装,       ru: Установка,             ja: 取付 }
+  Pemakaian:      { en: Use case,          zh: 使用场景,   ru: Применение,            ja: 用途 }
+  Pemasangan:     { en: Installation,      zh: 安装方式,   ru: Монтаж,                ja: 取付方法 }
+  Pengikat:       { en: Fastening,         zh: 固定方式,   ru: Крепление,             ja: 固定 }
+  Per:            { en: Spring,            zh: 弹簧,       ru: Пружина,               ja: スプリング }
+  Peredam:        { en: Damping,           zh: 减震,       ru: Демпфирование,         ja: 制振 }
+  Pilihan Warna:  { en: Colour options,    zh: 可选颜色,   ru: Цвета,                 ja: カラー }
+  Pin:            { en: Pin,               zh: 锁芯,       ru: Штырь,                 ja: ピン }
+  Pola:           { en: Tread pattern,     zh: 花纹,       ru: Рисунок протектора,    ja: パターン }
+  Proteksi:       { en: Protection,        zh: 防护,       ru: Защита,                ja: 保護 }
+  Protektor:      { en: Protector,         zh: 护具,       ru: Протектор,             ja: プロテクター }
+  Rasio:          { en: Ratio,             zh: 比例,       ru: Соотношение,           ja: 比率 }
+  Reduksi:        { en: Reduction,         zh: 降噪,       ru: Снижение,              ja: 低減 }
+  Reload:         { en: Reusable,          zh: 可重复使用, ru: Многоразовость,        ja: 再利用 }
+  Reservoir:      { en: Reservoir,         zh: 副油壶,     ru: Резервуар,             ja: リザーバー }
+  Sambungan:      { en: Links,             zh: 节数,       ru: Звенья,                ja: リンク数 }
+  Selang:         { en: Hose,              zh: 油管,       ru: Шланг,                 ja: ホース }
+  Sensor:         { en: Sensor,            zh: 传感器,     ru: Датчик,                ja: センサー }
+  Sertifikasi:    { en: Certification,     zh: 认证,       ru: Сертификация,          ja: 認証 }
+  Setelan:        { en: Adjustment,        zh: 可调项,     ru: Регулировка,           ja: 調整 }
+  Sistem:         { en: System,            zh: 系统,       ru: Система,               ja: システム }
+  Sol:            { en: Sole,              zh: 鞋底,       ru: Подошва,               ja: ソール }
+  Spesifikasi:    { en: Specification,     zh: 规格,       ru: Спецификация,          ja: 規格 }
+  Standar:        { en: Standard,          zh: 标准,       ru: Стандарт,              ja: 規格 }
+  Suara:          { en: Sound,             zh: 声浪,       ru: Звук,                  ja: 音量 }
+  Suhu Kerja:     { en: Operating temp,    zh: 工作温度,   ru: Рабочая температура,   ja: 使用温度 }
+  Suku Cadang:    { en: Parts,             zh: 配件,       ru: Запчасти,              ja: 部品 }
+  Tahan Air:      { en: Waterproof,        zh: 防水,       ru: Водозащита,            ja: 防水 }
+  Takaran:        { en: Dilution,          zh: 稀释比例,   ru: Дозировка,             ja: 希釈率 }
+  Tenaga:         { en: Power,             zh: 功率,       ru: Мощность,              ja: 最高出力 }
+  Tinggi:         { en: Height,            zh: 高度,       ru: Высота,                ja: 高さ }
+  Tinggi Jok:     { en: Seat height,       zh: 座高,       ru: Высота по седлу,       ja: シート高 }
+  Tipe:           { en: Type,              zh: 类型,       ru: Тип,                   ja: タイプ }
+  Titik Didih:    { en: Boiling point,     zh: 沸点,       ru: Температура кипения,   ja: 沸点 }
+  Titik Pasang:   { en: Mounting points,   zh: 安装位置,   ru: Точки крепления,       ja: 取付位置 }
+  Torsi:          { en: Torque,            zh: 扭矩,       ru: Крутящий момент,       ja: 最大トルク }
+  Trim:           { en: Trim,              zh: 版本,       ru: Комплектация,          ja: 仕様 }
+  Ukuran:         { en: Size,              zh: 尺寸,       ru: Размер,                ja: サイズ }
+  Ukuran HP:      { en: Phone size,        zh: 手机尺寸,   ru: Размер телефона,       ja: 対応スマホ }
+  Umur:           { en: Service life,      zh: 使用寿命,   ru: Ресурс,                ja: 寿命 }
+  Ventilasi:      { en: Ventilation,       zh: 通风,       ru: Вентиляция,            ja: 通気 }
+  Viskositas:     { en: Viscosity,         zh: 黏度,       ru: Вязкость,              ja: 粘度 }
+  Visor:          { en: Visor,             zh: 镜片,       ru: Визор,                 ja: シールド }
+  Warna:          { en: Colour,            zh: 颜色,       ru: Цвет,                  ja: カラー }
+  Zipper:         { en: Zip,               zh: 拉链,       ru: Молния,                ja: ファスナー }
