@@ -1,0 +1,152 @@
+---
+layout: default
+---
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- assign bikes = site.data.catalog | where: "category", "motor" -%}
+
+<section class="section section--tight">
+  <div class="shell shell--wide">
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <ol>
+        <li><a href="{{ t.prefix | append: '/' | relative_url }}">{{ t.nav.home }}</a></li>
+        <li aria-current="page">{{ t.nav.reserve }}</li>
+      </ol>
+    </nav>
+    <p class="eyebrow">{{ t.nav.reserve }}</p>
+    <h1 class="h-sec">{{ t.reserve.title }}</h1>
+    <p style="max-width:60ch;margin-top:.6rem;color:var(--ink-2)">{{ t.reserve.subtitle }}</p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="shell shell--wide">
+    <div class="form-layout">
+      <div>
+        {%- assign benefit_icons = "truck,shield,headset" | split: "," %}
+        <div class="grid" style="gap:1rem">
+          {%- for benefit in t.reserve.benefits %}
+          <div class="feature">
+            <svg aria-hidden="true"><use href="#i-{{ benefit_icons[forloop.index0] }}"/></svg>
+            <div>
+              <h3>{{ benefit.title }}</h3>
+              <p>{{ benefit.text }}</p>
+            </div>
+          </div>
+          {%- endfor %}
+        </div>
+
+        <div class="summary" style="margin-top:1.25rem" data-summary>
+          <h3 style="font-family:var(--font-sans);font-size:var(--t-sm);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)">
+            {{ t.reserve.summary_title }}
+          </h3>
+          <div><span>{{ t.reserve.summary_model }}</span> <b data-summary-model>{{ t.reserve.summary_empty }}</b></div>
+          <div><span>{{ t.reserve.summary_price }}</span> <b data-summary-price>-</b></div>
+          <div><span>{{ t.reserve.summary_qty }}</span> <b data-summary-qty>1</b></div>
+          <div><span>{{ t.reserve.summary_color }}</span> <b data-summary-color>-</b></div>
+          <div class="total"><span>{{ t.reserve.summary_total }}</span> <b data-summary-total>-</b></div>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h2 class="h-sec" style="font-size:var(--t-lg);margin-bottom:1.5rem">{{ t.reserve.form_title }}</h2>
+
+        <form data-reserve-form novalidate
+              data-wa="{{ site.contact.whatsapp }}"
+              data-wa-intro="{{ t.reserve.wa_message }}"
+              data-label-model="{{ t.reserve.summary_model }}"
+              data-label-qty="{{ t.reserve.summary_qty }}"
+              data-label-color="{{ t.reserve.summary_color }}"
+              data-label-total="{{ t.reserve.summary_total }}"
+              data-label-name="{{ t.reserve.name }}"
+              data-label-phone="{{ t.reserve.phone }}"
+              data-label-address="{{ t.reserve.address }}"
+              data-err-required="{{ t.reserve.errors.required }}"
+              data-err-name="{{ t.reserve.errors.name_words }}"
+              data-err-digits="{{ t.reserve.errors.phone_digits }}"
+              data-err-length="{{ t.reserve.errors.phone_length }}"
+              data-err-color="{{ t.reserve.errors.color }}"
+              data-err-qty="{{ t.reserve.errors.qty }}"
+              data-empty-label="{{ t.reserve.summary_empty }}"
+              data-success="{{ t.reserve.success_title }}">
+
+          <div class="field" data-field="name">
+            <label for="f-name">{{ t.reserve.name }}</label>
+            <input type="text" id="f-name" name="name" autocomplete="name" required aria-describedby="h-name e-name">
+            <span class="hint" id="h-name">{{ t.reserve.name_hint }}</span>
+            <span class="error" id="e-name" role="alert"></span>
+          </div>
+
+          <div class="field" data-field="phone">
+            <label for="f-phone">{{ t.reserve.phone }}</label>
+            <input type="tel" id="f-phone" name="phone" inputmode="numeric" autocomplete="tel" required aria-describedby="h-phone e-phone">
+            <span class="hint" id="h-phone">{{ t.reserve.phone_hint }}</span>
+            <span class="error" id="e-phone" role="alert"></span>
+          </div>
+
+          <div class="field" data-field="address">
+            <label for="f-address">{{ t.reserve.address }}</label>
+            <textarea id="f-address" name="address" rows="3" autocomplete="street-address" required aria-describedby="h-address e-address"></textarea>
+            <span class="hint" id="h-address">{{ t.reserve.address_hint }}</span>
+            <span class="error" id="e-address" role="alert"></span>
+          </div>
+
+          <div class="field" data-field="brand">
+            <label for="f-brand">{{ t.reserve.brand }}</label>
+            <select id="f-brand" name="brand" required aria-describedby="e-brand">
+              <option value="">{{ t.reserve.brand_placeholder }}</option>
+              <option value="Kawasaki">Kawasaki</option>
+              <option value="Vixian">Vixian</option>
+            </select>
+            <span class="error" id="e-brand" role="alert"></span>
+          </div>
+
+          <div class="field" data-field="model">
+            <label for="f-model">{{ t.reserve.model }}</label>
+            <select id="f-model" name="model" required aria-describedby="e-model" data-model-select>
+              <option value="">{{ t.reserve.model_placeholder }}</option>
+              {%- for bike in bikes %}
+              <option value="{{ bike.name }}" data-brand="{{ bike.brand }}" data-price="{{ bike.price }}" data-sku="{{ bike.sku }}" hidden>
+                {{ bike.name }} &mdash; {{ bike.price | rupiah }}
+              </option>
+              {%- endfor %}
+            </select>
+            <span class="error" id="e-model" role="alert"></span>
+          </div>
+
+          <div class="field" data-field="qty">
+            <label for="f-qty">{{ t.reserve.qty }}</label>
+            <input type="number" id="f-qty" name="qty" min="1" max="10" value="1" required aria-describedby="e-qty">
+            <span class="error" id="e-qty" role="alert"></span>
+          </div>
+
+          <div class="field" data-field="color">
+            <span id="l-color" style="font-size:var(--t-sm);font-weight:700">{{ t.reserve.color }}</span>
+            <div class="swatches" role="radiogroup" aria-labelledby="l-color" aria-describedby="e-color">
+              {%- assign swatch_hex = "#111111,#1d4ed8,#d81f26" | split: "," %}
+              {%- assign swatch_keys = "black,blue,red" | split: "," %}
+              {%- for key in swatch_keys %}
+              <label class="swatch-label">
+                <input type="radio" name="color" value="{{ t.reserve.colors[key] }}">
+                <span class="dot" style="background:{{ swatch_hex[forloop.index0] }}"></span>
+                {{ t.reserve.colors[key] }}
+              </label>
+              {%- endfor %}
+            </div>
+            <span class="error" id="e-color" role="alert"></span>
+          </div>
+
+          <button class="btn btn--block" type="submit" style="margin-top:1.5rem">{{ t.reserve.submit }}</button>
+        </form>
+
+        <div hidden data-success-panel style="margin-top:1.5rem;text-align:center">
+          <svg style="width:52px;height:52px;margin:0 auto 1rem;color:var(--ok)" aria-hidden="true"><use href="#i-check"/></svg>
+          <h3 class="h-sec" style="font-size:var(--t-lg)">{{ t.reserve.success_title }}</h3>
+          <p style="margin:.6rem 0 1.25rem;color:var(--ink-2)">{{ t.reserve.success_text }}</p>
+          <a class="btn btn--wa btn--block" data-wa-link href="#" target="_blank" rel="noopener noreferrer">
+            <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>{{ t.reserve.wa_button }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

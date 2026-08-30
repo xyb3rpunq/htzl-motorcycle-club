@@ -1,0 +1,71 @@
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- assign p = t.prefix -%}
+<footer class="site-footer">
+  <div class="shell shell--wide">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="{{ '/assets/img/logo.webp' | relative_url }}" width="38" height="38" alt="" loading="lazy" decoding="async">
+          <span>HTZL Motorcycle Club</span>
+        </div>
+        <p>{{ t.footer.about_text }}</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/htzl.mc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg aria-hidden="true"><use href="#i-instagram"/></svg>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100069020175227" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg aria-hidden="true"><use href="#i-facebook"/></svg>
+          </a>
+          <a href="https://twitter.com/htzl_mc" target="_blank" rel="noopener noreferrer" aria-label="X">
+            <svg aria-hidden="true"><use href="#i-x"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h3>{{ t.footer.quick_title }}</h3>
+        <ul>
+          <li><a href="{{ p | append: '/' | relative_url }}">{{ t.nav.home }}</a></li>
+          <li><a href="{{ p | append: '/catalog/' | relative_url }}">{{ t.nav.catalog }}</a></li>
+          <li><a href="{{ p | append: '/kawasaki/' | relative_url }}">{{ t.nav.kawasaki }}</a></li>
+          <li><a href="{{ p | append: '/vixian/' | relative_url }}">{{ t.nav.vixian }}</a></li>
+          <li><a href="{{ p | append: '/gallery/' | relative_url }}">{{ t.nav.gallery }}</a></li>
+          <li><a href="{{ p | append: '/reserve/' | relative_url }}">{{ t.nav.reserve }}</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>{{ t.footer.contact_title }}</h3>
+        <ul>
+          <li><a href="{{ site.contact.maps }}" target="_blank" rel="noopener noreferrer">{{ site.contact.address }}</a></li>
+          <li><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></li>
+          <li><a href="https://wa.me/{{ site.contact.whatsapp }}" target="_blank" rel="noopener noreferrer">{{ site.contact.phone_display }}</a></li>
+          <li><p>{{ t.footer.hours }}: {{ site.contact.hours }}</p></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>{{ t.nav.language }}</h3>
+        <ul>
+          {%- for alt in page.alternates %}
+          <li><a href="{{ alt.url | relative_url }}" hreflang="{{ alt.html_lang }}" lang="{{ alt.html_lang }}">{{ alt.flag }} {{ alt.name }}</a></li>
+          {%- endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <p class="disclaimer">{{ t.footer.disclaimer }}</p>
+
+    <div class="footer-bottom">
+      <span>&copy; {{ 'now' | date: '%Y' }} HTZL Motorcycle Club. {{ t.footer.rights }}</span>
+      <span>
+        {{ t.footer.built }} &middot;
+        <a href="https://github.com/xyb3rpunq/htzl-motorcycle-club" target="_blank" rel="noopener noreferrer">{{ t.footer.source }}</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/{{ site.contact.whatsapp }}" target="_blank" rel="noopener noreferrer" aria-label="{{ t.actions.chat }}">
+  <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>
+</a>

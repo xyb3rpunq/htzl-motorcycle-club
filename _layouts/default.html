@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{%- assign t = site.data.i18n[page.lang] -%}
+<html lang="{{ page.html_lang }}" data-theme="light">
+<head>
+  {%- include head.html -%}
+</head>
+<body>
+  <a class="skip-link" href="#main">{{ t.actions.skip }}</a>
+  {%- include icons.html -%}
+  {%- include header.html -%}
+
+  <main id="main">
+    {{ content }}
+  </main>
+
+  {%- include footer.html -%}
+
+  <div class="toast" data-toast role="status" aria-live="polite">
+    <svg aria-hidden="true"><use href="#i-check"/></svg>
+    <span data-toast-text></span>
+  </div>
+
+  <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
+  {%- if page.page_id == 'catalog' or page.page_id == 'kawasaki' or page.page_id == 'vixian' %}
+  <script src="{{ '/assets/js/catalog.js' | relative_url }}" defer></script>
+  {%- endif %}
+  {%- if page.page_id == 'reserve' %}
+  <script src="{{ '/assets/js/reserve.js' | relative_url }}" defer></script>
+  {%- endif %}
+</body>
+</html>

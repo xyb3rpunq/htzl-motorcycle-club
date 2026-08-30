@@ -1,0 +1,114 @@
+{%- assign t = site.data.i18n[page.lang] -%}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#d81f26" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e0d0c" media="(prefers-color-scheme: dark)">
+
+<title>{{ page.title }} | {{ site.title }}</title>
+<meta name="description" content="{{ page.description | strip_newlines | strip }}">
+<meta name="author" content="{{ site.author }}">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+{%- comment -%} Versi bahasa lain: wajib agar tiap bahasa terindeks terpisah {%- endcomment -%}
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+{%- for alt in page.alternates %}
+<link rel="alternate" hreflang="{{ alt.html_lang }}" href="{{ alt.url | absolute_url }}">
+{%- endfor %}
+{%- if page.alternates %}
+<link rel="alternate" hreflang="x-default" href="{{ page.alternates[0].url | absolute_url }}">
+{%- endif %}
+
+{%- comment -%} Open Graph dan Twitter {%- endcomment -%}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:locale" content="{{ t.html_lang | replace: '-', '_' }}">
+<meta property="og:title" content="{{ page.title }} | {{ site.title }}">
+<meta property="og:description" content="{{ page.description | strip_newlines | strip }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:image" content="{{ site.image | absolute_url }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page.title }} | {{ site.title }}">
+<meta name="twitter:description" content="{{ page.description | strip_newlines | strip }}">
+<meta name="twitter:image" content="{{ site.image | absolute_url }}">
+
+{%- comment -%} Ikon {%- endcomment -%}
+<link rel="icon" href="{{ '/assets/icons/favicon.ico' | relative_url }}" sizes="any">
+<link rel="apple-touch-icon" href="{{ '/assets/icons/apple-touch-icon.png' | relative_url }}">
+<link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
+
+{%- comment -%} Font self-hosted: dimuat lebih awal agar teks tidak berkedip {%- endcomment -%}
+<link rel="preload" href="{{ '/assets/fonts/arvo-700.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+
+{%- comment -%}
+  Tema dipulihkan sebelum halaman digambar supaya tidak ada kedipan putih
+  saat pengguna memilih mode gelap.
+{%- endcomment -%}
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem("htzl-theme");
+      var dark = saved ? saved === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.dataset.theme = dark ? "dark" : "light";
+    } catch (e) {
+      document.documentElement.dataset.theme = "light";
+    }
+  })();
+</script>
+
+{%- comment -%} Data terstruktur untuk hasil pencarian yang lebih kaya {%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoDealer",
+  "name": {{ site.title | jsonify }},
+  "description": {{ page.description | strip_newlines | strip | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "logo": {{ site.logo | absolute_url | jsonify }},
+  "image": {{ site.image | absolute_url | jsonify }},
+  "telephone": {{ site.contact.phone_display | jsonify }},
+  "email": {{ site.contact.email | jsonify }},
+  "priceRange": "Rp 75.000 - Rp 98.500.000",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": {{ site.contact.address | jsonify }},
+    "addressLocality": "Jakarta",
+    "addressCountry": "ID"
+  },
+  "openingHours": "Mo-Sa 09:00-18:00",
+  "sameAs": {{ site.social.links | jsonify }}
+}
+</script>
+{%- if page.page_id == "catalog" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": {{ t.catalog.title | jsonify }},
+  "numberOfItems": {{ site.data.catalog | size }},
+  "itemListElement": [
+    {%- for item in site.data.catalog limit: 20 %}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "item": {
+        "@type": "Product",
+        "name": {{ item.name | jsonify }},
+        "sku": {{ item.sku | jsonify }},
+        "category": {{ item.category_label | term: 'category', page.lang | jsonify }},
+        "offers": {
+          "@type": "Offer",
+          "price": {{ item.price }},
+          "priceCurrency": "IDR",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ]
+}
+</script>
+{%- endif %}

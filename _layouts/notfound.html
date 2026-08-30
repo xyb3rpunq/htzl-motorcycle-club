@@ -1,0 +1,15 @@
+---
+layout: default
+---
+{%- assign t = site.data.i18n[page.lang] -%}
+<section class="section" style="min-height:60vh;display:grid;place-items:center;text-align:center">
+  <div class="shell">
+    <p class="eyebrow" style="justify-content:center">404</p>
+    <h1 class="h-sec">{{ t.notfound.title }}</h1>
+    <p style="margin:.75rem auto 1.75rem;max-width:46ch;color:var(--ink-2)">{{ t.notfound.text }}</p>
+    <div class="btn-row" style="justify-content:center">
+      <a class="btn" href="{{ '/' | relative_url }}">{{ t.notfound.cta }}</a>
+      <a class="btn btn--ghost" href="{{ '/catalog/' | relative_url }}">{{ t.nav.catalog }}</a>
+    </div>
+  </div>
+</section>

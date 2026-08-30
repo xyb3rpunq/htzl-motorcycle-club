@@ -1,0 +1,111 @@
+---
+layout: default
+---
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- assign meta = site.data.catalog_meta -%}
+
+<section class="section section--tight">
+  <div class="shell shell--wide">
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <ol>
+        <li><a href="{{ t.prefix | append: '/' | relative_url }}">{{ t.nav.home }}</a></li>
+        <li aria-current="page">{{ t.nav.catalog }}</li>
+      </ol>
+    </nav>
+    <p class="eyebrow">{{ meta.total }} {{ t.catalog.items }}</p>
+    <h1 class="h-sec">{{ t.catalog.title }}</h1>
+    <p style="max-width:64ch;margin-top:.6rem;color:var(--ink-2)">{{ t.catalog.subtitle }}</p>
+  </div>
+</section>
+
+<div class="catalog__toolbar">
+  <div class="shell shell--wide">
+    <div class="toolbar__row">
+      <div class="search">
+        <svg class="search__icon" aria-hidden="true"><use href="#i-search"/></svg>
+        <label class="visually-hidden" for="catalog-search">{{ t.catalog.search_label }}</label>
+        <input type="search" id="catalog-search" data-search placeholder="{{ t.actions.search_placeholder }}" autocomplete="off">
+        <button class="search__clear" type="button" data-search-clear aria-label="{{ t.actions.clear }}">
+          <svg width="16" height="16" aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+      </div>
+
+      <label class="visually-hidden" for="catalog-brand">{{ t.catalog.brand_label }}</label>
+      <select class="select" id="catalog-brand" data-filter-brand>
+        <option value="">{{ t.catalog.brand_label }}: {{ t.catalog.all }}</option>
+        {%- for brand in meta.brands %}
+        <option value="{{ brand }}">{{ brand }}</option>
+        {%- endfor %}
+      </select>
+
+      <label class="visually-hidden" for="catalog-price">{{ t.catalog.price_label }}</label>
+      <select class="select" id="catalog-price" data-filter-price>
+        <option value="">{{ t.catalog.price_label }}: {{ t.catalog.all }}</option>
+        {%- for band in t.catalog.price_bands %}
+        <option value="{{ band[0] }}">{{ band[1] }}</option>
+        {%- endfor %}
+      </select>
+
+      <label class="visually-hidden" for="catalog-sort">{{ t.catalog.sort_label }}</label>
+      <select class="select" id="catalog-sort" data-sort>
+        <option value="relevant">{{ t.catalog.sort.relevant }}</option>
+        <option value="price_asc">{{ t.catalog.sort.price_asc }}</option>
+        <option value="price_desc">{{ t.catalog.sort.price_desc }}</option>
+        <option value="name">{{ t.catalog.sort.name }}</option>
+        <option value="rating">{{ t.catalog.sort.rating }}</option>
+      </select>
+
+      <div class="view-switch" role="group" aria-label="{{ t.catalog.view_grid }} / {{ t.catalog.view_list }}">
+        <button type="button" data-view="grid" aria-pressed="true" aria-label="{{ t.catalog.view_grid }}">
+          <svg aria-hidden="true"><use href="#i-grid"/></svg>
+        </button>
+        <button type="button" data-view="list" aria-pressed="false" aria-label="{{ t.catalog.view_list }}">
+          <svg aria-hidden="true"><use href="#i-list"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="chips" style="margin-top:.6rem" role="group" aria-label="{{ t.catalog.category }}">
+      <button class="chip" type="button" data-category="" aria-pressed="true">
+        {{ t.catalog.all }}<span class="chip__count">{{ meta.total }}</span>
+      </button>
+      {%- for cat in meta.categories %}
+      <button class="chip" type="button" data-category="{{ cat.key }}" aria-pressed="false">
+        <svg width="16" height="16" aria-hidden="true"><use href="#i-{{ cat.icon }}"/></svg>
+        {{ cat.label | term: 'category', page.lang }}<span class="chip__count">{{ cat.count }}</span>
+      </button>
+      {%- endfor %}
+    </div>
+  </div>
+</div>
+
+<section class="section section--tight">
+  <div class="shell shell--wide">
+    <div class="result-bar">
+      <span>{{ t.catalog.showing }} <b data-result-count>{{ meta.total }}</b> {{ t.catalog.of }} {{ meta.total }} {{ t.catalog.items }}</span>
+      <button class="btn btn--ghost btn--sm" type="button" data-reset>{{ t.actions.reset }}</button>
+    </div>
+
+    <div class="catalog__grid" data-view="grid" data-grid>
+      {%- for item in site.data.catalog %}
+      {%- include product-card.html item=item t=t lang=page.lang %}
+      {%- endfor %}
+    </div>
+
+    <div class="empty-state" data-empty>
+      <svg aria-hidden="true"><use href="#i-empty"/></svg>
+      <h2 class="h-sec" style="font-size:var(--t-lg)">{{ t.catalog.no_results_title }}</h2>
+      <p>{{ t.catalog.no_results_text }}</p>
+      <div class="btn-row" style="justify-content:center;margin-top:1.25rem">
+        <button class="btn" type="button" data-reset>{{ t.actions.reset }}</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<dialog id="product-dialog" aria-labelledby="detail-title">
+  <button class="dialog__close" type="button" data-dialog-close aria-label="{{ t.actions.close }}">
+    <svg aria-hidden="true"><use href="#i-close"/></svg>
+  </button>
+  <div class="dialog__body" data-dialog-body></div>
+</dialog>

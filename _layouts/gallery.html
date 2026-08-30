@@ -1,0 +1,59 @@
+---
+layout: default
+---
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- assign slugs = "goma-preview,norden,custom-build,showcase-id,italian-two-wheel,goma-install,cake-electric,expo-floor,night-ride,museum-hall,museum-closed,sydney-show" | split: "," -%}
+
+<section class="page-banner" style="background-image:url('{{ '/assets/img/gallery/museum-hall.webp' | relative_url }}')">
+  <div class="shell shell--wide">
+    <p class="eyebrow" style="color:#ffd7d7;justify-content:center">{{ site.title }}</p>
+    <h1>{{ t.gallery.title }}</h1>
+    <p>{{ t.gallery.subtitle }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell shell--wide">
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <ol>
+        <li><a href="{{ t.prefix | append: '/' | relative_url }}">{{ t.nav.home }}</a></li>
+        <li aria-current="page">{{ t.nav.gallery }}</li>
+      </ol>
+    </nav>
+
+    <div class="gallery-grid" data-gallery>
+      {%- for slug in slugs %}
+      {%- assign caption = t.gallery.captions[slug] %}
+      <button class="gallery-item" type="button"
+              data-full="{{ '/assets/img/gallery/' | append: slug | append: '.webp' | relative_url }}"
+              data-caption="{{ caption }}"
+              aria-label="{{ t.gallery.open }}: {{ caption }}">
+        <img src="{{ '/assets/img/gallery/' | append: slug | append: '-thumb.webp' | relative_url }}"
+             width="640" height="480" alt="{{ caption }}"
+             {% if forloop.index > 4 %}loading="lazy"{% endif %} decoding="async">
+        <figcaption>{{ caption }}</figcaption>
+      </button>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<dialog id="lightbox" aria-label="{{ t.gallery.title }}">
+  <button class="dialog__close" type="button" data-dialog-close aria-label="{{ t.actions.close }}">
+    <svg aria-hidden="true"><use href="#i-close"/></svg>
+  </button>
+  <div class="dialog__body">
+    <figure>
+      <img data-lightbox-img src="" alt="">
+      <figcaption data-lightbox-caption></figcaption>
+    </figure>
+    <div class="lightbox__nav">
+      <button class="btn btn--ghost btn--sm" type="button" data-lightbox-prev style="--btn-ink:#fff;--btn-line:rgba(255,255,255,.4)">
+        <svg aria-hidden="true"><use href="#i-chevron-left"/></svg>{{ t.actions.prev }}
+      </button>
+      <button class="btn btn--ghost btn--sm" type="button" data-lightbox-next style="--btn-ink:#fff;--btn-line:rgba(255,255,255,.4)">
+        {{ t.actions.next }}<svg aria-hidden="true"><use href="#i-chevron-right"/></svg>
+      </button>
+    </div>
+  </div>
+</dialog>

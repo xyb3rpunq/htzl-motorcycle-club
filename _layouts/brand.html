@@ -1,0 +1,74 @@
+---
+layout: default
+---
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- assign brand = t.brand[page.brand_key] -%}
+{%- assign items = site.data.catalog | where: "category", "motor" | where: "brand", page.brand -%}
+{%- assign base = items | where: "trim", "Standard" -%}
+{%- assign cheapest = items | sort: "price" | first -%}
+
+<section class="page-banner" style="background-image:url('{{ '/assets/img/banner-' | append: page.brand_key | append: '.webp' | relative_url }}')">
+  <div class="shell shell--wide">
+    <p class="eyebrow" style="color:#ffd7d7;justify-content:center">{{ site.title }}</p>
+    <h1>{{ page.brand }}</h1>
+    <p>{{ brand.tagline }}</p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="shell shell--wide">
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <ol>
+        <li><a href="{{ t.prefix | append: '/' | relative_url }}">{{ t.nav.home }}</a></li>
+        <li><a href="{{ t.prefix | append: '/catalog/' | relative_url }}">{{ t.nav.catalog }}</a></li>
+        <li aria-current="page">{{ page.brand }}</li>
+      </ol>
+    </nav>
+
+    <div class="section__head">
+      <div>
+        <h2 class="h-sec">{{ brand.intro }}</h2>
+        <p>{{ base | size }} {{ t.brand.models }} &middot; {{ items | size }} {{ t.brand.variants }} &middot;
+           {{ t.brand.from }} {{ cheapest.price | rupiah }}</p>
+      </div>
+      <a class="btn btn--ghost" href="{{ t.prefix | append: '/reserve/' | relative_url }}">{{ t.nav.reserve }}</a>
+    </div>
+
+    <div class="chips" style="margin-bottom:1.25rem" role="group" aria-label="{{ t.catalog.subcategory }}">
+      <button class="chip" type="button" data-category="" aria-pressed="true">
+        {{ t.catalog.all }}<span class="chip__count">{{ items | size }}</span>
+      </button>
+      {%- assign trims = "Standard,S,SP" | split: "," %}
+      {%- for trim in trims %}
+      {%- assign trim_items = items | where: "trim", trim %}
+      <button class="chip" type="button" data-trim="{{ trim }}" aria-pressed="false">
+        {{ trim }}<span class="chip__count">{{ trim_items | size }}</span>
+      </button>
+      {%- endfor %}
+    </div>
+
+    <div class="result-bar">
+      <span>{{ t.catalog.showing }} <b data-result-count>{{ items | size }}</b> {{ t.catalog.of }} {{ items | size }} {{ t.catalog.items }}</span>
+      <button class="btn btn--ghost btn--sm" type="button" data-reset>{{ t.actions.reset }}</button>
+    </div>
+
+    <div class="catalog__grid" data-view="grid" data-grid>
+      {%- for item in items %}
+      {%- include product-card.html item=item t=t lang=page.lang %}
+      {%- endfor %}
+    </div>
+
+    <div class="empty-state" data-empty>
+      <svg aria-hidden="true"><use href="#i-empty"/></svg>
+      <h2 class="h-sec" style="font-size:var(--t-lg)">{{ t.catalog.no_results_title }}</h2>
+      <p>{{ t.catalog.no_results_text }}</p>
+    </div>
+  </div>
+</section>
+
+<dialog id="product-dialog" aria-labelledby="detail-title">
+  <button class="dialog__close" type="button" data-dialog-close aria-label="{{ t.actions.close }}">
+    <svg aria-hidden="true"><use href="#i-close"/></svg>
+  </button>
+  <div class="dialog__body" data-dialog-body></div>
+</dialog>

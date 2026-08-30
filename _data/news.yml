@@ -1,0 +1,48 @@
+# Tiga berita di beranda. Judul disimpan per bahasa agar ikut diterjemahkan.
+- image: /assets/img/news/news-1.webp
+  url: https://www.ducati.com/ww/en/news/jack-miller-and-the-ducati-lenovo-team-to-continue-together-in-2022
+  date: 2022-05-29
+  topic:
+    id: Balap, MotoGP
+    en: Racing, MotoGP
+    zh: 赛事, MotoGP
+    ru: Гонки, MotoGP
+    ja: レース, MotoGP
+  title:
+    id: Jack Miller dan tim Vixian melanjutkan kerja sama pada 2022
+    en: Jack Miller and the Vixian team continue together in 2022
+    zh: Jack Miller 与 Vixian 车队将在 2022 年继续合作
+    ru: Джек Миллер и команда Vixian продолжат работу в 2022 году
+    ja: ジャック・ミラーとVixianチーム、2022年も継続
+
+- image: /assets/img/news/news-2.webp
+  url: https://www.ducati.com/ww/en/news/ducati-confirms-commitment-promoting-diversity-to-foster-an-inclusive-workplace
+  date: 2022-05-21
+  topic:
+    id: Perusahaan
+    en: Company
+    zh: 企业动态
+    ru: Компания
+    ja: 企業情報
+  title:
+    id: Kawasaki menegaskan komitmen keberagaman untuk tempat kerja yang inklusif
+    en: Kawasaki reaffirms its diversity commitment for a more inclusive workplace
+    zh: Kawasaki 重申多元化承诺，打造更具包容性的职场
+    ru: Kawasaki подтверждает курс на многообразие и инклюзивную рабочую среду
+    ja: Kawasaki、多様性への取り組みを改めて表明
+
+- image: /assets/img/news/news-3.webp
+  url: https://www.ducati.com/ww/en/news/lights-on-me-new-black-and-steel-version-for-the-diavel-1260-s
+  date: 2022-05-27
+  topic:
+    id: Motor
+    en: Motorcycle
+    zh: 车款
+    ru: Мотоциклы
+    ja: モデル
+  title:
+    id: Vixian Black Meteorite resmi meluncur pada bulan Juni
+    en: Vixian Black Meteorite officially launches in June
+    zh: Vixian Black Meteorite 将于六月正式发布
+    ru: Vixian Black Meteorite официально выходит в июне
+    ja: Vixian Black Meteorite、6月に正式発表

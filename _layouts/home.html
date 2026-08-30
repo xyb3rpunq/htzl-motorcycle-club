@@ -1,0 +1,193 @@
+---
+layout: default
+---
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- assign p = t.prefix -%}
+{%- assign hero_images = "promo,showroom,expo,community,museum" | split: "," -%}
+{%- assign kawasaki = site.data.catalog | where: "category", "motor" | where: "brand", "Kawasaki" | where: "trim", "Standard" -%}
+{%- assign vixian = site.data.catalog | where: "category", "motor" | where: "brand", "Vixian" | where: "trim", "Standard" -%}
+
+<section class="hero" aria-roledescription="carousel" aria-label="{{ t.home.hero[0].title }}">
+  <div class="hero__track" data-hero-track>
+    {%- for slide in t.home.hero %}
+    {%- assign idx = forloop.index0 %}
+    <div class="hero__slide" role="group" aria-roledescription="slide" aria-label="{{ forloop.index }} / {{ t.home.hero | size }}">
+      <img src="{{ '/assets/img/hero/' | append: hero_images[idx] | append: '.webp' | relative_url }}"
+           width="1400" height="788" alt="{{ slide.title }}"
+           {% if forloop.first %}loading="eager" fetchpriority="high"{% else %}loading="lazy"{% endif %} decoding="async">
+      <div class="hero__caption">
+        <div class="shell shell--wide">
+          <p class="eyebrow">{{ slide.eyebrow }}</p>
+          <h2>{{ slide.title }}</h2>
+          <p>{{ slide.text }}</p>
+          <div class="btn-row">
+            <a class="btn" href="{{ p | append: '/catalog/' | relative_url }}">{{ t.actions.view_catalog }}</a>
+            <a class="btn btn--ghost" style="--btn-ink:#fff;--btn-line:rgba(255,255,255,.4)" href="{{ p | append: '/reserve/' | relative_url }}">{{ t.nav.reserve }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {%- endfor %}
+  </div>
+
+  <button class="hero__nav hero__nav--prev" type="button" data-hero-prev aria-label="{{ t.actions.prev }}">
+    <svg aria-hidden="true"><use href="#i-chevron-left"/></svg>
+  </button>
+  <button class="hero__nav hero__nav--next" type="button" data-hero-next aria-label="{{ t.actions.next }}">
+    <svg aria-hidden="true"><use href="#i-chevron-right"/></svg>
+  </button>
+
+  <div class="hero__dots" role="tablist" data-hero-dots>
+    {%- for slide in t.home.hero %}
+    <button class="hero__dot" type="button" role="tab" data-hero-dot="{{ forloop.index0 }}"
+            aria-label="{{ slide.title }}" {% if forloop.first %}aria-current="true"{% endif %}></button>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="shell shell--wide">
+    <dl class="stats reveal">
+      {%- for stat in t.home.stats %}
+      <div>
+        <dt>{{ stat.value }}</dt>
+        <dd>{{ stat.label }}</dd>
+      </div>
+      {%- endfor %}
+    </dl>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell shell--wide">
+    <div class="split reveal">
+      <div>
+        <p class="eyebrow">{{ t.home.intro_eyebrow }}</p>
+        <h2 class="h-sec">{{ t.home.intro_title }}</h2>
+        <p style="margin-top:1rem;color:var(--ink-2)">{{ t.home.intro_text }}</p>
+        <div class="btn-row" style="margin-top:1.5rem">
+          <a class="btn" href="{{ p | append: '/catalog/' | relative_url }}">{{ t.actions.browse }}</a>
+        </div>
+      </div>
+      <img src="{{ '/assets/img/about.webp' | relative_url }}" width="1000" height="577"
+           alt="{{ t.home.intro_title }}" loading="lazy" decoding="async">
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="shell shell--wide">
+    <div class="grid grid--3">
+      {%- assign feature_icons = "truck,shield,headset" | split: "," %}
+      {%- for feature in t.home.features %}
+      <div class="feature reveal">
+        <svg aria-hidden="true"><use href="#i-{{ feature_icons[forloop.index0] }}"/></svg>
+        <div>
+          <h3>{{ feature.title }}</h3>
+          <p>{{ feature.text }}</p>
+        </div>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell shell--wide">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">Kawasaki</p>
+        <h2 class="h-sec">{{ t.home.kawasaki_title }}</h2>
+        <p>{{ t.home.kawasaki_sub }}</p>
+      </div>
+      <a class="btn btn--ghost" href="{{ p | append: '/kawasaki/' | relative_url }}">{{ t.actions.detail }}</a>
+    </div>
+    <div class="grid grid--3">
+      {%- for item in kawasaki %}
+      {%- include product-card.html item=item t=t lang=page.lang %}
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="shell shell--wide">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">Vixian</p>
+        <h2 class="h-sec">{{ t.home.vixian_title }}</h2>
+        <p>{{ t.home.vixian_sub }}</p>
+      </div>
+      <a class="btn btn--ghost" href="{{ p | append: '/vixian/' | relative_url }}">{{ t.actions.detail }}</a>
+    </div>
+    <div class="grid grid--3">
+      {%- for item in vixian %}
+      {%- include product-card.html item=item t=t lang=page.lang %}
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell shell--wide">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">{{ t.nav.catalog }}</p>
+        <h2 class="h-sec">{{ t.home.catalog_title }}</h2>
+        <p>{{ t.home.catalog_sub }}</p>
+      </div>
+      <a class="btn" href="{{ p | append: '/catalog/' | relative_url }}">{{ t.actions.view_catalog }}</a>
+    </div>
+    <div class="grid grid--auto">
+      {%- for cat in site.data.catalog_meta.categories %}
+      <a class="feature reveal" href="{{ p | append: '/catalog/?category=' | append: cat.key | relative_url }}" style="flex-direction:column;gap:.6rem">
+        <svg aria-hidden="true"><use href="#i-{{ cat.icon }}"/></svg>
+        <div>
+          <h3>{{ cat.label | term: 'category', page.lang }}</h3>
+          <p>{{ cat.blurb | term: 'category_blurb', page.lang }}</p>
+          <p class="pill" style="margin-top:.6rem">{{ cat.count }} {{ t.catalog.items }}</p>
+        </div>
+      </a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="shell shell--wide">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">{{ t.home.news_title }}</p>
+        <h2 class="h-sec">{{ t.home.news_title }}</h2>
+        <p>{{ t.home.news_sub }}</p>
+      </div>
+    </div>
+    <div class="grid grid--3">
+      {%- for news in site.data.news %}
+      <a class="news-card reveal" href="{{ news.url }}" target="_blank" rel="noopener noreferrer">
+        <img src="{{ news.image | relative_url }}" width="432" height="230" alt="" loading="lazy" decoding="async">
+        <div class="news-card__body">
+          <p class="news-card__topic">{{ news.topic[page.lang] }}</p>
+          <h3>{{ news.title[page.lang] }}</h3>
+          <time datetime="{{ news.date }}">{{ news.date | date: '%d %b %Y' }}</time>
+        </div>
+      </a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell shell--wide">
+    <div class="form-card reveal" style="text-align:center">
+      <h2 class="h-sec">{{ t.home.cta_title }}</h2>
+      <p style="margin:.75rem auto 1.5rem;max-width:52ch;color:var(--ink-2)">{{ t.home.cta_text }}</p>
+      <div class="btn-row" style="justify-content:center">
+        <a class="btn" href="{{ p | append: '/reserve/' | relative_url }}">{{ t.nav.reserve }}</a>
+        <a class="btn btn--wa" href="https://wa.me/{{ site.contact.whatsapp }}" target="_blank" rel="noopener noreferrer">
+          <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>{{ t.actions.chat }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

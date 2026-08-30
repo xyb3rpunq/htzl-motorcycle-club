@@ -1,0 +1,110 @@
+{%- comment -%}
+  Kartu produk katalog.
+  Parameter: item (hash dari _data/catalog.yml), t (kamus bahasa), lang.
+  Seluruh atribut data-* dipakai catalog.js untuk menyaring tanpa memuat ulang halaman.
+{%- endcomment -%}
+{%- assign item = include.item -%}
+{%- assign t = include.t -%}
+{%- assign lang = include.lang -%}
+{%- assign sub = item.subcategory | term: 'subcategory', lang -%}
+{%- assign cat = item.category_label | term: 'category', lang -%}
+{%- assign badge = t.catalog.badges[item.badge] -%}
+
+{%- if item.blurb_type == 'bike' -%}
+  {%- assign trim_note = t.catalog.trims[item.trim] -%}
+  {%- assign blurb = t.catalog.blurb_bike | fill: 'type', sub, 'cc', item.cc, 'trim', item.trim -%}
+  {%- assign blurb = blurb | append: ' ' | append: trim_note -%}
+{%- else -%}
+  {%- assign blurb = t.catalog.blurb_generic | fill: 'sub', sub -%}
+{%- endif -%}
+
+<article class="card" data-item
+         data-name="{{ item.name }}"
+         data-search="{{ item | search_blob }} {{ sub | downcase }} {{ cat | downcase }}"
+         data-category="{{ item.category }}"
+         data-sub="{{ item.subcategory }}"
+         data-brand="{{ item.brand }}"
+         data-price="{{ item.price }}"
+         data-band="{{ item.price_band }}"
+         data-rating="{{ item.rating }}">
+  <div class="card__media">
+    {%- if badge %}
+    <span class="badge {% if item.badge == 'Diskon' %}badge--sale{% elsif item.badge == 'Baru' %}badge--new{% elsif item.badge == 'Stok Terbatas' %}badge--low{% endif %}">{{ badge }}</span>
+    {%- endif %}
+    {%- if item.image %}
+    <img src="{{ item.image | relative_url }}" width="630" height="390" alt="{{ item.name }}" loading="lazy" decoding="async">
+    {%- else %}
+    <span class="thumb"><svg aria-hidden="true"><use href="#i-{{ item.icon }}"/></svg></span>
+    {%- endif %}
+  </div>
+
+  <div class="card__body">
+    <p class="card__kicker">{{ sub }}</p>
+    <h3 class="card__title">{{ item.name }}</h3>
+
+    <ul class="card__specs">
+      {%- for pair in item.specs limit: 3 %}
+      <li><span>{{ pair[0] | term: 'spec_key', lang }}</span> <b>{{ pair[1] }}</b></li>
+      {%- endfor %}
+    </ul>
+
+    <div class="card__foot">
+      <p class="price">
+        {{ item.price | rupiah }}
+        {%- if item.price_old %}<small>{{ item.price_old | rupiah }}</small>{% endif %}
+      </p>
+      <button class="btn btn--sm" type="button" data-detail>{{ t.actions.detail }}</button>
+    </div>
+  </div>
+
+  {%- comment -%} Isi dialog detail, disalin catalog.js saat tombol ditekan {%- endcomment -%}
+  <template data-detail-content>
+    <div class="dialog__media">
+      {%- if item.image %}
+      <img src="{{ item.image | relative_url }}" width="630" height="390" alt="{{ item.name }}">
+      {%- else %}
+      <span class="thumb"><svg aria-hidden="true"><use href="#i-{{ item.icon }}"/></svg></span>
+      {%- endif %}
+    </div>
+    <div class="dialog__content">
+      <div>
+        <p class="card__kicker">{{ cat }} &middot; {{ sub }} &middot; {{ t.catalog.sku }} {{ item.sku }}</p>
+        <h2 id="detail-title">{{ item.name }}</h2>
+        <p style="color:var(--ink-2);margin-top:.4rem">{{ blurb }}</p>
+      </div>
+
+      <div class="price-block">
+        <span class="now">{{ item.price | rupiah }}</span>
+        {%- if item.price_old %}<span class="was">{{ item.price_old | rupiah }}</span>{% endif %}
+        <span class="rating"><svg aria-hidden="true"><use href="#i-star"/></svg>{{ item.rating }}</span>
+        {%- if item.category == 'layanan' %}
+        <span class="pill pill--ok">{{ t.catalog.always_available }}</span>
+        {%- elsif item.stock <= 3 %}
+        <span class="pill pill--warn">{{ t.catalog.low_stock }} &middot; {{ item.stock }}</span>
+        {%- else %}
+        <span class="pill pill--ok">{{ t.catalog.in_stock }} &middot; {{ item.stock }}</span>
+        {%- endif %}
+      </div>
+
+      <table class="spec-table">
+        <caption class="visually-hidden">{{ t.catalog.specs }} {{ item.name }}</caption>
+        <tbody>
+          {%- for pair in item.specs %}
+          <tr>
+            <th scope="row">{{ pair[0] | term: 'spec_key', lang }}</th>
+            <td lang="id">{{ pair[1] }}</td>
+          </tr>
+          {%- endfor %}
+        </tbody>
+      </table>
+
+      {%- capture wa_message -%}
+{{ t.reserve.wa_message }} {{ item.name }} ({{ item.sku }}) - {{ item.price | rupiah }}
+      {%- endcapture -%}
+      <a class="btn btn--wa btn--block" href="{{ site.contact.whatsapp | whatsapp_link: wa_message }}" target="_blank" rel="noopener noreferrer">
+        <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>
+        {{ t.actions.order }}
+      </a>
+    </div>
+  </template>
+</article>
