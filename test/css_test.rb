@@ -92,7 +92,11 @@ class CssTest < Minitest::Test
   def test_halaman_hasil_build_tidak_memuat_aset_eksternal
     skip "jalankan `rake build` lebih dulu" unless site_built?
 
-    izin = %r{https?://(wa\.me|www\.instagram\.com|www\.facebook\.com|twitter\.com|maps\.google\.com|github\.com|www\.ducati\.com|schema\.org|xyb3rpunq\.github\.io)}
+    izin = %r{https?://(
+      wa\.me | www\.instagram\.com | x\.com | www\.linkedin\.com |
+      maps\.google\.com | github\.com | www\.ducati\.com | schema\.org |
+      commons\.wikimedia\.org | creativecommons\.org | xyb3rpunq\.github\.io
+    )}x
     Dir[File.join(ROOT, "_site", "**", "*.html")].each do |path|
       html = File.read(path, encoding: "utf-8")
       html.scan(/(?:src|href)="(https?:\/\/[^"]+)"/).flatten.uniq.each do |url|

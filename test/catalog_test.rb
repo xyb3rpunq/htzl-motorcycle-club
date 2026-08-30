@@ -148,8 +148,11 @@ class CatalogTest < Minitest::Test
     assert_equal "under-500k",   HTZL::Catalog.price_band(499_999)
     assert_equal "500k-2jt",     HTZL::Catalog.price_band(500_000)
     assert_equal "2jt-10jt",     HTZL::Catalog.price_band(2_000_000)
-    assert_equal "10jt-50jt",    HTZL::Catalog.price_band(10_000_000)
-    assert_equal "di-atas-50jt", HTZL::Catalog.price_band(50_000_000)
+    assert_equal "10jt-50jt",     HTZL::Catalog.price_band(10_000_000)
+    assert_equal "50jt-500jt",    HTZL::Catalog.price_band(50_000_000)
+    assert_equal "50jt-500jt",    HTZL::Catalog.price_band(499_999_999)
+    assert_equal "di-atas-500jt", HTZL::Catalog.price_band(500_000_000)
+    assert_equal "di-atas-500jt", HTZL::Catalog.price_band(4_500_000_000)
   end
 
   def test_price_band_setiap_item_konsisten_dengan_harganya
