@@ -384,4 +384,88 @@ class BuildTest < Minitest::Test
     assert_includes hasil["ja"], "年"
     assert_includes hasil["zh"], "年"
   end
+
+  # --- pencarian dan gambar responsif -------------------------------------
+
+  def catalog_cards
+    @catalog_cards ||= read_page("catalog", "index.html")
+                       .scan(%r{<article class="card".*?</article>}m)
+  end
+
+  def search_blobs
+    @search_blobs ||= catalog_cards.filter_map { |card| card[/data-search="([^"]*)"/, 1] }
+  end
+
+  # Nilai spesifikasi dulu tidak ikut diindeks, sehingga mengetik "Brembo" atau
+  # "Cordura" tidak menemukan apa pun padahal produknya ada di katalog.
+  def test_pencarian_mencakup_nilai_spesifikasi
+    assert_equal catalog.size, search_blobs.size
+
+    kosong = []
+    catalog.each_with_index do |item, index|
+      blob = search_blobs[index]
+      item["specs"].each_value do |value|
+        value.to_s.scan(/[[:alnum:]]{5,}/).each do |kata|
+          kosong << "#{item["sku"]}: #{kata}" unless blob.include?(kata.downcase)
+        end
+      end
+    end
+
+    assert_empty kosong.first(10)
+  end
+
+  def test_kata_kunci_spesifikasi_menemukan_produk
+    %w[brembo cordura titanium waterproof sintered ohlins].each do |kata|
+      hasil = search_blobs.count { |blob| blob.include?(kata) }
+
+      assert_operator hasil, :>=, 1, "\"#{kata}\" tidak menemukan apa pun"
+    end
+  end
+
+  def test_indeks_pencarian_tidak_memuat_kata_kembar
+    search_blobs.each do |blob|
+      kata = blob.split
+
+      assert_equal kata.uniq, kata, "indeks memuat kata kembar: #{blob[0, 60]}"
+    end
+  end
+
+  def test_kartu_berfoto_menawarkan_beberapa_ukuran_gambar
+    berfoto = catalog_cards.select { |card| card.include?(".webp") }
+
+    refute_empty berfoto
+
+    berfoto.each do |card|
+      assert_includes card, "srcset=", "kartu tanpa srcset"
+      assert_includes card, "sizes=", "kartu tanpa sizes"
+    end
+  end
+
+  def test_setiap_kandidat_srcset_mengarah_ke_berkas_yang_ada
+    kandidat = read_page("catalog", "index.html").scan(/srcset="([^"]*)"/).flatten
+                                                 .flat_map { |set| set.split(",") }
+                                                 .map { |entry| entry.strip.split(/\s+/).first }
+                                                 .uniq
+
+    refute_empty kandidat
+
+    hilang = kandidat.reject { |url| File.exist?(site_path(url.sub(BASEURL, "").sub(%r{\A/}, ""))) }
+
+    assert_empty hilang
+  end
+
+  # Dialog memakai berkas penuh, jadi varian kecil tidak boleh bocor ke sana.
+  def test_json_detail_memakai_berkas_penuh
+    json = JSON.parse(read_page("catalog", "index.html")[
+      %r{<script type="application/json" id="catalog-details">(.*?)</script>}m, 1
+    ])
+    varian = json.each_value.select { |entry| entry["i"] =~ /-(384|640)\.webp\z/ }
+
+    assert_empty(varian.map { |entry| entry["i"] })
+
+    json.each_value do |entry|
+      assert_operator entry["w"].to_i, :>, 0
+      assert_operator entry["h"].to_i, :>, 0
+    end
+  end
 end

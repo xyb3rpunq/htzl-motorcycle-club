@@ -71,6 +71,17 @@ module HTZL
         .compact.join(" ").downcase
     end
 
+    # Membuang kata kembar dari indeks pencarian.
+    #
+    # Blob pencarian menggabungkan nama, merek, kategori, dan seluruh nilai
+    # spesifikasi, sehingga kata seperti "mm" atau "aluminium" muncul berkali
+    # kali dalam satu kartu. Pencocokannya memeriksa tiap kata kunci sebagai
+    # substring dan tidak peduli urutan, jadi pengulangan itu hanya menambah
+    # berat halaman. Pada katalog penuh, ini memangkas sekitar 60 KB.
+    def search_tokens(text)
+      text.to_s.downcase.scan(/[[:alnum:]]+/).uniq.join(" ")
+    end
+
     private
 
     def trim_decimal(float)

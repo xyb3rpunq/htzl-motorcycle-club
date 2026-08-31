@@ -214,4 +214,32 @@ class FiltersTest < Minitest::Test
     assert_equal "", @subject.localize_date("bukan tanggal", "id")
     assert_equal "", @subject.localize_date(nil, "id")
   end
+
+  # --- indeks pencarian ---------------------------------------------------
+
+  def test_search_tokens_membuang_kata_kembar
+    assert_equal "cakram brembo 320 mm", @subject.search_tokens("Cakram Brembo 320 mm, Brembo 320 mm")
+  end
+
+  def test_search_tokens_menormalkan_huruf_dan_tanda_baca
+    assert_equal "ohlins ttx36 rem abs", @subject.search_tokens("Ohlins TTX36 / Rem: ABS")
+  end
+
+  def test_search_tokens_mempertahankan_aksara_non_latin
+    assert_equal "碳纤维 титан チタン", @subject.search_tokens("碳纤维 Титан チタン")
+  end
+
+  def test_search_tokens_aman_untuk_masukan_kosong
+    assert_equal "", @subject.search_tokens(nil)
+    assert_equal "", @subject.search_tokens("   ")
+  end
+
+  # Pencocokannya memeriksa tiap kata kunci sebagai substring, jadi pemadatan
+  # tidak boleh menghilangkan satu pun kata yang bisa dicari.
+  def test_search_tokens_tidak_menghilangkan_kata
+    asli = "Rangka Trellis, Suspensi Ohlins, Ban Pirelli Diablo Rosso IV"
+    hasil = @subject.search_tokens(asli)
+
+    asli.downcase.scan(/[[:alnum:]]+/).uniq.each { |kata| assert_includes hasil, kata }
+  end
 end
