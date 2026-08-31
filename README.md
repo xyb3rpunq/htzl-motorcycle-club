@@ -306,9 +306,9 @@ penerbitan dibatalkan bila ada satu saja yang gagal.
 
 | Lapis | Jumlah | Yang dijaga |
 |---|--:|---|
-| Ruby | 241 | Data katalog, terjemahan, hasil build, tautan, data terstruktur, dan kontras warna |
+| Ruby | 249 | Data katalog, terjemahan, hasil build, tautan, data terstruktur, dan kontras warna |
 | JavaScript | 23 | Fungsi murni pada kode yang benar-benar dikirim ke peramban |
-| End-to-end | 49 | Antarmukanya ditekan sungguhan di Chrome, termasuk tata letak di 5 bahasa dan 4 lebar layar |
+| End-to-end | 54 | Antarmukanya ditekan sungguhan di Chrome, termasuk tata letak di 5 bahasa dan 4 lebar layar |
 
 Kode Ruby tercakup **100 persen baris dan 100 persen cabang**, diukur dengan
 pustaka standar dan diperiksa ulang di setiap penerbitan. Angka cabang dipakai
@@ -328,6 +328,14 @@ dari alat yang tidak berfungsi tidak membuktikan apa pun.
 interaksi pada ponsel 390 piksel dengan CPU empat kali lebih lambat: yang
 terburuk 136 milidetik, seluruhnya di bawah ambang 200 milidetik. Menyaring
 seluruh 231 produk memakan sekitar 60 milidetik kerja nyata.
+
+**Sumber daya terkunci.** Halaman menyatakan Content-Security-Policy lewat
+meta, karena GitHub Pages tidak mengirim header sendiri. Skrip hanya boleh
+berasal dari situs ini, dan dua skrip inline yang ada diizinkan lewat sidik
+jari isinya, bukan lewat izin menyeluruh. Penegakannya diuji dengan mencoba
+melakukan yang dilarang: skrip yang disuntik tidak berjalan, dan sumber daya
+dari host lain ditolak. Gaya inline masih diizinkan karena templat memakai
+ratusan atribut `style`; itu disebut apa adanya, bukan disembunyikan.
 
 **Ditemukan mesin pencari.** Setiap halaman yang memuat daftar produk
 menyatakan isinya sebagai data terstruktur, lengkap dengan harga, mata uang,
