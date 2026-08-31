@@ -116,8 +116,10 @@ end
 desc "Uji end-to-end di peramban sungguhan (butuh Google Chrome)"
 task e2e: "build:preview" do
   # Batas waktu per test supaya kegagalan muncul sebagai kegagalan, bukan
-  # sebagai proses yang menggantung tanpa keterangan.
-  sh "node --test --test-timeout=40000 test/e2e/*.e2e.mjs"
+  # sebagai proses yang menggantung tanpa keterangan. Angkanya longgar dengan
+  # sengaja: satu test tata letak memuat 35 halaman, dan mesin CI berjalan
+  # sekitar dua setengah kali lebih lambat daripada mesin pengembangan.
+  sh "node --test --test-timeout=180000 test/e2e/*.e2e.mjs"
 end
 
 desc "Laporan cakupan pengujian untuk kode Ruby di lib/"
