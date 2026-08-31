@@ -150,7 +150,10 @@
    * boleh memilikinya.
    * ---------------------------------------------------------------- */
   function syncControls() {
-    if (searchInput) searchInput.value = state.q;
+    // Kotak pencarian sengaja tidak ditulis di sini. Pencarian ditunda 140 ms,
+    // sehingga menekan kontrol lain tepat setelah mengetik akan menimpa isi
+    // kotak dengan keadaan lama dan menghapus ketikan pengguna. Nilainya hanya
+    // dipulihkan sekali saat halaman dimuat, lewat restoreSearchBox.
     if (brandSelect) brandSelect.value = state.brand;
     if (priceSelect) priceSelect.value = state.band;
     if (sortSelect) sortSelect.value = state.sort;
@@ -204,11 +207,27 @@
     priceSelect.addEventListener("change", function () { state.band = priceSelect.value; apply(); });
   }
   if (sortSelect) {
-    sortSelect.addEventListener("change", function () { state.sort = sortSelect.value; apply(); });
+    sortSelect.addEventListener("change", function () { commitSearch(); state.sort = sortSelect.value; apply(); });
+  }
+
+  // Ketikan yang masih menunggu tunda harus ikut dihitung begitu pengguna
+  // menekan kontrol lain. Tanpa ini, hasilnya sesaat mengabaikan kata kunci
+  // yang sudah terlihat di layar.
+  function commitSearch() {
+    if (debounceTimer) {
+      window.clearTimeout(debounceTimer);
+      debounceTimer = null;
+    }
+    if (searchInput) state.q = searchInput.value.trim();
+  }
+
+  function restoreSearchBox() {
+    if (searchInput) searchInput.value = state.q;
   }
 
   $$("button[data-category]").forEach(function (chip) {
     chip.addEventListener("click", function () {
+      commitSearch();
       state.category = chip.dataset.category;
       syncControls();
       apply();
@@ -217,6 +236,7 @@
 
   $$("button[data-subcategory]").forEach(function (chip) {
     chip.addEventListener("click", function () {
+      commitSearch();
       state.sub = state.sub === chip.dataset.subcategory ? "" : chip.dataset.subcategory;
       syncControls();
       apply();
@@ -225,6 +245,7 @@
 
   $$("button[data-trim]").forEach(function (chip) {
     chip.addEventListener("click", function () {
+      commitSearch();
       state.trim = state.trim === chip.dataset.trim ? "" : chip.dataset.trim;
       syncControls();
       apply();
@@ -233,6 +254,7 @@
 
   $$("button[data-view]").forEach(function (btn) {
     btn.addEventListener("click", function () {
+      commitSearch();
       state.view = btn.dataset.view;
       syncControls();
       apply();
@@ -242,6 +264,7 @@
   $$("[data-reset]").forEach(function (btn) {
     btn.addEventListener("click", function () {
       state = { q: "", category: "", sub: "", brand: "", band: "", trim: "", sort: "relevant", view: state.view };
+      restoreSearchBox();
       syncControls();
       apply();
       if (searchInput) searchInput.focus();
@@ -499,6 +522,7 @@
   }
 
   readUrl();
+  restoreSearchBox();
   syncControls();
   apply();
 })();
