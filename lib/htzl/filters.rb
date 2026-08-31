@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "date"
+require "digest"
 require_relative "catalog"
 require_relative "locales"
 
@@ -71,6 +72,21 @@ module HTZL
     def search_blob(item)
       [item["name"], item["brand"], item["subcategory"], item["category_label"], item["sku"]]
         .compact.join(" ").downcase
+    end
+
+    # Sidik jari sebuah skrip inline untuk Content-Security-Policy.
+    #
+    # Situs ini terbit di GitHub Pages, yang tidak bisa mengirim header HTTP
+    # sendiri, jadi kebijakannya dinyatakan lewat <meta http-equiv>. Agar
+    # script-src tetap ketat tanpa 'unsafe-inline', tiap skrip inline
+    # diizinkan lewat sidik jarinya sendiri.
+    #
+    # Nilainya dihitung dari isi skrip persis seperti yang dikirim, jadi
+    # templat harus menangkap isinya sekali lalu memakai tangkapan yang sama
+    # untuk sidik jari dan untuk keluarannya.
+    def csp_hash(script)
+      digest = Digest::SHA256.digest(script.to_s)
+      "sha256-#{[digest].pack("m0")}"
     end
 
     # Membuang kata kembar dari indeks pencarian.

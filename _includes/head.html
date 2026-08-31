@@ -57,8 +57,12 @@
 {%- comment -%}
   Tema dipulihkan sebelum halaman digambar supaya tidak ada kedipan putih
   saat pengguna memilih mode gelap.
+
+  Isinya ditangkap lebih dulu, bukan langsung dicetak, karena sidik jarinya
+  dibutuhkan Content-Security-Policy di atas. Menangkap sekali lalu memakai
+  tangkapan yang sama untuk keduanya menjamin sidik jarinya cocok.
 {%- endcomment -%}
-<script>
+{%- capture theme_script -%}
   (function () {
     // Penanda ini dihapus di luar blok try supaya kontrol yang butuh
     // JavaScript tetap muncul walaupun localStorage diblokir peramban.
@@ -71,7 +75,21 @@
       document.documentElement.dataset.theme = "light";
     }
   })();
-</script>
+{%- endcapture -%}
+{%- capture extra_script -%}{%- if page.page_id == "notfound" -%}{%- include notfound-script.html -%}{%- endif -%}{%- endcapture -%}
+{%- comment -%}
+  GitHub Pages tidak bisa mengirim header HTTP sendiri, jadi kebijakannya
+  dinyatakan lewat meta. Karena itu frame-ancestors dan X-Content-Type-Options
+  tidak bisa dipasang di sini; keduanya hanya berlaku sebagai header.
+
+  script-src sengaja tanpa 'unsafe-inline': kedua skrip inline diizinkan lewat
+  sidik jarinya masing-masing. style-src masih memerlukannya karena templat
+  memakai ratusan atribut style, dan penyuntikan gaya jauh kurang berbahaya
+  daripada penyuntikan skrip.
+{%- endcomment -%}
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' '{{ theme_script | csp_hash }}'{% if extra_script != '' %} '{{ extra_script | csp_hash }}'{% endif %}; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; manifest-src 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<script>{{ theme_script }}</script>
 
 {%- comment -%} Data terstruktur untuk hasil pencarian yang lebih kaya {%- endcomment -%}
 <script type="application/ld+json">

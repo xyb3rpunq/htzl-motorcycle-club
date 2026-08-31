@@ -1,0 +1,36 @@
+{%- comment -%}
+  Skrip pengalih bahasa halaman 404, dipisah ke include-nya sendiri.
+
+  Content-Security-Policy mengizinkan skrip inline lewat sidik jari isinya,
+  dan sidik jari itu dihitung di <head> sebelum badan halaman dirender.
+  Dengan berada di satu berkas, isi yang dihitung dan isi yang dikirim
+  dijamin sama persis.
+{%- endcomment -%}
+  (function () {
+    var base = {{ site.baseurl | jsonify }};
+    var data;
+    try {
+      data = JSON.parse(document.getElementById("notfound-i18n").textContent);
+    } catch (e) {
+      return;
+    }
+
+    // Ambil segmen pertama setelah baseurl, misal "/htzl-motorcycle-club/ja/x".
+    var path = window.location.pathname;
+    if (base && path.indexOf(base) === 0) path = path.slice(base.length);
+    var segment = path.replace(/^\/+/, "").split("/")[0];
+
+    var dict = data[segment];
+    if (!dict) return;
+
+    document.documentElement.lang = dict.lang;
+    document.querySelector("[data-404-title]").textContent = dict.title;
+    document.querySelector("[data-404-text]").textContent = dict.text;
+
+    var home = document.querySelector("[data-404-home]");
+    var catalog = document.querySelector("[data-404-catalog]");
+    home.textContent = dict.home;
+    home.href = base + dict.prefix + "/";
+    catalog.textContent = dict.catalog;
+    catalog.href = base + dict.prefix + "/catalog/";
+  })();
