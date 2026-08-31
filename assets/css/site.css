@@ -1117,6 +1117,30 @@ dialog[open] { animation: dialog-in 0.25s var(--ease); }
 
 .lightbox__nav { display: flex; justify-content: center; gap: 0.5rem; margin-block-start: 0.75rem; }
 
+/* ----- Penurunan tanpa JavaScript ---------------------------------------
+   Kelas no-js dipasang di <html> dan dihapus skrip di <head>. Kontrol yang
+   tidak berfungsi tanpa JavaScript disembunyikan daripada dibiarkan tampil
+   dan mati saat diklik; sebagai gantinya muncul penjelasan dan jalan lain. */
+[data-no-js] { display: none; }
+.no-js [data-js-only] { display: none; }
+.no-js [data-no-js] { display: block; }
+
+/* Garis waktu heritage memuat informasi nyata: sebelas generasi mesin dengan
+   rentang tahun dan jumlah unitnya. Menyembunyikannya tanpa JavaScript justru
+   merugikan pembaca, jadi ia tetap tampil tetapi berhenti terlihat bisa
+   diklik. */
+.no-js .timeline__btn { cursor: default; pointer-events: none; }
+
+.notice {
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--surface-2);
+  color: var(--ink-2);
+  font-size: var(--t-sm);
+  line-height: 1.6;
+}
+
 /* ----- Banner halaman merek --------------------------------------------- */
 .page-banner {
   position: relative;

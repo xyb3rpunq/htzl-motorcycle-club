@@ -276,6 +276,11 @@ meta:
   vixian_desc: Six Vixian models from supermoto to adventure with full pricing and specifications.
   heritage_desc: One hundred Harley-Davidson machines from 1903 to 2017, ordered from the oldest, with freely licensed photos and full specifications.
 
+no_js:
+  catalog: Filtering, search, and the detail panel need JavaScript. Every product is still listed in full below.
+  reserve: The reservation form needs JavaScript. You can still order directly over WhatsApp.
+  detail: Full specifications need JavaScript.
+
 notfound:
   title: Page not found
   text: The address you asked for has moved, or it never existed.

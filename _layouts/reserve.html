@@ -38,7 +38,7 @@ layout: default
           {%- endfor %}
         </div>
 
-        <div class="summary" style="margin-top:1.25rem" data-summary>
+        <div class="summary" style="margin-top:1.25rem" data-summary data-js-only>
           <h3 style="font-family:var(--font-sans);font-size:var(--t-sm);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2)">
             {{ t.reserve.summary_title }}
           </h3>
@@ -53,7 +53,7 @@ layout: default
       <div class="form-card">
         <h2 class="h-sec" style="font-size:var(--t-lg);margin-bottom:1.5rem">{{ t.reserve.form_title }}</h2>
 
-        <form data-reserve-form novalidate
+        <form data-reserve-form data-js-only
               data-wa="{{ site.contact.whatsapp }}"
               data-wa-intro="{{ t.reserve.wa_message }}"
               data-label-model="{{ t.reserve.summary_model }}"
@@ -141,6 +141,19 @@ layout: default
 
           <button class="btn btn--block" type="submit" style="margin-top:1.5rem">{{ t.reserve.submit }}</button>
         </form>
+
+        {%- comment -%}
+          Tanpa JavaScript, formulir di atas tidak bisa mengirim apa pun.
+          Menampilkannya hanya akan membuang isian pengunjung saat ditekan,
+          jadi ia disembunyikan dan diganti jalan lain yang benar-benar jalan.
+        {%- endcomment -%}
+        <div data-no-js>
+          <p class="notice">{{ t.no_js.reserve }}</p>
+          <a class="btn btn--wa btn--block" style="margin-top:1.25rem"
+             href="https://wa.me/{{ site.contact.whatsapp }}" target="_blank" rel="noopener noreferrer">
+            <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>{{ t.reserve.wa_button }}
+          </a>
+        </div>
 
         <div hidden data-success-panel style="margin-top:1.5rem;text-align:center">
           <svg style="width:52px;height:52px;margin:0 auto 1rem;color:var(--ok)" aria-hidden="true"><use href="#i-check"/></svg>

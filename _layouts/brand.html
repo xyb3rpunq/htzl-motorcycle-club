@@ -29,7 +29,8 @@ layout: default
       <a class="btn btn--ghost" href="{{ t.prefix | append: '/reserve/' | relative_url }}">{{ t.nav.reserve }}</a>
     </div>
 
-    <div class="chips" style="margin-bottom:1.25rem" role="group" aria-label="{{ t.catalog.subcategory }}">
+    <p class="notice" data-no-js style="margin-bottom:1.25rem">{{ t.no_js.catalog }}</p>
+    <div class="chips" style="margin-bottom:1.25rem" role="group" aria-label="{{ t.catalog.subcategory }}" data-js-only>
       <button class="chip" type="button" data-category="" aria-pressed="true">
         {{ t.catalog.all }}<span class="chip__count">{{ items | size }}</span>
       </button>

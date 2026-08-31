@@ -273,6 +273,11 @@ meta:
   vixian_desc: 六款 Vixian 车型，从超级摩托到探险车，含完整价格与规格。
   heritage_desc: 一百台 1903 至 2017 年的 Harley-Davidson，按年份从最早排起，附自由授权照片与完整规格。
 
+no_js:
+  catalog: 筛选、搜索和详情面板需要 JavaScript。下方仍然完整列出全部产品。
+  reserve: 预订表单需要 JavaScript。您仍可直接通过 WhatsApp 下单。
+  detail: 查看完整规格需要 JavaScript。
+
 notfound:
   title: 找不到页面
   text: 您访问的地址已迁移，或从未存在。

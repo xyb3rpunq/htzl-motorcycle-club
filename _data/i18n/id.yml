@@ -276,6 +276,11 @@ meta:
   vixian_desc: Enam model Vixian dari supermoto sampai adventure lengkap dengan harga dan spesifikasi.
   heritage_desc: Seratus unit Harley-Davidson dari 1903 sampai 2017, diurutkan dari yang tertua, lengkap dengan foto berlisensi bebas dan spesifikasi.
 
+no_js:
+  catalog: Penyaringan, pencarian, dan panel detail memerlukan JavaScript. Seluruh produk tetap tercantum lengkap di bawah ini.
+  reserve: Formulir reservasi memerlukan JavaScript. Anda tetap bisa memesan langsung lewat WhatsApp.
+  detail: Rincian lengkap memerlukan JavaScript.
+
 notfound:
   title: Halaman tidak ditemukan
   text: Alamat yang Anda tuju sudah dipindahkan atau tidak pernah ada.

@@ -60,6 +60,9 @@
 {%- endcomment -%}
 <script>
   (function () {
+    // Penanda ini dihapus di luar blok try supaya kontrol yang butuh
+    // JavaScript tetap muncul walaupun localStorage diblokir peramban.
+    document.documentElement.classList.remove("no-js");
     try {
       var saved = localStorage.getItem("htzl-theme");
       var dark = saved ? saved === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;

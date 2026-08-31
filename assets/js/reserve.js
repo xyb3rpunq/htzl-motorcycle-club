@@ -167,6 +167,11 @@
     return ok ? values : null;
   }
 
+  // Validasi bawaan peramban dimatikan hanya setelah JavaScript siap
+  // menggantikannya dengan pesan yang lebih jelas. Kalau ditulis di HTML,
+  // pengunjung tanpa JavaScript justru kehilangan validasi sama sekali.
+  form.noValidate = true;
+
   form.addEventListener("submit", function (event) {
     event.preventDefault();
     var values = validate();

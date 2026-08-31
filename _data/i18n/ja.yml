@@ -275,6 +275,11 @@ meta:
   vixian_desc: スーパーモトからアドベンチャーまで、Vixian 6モデルを価格と仕様とともに掲載。
   heritage_desc: 1903年から2017年までのHarley-Davidson 100台を古い順に掲載。自由ライセンスの写真と詳細仕様付き。
 
+no_js:
+  catalog: 絞り込み、検索、詳細パネルには JavaScript が必要です。すべての製品は下に一覧表示されています。
+  reserve: 予約フォームには JavaScript が必要です。WhatsApp から直接ご注文いただけます。
+  detail: 詳細な仕様には JavaScript が必要です。
+
 notfound:
   title: ページが見つかりません
   text: お探しのアドレスは移動したか、もともと存在しません。

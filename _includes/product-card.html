@@ -71,7 +71,7 @@
         {{ item.price | rupiah }}
         {%- if item.price_old %}<small>{{ item.price_old | rupiah }}</small>{% endif %}
       </p>
-      <button class="btn btn--sm" type="button" data-detail>{{ t.actions.detail }}</button>
+      <button class="btn btn--sm" type="button" data-detail data-js-only>{{ t.actions.detail }}</button>
     </div>
   </div>
 

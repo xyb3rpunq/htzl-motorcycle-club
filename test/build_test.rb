@@ -560,4 +560,107 @@ class BuildTest < Minitest::Test
 
     assert_empty hilang
   end
+
+  # --- penurunan tanpa JavaScript -----------------------------------------
+
+  # Kontrol yang mati tanpa JavaScript disembunyikan lewat kelas no-js di
+  # <html>, yang dihapus skrip di <head>. Kalau penanda itu hilang, seluruh
+  # mekanismenya ikut mati tanpa suara.
+  def test_penanda_no_js_ada_di_setiap_halaman
+    all_pages.each do |path|
+      html = File.read(path, encoding: "utf-8")
+
+      assert_includes html[0, 200], 'class="no-js"', File.basename(File.dirname(path))
+    end
+  end
+
+  def test_penanda_no_js_dihapus_skrip_di_head
+    html = read_page("index.html")
+
+    assert_includes html, 'classList.remove("no-js")'
+    assert_operator html.index('classList.remove("no-js")'), :<, html.index("<body"),
+                    "penghapus penanda harus jalan sebelum badan halaman digambar"
+  end
+
+  def test_aturan_css_no_js_lengkap
+    css = File.read(File.join(ROOT, "assets", "css", "site.css"), encoding: "utf-8")
+
+    assert_includes css, "[data-no-js] { display: none; }"
+    assert_includes css, ".no-js [data-js-only] { display: none; }"
+    assert_includes css, ".no-js [data-no-js] { display: block; }"
+  end
+
+  # Halaman yang menyembunyikan alat penyaring, pencarian, atau formulirnya
+  # wajib menjelaskan kenapa. Kontrol yang lenyap tanpa keterangan lebih
+  # membingungkan daripada berguna.
+  #
+  # Tombol detail per kartu tidak dihitung: di beranda, tiap bagian sudah punya
+  # tautan biasa ke halaman merek, sehingga jalan lain tetap tersedia tanpa
+  # perlu keterangan tambahan.
+  def test_halaman_dengan_kontrol_tersembunyi_selalu_menjelaskan
+    all_pages.each do |path|
+      html = File.read(path, encoding: "utf-8")
+      tersembunyi = html.scan("data-js-only").size - html.scan("data-detail data-js-only").size
+      next if tersembunyi.zero?
+
+      assert_includes html, "data-no-js",
+                      "#{File.basename(File.dirname(path))}: menyembunyikan kontrol tanpa penjelasan"
+    end
+  end
+
+  # Beranda boleh menyembunyikan tombol detail tanpa keterangan justru karena
+  # jalan lain itu ada. Kalau tautannya hilang, alasannya ikut hilang.
+  def test_beranda_tetap_punya_tautan_biasa_ke_tiap_merek
+    html = read_page("index.html")
+
+    %w[kawasaki vixian].each do |brand|
+      assert_match %r{<a[^>]*href="[^"]*/#{brand}/"[^>]*class="btn|<a class="btn[^"]*"[^>]*href="[^"]*/#{brand}/"},
+                   html, "beranda kehilangan tautan ke #{brand}"
+    end
+  end
+
+  def test_kontrol_yang_butuh_javascript_sudah_ditandai
+    catalog = read_page("catalog", "index.html")
+
+    assert_match(/<div class="catalog__toolbar" data-js-only>/, catalog)
+    assert_equal catalog.scan(/<button[^>]*data-detail[^>]*>/).size,
+                 catalog.scan(/<button[^>]*data-detail[^>]*data-js-only[^>]*>/).size,
+                 "ada tombol detail yang belum ditandai"
+  end
+
+  # Formulir tanpa action tidak bisa mengirim apa pun. Menampilkannya tanpa
+  # JavaScript hanya membuang isian pengunjung saat tombol kirim ditekan.
+  def test_formulir_reservasi_disembunyikan_dan_diberi_jalan_lain
+    reserve = read_page("reserve", "index.html")
+    form = reserve[/<form[^>]*data-reserve-form[^>]*>/]
+
+    refute_nil form
+    assert_includes form, "data-js-only"
+    assert_match %r{<div data-no-js>.*?https://wa\.me/}m, reserve
+  end
+
+  # novalidate ditulis JavaScript, bukan di HTML. Kalau ditulis di HTML,
+  # pengunjung tanpa JavaScript kehilangan validasi bawaan peramban.
+  def test_validasi_bawaan_tidak_dimatikan_di_html
+    form = read_page("reserve", "index.html")[/<form[^>]*data-reserve-form[^>]*>/]
+
+    refute_includes form, "novalidate"
+
+    js = File.read(File.join(ROOT, "assets", "js", "reserve.js"), encoding: "utf-8")
+
+    assert_includes js, "form.noValidate = true"
+  end
+
+  def test_pesan_no_js_diterjemahkan_ke_setiap_bahasa
+    TestSupport::LOCALES.each do |locale|
+      pesan = i18n(locale).dig("no_js", "catalog")
+
+      refute_nil pesan, locale
+      refute_empty pesan.to_s.strip, locale
+
+      html = File.read(page_path_for(locale, "catalog"), encoding: "utf-8")
+
+      assert_includes html, pesan.split(".").first.strip, locale
+    end
+  end
 end
