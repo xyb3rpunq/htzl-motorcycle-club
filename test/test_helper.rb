@@ -30,12 +30,23 @@ module TestSupport
     @terms ||= YAML.load_file(File.join(ROOT, "_data", "i18n", "terms.yml"))
   end
 
+  def spec_values
+    @spec_values ||= YAML.load_file(File.join(ROOT, "_data", "i18n", "spec_values.yml"))
+  end
+
   def site_path(*parts)
     File.join(ROOT, "_site", *parts)
   end
 
   def site_built?
     File.directory?(File.join(ROOT, "_site"))
+  end
+
+  # Jalur berkas hasil build untuk satu halaman dalam satu bahasa. Bahasa
+  # Indonesia tidak memakai awalan karena ia bahasa dasar situs.
+  def page_path_for(locale, id)
+    prefix = locale == "id" ? [] : [locale]
+    id == "home" ? site_path(*prefix, "index.html") : site_path(*prefix, id, "index.html")
   end
 
   # Kumpulkan semua kunci bersarang jadi jalur bertitik, untuk membandingkan

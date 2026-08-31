@@ -29,7 +29,10 @@ class FiltersTest < Minitest::Test
 
   def setup
     site = FakeSite.new(
-      { "i18n" => { "en" => i18n("en"), "id" => i18n("id"), "terms" => terms } },
+      # Susunan ini mengikuti site.data.i18n pada situs sungguhan: tiap berkas
+      # di _data/i18n/ menjadi satu kunci, termasuk kamus nilai spesifikasi.
+      { "i18n" => { "en" => i18n("en"), "id" => i18n("id"),
+                    "terms" => terms, "spec_values" => spec_values } },
       { "baseurl" => "/htzl-motorcycle-club" }
     )
     @subject = Subject.new(FakeContext.new(site))
@@ -241,5 +244,45 @@ class FiltersTest < Minitest::Test
     hasil = @subject.search_tokens(asli)
 
     asli.downcase.scan(/[[:alnum:]]+/).uniq.each { |kata| assert_includes hasil, kata }
+  end
+
+  # --- jalur pertahanan ---------------------------------------------------
+  #
+  # Cabang di bawah ini tidak pernah dijalankan oleh data situs yang normal.
+  # Justru karena itu ia perlu diuji: kalau suatu saat benar-benar terpicu,
+  # tidak ada yang pernah membuktikan hasilnya masuk akal.
+
+  def test_terjemahan_spesifikasi_jatuh_ke_kamus_bila_bukan_ukuran
+    # Nilai ini bukan angka bersatuan, jadi penerjemah otomatis mengembalikan
+    # nil dan kamuslah yang mengambil alih.
+    nilai = "Fiberglass komposit"
+
+    assert_nil HTZL::Measures.localize(nilai, "en"), "nilai contoh ternyata terbaca sebagai ukuran"
+    assert_equal "Composite fibreglass", @subject.term(nilai, "spec_value", "en")
+  end
+
+  def test_terjemahan_spesifikasi_memakai_penerjemah_otomatis_bila_berupa_ukuran
+    assert_equal "1,362 mm", @subject.term("1.362 mm", "spec_value", "en")
+  end
+
+  def test_tanggal_memakai_bentuk_cadangan_bila_kamus_bahasa_tidak_ada
+    hasil = @subject.localize_date(Date.new(2022, 5, 29), "xx")
+
+    assert_equal "29 May 2022", hasil
+  end
+
+  def test_tanggal_menolak_nilai_yang_tidak_bisa_jadi_tanggal
+    assert_equal "", @subject.localize_date(12_345, "id")
+    assert_equal "", @subject.localize_date([], "id")
+  end
+
+  # Liquid dapat mengoper objek pembungkus, bukan Date. Selama ia bisa
+  # dijadikan tanggal, hasilnya harus tetap benar.
+  def test_tanggal_menerima_objek_yang_bisa_dijadikan_tanggal
+    pembungkus = Class.new do
+      def to_date = Date.new(2016, 12, 30)
+    end
+
+    assert_equal "30 Desember 2016", @subject.localize_date(pembungkus.new, "id")
   end
 end

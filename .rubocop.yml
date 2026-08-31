@@ -68,6 +68,15 @@ Metrics/BlockLength:
   Exclude:
     - "test/**/*"
     - "Rakefile"
+    # Skrip pelaporan: satu blok yang mencetak satu tabel, memecahnya justru
+    # menyebarkan urusan format ke mana-mana.
+    - "lib/coverage_report.rb"
+
+Style/StringConcatenation:
+  Exclude:
+    # Header WebP disusun byte demi byte. Interpolasi menggabungkan literal
+    # UTF-8 dengan hasil pack yang biner, dan itu bisa gagal pada byte tinggi.
+    - "test/image_size_edge_test.rb"
 
 Metrics/ClassLength:
   Max: 200

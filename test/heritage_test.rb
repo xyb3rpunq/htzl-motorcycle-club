@@ -143,4 +143,12 @@ class HeritageTest < Minitest::Test
       refute_match %r{https?://(?!www\.w3\.org)}, svg, "artwork tidak boleh menarik aset eksternal"
     end
   end
+
+  # Sebelas generasi mesin sudah tercakup, jadi cabang terakhir ini tidak
+  # pernah terpicu oleh data sekarang. Ia tetap harus benar bila suatu saat
+  # ada unit dengan era baru.
+  def test_era_yang_tidak_dikenal_masuk_kelompok_lain
+    assert_equal "Era Lainnya", HTZL::Heritage.subcategory("Era Antah Berantah")
+    assert_equal "Era Lainnya", HTZL::Heritage.subcategory("")
+  end
 end

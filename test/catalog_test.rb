@@ -208,4 +208,32 @@ class CatalogTest < Minitest::Test
                    "rupiah(#{input}) berbeda dari kontrak di test/fixtures/rupiah.json"
     end
   end
+
+  # --- jalur pertahanan ---------------------------------------------------
+
+  # Setiap produk sekarang punya artwork, jadi cabang ini tidak pernah terpicu
+  # oleh data nyata. Ia tetap harus mengembalikan nil, bukan jalur berkas yang
+  # menunjuk ke gambar hilang.
+  def test_artwork_yang_tidak_ada_menghasilkan_nil
+    assert_nil HTZL::Catalog.send(:art_path, "slug-yang-tidak-pernah-ada")
+  end
+
+  def test_artwork_yang_ada_menghasilkan_jalur_situs
+    slug = catalog.find { |i| i["image"].to_s.end_with?(".svg") }["slug"]
+
+    assert_equal "/assets/img/products/#{slug}.svg", HTZL::Catalog.send(:art_path, slug)
+  end
+
+  # photo_credits.yml dihasilkan skrip terpisah dan boleh belum ada, misalnya
+  # pada klon baru yang belum menjalankan `rake photos`. Katalog harus tetap
+  # bisa dibangun, dengan unit tanpa foto memakai ikon kategori.
+  def test_katalog_tetap_terbangun_bila_kredit_foto_belum_ada
+    HTZL::Catalog.instance_variable_set(:@photo_credits, nil)
+
+    File.stub(:exist?, false) do
+      assert_empty HTZL::Catalog.send(:photo_credits)
+    end
+  ensure
+    HTZL::Catalog.instance_variable_set(:@photo_credits, nil)
+  end
 end

@@ -113,4 +113,16 @@ class ImageFiltersTest < Minitest::Test
     assert_equal "/htzl-motorcycle-club/assets/img/hero/promo.webp",
                  @subject.largest_variant(ImageSourcesTest::HERO)
   end
+
+  def test_kandidat_terbesar_untuk_gambar_tanpa_varian
+    # SVG tidak punya varian ukuran; filter harus mengembalikan berkasnya
+    # sendiri, bukan meledak.
+    assert_equal "/htzl-motorcycle-club/assets/img/art/oli-htzl-4t.svg",
+                 @subject.largest_variant("/assets/img/art/oli-htzl-4t.svg")
+  end
+
+  def test_lebar_dan_tinggi_untuk_masukan_kosong
+    assert_nil @subject.image_width(nil)
+    assert_nil @subject.image_height(nil)
+  end
 end

@@ -54,6 +54,14 @@ jobs:
       - name: Jalankan seluruh test
         run: bundle exec rake test
 
+      - name: Periksa cakupan pengujian
+        run: bundle exec rake coverage
+
+      - name: Uji end-to-end di peramban
+        run: bundle exec rake e2e
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
+
       - name: Unggah artefak
         uses: actions/upload-pages-artifact@v3
         with:

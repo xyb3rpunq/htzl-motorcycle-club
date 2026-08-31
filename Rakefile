@@ -103,6 +103,26 @@ task :art do
   ruby "lib/generate_art.rb"
 end
 
+namespace :build do
+  desc "Bangun situs dengan baseurl kosong ke _preview, untuk uji end-to-end"
+  task :preview do
+    # Hasil build biasa memakai baseurl GitHub Pages, sehingga seluruh aset
+    # menunjuk /htzl-motorcycle-club/... dan tidak bisa dilayani dari akar.
+    # Uji end-to-end memerlukan salinan yang bisa dibuka apa adanya.
+    sh "bundle exec jekyll build --baseurl \"\" -d _preview"
+  end
+end
+
+desc "Uji end-to-end di peramban sungguhan (butuh Google Chrome)"
+task e2e: "build:preview" do
+  sh "node --test test/e2e/*.e2e.mjs"
+end
+
+desc "Laporan cakupan pengujian untuk kode Ruby di lib/"
+task :coverage do
+  ruby "-Itest lib/coverage_report.rb"
+end
+
 namespace :photos do
   desc "Ambil ulang foto heritage pada resolusi lebih tinggi (butuh Python + Pillow)"
   task :hires do
