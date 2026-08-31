@@ -6,7 +6,8 @@
 // langkah pemasangan tambahan.
 import { spawn } from "node:child_process";
 import { createServer } from "node:http";
-import { readFile, stat } from "node:fs/promises";
+import { readFile, stat, mkdtemp, rm } from "node:fs/promises";
+import { tmpdir } from "node:os";
 import { join, extname, resolve } from "node:path";
 
 const TIPE = {
@@ -45,11 +46,39 @@ const CHROME_PATHS = [
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-export async function launch(port = 9400 + Math.floor(Math.random() * 400)) {
+// Port yang masih dipegang Chrome dari proses sebelumnya adalah jebakan halus:
+// spawn kita gagal diam-diam, lalu kita mengemudikan peramban asing yang
+// sedang menampilkan halaman lain, dan seluruh test menggantung.
+async function portTerpakai(port) {
+  try {
+    const kendali = AbortSignal.timeout(700);
+    await fetch(`http://127.0.0.1:${port}/json/version`, { signal: kendali });
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+export async function launch(port) {
+  if (port === undefined) {
+    for (let coba = 0; coba < 12; coba++) {
+      const kandidat = 9400 + Math.floor(Math.random() * 500);
+      if (!(await portTerpakai(kandidat))) { port = kandidat; break; }
+    }
+    if (port === undefined) throw new Error("tidak ada port debug yang bebas");
+  } else if (await portTerpakai(port)) {
+    throw new Error(`port ${port} sudah dipakai peramban lain`);
+  }
+
+  // Profil terpisah per peluncuran, supaya dua uji yang berjalan bersamaan
+  // tidak saling mengunci direktori data.
+  const profil = await mkdtemp(join(tmpdir(), "htzl-e2e-"));
+
   let chrome = null;
   for (const bin of CHROME_PATHS) {
     chrome = spawn(bin, [
       "--headless=new", "--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage",
+      `--user-data-dir=${profil}`,
       `--remote-debugging-port=${port}`, "about:blank",
     ], { stdio: "ignore" });
     const ok = await new Promise((r) => { chrome.once("error", () => r(false)); setTimeout(() => r(true), 400); });
@@ -165,7 +194,11 @@ export async function launch(port = 9400 + Math.floor(Math.random() * 400)) {
       await sleep(160);
     },
     resetSize() { return send("Emulation.clearDeviceMetricsOverride"); },
-    close() { ws.close(); chrome.kill(); },
+    close() {
+      ws.close();
+      chrome.kill();
+      rm(profil, { recursive: true, force: true }).catch(() => {});
+    },
   };
 
   return page;

@@ -115,7 +115,9 @@ end
 
 desc "Uji end-to-end di peramban sungguhan (butuh Google Chrome)"
 task e2e: "build:preview" do
-  sh "node --test test/e2e/*.e2e.mjs"
+  # Batas waktu per test supaya kegagalan muncul sebagai kegagalan, bukan
+  # sebagai proses yang menggantung tanpa keterangan.
+  sh "node --test --test-timeout=40000 test/e2e/*.e2e.mjs"
 end
 
 desc "Laporan cakupan pengujian untuk kode Ruby di lib/"

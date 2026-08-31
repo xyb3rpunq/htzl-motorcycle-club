@@ -186,4 +186,61 @@ describe("halaman katalog", () => {
     assert.equal(await page.count("img[src='x']"), 0, "markup dari kotak pencarian ikut dirender");
     assert.deepEqual(page.konsol, []);
   });
+
+  // Regresi: localeCompare tanpa opsi numeric membandingkan angka sebagai
+  // huruf, sehingga urutan A sampai Z menaruh "Servis Berkala 12.000 km"
+  // sebelum "Servis Berkala 4.000 km".
+  test("urutan nama membaca angka sebagai angka", async () => {
+    await page.goto(`${BASE}/catalog/`);
+    await page.fill("[data-search]", "servis berkala");
+    await page.waitFor(`document.querySelectorAll("${KARTU}").length > 1`);
+    await page.fill("[data-sort]", "name");
+    await page.waitFor(`document.querySelector("[data-sort]").value === "name"`);
+
+    const nama = await page.eval(`[...document.querySelectorAll("${KARTU}")].map((c) => c.dataset.name)`);
+    const angka = nama.map((n) => Number(String(n).match(/([\d.]+)\s*km/)?.[1].replace(/\./g, "") ?? 0));
+
+    assert.deepEqual(angka, [...angka].sort((a, b) => a - b), `urutan salah: ${nama.join(" | ")}`);
+  });
+
+  test("urutan nama tetap benar di halaman berbahasa lain", async () => {
+    for (const prefix of ["/en", "/ja"]) {
+      await page.goto(`${BASE}${prefix}/catalog/`);
+      await page.fill("[data-search]", "servis berkala");
+      await page.waitFor(`document.querySelectorAll("${KARTU}").length > 1`);
+      await page.fill("[data-sort]", "name");
+      await page.waitFor(`document.querySelector("[data-sort]").value === "name"`);
+
+      const nama = await page.eval(`[...document.querySelectorAll("${KARTU}")].map((c) => c.dataset.name)`);
+
+      assert.match(nama[0], /4\.000/, `${prefix}: ${nama.join(" | ")}`);
+    }
+  });
+
+  // Menyaring 231 kartu terjadi pada tiap ketukan tombol. Angka ini longgar
+  // dengan sengaja: yang dijaga adalah tidak adanya kemunduran besar, bukan
+  // selisih beberapa milidetik antar mesin.
+  test("menyaring seluruh katalog selesai dalam waktu wajar", async () => {
+    await page.goto(`${BASE}/catalog/`);
+    const ms = await page.eval(`(async () => {
+      const input = document.querySelector("input[data-search]");
+      const mulai = performance.now();
+      input.value = "harley";
+      input.dispatchEvent(new Event("input", { bubbles: true }));
+      await new Promise((selesai) => {
+        let sebelum = -1;
+        const cek = () => {
+          const kini = document.querySelectorAll("article.card:not([hidden])").length;
+          if (kini === sebelum) return requestAnimationFrame(() => selesai());
+          sebelum = kini;
+          setTimeout(cek, 30);
+        };
+        setTimeout(cek, 160);
+      });
+      return Math.round(performance.now() - mulai);
+    })()`);
+
+    assert.equal(await page.count(KARTU), 100);
+    assert.ok(ms < 1500, `penyaringan butuh ${ms} ms`);
+  });
 });

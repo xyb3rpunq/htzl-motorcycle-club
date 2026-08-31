@@ -75,6 +75,18 @@
     return true;
   }
 
+  // Pembanding nama dibuat sekali dan mengikuti bahasa halaman.
+  //
+  // localeCompare tanpa argumen memakai setelan peramban, bukan bahasa situs,
+  // sehingga urutan nama di halaman Jepang atau Rusia mengikuti perangkat
+  // pembacanya. Tanpa opsi numeric, ia juga menaruh "Servis Berkala 12.000 km"
+  // sebelum "Servis Berkala 4.000 km", karena membandingkan angka 1 dengan 4
+  // sebagai huruf.
+  var pembandingNama = new Intl.Collator(document.documentElement.lang || "id", {
+    numeric: true,
+    sensitivity: "base",
+  });
+
   function sortCards(visible) {
     var sorted = visible.slice();
     switch (state.sort) {
@@ -85,7 +97,7 @@
         sorted.sort(function (a, b) { return Number(b.dataset.price) - Number(a.dataset.price); });
         break;
       case "name":
-        sorted.sort(function (a, b) { return a.dataset.name.localeCompare(b.dataset.name); });
+        sorted.sort(function (a, b) { return pembandingNama.compare(a.dataset.name, b.dataset.name); });
         break;
       case "rating":
         sorted.sort(function (a, b) { return Number(b.dataset.rating) - Number(a.dataset.rating); });
