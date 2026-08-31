@@ -283,12 +283,19 @@ katalog dimuat segera karena di sanalah elemen terbesar berada. Penyetelan ini
 memangkas 92 sampai 264 milidetik pada keempat halaman utama tanpa menambah
 satu byte pun.
 
+**Tanpa JavaScript.** Katalog tetap menampilkan seluruh 231 produk, karena
+halaman dirender lengkap sebelum diterbitkan. Kontrol yang memang butuh
+JavaScript — penyaring, pencarian, panel detail — disembunyikan dan diganti
+keterangan singkat, bukan dibiarkan tampil lalu mati saat ditekan. Halaman
+reservasi menawarkan tautan WhatsApp langsung sebagai gantinya, sehingga
+pengunjung tetap bisa memesan.
+
 **Aksesibilitas.** Diaudit dengan axe-core pada aturan WCAG 2.1 A/AA ditambah
 best practice: **nol pelanggaran** di seluruh halaman. Navigasi keyboard penuh,
 target sentuh minimal 44 piksel, kontras terjaga di kedua tema, dan animasi
 dimatikan bila sistem meminta gerak minimal.
 
-**Pengujian.** 182 test Ruby dan 23 test JavaScript berjalan pada tiap
+**Pengujian.** 191 test Ruby dan 23 test JavaScript berjalan pada tiap
 perubahan, ditambah pemeriksaan gaya kode. Penerbitan dibatalkan bila ada yang
 gagal.
 
