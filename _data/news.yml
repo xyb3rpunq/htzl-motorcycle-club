@@ -1,7 +1,11 @@
 # Tiga berita di beranda. Judul disimpan per bahasa agar ikut diterjemahkan.
+#
+# url menunjuk halaman di situs ini sendiri, tanpa awalan bahasa: awalannya
+# ditambahkan template. Sebelumnya ketiganya menunjuk ducati.com, sehingga
+# judul bermerek Kawasaki dan Vixian mengantar pembaca ke situs pabrikan lain.
 - image: /assets/img/news/news-1.webp
-  url: https://www.ducati.com/ww/en/news/jack-miller-and-the-ducati-lenovo-team-to-continue-together-in-2022
-  date: 2022-05-29
+  url: /vixian/
+  date: 2026-08-24
   topic:
     id: Balap, MotoGP
     en: Racing, MotoGP
@@ -16,8 +20,8 @@
     ja: ジャック・ミラーとVixianチーム、2022年も継続
 
 - image: /assets/img/news/news-2.webp
-  url: https://www.ducati.com/ww/en/news/ducati-confirms-commitment-promoting-diversity-to-foster-an-inclusive-workplace
-  date: 2022-05-21
+  url: /kawasaki/
+  date: 2026-08-11
   topic:
     id: Perusahaan
     en: Company
@@ -32,8 +36,8 @@
     ja: Kawasaki、多様性への取り組みを改めて表明
 
 - image: /assets/img/news/news-3.webp
-  url: https://www.ducati.com/ww/en/news/lights-on-me-new-black-and-steel-version-for-the-diavel-1260-s
-  date: 2022-05-27
+  url: /vixian/
+  date: 2026-08-19
   topic:
     id: Motor
     en: Motorcycle

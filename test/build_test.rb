@@ -22,11 +22,6 @@ class BuildTest < Minitest::Test
     File.read(site_path(*parts), encoding: "utf-8")
   end
 
-  def page_path_for(locale, id)
-    prefix = locale == "id" ? [] : [locale]
-    id == "home" ? site_path(*prefix, "index.html") : site_path(*prefix, id, "index.html")
-  end
-
   # --- kelengkapan halaman ----------------------------------------------
   def test_semua_halaman_terbentuk_untuk_setiap_bahasa
     TestSupport::LOCALES.each do |locale|
@@ -378,11 +373,15 @@ class BuildTest < Minitest::Test
     # adalah bahwa tanggalnya tidak seragam di semua bahasa.
     assert_operator hasil.values.uniq.length, :>=, 4,
                     "tanggal seharusnya mengikuti bahasa, bukan seragam"
-    assert_includes hasil["id"], "Mei"
-    assert_includes hasil["en"], "May"
-    assert_includes hasil["ru"], "мая"
-    assert_includes hasil["ja"], "年"
-    assert_includes hasil["zh"], "年"
+
+    # Nama bulannya diambil dari kamus tiap bahasa, bukan ditulis tetap di
+    # sini: tanggal berita boleh berubah tanpa membuat tes ini palsu gagal.
+    bulan = data_file("news.yml").first["date"].month
+    TestSupport::LOCALES.each do |locale|
+      nama = i18n(locale).dig("date", "months")[bulan - 1]
+
+      assert_includes hasil[locale], nama, "#{locale}: nama bulan tidak sesuai kamus"
+    end
   end
 
   # --- pencarian dan gambar responsif -------------------------------------

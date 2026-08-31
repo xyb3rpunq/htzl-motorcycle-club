@@ -171,7 +171,7 @@ layout: default
     </div>
     <div class="grid grid--3">
       {%- for news in site.data.news %}
-      <a class="news-card reveal" href="{{ news.url }}" target="_blank" rel="noopener noreferrer">
+      <a class="news-card reveal" href="{{ t.prefix | append: news.url | relative_url }}">
         <img src="{{ news.image | relative_url }}" width="432" height="230" alt="" loading="lazy" decoding="async">
         <div class="news-card__body">
           <p class="news-card__topic">{{ news.topic[page.lang] }}</p>
