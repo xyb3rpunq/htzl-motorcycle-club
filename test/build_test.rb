@@ -8,7 +8,7 @@ class BuildTest < Minitest::Test
   include TestSupport
 
   BASEURL = "/htzl-motorcycle-club"
-  PAGES = %w[home catalog kawasaki vixian gallery reserve].freeze
+  PAGES = %w[home catalog kawasaki vixian heritage gallery reserve].freeze
 
   def setup
     skip "jalankan `rake build` lebih dulu" unless site_built?
@@ -203,5 +203,45 @@ class BuildTest < Minitest::Test
             .select { |f| File.size(f) > 200 * 1024 }
             .map { |f| "#{File.basename(f)} (#{File.size(f) / 1024} KB)" }
     assert_empty besar, "gambar terlalu besar: #{besar.join(', ')}"
+  end
+
+  # Sitemap ditulis sendiri agar bisa memuat anotasi bahasa; plugin bawaan
+  # tidak menuliskannya, dan tanpa itu Google tidak tahu kelima versi bahasa
+  # adalah halaman yang sama.
+  def test_sitemap_memuat_anotasi_bahasa
+    sitemap = File.read(site_path("sitemap.xml"), encoding: "utf-8")
+    blocks = sitemap.scan(%r{<url>.*?</url>}m)
+
+    assert_equal TestSupport::LOCALES.length * PAGES.length, blocks.length,
+                 "jumlah entri sitemap tidak sesuai"
+
+    blocks.each do |block|
+      langs = block.scan(/xhtml:link rel="alternate" hreflang="([^"]+)"/).flatten
+      assert_equal 6, langs.length, "entri sitemap kurang anotasi bahasa"
+      assert_includes langs, "x-default"
+    end
+  end
+
+  def test_halaman_heritage_hanya_memuat_harley
+    html = read_page("heritage", "index.html")
+    brands = html.scan(/data-brand="([^"]+)"/).flatten.uniq
+    assert_equal ["Harley-Davidson"], brands
+    assert_equal 100, html.scan(/<article class="card"/).length
+  end
+
+  def test_garis_waktu_heritage_urut_menaik
+    html = read_page("heritage", "index.html")
+    years = html.scan(/timeline__years">(\d{4})/).flatten.map(&:to_i)
+    assert_equal 11, years.length, "jumlah generasi mesin tidak sesuai"
+    assert_equal years.sort, years, "garis waktu harus urut dari tahun tertua"
+  end
+
+  def test_halaman_404_memuat_kelima_bahasa
+    html = read_page("404.html")
+    payload = html[/id="notfound-i18n">(.*?)<\/script>/m, 1]
+    refute_nil payload, "data terjemahan 404 tidak ditemukan"
+    TestSupport::LOCALES.each do |locale|
+      assert_includes payload, %("#{locale}":), "404 tidak memuat bahasa #{locale}"
+    end
   end
 end

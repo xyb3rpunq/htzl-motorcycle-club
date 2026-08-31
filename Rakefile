@@ -7,12 +7,20 @@ task :seed do
   ruby "lib/seed_catalog.rb"
 end
 
-Rake::TestTask.new(:test) do |t|
+Rake::TestTask.new("test:ruby") do |t|
   t.libs << "test" << "lib"
   t.test_files = FileList["test/**/*_test.rb"]
   t.warning = false
   t.verbose = false
 end
+
+desc "Uji fungsi JavaScript dengan test runner bawaan Node"
+task "test:js" do
+  sh "node --test test/js/*.test.mjs"
+end
+
+desc "Jalankan seluruh test, Ruby dan JavaScript"
+task test: ["test:ruby", "test:js"]
 
 desc "Build situs statis ke _site"
 task build: :seed do

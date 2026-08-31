@@ -7,10 +7,8 @@ ruby ">= 3.1"
 # Generator situs statis berbasis Ruby. Dipakai GitHub Pages lewat GitHub Actions.
 gem "jekyll", "~> 4.3"
 
-group :jekyll_plugins do
-  gem "jekyll-sitemap", "~> 1.4"   # sitemap.xml otomatis
-  gem "jekyll-seo-tag", "~> 2.8"   # meta OG/Twitter/JSON-LD
-end
+# Sitemap dan metadata SEO ditulis sendiri di sitemap.xml dan _includes/head.html
+# supaya anotasi hreflang lima bahasa bisa dikendalikan sepenuhnya.
 
 group :development, :test do
   gem "minitest", "~> 5.20"        # test suite (padanan Rails test)

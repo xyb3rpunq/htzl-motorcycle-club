@@ -88,3 +88,48 @@ subcategories:
 - Superbike
 - Supermoto
 - Suspensi
+eras:
+- name: Era Perintis
+  count: 21
+  from: 1903
+  to: 1928
+- name: Era Flathead
+  count: 18
+  from: 1919
+  to: 1964
+- name: Era Model Ringan
+  count: 3
+  from: 1927
+  to: 1961
+- name: Era Knucklehead
+  count: 4
+  from: 1936
+  to: 1946
+- name: Era Panhead
+  count: 9
+  from: 1948
+  to: 1965
+- name: Era Ironhead
+  count: 8
+  from: 1957
+  to: 1977
+- name: Era Shovelhead
+  count: 13
+  from: 1966
+  to: 1983
+- name: Era Evolution
+  count: 17
+  from: 1984
+  to: 1998
+- name: Era Twin Cam
+  count: 3
+  from: 1999
+  to: 2011
+- name: Era Revolution
+  count: 3
+  from: 2001
+  to: 2014
+- name: Era Milwaukee-Eight
+  count: 1
+  from: 2017
+  to: 2017

@@ -17,6 +17,8 @@ nav:
   vixian: Vixian
   kawasaki_sub: 超级跑车与街车
   vixian_sub: 探险车与超级摩托
+  heritage: 传承典藏
+  heritage_sub: 1903 年至今的 Harley-Davidson
   menu: 菜单
   language: 语言
   theme: 切换浅色或深色主题
@@ -172,7 +174,13 @@ brand:
   vixian:
     tagline: 慢下来，也无需畏惧
     intro: 六款 Vixian 车型，从灵巧的超级摩托到长途探险车。
+  heritage:
+    tagline: 一百台车，一百二十年历史
+    intro: 按年份从最早排起，从 1903 年的 Serial Number One 到 2017 年的 Milwaukee-Eight。
   models: 款车型
+  era_title: 按发动机世代
+  era_sub: 十一个发动机世代，从 1903 年的自然进气单缸到 Milwaukee-Eight。
+  units: 台
   variants: 个可选版本
   from: 起售价
 
@@ -246,6 +254,7 @@ meta:
   reserve_desc: 在线预订 Kawasaki 或 Vixian。无需订金，通过 WhatsApp 确认。
   kawasaki_desc: 六款 Kawasaki 车型，提供 Standard、S 与 SP 版本，含完整价格与规格。
   vixian_desc: 六款 Vixian 车型，从超级摩托到探险车，含完整价格与规格。
+  heritage_desc: 一百台 1903 至 2017 年的 Harley-Davidson，按年份从最早排起，附自由授权照片与完整规格。
 
 notfound:
   title: 找不到页面

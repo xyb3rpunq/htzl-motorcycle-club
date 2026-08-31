@@ -17,6 +17,8 @@ nav:
   vixian: Vixian
   kawasaki_sub: Супербайки и нейкеды
   vixian_sub: Эндуро и супермото
+  heritage: Коллекция Heritage
+  heritage_sub: Harley-Davidson с 1903 года
   menu: Меню
   language: Язык
   theme: Переключить светлую или тёмную тему
@@ -174,7 +176,13 @@ brand:
   vixian:
     tagline: Никогда не бойтесь сбавить ход
     intro: "Шесть моделей Vixian: от манёвренного супермото до дальнего эндуро."
+  heritage:
+    tagline: Сто мотоциклов, сто двадцать лет истории
+    intro: "По возрастанию года выпуска: от Serial Number One 1903 года до Milwaukee-Eight 2017 года."
   models: моделей
+  era_title: По поколениям двигателей
+  era_sub: "Одиннадцать поколений двигателей: от атмосферного одноцилиндрового 1903 года до Milwaukee-Eight."
+  units: шт.
   variants: доступных версий
   from: От
 
@@ -250,6 +258,7 @@ meta:
   reserve_desc: Забронируйте Kawasaki или Vixian онлайн. Без предоплаты, подтверждение в WhatsApp.
   kawasaki_desc: Шесть моделей Kawasaki в комплектациях Standard, S и SP с ценами и характеристиками.
   vixian_desc: Шесть моделей Vixian от супермото до эндуро с ценами и характеристиками.
+  heritage_desc: Сто мотоциклов Harley-Davidson с 1903 по 2017 год по возрастанию года выпуска, со свободно лицензированными фото и характеристиками.
 
 notfound:
   title: Страница не найдена

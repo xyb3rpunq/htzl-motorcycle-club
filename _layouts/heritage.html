@@ -1,0 +1,85 @@
+---
+layout: default
+---
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- assign meta = site.data.catalog_meta -%}
+{%- assign units = site.data.catalog | where: "category", "heritage" -%}
+{%- assign oldest = units | first -%}
+{%- assign newest = units | last -%}
+{%- assign berfoto = units | where_exp: "u", "u.credit" -%}
+
+<section class="page-banner" style="background-image:url('{{ oldest.image | relative_url }}')">
+  <div class="shell shell--wide">
+    <p class="eyebrow" style="color:#ffd7d7;justify-content:center">Harley-Davidson</p>
+    <h1>{{ t.nav.heritage }}</h1>
+    <p>{{ t.brand.heritage.tagline }}</p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="shell shell--wide">
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <ol>
+        <li><a href="{{ t.prefix | append: '/' | relative_url }}">{{ t.nav.home }}</a></li>
+        <li><a href="{{ t.prefix | append: '/catalog/' | relative_url }}">{{ t.nav.catalog }}</a></li>
+        <li aria-current="page">{{ t.nav.heritage }}</li>
+      </ol>
+    </nav>
+
+    <div class="section__head">
+      <div>
+        <h2 class="h-sec">{{ t.brand.heritage.intro }}</h2>
+        <p>{{ units | size }} {{ t.brand.units }} &middot;
+           {{ oldest.year }}&ndash;{{ newest.year }} &middot;
+           {{ berfoto | size }} {{ t.catalog.photo_credit | downcase }} Wikimedia Commons</p>
+      </div>
+      <a class="btn btn--ghost" href="{{ t.prefix | append: '/reserve/' | relative_url }}">{{ t.nav.reserve }}</a>
+    </div>
+
+    {%- comment -%}
+      Garis waktu generasi mesin. Urutannya dihitung di lib/seed_catalog.rb
+      berdasarkan tahun tertua tiap generasi, bukan diurutkan di template.
+    {%- endcomment -%}
+    <h3 class="eyebrow" style="margin-block-start:2rem">{{ t.brand.era_title }}</h3>
+    <p style="color:var(--ink-2);margin-block-end:1.25rem;max-width:60ch">{{ t.brand.era_sub }}</p>
+
+    <ol class="timeline">
+      {%- for era in meta.eras %}
+      <li class="timeline__item">
+        <button class="timeline__btn" type="button" data-subcategory="{{ era.name }}" aria-pressed="false">
+          <span class="timeline__years">{{ era.from }}&ndash;{{ era.to }}</span>
+          <span class="timeline__name">{{ era.name | term: 'subcategory', page.lang }}</span>
+          <span class="timeline__count">{{ era.count }} {{ t.brand.units }}</span>
+        </button>
+      </li>
+      {%- endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="shell shell--wide">
+    <div class="result-bar">
+      <span>{{ t.catalog.showing }} <b data-result-count>{{ units | size }}</b> {{ t.catalog.of }} {{ units | size }} {{ t.brand.units }}</span>
+      <button class="btn btn--ghost btn--sm" type="button" data-reset>{{ t.actions.reset }}</button>
+    </div>
+
+    <h2 class="visually-hidden">{{ t.catalog.results_heading }}</h2>
+    <div class="catalog__grid" data-view="grid" data-grid>
+      {%- for item in units %}
+      {%- include product-card.html item=item t=t lang=page.lang %}
+      {%- endfor %}
+    </div>
+
+    <div class="empty-state" data-empty>
+      <svg aria-hidden="true"><use href="#i-empty"/></svg>
+      <h2 class="h-sec" style="font-size:var(--t-lg)">{{ t.catalog.no_results_title }}</h2>
+      <p>{{ t.catalog.no_results_text }}</p>
+      <div class="btn-row" style="justify-content:center;margin-top:1.25rem">
+        <button class="btn" type="button" data-reset>{{ t.actions.reset }}</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- include product-dialog.html t=t -%}

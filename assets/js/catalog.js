@@ -20,7 +20,7 @@
   var priceSelect = $("[data-filter-price]");
   var sortSelect = $("[data-sort]");
 
-  var state = { q: "", category: "", brand: "", band: "", trim: "", sort: "relevant", view: "grid" };
+  var state = { q: "", category: "", sub: "", brand: "", band: "", trim: "", sort: "relevant", view: "grid" };
   var originalOrder = cards.slice();
 
   /* ---------------------------------------------------------------- *
@@ -30,6 +30,7 @@
     var params = new URLSearchParams(window.location.search);
     state.q = params.get("q") || "";
     state.category = params.get("category") || "";
+    state.sub = params.get("sub") || "";
     state.brand = params.get("brand") || "";
     state.band = params.get("price") || "";
     state.trim = params.get("trim") || "";
@@ -41,6 +42,7 @@
     var params = new URLSearchParams();
     if (state.q) params.set("q", state.q);
     if (state.category) params.set("category", state.category);
+    if (state.sub) params.set("sub", state.sub);
     if (state.brand) params.set("brand", state.brand);
     if (state.band) params.set("price", state.band);
     if (state.trim) params.set("trim", state.trim);
@@ -57,6 +59,7 @@
    * ---------------------------------------------------------------- */
   function matches(card) {
     if (state.category && card.dataset.category !== state.category) return false;
+    if (state.sub && card.dataset.sub !== state.sub) return false;
     if (state.brand && card.dataset.brand !== state.brand) return false;
     if (state.band && card.dataset.band !== state.band) return false;
     if (state.trim && card.dataset.name.indexOf(" " + state.trim) === -1 && state.trim !== "Standard") return false;
@@ -131,6 +134,9 @@
     $$("button[data-category]").forEach(function (chip) {
       chip.setAttribute("aria-pressed", String(chip.dataset.category === state.category));
     });
+    $$("button[data-subcategory]").forEach(function (chip) {
+      chip.setAttribute("aria-pressed", String(chip.dataset.subcategory === state.sub));
+    });
     $$("button[data-trim]").forEach(function (chip) {
       chip.setAttribute("aria-pressed", String(chip.dataset.trim === state.trim));
     });
@@ -185,6 +191,14 @@
     });
   });
 
+  $$("button[data-subcategory]").forEach(function (chip) {
+    chip.addEventListener("click", function () {
+      state.sub = state.sub === chip.dataset.subcategory ? "" : chip.dataset.subcategory;
+      syncControls();
+      apply();
+    });
+  });
+
   $$("button[data-trim]").forEach(function (chip) {
     chip.addEventListener("click", function () {
       state.trim = state.trim === chip.dataset.trim ? "" : chip.dataset.trim;
@@ -203,7 +217,7 @@
 
   $$("[data-reset]").forEach(function (btn) {
     btn.addEventListener("click", function () {
-      state = { q: "", category: "", brand: "", band: "", trim: "", sort: "relevant", view: state.view };
+      state = { q: "", category: "", sub: "", brand: "", band: "", trim: "", sort: "relevant", view: state.view };
       syncControls();
       apply();
       if (searchInput) searchInput.focus();

@@ -92,6 +92,26 @@
   "sameAs": {{ social_links | jsonify }}
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": {{ t.nav.home | jsonify }},
+      "item": {{ t.prefix | append: "/" | absolute_url | jsonify }}
+    }{% unless page.page_id == "home" %},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ page.title | jsonify }},
+      "item": {{ page.url | absolute_url | jsonify }}
+    }{% endunless %}
+  ]
+}
+</script>
 {%- if page.page_id == "catalog" %}
 <script type="application/ld+json">
 {

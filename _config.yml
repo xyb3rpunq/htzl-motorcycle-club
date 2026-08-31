@@ -29,8 +29,7 @@ contact:
   maps: "https://maps.google.com/?q=Jakarta+Selatan"
   hours: "Senin-Sabtu 09.00-18.00 WIB"
 
-plugins:
-  - jekyll-sitemap
+plugins: []
 
 sass:
   style: compressed

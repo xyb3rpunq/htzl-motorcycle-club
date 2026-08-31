@@ -1312,3 +1312,62 @@ dialog[open] { animation: dialog-in 0.25s var(--ease); }
 
 /* ----- Transisi antar halaman (progresif) ------------------------------ */
 @view-transition { navigation: auto; }
+
+/* ----- Garis waktu generasi mesin -------------------------------------- */
+.timeline {
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 190px), 1fr));
+  counter-reset: era;
+}
+
+.timeline__btn {
+  position: relative;
+  display: grid;
+  gap: 0.15rem;
+  width: 100%;
+  padding: 0.9rem 1rem 0.9rem 1.15rem;
+  text-align: start;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  cursor: pointer;
+  transition: border-color var(--dur) var(--ease), background var(--dur) var(--ease),
+              transform var(--dur) var(--ease);
+}
+
+/* Batang penanda urutan waktu di tepi kiri tiap kartu. */
+.timeline__btn::before {
+  content: "";
+  position: absolute;
+  inset-block: 0.9rem;
+  inset-inline-start: 0;
+  width: 3px;
+  border-radius: 0 3px 3px 0;
+  background: var(--line-strong);
+  transition: background var(--dur) var(--ease);
+}
+
+.timeline__btn:hover {
+  border-color: var(--line-strong);
+  transform: translateY(-2px);
+}
+
+.timeline__btn:hover::before { background: var(--brand); }
+
+.timeline__btn[aria-pressed="true"] {
+  border-color: var(--brand);
+  background: var(--brand-soft);
+}
+
+.timeline__btn[aria-pressed="true"]::before { background: var(--brand); }
+
+.timeline__years {
+  font-family: var(--font-display);
+  font-size: var(--t-sm);
+  color: var(--brand);
+  letter-spacing: 0.02em;
+}
+
+.timeline__name { font-weight: 700; font-size: var(--t-sm); color: var(--ink); }
+.timeline__count { font-size: var(--t-xs); color: var(--ink-2); }

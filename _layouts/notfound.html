@@ -2,14 +2,71 @@
 layout: default
 ---
 {%- assign t = site.data.i18n[page.lang] -%}
+{%- comment -%}
+  GitHub Pages hanya melayani satu berkas /404.html untuk seluruh alamat yang
+  tidak ditemukan, termasuk yang berada di bawah /en/, /zh/, /ru/, dan /ja/.
+  Karena itu kelima terjemahan disertakan di halaman ini, lalu bahasa yang
+  tepat dipilih dari awalan alamat yang gagal dibuka. Isi Bahasa Indonesia
+  tetap dirender sebagai bawaan sehingga halaman ini bermakna tanpa JavaScript.
+{%- endcomment -%}
 <section class="section" style="min-height:60vh;display:grid;place-items:center;text-align:center">
   <div class="shell">
     <p class="eyebrow" style="justify-content:center">404</p>
-    <h1 class="h-sec">{{ t.notfound.title }}</h1>
-    <p style="margin:.75rem auto 1.75rem;max-width:46ch;color:var(--ink-2)">{{ t.notfound.text }}</p>
+    <h1 class="h-sec" data-404-title>{{ t.notfound.title }}</h1>
+    <p style="margin:.75rem auto 1.75rem;max-width:46ch;color:var(--ink-2)" data-404-text>{{ t.notfound.text }}</p>
     <div class="btn-row" style="justify-content:center">
-      <a class="btn" href="{{ '/' | relative_url }}">{{ t.notfound.cta }}</a>
-      <a class="btn btn--ghost" href="{{ '/catalog/' | relative_url }}">{{ t.nav.catalog }}</a>
+      <a class="btn" href="{{ '/' | relative_url }}" data-404-home>{{ t.notfound.cta }}</a>
+      <a class="btn btn--ghost" href="{{ '/catalog/' | relative_url }}" data-404-catalog>{{ t.nav.catalog }}</a>
     </div>
   </div>
 </section>
+
+<script type="application/json" id="notfound-i18n">
+{
+  {%- for locale in site.data.i18n %}
+  {%- assign key = locale[0] %}
+  {%- assign dict = locale[1] %}
+  {%- if dict.locale %}
+  {{ key | jsonify }}: {
+    "lang": {{ dict.html_lang | jsonify }},
+    "prefix": {{ dict.prefix | jsonify }},
+    "title": {{ dict.notfound.title | jsonify }},
+    "text": {{ dict.notfound.text | jsonify }},
+    "home": {{ dict.notfound.cta | jsonify }},
+    "catalog": {{ dict.nav.catalog | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+  {%- endif %}
+  {%- endfor %}
+}
+</script>
+
+<script>
+  (function () {
+    var base = {{ site.baseurl | jsonify }};
+    var data;
+    try {
+      data = JSON.parse(document.getElementById("notfound-i18n").textContent);
+    } catch (e) {
+      return;
+    }
+
+    // Ambil segmen pertama setelah baseurl, misal "/htzl-motorcycle-club/ja/x".
+    var path = window.location.pathname;
+    if (base && path.indexOf(base) === 0) path = path.slice(base.length);
+    var segment = path.replace(/^\/+/, "").split("/")[0];
+
+    var dict = data[segment];
+    if (!dict) return;
+
+    document.documentElement.lang = dict.lang;
+    document.querySelector("[data-404-title]").textContent = dict.title;
+    document.querySelector("[data-404-text]").textContent = dict.text;
+
+    var home = document.querySelector("[data-404-home]");
+    var catalog = document.querySelector("[data-404-catalog]");
+    home.textContent = dict.home;
+    home.href = base + dict.prefix + "/";
+    catalog.textContent = dict.catalog;
+    catalog.href = base + dict.prefix + "/catalog/";
+  })();
+</script>

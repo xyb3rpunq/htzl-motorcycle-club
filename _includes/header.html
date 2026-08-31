@@ -28,6 +28,10 @@
             <svg width="18" height="18" aria-hidden="true"><use href="#i-motorcycle"/></svg>
             <span>{{ t.nav.vixian }}<small>{{ t.nav.vixian_sub }}</small></span>
           </a>
+          <a href="{{ p | append: '/heritage/' | relative_url }}">
+            <svg width="18" height="18" aria-hidden="true"><use href="#i-heritage"/></svg>
+            <span>{{ t.nav.heritage }}<small>{{ t.nav.heritage_sub }}</small></span>
+          </a>
           <a href="{{ p | append: '/catalog/' | relative_url }}">
             <svg width="18" height="18" aria-hidden="true"><use href="#i-grid"/></svg>
             <span>{{ t.nav.catalog }}<small>{{ site.data.catalog | size }} {{ t.catalog.items }}</small></span>

@@ -42,7 +42,20 @@ File.write(
       }
     end,
     "brands"        => items.map { |i| i["brand"] }.uniq.sort,
-    "subcategories" => items.map { |i| i["subcategory"] }.uniq.sort
+    "subcategories" => items.map { |i| i["subcategory"] }.uniq.sort,
+    # Generasi mesin koleksi heritage, diurutkan menurut tahun tertuanya.
+    "eras"          => items.select { |i| i["category"] == "heritage" }
+                            .group_by { |i| i["subcategory"] }
+                            .map do |era, units|
+                              years = units.map { |u| u["year"] }
+                              {
+                                "name"  => era,
+                                "count" => units.length,
+                                "from"  => years.min,
+                                "to"    => years.max
+                              }
+                            end
+                            .sort_by { |era| era["from"] }
   }.to_yaml
 )
 

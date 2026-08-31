@@ -17,6 +17,8 @@ nav:
   vixian: Vixian
   kawasaki_sub: Superbikes and naked sports
   vixian_sub: Adventure and supermoto
+  heritage: Heritage Collection
+  heritage_sub: Harley-Davidson from 1903 to today
   menu: Menu
   language: Language
   theme: Switch light or dark theme
@@ -174,7 +176,13 @@ brand:
   vixian:
     tagline: Never be afraid to slow down
     intro: Six Vixian models, from the nimble supermoto to the long-haul adventure.
+  heritage:
+    tagline: One hundred machines, one hundred and twenty years of history
+    intro: Ordered from the oldest, from the 1903 Serial Number One to the 2017 Milwaukee-Eight.
   models: models
+  era_title: By engine generation
+  era_sub: Eleven engine generations, from the 1903 atmospheric single to the Milwaukee-Eight.
+  units: units
   variants: variants available
   from: From
 
@@ -249,6 +257,7 @@ meta:
   reserve_desc: Reserve a Kawasaki or Vixian online. No deposit, confirmed over WhatsApp.
   kawasaki_desc: Six Kawasaki models in Standard, S and SP trim with full pricing and specifications.
   vixian_desc: Six Vixian models from supermoto to adventure with full pricing and specifications.
+  heritage_desc: One hundred Harley-Davidson machines from 1903 to 2017, ordered from the oldest, with freely licensed photos and full specifications.
 
 notfound:
   title: Page not found

@@ -2,7 +2,9 @@
 layout: default
 ---
 {%- assign t = site.data.i18n[page.lang] -%}
-{%- assign bikes = site.data.catalog | where: "category", "motor" -%}
+{%- assign modern = site.data.catalog | where: "category", "motor" -%}
+{%- assign heritage = site.data.catalog | where: "category", "heritage" -%}
+{%- assign bikes = modern | concat: heritage -%}
 
 <section class="section section--tight">
   <div class="shell shell--wide">
@@ -97,6 +99,7 @@ layout: default
               <option value="">{{ t.reserve.brand_placeholder }}</option>
               <option value="Kawasaki">Kawasaki</option>
               <option value="Vixian">Vixian</option>
+              <option value="Harley-Davidson">Harley-Davidson</option>
             </select>
             <span class="error" id="e-brand" role="alert"></span>
           </div>

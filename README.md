@@ -13,7 +13,8 @@ Tanpa framework, tanpa basis data, tanpa server.
 [![Deploy](https://github.com/xyb3rpunq/htzl-motorcycle-club/actions/workflows/deploy.yml/badge.svg)](https://github.com/xyb3rpunq/htzl-motorcycle-club/actions/workflows/deploy.yml)
 [![Ruby](https://img.shields.io/badge/Ruby-3.3-CC342D?logo=ruby&logoColor=white)](https://www.ruby-lang.org)
 [![Jekyll](https://img.shields.io/badge/Jekyll-4.3-CC0000?logo=jekyll&logoColor=white)](https://jekyllrb.com)
-[![Tests](https://img.shields.io/badge/Minitest-117%20lolos-3fb950)](test)
+[![Tests](https://img.shields.io/badge/tes-127%20Ruby%20%2B%2023%20JS-3fb950)](test)
+[![A11y](https://img.shields.io/badge/axe--core-0%20pelanggaran-3fb950)](#aksesibilitas)
 [![Bahasa](https://img.shields.io/badge/bahasa-ID%20EN%20ZH%20RU%20JA-4c7cf0)](#lima-bahasa-lima-url)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
@@ -38,6 +39,7 @@ Tanpa framework, tanpa basis data, tanpa server.
 - [Fitur](#fitur)
   - [Katalog 231 item](#katalog-231-item)
   - [Koleksi Heritage: 100 Harley-Davidson](#koleksi-heritage-100-harley-davidson)
+  - [Garis waktu generasi mesin](#garis-waktu-generasi-mesin)
   - [Dialog detail produk](#dialog-detail-produk)
   - [Galeri dan reservasi](#galeri-dan-reservasi)
   - [Lima bahasa, lima URL](#lima-bahasa-lima-url)
@@ -99,6 +101,31 @@ Enam puluh sembilan unit memakai **foto asli berlisensi bebas** dari Wikimedia
 Commons, lengkap dengan atribusi. Sisanya memakai artwork SVG yang dibuat
 program.
 
+### Garis waktu generasi mesin
+
+Koleksi ini punya halamannya sendiri di `/heritage/`, dengan garis waktu sebelas
+generasi mesin. Urutan dan rentang tahunnya dihitung di Ruby saat build, bukan
+ditulis manual, jadi ikut menyesuaikan sendiri kalau ada unit baru.
+
+<img src="docs/shots/heritage.webp" alt="Halaman koleksi heritage dengan garis waktu generasi mesin">
+
+Menekan satu generasi menyaring koleksinya seketika, dan pilihan itu masuk ke
+URL sehingga bisa dibagikan:
+
+| Generasi | Unit | Rentang tahun |
+|---|--:|---|
+| Era Perintis | 21 | 1903–1928 |
+| Era Flathead | 18 | 1919–1964 |
+| Era Evolution | 17 | 1984–1998 |
+| Era Shovelhead | 13 | 1966–1983 |
+| Era Panhead | 9 | 1948–1965 |
+| Era Ironhead | 8 | 1957–1977 |
+| Era Knucklehead | 4 | 1936–1946 |
+| Era Model Ringan | 3 | 1927–1961 |
+| Era Twin Cam | 3 | 1999–2011 |
+| Era Revolution | 3 | 2001–2014 |
+| Era Milwaukee-Eight | 1 | 2017 |
+
 ### Dialog detail produk
 
 Bar bawah menempel sehingga tombol pesan selalu terjangkau, betapa pun panjang
@@ -117,8 +144,10 @@ tabel spesifikasinya.
 
 ### Galeri dan reservasi
 
-Galeri memakai elemen `<dialog>` bawaan browser, sehingga jebakan fokus dan
-tombol Esc ditangani peramban sendiri. Panah kiri dan kanan berpindah gambar.
+Galeri berisi 81 foto: dokumentasi showroom dan pameran, ditambah seluruh foto
+koleksi heritage. Elemen `<dialog>` bawaan browser menangani jebakan fokus dan
+tombol Esc; panah kiri dan kanan berpindah gambar, dan atribusi lisensi ikut
+tampil untuk foto Creative Commons.
 
 <img src="docs/shots/galeri.webp" alt="Halaman galeri">
 
@@ -147,8 +176,19 @@ penting agar mesin pencari mengindeks tiap bahasa sebagai halaman terpisah.
 
 <img src="docs/shots/bahasa-zh.webp" alt="Katalog dalam bahasa Mandarin">
 
-Satu generator Ruby mengalikan enam cetak biru halaman dengan lima bahasa menjadi
-tiga puluh halaman, lengkap dengan `hreflang` timbal balik dan `x-default`.
+Satu generator Ruby mengalikan tujuh cetak biru halaman dengan lima bahasa
+menjadi tiga puluh lima halaman, lengkap dengan `hreflang` timbal balik dan
+`x-default`. Pindah bahasa **membawa serta filter yang sedang aktif**: dari
+`/heritage/?sub=Era+Shovelhead&sort=price_desc` ke versi Jepangnya, hasil
+saringannya tetap sama.
+
+`sitemap.xml` ditulis sendiri, bukan memakai plugin, karena tiap `<url>` perlu
+anotasi `xhtml:link` agar Google tahu kelima versi bahasa adalah halaman yang
+sama. Hasilnya 35 URL dengan 210 anotasi bahasa.
+
+Halaman 404 juga mengikuti bahasa. GitHub Pages hanya melayani satu berkas
+`/404.html` untuk seluruh alamat, jadi kelima terjemahan disertakan di halaman
+itu dan bahasanya dipilih dari awalan alamat yang gagal dibuka.
 
 ### Tampilan ponsel
 
@@ -175,7 +215,7 @@ sama sekali. Versi 2026 menulis ulang seluruhnya di atas Ruby dan Jekyll.
 
 | | Versi 2021 | Versi 2026 |
 |---|---|---|
-| **Halaman** | 5 berkas HTML ditulis tangan | 31 halaman dibuat generator Ruby |
+| **Halaman** | 5 berkas HTML ditulis tangan | 36 halaman dibuat generator Ruby |
 | **Bahasa** | 1 (Indonesia) | 5 (ID, EN, ZH, RU, JA) dengan `hreflang` |
 | **Produk** | 12 motor, ditulis manual di HTML | 231 item dari sumber tunggal Ruby |
 | **Gambar produk** | 12 | 231, semuanya punya gambar |
@@ -188,7 +228,8 @@ sama sekali. Versi 2026 menulis ulang seluruhnya di atas Ruby dan Jekyll.
 | **Tema gelap** | tidak ada | ada, mengikuti sistem, bisa diganti |
 | **SEO** | tanpa `description`, OG, sitemap | lengkap dengan JSON-LD `AutoDealer` |
 | **Lisensi aset** | tidak dicatat | 69 foto beratribusi, semuanya lisensi bebas |
-| **Pengujian** | tidak ada | 117 test, 21.081 assertion |
+| **Aksesibilitas** | tidak pernah diperiksa | 0 pelanggaran axe-core (WCAG 2.1 AA) |
+| **Pengujian** | tidak ada | 127 test Ruby + 23 test JavaScript |
 
 <details>
 <summary><b>Tampilan versi 2021 (klik untuk lihat)</b></summary>
@@ -336,11 +377,12 @@ Diukur pada halaman katalog — halaman terberat, berisi 231 kartu produk sekali
 
 | Metrik | Nilai |
 |---|---|
-| HTML katalog setelah gzip | **47 KB** (719 KB mentah) |
+| HTML katalog setelah gzip | **47 KB** (720 KB mentah, 231 kartu) |
+| HTML heritage setelah gzip | **24 KB** (100 kartu) |
 | HTML beranda setelah gzip | **11 KB** |
 | DOMContentLoaded | **175 ms** |
 | Muat penuh | **191 ms** |
-| Permintaan JavaScript | 2 berkas, 15 KB, keduanya `defer` |
+| Permintaan JavaScript | 2 berkas, 16 KB, keduanya `defer` |
 | Permintaan pihak ketiga | **0** |
 
 Yang membuatnya ringan:
@@ -356,16 +398,41 @@ Yang membuatnya ringan:
 
 ## Aksesibilitas
 
+Diaudit dengan **axe-core** lewat Chrome DevTools Protocol pada aturan WCAG 2.1
+A/AA ditambah best practice. Skripnya ada di riwayat commit; hasil terakhir:
+
+| Halaman | Pelanggaran |
+|---|--:|
+| Beranda, katalog, heritage, galeri, reservasi, Kawasaki, Vixian, 404 | **0** |
+
+Audit pertama menemukan 611 elemen bermasalah. Yang paling serius bukan soal
+warna, melainkan **bug JavaScript**: selektor `[data-category]` dan `[data-view]`
+ternyata juga cocok dengan 231 kartu produk dan elemen grid, sehingga
+`aria-pressed` menempel ke ratusan elemen yang tidak boleh memilikinya. Selektor
+kini dibatasi ke `<button>`.
+
+Sisanya kontras warna di 322 elemen. Nilai penggantinya dihitung, bukan
+dikira-kira:
+
+| Token | Sebelum | Rasio | Sesudah | Rasio |
+|---|---|--:|---|--:|
+| `--ink-3` terang | `#8c837d` | 3,71 | `#786f69` | **4,91** |
+| `--ink-3` gelap | `#857d77` | 4,42 | `#88807a` | **4,61** |
+| Teks lencana gelap | `#fff` | 1,81 | `--ok-ink` | **9,08** |
+| Hijau WhatsApp | `#1faa53` | 3,03 | `#148730` | **4,63** |
+| Disclaimer footer | 45% | 4,48 | 62% | **6,7** |
+
+`test/contrast_test.rb` membaca token langsung dari berkas gaya dan menghitung
+rasionya sendiri, jadi palet yang terlalu pucat akan langsung menggagalkan test.
+
+Selain itu:
+
 - Navigasi keyboard penuh, dengan indikator fokus yang jelas di semua kontrol
-- Tautan lewati-ke-konten
+- Tautan lewati-ke-konten, dan setiap halaman punya tepat satu `<h1>`
 - Dialog memakai elemen `<dialog>` bawaan, sehingga jebakan fokus dan tombol Esc ditangani browser
-- Semua gambar punya `alt` yang bermakna
 - Target sentuh minimal 44 piksel
 - `aria-current`, `aria-expanded`, `aria-pressed`, `aria-live`, dan `role="alert"` pada galat formulir
 - Menghormati `prefers-reduced-motion`: putar otomatis dan animasi dimatikan
-- Kontras warna terjaga di tema terang maupun gelap
-
----
 
 ## Menjalankan di komputer sendiri
 
@@ -390,7 +457,9 @@ bundle exec rake art          # buat artwork SVG untuk produk tanpa foto
 bundle exec rake photos       # ambil foto berlisensi bebas dari Wikimedia Commons
 bundle exec rake build        # seed lalu build ke _site
 bundle exec rake serve        # server pengembangan dengan livereload
-bundle exec rake test         # jalankan seluruh test
+bundle exec rake test         # seluruh test, Ruby dan JavaScript
+bundle exec rake test:ruby    # hanya Minitest
+bundle exec rake test:js      # hanya test runner Node
 bundle exec rake ci           # seed, build, lalu test (dipakai GitHub Actions)
 bundle exec rake i18n:report  # laporan cakupan terjemahan
 ```
@@ -403,7 +472,7 @@ mengakses jaringan.
 
 ## Pengujian
 
-117 test, 21.081 assertion, berjalan dalam kurang dari satu detik.
+**127 test Ruby** (22.161 assertion) dan **23 test JavaScript**, berjalan dalam kurang dari dua detik.
 
 | Berkas | Cakupan |
 |---|---|
@@ -413,6 +482,13 @@ mengakses jaringan.
 | `test/i18n_test.rb` | Struktur kunci identik di lima bahasa, tidak ada nilai kosong, kamus menutupi seluruh data katalog tanpa entri usang |
 | `test/build_test.rb` | Hasil build: tautan aset tidak putus, `hreflang` lengkap, tidak ada sisa sintaks Liquid, anggaran ukuran halaman |
 | `test/css_test.rb` | Penjaga regresi untuk bug tata letak yang pernah terjadi |
+| `test/contrast_test.rb` | Menghitung rasio kontras tiap pasangan warna dari token yang sebenarnya, di kedua tema |
+| `test/js/reserve.test.mjs` | Validator formulir dan penyusun tautan WhatsApp, dijalankan test runner bawaan Node |
+
+Format rupiah punya **kontrak lintas bahasa**: Ruby memformatnya saat build,
+JavaScript memformatnya lagi saat pengunjung mengubah jumlah pesanan. Keduanya
+membaca daftar kasus yang sama di `test/fixtures/rupiah.json`, jadi keduanya
+tidak bisa menyimpang diam-diam.
 
 `css_test.rb` menjaga tiga bug nyata yang ditemukan saat pengujian di peramban
 dan sudah diperbaiki:
@@ -464,18 +540,19 @@ htzl-motorcycle-club/
 │   ├── catalog.yml         # dibuat otomatis, jangan disunting
 │   ├── photo_credits.yml   # atribusi 69 foto Wikimedia
 │   └── i18n/               # id, en, zh, ru, ja, terms, spec_values
-├── _layouts/               # home, catalog, brand, gallery, reserve, 404
+├── _layouts/               # home, catalog, brand, heritage, gallery, reserve, 404
 ├── _includes/              # head, header, footer, kartu produk, dialog, sprite ikon
 ├── assets/
-│   ├── css/site.css        # 1.310 baris, tanpa framework
-│   ├── js/                 # site, catalog, reserve — 881 baris vanilla
+│   ├── css/site.css        # 1.373 baris, tanpa framework
+│   ├── js/                 # site, catalog, reserve — 928 baris vanilla
 │   ├── fonts/              # Arvo, di-host sendiri
 │   └── img/                # WebP dan SVG
-├── test/                   # 117 test Minitest
+├── sitemap.xml             # ditulis sendiri, memuat anotasi hreflang
+├── test/                   # 127 test Minitest + 23 test Node
 └── .github/workflows/      # CI dan penerbitan
 ```
 
-Total kode Ruby: 2.259 baris di 16 berkas.
+Total kode Ruby: 2.444 baris di 17 berkas.
 
 ---
 

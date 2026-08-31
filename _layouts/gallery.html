@@ -38,6 +38,38 @@ layout: default
   </div>
 </section>
 
+{%- comment -%}
+  Foto koleksi heritage. Lisensi CC mewajibkan atribusi, jadi nama pembuat dan
+  jenis lisensinya ikut dibawa ke lightbox lewat atribut data-credit.
+{%- endcomment -%}
+{%- assign berfoto = site.data.catalog | where: "category", "heritage" | where_exp: "u", "u.credit" -%}
+<section class="section section--alt">
+  <div class="shell shell--wide">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">Harley-Davidson</p>
+        <h2 class="h-sec">{{ t.nav.heritage }}</h2>
+        <p>{{ berfoto | size }} {{ t.catalog.photo_credit | downcase }} &middot; Wikimedia Commons</p>
+      </div>
+      <a class="btn btn--ghost" href="{{ t.prefix | append: '/heritage/' | relative_url }}">{{ t.actions.detail }}</a>
+    </div>
+
+    <div class="gallery-grid" data-gallery>
+      {%- for unit in berfoto %}
+      <button class="gallery-item" type="button"
+              data-full="{{ unit.image | relative_url }}"
+              data-caption="{{ unit.name }}"
+              data-credit="{{ unit.credit.author }} &middot; {{ unit.credit.license }} &middot; Wikimedia Commons"
+              aria-label="{{ t.gallery.open }}: {{ unit.name }}">
+        <img src="{{ unit.image | relative_url }}" width="630" height="390" alt=""
+             loading="lazy" decoding="async">
+        <figcaption>{{ unit.name }}</figcaption>
+      </button>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
 <dialog id="lightbox" aria-label="{{ t.gallery.title }}">
   <button class="dialog__close" type="button" data-dialog-close aria-label="{{ t.actions.close }}">
     <svg aria-hidden="true"><use href="#i-close"/></svg>
@@ -46,6 +78,7 @@ layout: default
     <figure>
       <img data-lightbox-img src="" alt="">
       <figcaption data-lightbox-caption></figcaption>
+      <figcaption class="credit" data-lightbox-credit style="border:0;text-align:center;color:rgb(255 255 255 / 70%)"></figcaption>
     </figure>
     <div class="lightbox__nav">
       <button class="btn btn--ghost btn--sm" type="button" data-lightbox-prev style="--btn-ink:#fff;--btn-line:rgba(255,255,255,.4)">

@@ -1,0 +1,19 @@
+{
+  "_comment": "Kontrak format rupiah yang dipakai bersama oleh Ruby dan JavaScript. Ruby memformatnya saat build (kartu, dialog, JSON-LD); JavaScript memformatnya saat pengunjung mengubah jumlah pesanan. Keduanya harus menghasilkan teks yang sama persis, jadi test di kedua bahasa membaca berkas ini.",
+  "cases": [
+    [0, "Rp 0"],
+    [1, "Rp 1"],
+    [750, "Rp 750"],
+    [1000, "Rp 1.000"],
+    [75000, "Rp 75.000"],
+    [285000, "Rp 285.000"],
+    [1050000, "Rp 1.050.000"],
+    [45000000, "Rp 45.000.000"],
+    [98500000, "Rp 98.500.000"],
+    [197000000, "Rp 197.000.000"],
+    [4500000000, "Rp 4.500.000.000"]
+  ],
+  "negative": [
+    [-1500, "-Rp 1.500"]
+  ]
+}

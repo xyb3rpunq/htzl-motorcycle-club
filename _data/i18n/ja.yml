@@ -17,6 +17,8 @@ nav:
   vixian: Vixian
   kawasaki_sub: スーパーバイクとネイキッド
   vixian_sub: アドベンチャーとスーパーモト
+  heritage: ヘリテージ
+  heritage_sub: 1903年から現在までのHarley-Davidson
   menu: メニュー
   language: 言語
   theme: ライト・ダークテーマの切り替え
@@ -173,7 +175,13 @@ brand:
   vixian:
     tagline: ゆっくり走ることを、恐れない
     intro: Vixianの6モデル。軽快なスーパーモトから長距離アドベンチャーまで。
+  heritage:
+    tagline: 100台の車両、120年の歴史
+    intro: 古い順に並べています。1903年のSerial Number Oneから2017年のMilwaukee-Eightまで。
   models: モデル
+  era_title: エンジン世代別
+  era_sub: 1903年の自然吸気単気筒からMilwaukee-Eightまで、11の世代。
+  units: 台
   variants: 仕様を用意
   from: 価格
 
@@ -248,6 +256,7 @@ meta:
   reserve_desc: KawasakiまたはVixianをオンラインで予約。頭金不要、WhatsAppで確認します。
   kawasaki_desc: Kawasaki 6モデルのStandard・S・SP仕様を、価格と仕様とともに掲載。
   vixian_desc: スーパーモトからアドベンチャーまで、Vixian 6モデルを価格と仕様とともに掲載。
+  heritage_desc: 1903年から2017年までのHarley-Davidson 100台を古い順に掲載。自由ライセンスの写真と詳細仕様付き。
 
 notfound:
   title: ページが見つかりません

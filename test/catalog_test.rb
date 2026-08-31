@@ -185,4 +185,17 @@ class CatalogTest < Minitest::Test
     assert_equal catalog.map { |i| i["brand"] }.uniq.sort, meta["brands"]
     assert_equal catalog.length, meta["categories"].sum { |c| c["count"] }
   end
+
+  # Kontrak lintas bahasa: berkas fixture yang sama juga dibaca oleh
+  # test/js/reserve.test.mjs. Ruby memformat harga saat build, JavaScript
+  # memformatnya lagi saat pengunjung mengubah jumlah pesanan, dan keduanya
+  # harus menghasilkan teks yang persis sama.
+  def test_rupiah_cocok_dengan_kontrak_bersama_javascript
+    fixture = JSON.parse(File.read(File.join(ROOT, "test", "fixtures", "rupiah.json"), encoding: "utf-8"))
+
+    (fixture["cases"] + fixture["negative"]).each do |input, expected|
+      assert_equal expected, HTZL::Catalog.rupiah(input),
+                   "rupiah(#{input}) berbeda dari kontrak di test/fixtures/rupiah.json"
+    end
+  end
 end

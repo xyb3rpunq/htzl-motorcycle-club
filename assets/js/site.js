@@ -98,6 +98,30 @@
   }
 
   /* ------------------------------------------------------------------ *
+   * Pemilih bahasa
+   *
+   * Tautan antarbahasa dirender sebagai URL statis saat build. Kalau
+   * pengunjung sedang menyaring katalog, keadaan itu ada di query string,
+   * jadi ikut disalin supaya pindah bahasa tidak mengulang dari nol.
+   * ------------------------------------------------------------------ */
+  function initLanguageLinks() {
+    $$("a[hreflang]").forEach(function (link) {
+      var base = link.getAttribute("href");
+      if (!base || base.indexOf("?") !== -1) return;
+
+      // Href disegarkan tepat sebelum berpindah, karena penyaringan katalog
+      // mengubah query string setelah halaman selesai dimuat.
+      var refresh = function () {
+        link.setAttribute("href", base + window.location.search);
+      };
+      link.addEventListener("pointerdown", refresh);
+      link.addEventListener("focus", refresh);
+      link.addEventListener("keydown", refresh);
+      refresh();
+    });
+  }
+
+  /* ------------------------------------------------------------------ *
    * Hero slider berbasis scroll-snap.
    * Menggeser dengan jari sudah didukung browser secara native, jadi
    * JavaScript hanya mengurus tombol, titik indikator, dan putar otomatis.
@@ -210,12 +234,14 @@
    * ------------------------------------------------------------------ */
   function initLightbox() {
     var dialog = $("#lightbox");
-    var gallery = $("[data-gallery]");
-    if (!dialog || !gallery || typeof dialog.showModal !== "function") return;
+    if (!dialog || typeof dialog.showModal !== "function") return;
 
-    var items = $$(".gallery-item", gallery);
+    // Halaman galeri memuat dua kisi: dokumentasi dan koleksi heritage.
+    var items = $$("[data-gallery] .gallery-item");
+    if (!items.length) return;
     var img = $("[data-lightbox-img]", dialog);
     var caption = $("[data-lightbox-caption]", dialog);
+    var credit = $("[data-lightbox-credit]", dialog);
     var index = 0;
 
     function show(i) {
@@ -224,6 +250,7 @@
       img.src = item.dataset.full;
       img.alt = item.dataset.caption;
       caption.textContent = item.dataset.caption;
+      if (credit) credit.innerHTML = item.dataset.credit || "";
     }
 
     items.forEach(function (item, i) {
@@ -292,6 +319,7 @@
     initTheme();
     initNav();
     initDropdowns();
+    initLanguageLinks();
     initHero();
     initReveal();
     initLightbox();

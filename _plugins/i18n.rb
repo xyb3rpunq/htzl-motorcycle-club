@@ -50,7 +50,8 @@ module HTZL
       when "home"    then dict.dig("meta", "home_title")
       when "catalog" then dict.dig("catalog", "title")
       when "gallery" then dict.dig("gallery", "title")
-      when "reserve" then dict.dig("reserve", "title")
+      when "reserve"  then dict.dig("reserve", "title")
+      when "heritage" then dict.dig("nav", "heritage")
       else blueprint[:brand]
       end
     end

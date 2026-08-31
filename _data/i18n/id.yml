@@ -17,6 +17,8 @@ nav:
   vixian: Vixian
   kawasaki_sub: Superbike dan sport naked
   vixian_sub: Adventure dan supermoto
+  heritage: Koleksi Heritage
+  heritage_sub: Harley-Davidson 1903 sampai kini
   menu: Menu
   language: Bahasa
   theme: Ganti tema terang/gelap
@@ -174,7 +176,13 @@ brand:
   vixian:
     tagline: Jangan pernah takut melambat
     intro: Enam model Vixian, dari supermoto lincah sampai adventure jarak jauh.
+  heritage:
+    tagline: Seratus unit, seratus dua puluh tahun sejarah
+    intro: Diurutkan dari yang tertua, dari Serial Number One 1903 sampai Milwaukee-Eight 2017.
   models: model
+  era_title: Berdasarkan generasi mesin
+  era_sub: Sebelas generasi mesin, dari mesin atmosferik 1903 sampai Milwaukee-Eight.
+  units: unit
   variants: varian tersedia
   from: Mulai dari
 
@@ -249,6 +257,7 @@ meta:
   reserve_desc: Pesan motor Kawasaki atau Vixian secara online. Tanpa uang muka, konfirmasi lewat WhatsApp.
   kawasaki_desc: Enam model Kawasaki dalam trim Standard, S, dan SP lengkap dengan harga dan spesifikasi.
   vixian_desc: Enam model Vixian dari supermoto sampai adventure lengkap dengan harga dan spesifikasi.
+  heritage_desc: Seratus unit Harley-Davidson dari 1903 sampai 2017, diurutkan dari yang tertua, lengkap dengan foto berlisensi bebas dan spesifikasi.
 
 notfound:
   title: Halaman tidak ditemukan
