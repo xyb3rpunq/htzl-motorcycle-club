@@ -104,4 +104,19 @@ class CssTest < Minitest::Test
       end
     end
   end
+
+  # Regresi: reset global `* { margin: 0 }` menimpa `margin: auto` bawaan
+  # browser untuk <dialog>, sehingga dialog detail produk menempel ke tepi
+  # kiri layar alih-alih berada di tengah.
+  def test_dialog_dinyatakan_rata_tengah
+    rule = block("dialog")
+    refute_nil rule, "blok dialog tidak ditemukan"
+    assert_match(/margin:\s*auto/, rule,
+                 "dialog wajib menyatakan margin: auto karena reset global menimpanya")
+  end
+
+  def test_reset_global_memang_menghapus_margin
+    assert_match(/\*\s*\{\s*margin:\s*0;\s*\}/, css,
+                 "reset global berubah; periksa ulang apakah dialog masih perlu margin: auto")
+  end
 end

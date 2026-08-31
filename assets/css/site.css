@@ -886,9 +886,13 @@ p { text-wrap: pretty; }
 .empty-state[data-show="true"] { display: block; }
 
 /* ----- Dialog detail produk --------------------------------------------- */
+/* Reset global penghapus margin di bagian atas berkas ini juga menimpa
+   `margin: auto` bawaan browser untuk <dialog>, sehingga dialog menempel ke
+   tepi kiri layar. Perataan tengah karena itu dinyatakan ulang di sini. */
 dialog {
   display: flex;
   flex-direction: column;
+  margin: auto;
   width: min(100% - 2rem, 760px);
   max-height: min(90dvh, 860px);
   padding: 0;
