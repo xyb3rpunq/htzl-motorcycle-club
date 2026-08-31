@@ -255,32 +255,40 @@ samping.
 
 ## Kualitas yang bisa diukur
 
-Diukur pada halaman katalog — halaman terberat, memuat seluruh 231 produk
-sekaligus — dengan emulasi ponsel 390 piksel, CPU empat kali lebih lambat, dan
-jaringan 4G.
+Diukur pada lima halaman, termasuk katalog yang memuat seluruh 231 produk
+sekaligus. Kondisinya sengaja tidak ramah: ponsel 390 piksel dengan kerapatan
+layar 3x, CPU empat kali lebih lambat, jaringan Slow 4G, cache kosong seperti
+kunjungan pertama. Yang ditampilkan adalah angka terburuk dari kelimanya,
+diambil dari median tiga kali jalan.
 
-| | Hasil | Ambang "baik" |
+| | Hasil terburuk | Ambang "baik" |
 |---|--:|--:|
-| Largest Contentful Paint | 372 ms | < 2.500 ms |
+| Largest Contentful Paint | 1.980 ms | < 2.500 ms |
 | Cumulative Layout Shift | 0,000 | < 0,1 |
 | Total Blocking Time | 0 ms | < 200 ms |
-| Halaman katalog terkompresi | 51 KB | — |
-| Beranda terkompresi | 10 KB | — |
+| Halaman katalog terkompresi | 52 KB | — |
+| Beranda terkompresi | 11 KB | — |
 | Permintaan ke pihak ketiga | 0 | — |
 
-**Gambar.** Tiap foto tersedia dalam tiga ukuran, dan peramban mengambil yang
-paling pas untuk lebar tampil serta kerapatan layarnya. Layar biasa menarik
-1,5 MB alih-alih 6,5 MB bila seluruh kartu berfoto dimuat, sementara layar
-retina tetap menerima berkas penuh. Lebar dan tinggi setiap gambar dibaca
+**Gambar.** Tiap foto tersedia dalam beberapa ukuran, dan peramban mengambil
+yang paling pas untuk lebar tampil serta kerapatan layarnya. Layar biasa
+menarik 1,5 MB alih-alih 6,5 MB bila seluruh kartu berfoto dimuat, sementara
+layar retina tetap menerima berkas penuh. Lebar dan tinggi setiap gambar dibaca
 langsung dari berkasnya saat pembangunan, sehingga tata letak tidak pernah
 melompat saat gambar selesai dimuat.
+
+Gambar terbesar di layar pertama juga didahulukan: banner halaman dipasang
+sebagai gambar biasa agar ditemukan peramban sejak awal, dan kartu pertama
+katalog dimuat segera karena di sanalah elemen terbesar berada. Penyetelan ini
+memangkas 92 sampai 264 milidetik pada keempat halaman utama tanpa menambah
+satu byte pun.
 
 **Aksesibilitas.** Diaudit dengan axe-core pada aturan WCAG 2.1 A/AA ditambah
 best practice: **nol pelanggaran** di seluruh halaman. Navigasi keyboard penuh,
 target sentuh minimal 44 piksel, kontras terjaga di kedua tema, dan animasi
 dimatikan bila sistem meminta gerak minimal.
 
-**Pengujian.** 162 test Ruby dan 23 test JavaScript berjalan pada tiap
+**Pengujian.** 182 test Ruby dan 23 test JavaScript berjalan pada tiap
 perubahan, ditambah pemeriksaan gaya kode. Penerbitan dibatalkan bila ada yang
 gagal.
 
