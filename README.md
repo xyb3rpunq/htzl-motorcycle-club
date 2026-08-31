@@ -295,9 +295,24 @@ best practice: **nol pelanggaran** di seluruh halaman. Navigasi keyboard penuh,
 target sentuh minimal 44 piksel, kontras terjaga di kedua tema, dan animasi
 dimatikan bila sistem meminta gerak minimal.
 
-**Pengujian.** 191 test Ruby dan 23 test JavaScript berjalan pada tiap
-perubahan, ditambah pemeriksaan gaya kode. Penerbitan dibatalkan bila ada yang
-gagal.
+**Pengujian.** Tiga lapis, seluruhnya berjalan pada tiap perubahan, dan
+penerbitan dibatalkan bila ada satu saja yang gagal.
+
+| Lapis | Jumlah | Yang dijaga |
+|---|--:|---|
+| Ruby | 227 | Data katalog, terjemahan, hasil build, tautan, dan kontras warna |
+| JavaScript | 23 | Fungsi murni pada kode yang benar-benar dikirim ke peramban |
+| End-to-end | 34 | Antarmukanya ditekan sungguhan di Chrome |
+
+Kode Ruby tercakup **100 persen baris dan 100 persen cabang**, diukur dengan
+pustaka standar dan diperiksa ulang di setiap penerbitan. Angka cabang dipakai
+karena lebih jujur: satu baris penjagaan tercatat terpakai walau kondisi
+gagalnya tidak pernah diuji sekali pun.
+
+Uji end-to-end menjalankan Chrome sungguhan tanpa satu pun dependensi
+tambahan, lalu menekan tombolnya: menyaring, mengurutkan, membuka panel
+detail, mengisi formulir reservasi sampai tautan pemesanannya terbentuk,
+mengganti bahasa, dan memastikan tidak ada halaman yang memunculkan galat.
 
 ---
 
