@@ -131,6 +131,7 @@ catalog:
   sku: Kode
   specs: Spesifikasi
   photo_credit: Foto
+  results_heading: Daftar produk
   category: Kategori
   subcategory: Jenis
   brand: Merek
@@ -188,6 +189,7 @@ reserve:
     - title: Dukungan online penuh
       text: Pantau status pesanan lewat WhatsApp sampai unit tiba.
   form_title: Masukkan informasi kontak Anda
+  benefits_heading: Keuntungan memesan di HTZL
   name: Nama lengkap
   name_hint: Minimal dua kata, sesuai kartu identitas.
   phone: Nomor WhatsApp

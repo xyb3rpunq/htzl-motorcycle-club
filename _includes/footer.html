@@ -29,7 +29,7 @@
       </div>
 
       <div>
-        <h3>{{ t.footer.quick_title }}</h3>
+        <h2>{{ t.footer.quick_title }}</h2>
         <ul>
           <li><a href="{{ p | append: '/' | relative_url }}">{{ t.nav.home }}</a></li>
           <li><a href="{{ p | append: '/catalog/' | relative_url }}">{{ t.nav.catalog }}</a></li>
@@ -41,7 +41,7 @@
       </div>
 
       <div>
-        <h3>{{ t.footer.contact_title }}</h3>
+        <h2>{{ t.footer.contact_title }}</h2>
         <ul>
           <li><a href="{{ site.contact.maps }}" target="_blank" rel="noopener noreferrer">{{ site.contact.address }}</a></li>
           <li><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></li>
@@ -51,7 +51,7 @@
       </div>
 
       <div>
-        <h3>{{ t.nav.language }}</h3>
+        <h2>{{ t.nav.language }}</h2>
         <ul>
           {%- for alt in page.alternates %}
           <li><a href="{{ alt.url | relative_url }}" hreflang="{{ alt.html_lang }}" lang="{{ alt.html_lang }}">{{ alt.flag }} {{ alt.name }}</a></li>
@@ -70,8 +70,7 @@
       </span>
     </div>
   </div>
+  <a class="fab" href="https://wa.me/{{ site.contact.whatsapp }}" target="_blank" rel="noopener noreferrer" aria-label="{{ t.actions.chat }}">
+    <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>
+  </a>
 </footer>
-
-<a class="fab" href="https://wa.me/{{ site.contact.whatsapp }}" target="_blank" rel="noopener noreferrer" aria-label="{{ t.actions.chat }}">
-  <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>
-</a>

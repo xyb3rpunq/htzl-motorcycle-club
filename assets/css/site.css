@@ -27,7 +27,7 @@
   --surface-2: #f2efec;
   --ink: #1a1715;
   --ink-2: #5c5551;
-  --ink-3: #8c837d;
+  --ink-3: #786f69;   /* 4,91 pada surface, 4,51 pada bg (WCAG AA) */
   --line: #e2ddd8;
   --line-strong: #cfc8c1;
 
@@ -36,8 +36,10 @@
   --brand-soft: #fdeceb;
   --brand-ink: #ffffff;
   --ok: #14724a;
+  --ok-ink: #ffffff;   /* 5,94 pada --ok */
   --ok-soft: #e4f4ec;
   --warn: #9a6400;
+  --warn-ink: #ffffff; /* 5,00 pada --warn */
   --warn-soft: #fdf2dd;
 
   --shadow-1: 0 1px 2px rgb(26 23 21 / 6%), 0 2px 8px rgb(26 23 21 / 5%);
@@ -83,7 +85,7 @@
   --surface-2: #221f1d;
   --ink: #f5f2ef;
   --ink-2: #b9b1ab;
-  --ink-3: #857d77;
+  --ink-3: #88807a;   /* 4,61 pada surface, 5,01 pada bg (WCAG AA) */
   --line: #2d2a27;
   --line-strong: #403b37;
 
@@ -92,8 +94,10 @@
   --brand-soft: #2b1615;
   --brand-ink: #1a0d0d;
   --ok: #4ad991;
+  --ok-ink: #0b2418;   /* 9,08 pada --ok */
   --ok-soft: #12281e;
   --warn: #e8b45c;
+  --warn-ink: #241a06; /* 9,07 pada --warn */
   --warn-soft: #2a2113;
 
   --shadow-1: 0 1px 2px rgb(0 0 0 / 40%), 0 2px 8px rgb(0 0 0 / 30%);
@@ -243,8 +247,8 @@ p { text-wrap: pretty; }
 .btn--dark { --btn-bg: var(--ink); --btn-ink: var(--bg); }
 .btn--dark:hover { --btn-bg: var(--ink-2); }
 
-.btn--wa { --btn-bg: #1faa53; --btn-ink: #fff; }
-.btn--wa:hover { --btn-bg: #178c43; }
+.btn--wa { --btn-bg: #148730; --btn-ink: #fff; }   /* 4,63 dengan teks putih */
+.btn--wa:hover { --btn-bg: #10751e; }              /* 5,86 */
 
 .btn--sm { padding: 0.5em 1em; min-height: 38px; font-size: var(--t-xs); }
 .btn--block { width: 100%; }
@@ -683,8 +687,8 @@ p { text-wrap: pretty; }
 }
 
 .badge--sale { background: var(--brand); color: var(--brand-ink); }
-.badge--new { background: var(--ok); color: #fff; }
-.badge--low { background: var(--warn); color: #fff; }
+.badge--new { background: var(--ok); color: var(--ok-ink); }
+.badge--low { background: var(--warn); color: var(--warn-ink); }
 
 .pill {
   display: inline-flex;
@@ -840,7 +844,7 @@ p { text-wrap: pretty; }
   background: var(--surface-2);
   font-size: 0.6875rem;
   font-weight: 800;
-  color: var(--ink-3);
+  color: var(--ink-2);
 }
 
 .chip[aria-pressed="true"] .chip__count { background: rgb(255 255 255 / 22%); color: inherit; }
@@ -1024,7 +1028,7 @@ dialog[open] { animation: dialog-in 0.25s var(--ease); }
 .qty input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
 
 .dialog__total { margin-inline-end: auto; line-height: 1.2; }
-.dialog__total small { display: block; font-size: var(--t-xs); color: var(--ink-3); font-weight: 600; }
+.dialog__total small { display: block; font-size: var(--t-xs); color: var(--ink-2); font-weight: 600; }
 .dialog__total b { font-family: var(--font-display); font-size: var(--t-lg); color: var(--brand); }
 
 /* Di ponsel dialog tampil sebagai lembar yang naik dari bawah */
@@ -1247,7 +1251,7 @@ dialog[open] { animation: dialog-in 0.25s var(--ease); }
 
 .site-footer a:hover { color: #fff; }
 .footer-grid { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); }
-.footer-grid h3 { font-family: var(--font-sans); font-size: var(--t-xs); font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: rgb(255 255 255 / 55%); margin-block-end: 0.9rem; }
+.footer-grid h2 { font-family: var(--font-sans); font-size: var(--t-xs); font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: rgb(255 255 255 / 55%); margin-block-end: 0.9rem; }
 .footer-grid li + li { margin-block-start: 0.5rem; }
 .footer-grid a, .footer-grid p { font-size: var(--t-sm); color: rgb(255 255 255 / 72%); }
 .footer-brand { display: flex; align-items: center; gap: 0.65rem; color: #fff; font-family: var(--font-display); margin-block-end: 0.85rem; }
@@ -1260,7 +1264,7 @@ dialog[open] { animation: dialog-in 0.25s var(--ease); }
 
 .footer-bottom { margin-block-start: 2.5rem; padding-block-start: 1.5rem; border-block-start: 1px solid rgb(255 255 255 / 12%); display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; justify-content: space-between; font-size: var(--t-xs); color: rgb(255 255 255 / 55%); }
 
-.disclaimer { font-size: var(--t-xs); color: rgb(255 255 255 / 45%); max-width: 70ch; margin-block-start: 0.75rem; line-height: 1.55; }
+.disclaimer { font-size: var(--t-xs); color: rgb(255 255 255 / 62%); max-width: 70ch; margin-block-start: 0.75rem; line-height: 1.55; }
 
 /* ----- FAB WhatsApp ----------------------------------------------------- */
 .fab {
@@ -1272,7 +1276,7 @@ dialog[open] { animation: dialog-in 0.25s var(--ease); }
   place-items: center;
   width: 54px; height: 54px;
   border-radius: var(--r-full);
-  background: #1faa53;
+  background: #148730;
   color: #fff;
   box-shadow: var(--shadow-2);
   transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);

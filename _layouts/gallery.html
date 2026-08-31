@@ -29,7 +29,7 @@ layout: default
               data-caption="{{ caption }}"
               aria-label="{{ t.gallery.open }}: {{ caption }}">
         <img src="{{ '/assets/img/gallery/' | append: slug | append: '-thumb.webp' | relative_url }}"
-             width="640" height="480" alt="{{ caption }}"
+             width="640" height="480" alt=""
              {% if forloop.index > 4 %}loading="lazy"{% endif %} decoding="async">
         <figcaption>{{ caption }}</figcaption>
       </button>

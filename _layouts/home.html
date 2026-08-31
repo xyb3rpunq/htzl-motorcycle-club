@@ -8,6 +8,8 @@ layout: default
 {%- assign kawasaki = site.data.catalog | where: "category", "motor" | where: "brand", "Kawasaki" | where: "trim", "Standard" -%}
 {%- assign vixian = site.data.catalog | where: "category", "motor" | where: "brand", "Vixian" | where: "trim", "Standard" -%}
 
+<h1 class="visually-hidden">HTZL Motorcycle Club &mdash; {{ t.meta.home_title }}</h1>
+
 <section class="hero" aria-roledescription="carousel" aria-label="{{ t.home.hero[0].title }}">
   <div class="hero__track" data-hero-track>
     {%- for slide in t.home.hero %}

@@ -131,6 +131,7 @@ catalog:
   sku: Code
   specs: Specifications
   photo_credit: Photo
+  results_heading: Product list
   category: Category
   subcategory: Type
   brand: Brand
@@ -188,6 +189,7 @@ reserve:
     - title: Full online support
       text: Track your order over WhatsApp until the bike arrives.
   form_title: Enter your contact information
+  benefits_heading: Why order from HTZL
   name: Full name
   name_hint: At least two words, as printed on your ID.
   phone: WhatsApp number

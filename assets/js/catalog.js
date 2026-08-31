@@ -116,6 +116,11 @@
 
   /* ---------------------------------------------------------------- *
    * Menyelaraskan kontrol dengan keadaan
+   *
+   * Selektor sengaja dibatasi ke <button>. Kartu produk juga membawa
+   * data-category dan grid membawa data-view, sehingga selektor atribut
+   * telanjang akan menempelkan aria-pressed ke ratusan elemen yang tidak
+   * boleh memilikinya.
    * ---------------------------------------------------------------- */
   function syncControls() {
     if (searchInput) searchInput.value = state.q;
@@ -123,13 +128,13 @@
     if (priceSelect) priceSelect.value = state.band;
     if (sortSelect) sortSelect.value = state.sort;
 
-    $$("[data-category]").forEach(function (chip) {
+    $$("button[data-category]").forEach(function (chip) {
       chip.setAttribute("aria-pressed", String(chip.dataset.category === state.category));
     });
-    $$("[data-trim]").forEach(function (chip) {
+    $$("button[data-trim]").forEach(function (chip) {
       chip.setAttribute("aria-pressed", String(chip.dataset.trim === state.trim));
     });
-    $$("[data-view]").forEach(function (btn) {
+    $$("button[data-view]").forEach(function (btn) {
       btn.setAttribute("aria-pressed", String(btn.dataset.view === state.view));
     });
   }
@@ -172,7 +177,7 @@
     sortSelect.addEventListener("change", function () { state.sort = sortSelect.value; apply(); });
   }
 
-  $$("[data-category]").forEach(function (chip) {
+  $$("button[data-category]").forEach(function (chip) {
     chip.addEventListener("click", function () {
       state.category = chip.dataset.category;
       syncControls();
@@ -180,7 +185,7 @@
     });
   });
 
-  $$("[data-trim]").forEach(function (chip) {
+  $$("button[data-trim]").forEach(function (chip) {
     chip.addEventListener("click", function () {
       state.trim = state.trim === chip.dataset.trim ? "" : chip.dataset.trim;
       syncControls();
@@ -188,7 +193,7 @@
     });
   });
 
-  $$("[data-view]").forEach(function (btn) {
+  $$("button[data-view]").forEach(function (btn) {
     btn.addEventListener("click", function () {
       state.view = btn.dataset.view;
       syncControls();

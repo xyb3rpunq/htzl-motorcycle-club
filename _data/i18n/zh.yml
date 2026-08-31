@@ -129,6 +129,7 @@ catalog:
   sku: 编号
   specs: 规格
   photo_credit: 图片
+  results_heading: 产品列表
   category: 类别
   subcategory: 种类
   brand: 品牌
@@ -186,6 +187,7 @@ reserve:
     - title: 全程线上支持
       text: 通过 WhatsApp 追踪订单，直到车辆送达。
   form_title: 请填写您的联系方式
+  benefits_heading: 在 HTZL 订购的优势
   name: 姓名全称
   name_hint: 至少两个词，须与证件一致。
   phone: WhatsApp 号码

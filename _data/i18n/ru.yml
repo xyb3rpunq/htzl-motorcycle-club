@@ -131,6 +131,7 @@ catalog:
   sku: Артикул
   specs: Характеристики
   photo_credit: Фото
+  results_heading: Список товаров
   category: Категория
   subcategory: Тип
   brand: Марка
@@ -188,6 +189,7 @@ reserve:
     - title: Полная онлайн-поддержка
       text: Следите за статусом заказа в WhatsApp вплоть до доставки.
   form_title: Укажите свои контактные данные
+  benefits_heading: Преимущества заказа в HTZL
   name: Полное имя
   name_hint: Минимум два слова, как в документе.
   phone: Номер WhatsApp

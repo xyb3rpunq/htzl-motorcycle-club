@@ -130,6 +130,7 @@ catalog:
   sku: 品番
   specs: 仕様
   photo_credit: 写真
+  results_heading: 製品一覧
   category: カテゴリー
   subcategory: 種別
   brand: ブランド
@@ -187,6 +188,7 @@ reserve:
     - title: 充実のオンラインサポート
       text: 車両が届くまで、WhatsAppでご注文状況を確認できます。
   form_title: ご連絡先をご記入ください
+  benefits_heading: HTZLで予約する利点
   name: お名前
   name_hint: 身分証のとおり、2語以上でご記入ください。
   phone: WhatsApp番号

@@ -22,6 +22,7 @@ layout: default
   <div class="shell shell--wide">
     <div class="form-layout">
       <div>
+        <h2 class="visually-hidden">{{ t.reserve.benefits_heading }}</h2>
         {%- assign benefit_icons = "truck,shield,headset" | split: "," %}
         <div class="grid" style="gap:1rem">
           {%- for benefit in t.reserve.benefits %}
@@ -36,7 +37,7 @@ layout: default
         </div>
 
         <div class="summary" style="margin-top:1.25rem" data-summary>
-          <h3 style="font-family:var(--font-sans);font-size:var(--t-sm);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)">
+          <h3 style="font-family:var(--font-sans);font-size:var(--t-sm);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2)">
             {{ t.reserve.summary_title }}
           </h3>
           <div><span>{{ t.reserve.summary_model }}</span> <b data-summary-model>{{ t.reserve.summary_empty }}</b></div>
