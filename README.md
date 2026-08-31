@@ -292,8 +292,14 @@ pengunjung tetap bisa memesan.
 
 **Aksesibilitas.** Diaudit dengan axe-core pada aturan WCAG 2.1 A/AA ditambah
 best practice: **nol pelanggaran** di seluruh halaman. Navigasi keyboard penuh,
-target sentuh minimal 44 piksel, kontras terjaga di kedua tema, dan animasi
-dimatikan bila sistem meminta gerak minimal.
+target sentuh memenuhi ambang WCAG 2.5.8 dan diperiksa otomatis di setiap
+halaman, kontras terjaga di kedua tema, fokus keyboard berpindah ke dalam
+panel detail lalu kembali ke tombol yang membukanya, dan animasi dimatikan
+bila sistem meminta gerak minimal.
+
+Sebagian hal ini tidak terdeteksi pemindai mana pun. Perubahan jumlah hasil
+penyaringan diumumkan lewat region status, sehingga menyaring 231 produk
+menjadi tiga terdengar juga oleh yang tidak melihat layar.
 
 **Pengujian.** Tiga lapis, seluruhnya berjalan pada tiap perubahan, dan
 penerbitan dibatalkan bila ada satu saja yang gagal.

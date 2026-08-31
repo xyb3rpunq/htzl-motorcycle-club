@@ -546,7 +546,10 @@ p { text-wrap: pretty; }
 
 .hero__dots {
   position: absolute;
-  inset-block-end: 1rem;
+  /* Titik penunjuk kini membawa padding setinggi 20 piksel di atas dan bawah,
+     jadi jarak wadahnya dari tepi bawah dikurangi supaya bilahnya tetap
+     terlihat di tempat yang sama. */
+  inset-block-end: 0;
   inset-inline: 0;
   z-index: 3;
   display: flex;
@@ -557,13 +560,21 @@ p { text-wrap: pretty; }
 .hero__dot {
   width: 28px;
   height: 4px;
+  /* Bilahnya sengaja tipis, tetapi bidang sentuhnya tidak boleh ikut setipis
+     itu: empat piksel mustahil ditekan dengan jari. Padding memperbesar area
+     yang menerima sentuhan menjadi 44 piksel, sementara background-clip
+     menjaga bilah yang terlihat tetap setinggi empat piksel. */
+  padding-block: 20px;
+  padding-inline: 0;
+  box-sizing: content-box;
+  background-clip: content-box;
   border-radius: var(--r-full);
-  background: rgb(255 255 255 / 35%);
+  background-color: rgb(255 255 255 / 35%);
   cursor: pointer;
-  transition: background var(--dur) var(--ease), width var(--dur) var(--ease);
+  transition: background-color var(--dur) var(--ease), width var(--dur) var(--ease);
 }
 
-.hero__dot[aria-current="true"] { background: var(--brand); width: 44px; }
+.hero__dot[aria-current="true"] { background-color: var(--brand); width: 44px; }
 
 /* ----- Section ---------------------------------------------------------- */
 .section { padding-block: clamp(3rem, 7vw, 6rem); }
@@ -894,7 +905,10 @@ p { text-wrap: pretty; }
    `margin: auto` bawaan browser untuk <dialog>, sehingga dialog menempel ke
    tepi kiri layar. Perataan tengah karena itu dinyatakan ulang di sini. */
 dialog {
-  display: flex;
+  /* display sengaja tidak diatur di sini. Peramban menyembunyikan panel yang
+     tertutup lewat aturan bawaan dialog:not([open]) { display: none }, dan
+     menulis display pada aturan tanpa syarat ini menimpanya, sehingga isi
+     panel ikut tampil di dalam halaman meski sedang tertutup. */
   flex-direction: column;
   margin: auto;
   width: min(100% - 2rem, 760px);
@@ -910,7 +924,7 @@ dialog {
 
 dialog::backdrop { background: rgb(0 0 0 / 62%); backdrop-filter: blur(4px); }
 
-dialog[open] { animation: dialog-in 0.25s var(--ease); }
+dialog[open] { display: flex; animation: dialog-in 0.25s var(--ease); }
 
 @keyframes dialog-in {
   from { opacity: 0; transform: translateY(14px) scale(0.98); }
@@ -1286,7 +1300,12 @@ dialog[open] { animation: dialog-in 0.25s var(--ease); }
 .site-footer a:hover { color: #fff; }
 .footer-grid { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); }
 .footer-grid h2 { font-family: var(--font-sans); font-size: var(--t-xs); font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: rgb(255 255 255 / 55%); margin-block-end: 0.9rem; }
-.footer-grid li + li { margin-block-start: 0.5rem; }
+/* Tautan daftar di footer semula hanya setinggi 17 piksel dengan jarak 16
+   piksel. Itu memang lolos ambang WCAG 2.5.8 lewat pengecualian spasi, tetapi
+   tetap sulit ditekan di ponsel. Bidang sentuhnya diperbesar lewat padding,
+   bukan lewat ukuran huruf, sehingga tampilannya tidak berubah. */
+.footer-grid li a { display: inline-flex; align-items: center; min-height: 44px; }
+.footer-grid li + li { margin-block-start: 0; }
 .footer-grid a, .footer-grid p { font-size: var(--t-sm); color: rgb(255 255 255 / 72%); }
 .footer-brand { display: flex; align-items: center; gap: 0.65rem; color: #fff; font-family: var(--font-display); margin-block-end: 0.85rem; }
 .footer-brand img { width: 38px; height: 38px; }

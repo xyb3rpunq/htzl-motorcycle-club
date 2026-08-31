@@ -83,7 +83,12 @@ layout: default
 <section class="section section--tight">
   <div class="shell shell--wide">
     <div class="result-bar">
-      <span>{{ t.catalog.showing }} <b data-result-count>{{ meta.total }}</b> {{ t.catalog.of }} {{ meta.total }} {{ t.catalog.items }}</span>
+      {%- comment -%}
+        role="status" membuat perubahan jumlah hasil diumumkan pembaca layar.
+        Tanpa itu, mengetik di kotak pencarian menyaring 231 produk menjadi
+        tiga tanpa satu pun tanda bagi yang tidak melihat layar.
+      {%- endcomment -%}
+      <span role="status">{{ t.catalog.showing }} <b data-result-count>{{ meta.total }}</b> {{ t.catalog.of }} {{ meta.total }} {{ t.catalog.items }}</span>
       <button class="btn btn--ghost btn--sm" type="button" data-reset>{{ t.actions.reset }}</button>
     </div>
 

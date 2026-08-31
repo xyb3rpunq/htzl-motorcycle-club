@@ -7,8 +7,12 @@ require_relative "test_helper"
 class CssTest < Minitest::Test
   include TestSupport
 
+  # Komentar dibuang lebih dulu. Isinya sering memuat contoh aturan lengkap
+  # dengan kurung kurawal, dan itu memotong blok yang sedang dicari di tempat
+  # yang salah.
   def css
     @css ||= File.read(File.join(ROOT, "assets", "css", "site.css"), encoding: "utf-8")
+                 .gsub(%r{/\*.*?\*/}m, "")
   end
 
   def block(selector)
@@ -120,6 +124,36 @@ class CssTest < Minitest::Test
     refute_nil rule, "blok dialog tidak ditemukan"
     assert_match(/margin:\s*auto/, rule,
                  "dialog wajib menyatakan margin: auto karena reset global menimpanya")
+  end
+
+  # Regresi: `dialog { display: flex }` tanpa syarat menimpa aturan bawaan
+  # peramban `dialog:not([open]) { display: none }`, sehingga isi panel detail
+  # tampil begitu saja di dalam halaman meski sedang tertutup.
+  def test_panel_tertutup_tidak_dinyatakan_tampil
+    rule = block("dialog")
+
+    refute_nil rule
+    refute_match(/(\A|;|\s)display\s*:/, rule,
+                 "blok dialog tidak boleh menyatakan display; itu menimpa aturan bawaan peramban")
+  end
+
+  def test_panel_terbuka_dinyatakan_tampil
+    assert_match(/dialog\[open\]\s*\{[^}]*display:\s*flex/, css,
+                 "dialog[open] harus menyatakan display: flex")
+  end
+
+  # Bilah penunjuk hero hanya setinggi 4 piksel. Bidang sentuhnya diperbesar
+  # lewat padding, dan background-clip yang menjaga bilahnya tetap tipis.
+  def test_titik_hero_punya_bidang_sentuh_yang_cukup
+    rule = block(".hero__dot")
+
+    refute_nil rule
+    assert_match(/padding-block:\s*20px/, rule)
+    assert_match(/background-clip:\s*content-box/, rule)
+  end
+
+  def test_tautan_footer_cukup_tinggi_untuk_disentuh
+    assert_match(/\.footer-grid li a\s*\{[^}]*min-height:\s*44px/, css)
   end
 
   def test_reset_global_memang_menghapus_margin

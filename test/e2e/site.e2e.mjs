@@ -128,4 +128,111 @@ describe("antarmuka menyeluruh", () => {
     assert.ok(await page.eval(`document.querySelectorAll('a[href="/"], a[href$="/"]').length > 0`));
     assert.deepEqual(page.konsol, []);
   });
+
+  // Regresi: aturan `dialog { display: flex }` tanpa syarat menimpa aturan
+  // bawaan peramban yang menyembunyikan panel tertutup. Akibatnya isi panel
+  // detail, termasuk tombol maju-mundur dan penghitung jumlah, tampil begitu
+  // saja di dalam halaman tepat di atas footer.
+  test("panel yang tertutup tidak memakan ruang di halaman", async () => {
+    for (const path of HALAMAN) {
+      await page.goto(BASE + path);
+      const tinggi = await page.eval(`[...document.querySelectorAll("dialog")]
+        .filter(d => !d.open)
+        .reduce((total, d) => total + d.getBoundingClientRect().height, 0)`);
+
+      assert.equal(Math.round(tinggi), 0, `${path}: panel tertutup masih tampil`);
+    }
+  });
+
+  test("panel tetap bisa dibuka dan ditutup setelah aturan tampilannya diperketat", async () => {
+    await page.goto(`${BASE}/catalog/`);
+    await page.click("article.card:not([hidden]) button[data-detail]");
+    await page.waitFor(`document.querySelector("dialog[open]")`);
+
+    assert.ok(await page.visible("dialog[open]"));
+    assert.ok(await page.eval(`document.querySelector("dialog[open]").matches(":modal")`),
+              "panel harus benar-benar modal supaya fokus terkurung di dalamnya");
+
+    await page.eval(`document.querySelector("dialog[open]").close()`);
+    await page.waitFor(`!document.querySelector("dialog[open]")`);
+
+    assert.equal(await page.visible("dialog"), false);
+  });
+
+  // Menyaring 231 produk menjadi tiga tidak memberi tanda apa pun bagi yang
+  // tidak melihat layar sebelum region status ini ada.
+  test("perubahan jumlah hasil diumumkan lewat region status", async () => {
+    await page.goto(`${BASE}/catalog/`);
+
+    assert.ok(await page.eval(`Boolean(document.querySelector("[data-result-count]").closest("[role=status]"))`),
+              "penghitung hasil tidak berada di dalam region status");
+
+    await page.fill("[data-search]", "brembo");
+    await page.waitFor(`document.querySelector("[data-result-count]").textContent.trim() !== "231"`);
+
+    assert.match(await page.text("[role=status]"), /\d+/);
+  });
+
+  test("fokus masuk ke panel lalu kembali ke tombol yang membukanya", async () => {
+    await page.goto(`${BASE}/catalog/`);
+    await page.eval(`window.__pemicu = document.querySelector("article.card:not([hidden]) button[data-detail]");
+                     window.__pemicu.focus(); window.__pemicu.click();`);
+    await page.waitFor(`document.querySelector("dialog[open]")`);
+
+    assert.ok(await page.eval(`document.querySelector("dialog[open]").contains(document.activeElement)`),
+              "fokus tidak berpindah ke dalam panel");
+
+    await page.eval(`document.querySelector("dialog[open]").close()`);
+    await page.waitFor(`!document.querySelector("dialog[open]")`);
+
+    assert.ok(await page.eval(`document.activeElement === window.__pemicu`),
+              "fokus tidak kembali ke tombol asal");
+  });
+
+  // Ambang WCAG 2.5.8 adalah 24 piksel, dan boleh dipenuhi lewat jarak antar
+  // target. Tautan dalam kalimat dikecualikan.
+  test("target sentuh memenuhi ambang, sendiri atau bersama jaraknya", async () => {
+    const gagal = [];
+    for (const path of HALAMAN) {
+      await page.goto(BASE + path);
+      const kecil = await page.eval(`(() => {
+        const semua = [...document.querySelectorAll("a,button,input,select,summary")]
+          .filter(el => { const r = el.getBoundingClientRect(); return r.width && r.height; });
+        const bermasalah = [];
+        for (const el of semua) {
+          const r = el.getBoundingClientRect();
+          if (Math.min(r.width, r.height) >= 24) continue;
+          const induk = el.parentElement;
+          const dalamKalimat = el.tagName === "A" && induk &&
+            getComputedStyle(el).display.startsWith("inline") &&
+            induk.textContent.trim().length > el.textContent.trim().length + 3;
+          if (dalamKalimat) continue;
+          let terdekat = Infinity;
+          for (const lain of semua) {
+            if (lain === el) continue;
+            const q = lain.getBoundingClientRect();
+            const dx = Math.max(0, Math.max(r.left - q.right, q.left - r.right));
+            const dy = Math.max(0, Math.max(r.top - q.bottom, q.top - r.bottom));
+            terdekat = Math.min(terdekat, Math.hypot(dx, dy));
+          }
+          if (Math.min(r.width, r.height) + terdekat < 24) {
+            bermasalah.push(Math.round(r.width) + "x" + Math.round(r.height) + " " +
+              el.textContent.trim().slice(0, 20));
+          }
+        }
+        return bermasalah;
+      })()`);
+      kecil.forEach((k) => gagal.push(`${path}: ${k}`));
+    }
+
+    assert.deepEqual(gagal, []);
+  });
+
+  test("tautan daftar di footer cukup besar untuk ditekan di ponsel", async () => {
+    await page.goto(`${BASE}/`);
+    const kecil = await page.eval(`[...document.querySelectorAll(".footer-grid li a")]
+      .filter(a => a.getBoundingClientRect().height < 44).length`);
+
+    assert.equal(kecil, 0, "ada tautan footer di bawah 44 piksel");
+  });
 });
