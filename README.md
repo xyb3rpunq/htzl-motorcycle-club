@@ -124,13 +124,15 @@ bisa disaring tanpa berpindah halaman sama sekali.
 <img src="docs/shots/katalog.webp" alt="Halaman katalog">
 
 Pencarian menerima beberapa kata sekaligus dan mencocokkannya ke nama, merek,
-jenis, dan kode produk. Hasilnya muncul selagi mengetik.
+jenis, kode produk, sampai ke isi tabel spesifikasi. Mengetik "Brembo",
+"Cordura", atau "waterproof" langsung menyisakan produk yang memakainya.
+Hasilnya muncul selagi mengetik.
 
 <img src="docs/shots/katalog-cari.webp" alt="Pencarian kata kunci dalam tampilan daftar">
 
 | Kontrol | Fungsinya bagi pengunjung |
 |---|---|
-| Pencarian | Ketik "helm carbon", langsung menyisakan produk yang dimaksud |
+| Pencarian | Ketik "helm carbon" atau "Brembo", langsung menyisakan produk yang dimaksud |
 | Chip kategori | Tujuh kategori beserta jumlah isinya, sekali ketuk |
 | Merek | Kawasaki, Vixian, Harley-Davidson, dan lini HTZL |
 | Rentang harga | Enam tingkat, dari bawah Rp 500 rb sampai di atas Rp 500 jt |
@@ -259,19 +261,26 @@ jaringan 4G.
 
 | | Hasil | Ambang "baik" |
 |---|--:|--:|
-| Largest Contentful Paint | 436 ms | < 2.500 ms |
-| Cumulative Layout Shift | 0,001 | < 0,1 |
-| Total Blocking Time | 45 ms | < 200 ms |
-| Halaman katalog terkompresi | 47 KB | — |
+| Largest Contentful Paint | 372 ms | < 2.500 ms |
+| Cumulative Layout Shift | 0,000 | < 0,1 |
+| Total Blocking Time | 0 ms | < 200 ms |
+| Halaman katalog terkompresi | 51 KB | — |
 | Beranda terkompresi | 10 KB | — |
 | Permintaan ke pihak ketiga | 0 | — |
+
+**Gambar.** Tiap foto tersedia dalam tiga ukuran, dan peramban mengambil yang
+paling pas untuk lebar tampil serta kerapatan layarnya. Layar biasa menarik
+1,5 MB alih-alih 6,5 MB bila seluruh kartu berfoto dimuat, sementara layar
+retina tetap menerima berkas penuh. Lebar dan tinggi setiap gambar dibaca
+langsung dari berkasnya saat pembangunan, sehingga tata letak tidak pernah
+melompat saat gambar selesai dimuat.
 
 **Aksesibilitas.** Diaudit dengan axe-core pada aturan WCAG 2.1 A/AA ditambah
 best practice: **nol pelanggaran** di seluruh halaman. Navigasi keyboard penuh,
 target sentuh minimal 44 piksel, kontras terjaga di kedua tema, dan animasi
 dimatikan bila sistem meminta gerak minimal.
 
-**Pengujian.** 141 test Ruby dan 23 test JavaScript berjalan pada tiap
+**Pengujian.** 162 test Ruby dan 23 test JavaScript berjalan pada tiap
 perubahan, ditambah pemeriksaan gaya kode. Penerbitan dibatalkan bila ada yang
 gagal.
 
