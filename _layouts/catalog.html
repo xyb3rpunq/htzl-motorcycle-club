@@ -89,7 +89,7 @@ layout: default
     <h2 class="visually-hidden">{{ t.catalog.results_heading }}</h2>
     <div class="catalog__grid" data-view="grid" data-grid>
       {%- for item in site.data.catalog %}
-      {%- include product-card.html item=item t=t lang=page.lang %}
+      {%- include product-card.html item=item t=t lang=page.lang position=forloop.index %}
       {%- endfor %}
     </div>
 

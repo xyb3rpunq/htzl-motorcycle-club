@@ -8,13 +8,7 @@ layout: default
 {%- assign newest = units | last -%}
 {%- assign berfoto = units | where_exp: "u", "u.credit" -%}
 
-<section class="page-banner" style="background-image:url('{{ oldest.image | relative_url }}')">
-  <div class="shell shell--wide">
-    <p class="eyebrow" style="color:#ffd7d7;justify-content:center">Harley-Davidson</p>
-    <h1>{{ t.nav.heritage }}</h1>
-    <p>{{ t.brand.heritage.tagline }}</p>
-  </div>
-</section>
+{%- include page-banner.html image=oldest.image eyebrow='Harley-Davidson' title=t.nav.heritage subtitle=t.brand.heritage.tagline -%}
 
 <section class="section section--tight">
   <div class="shell shell--wide">

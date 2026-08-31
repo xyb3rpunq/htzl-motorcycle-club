@@ -109,7 +109,7 @@ namespace :photos do
     sh "python lib/refetch_heritage_photos.py"
   end
 
-  desc "Buat varian 384w dan 640w untuk srcset kartu katalog (butuh Python + Pillow)"
+  desc "Buat varian ukuran untuk srcset kartu, hero, dan banner (butuh Python + Pillow)"
   task :thumbs do
     sh "python lib/make_thumbnails.py"
     Rake::Task["seed"].invoke

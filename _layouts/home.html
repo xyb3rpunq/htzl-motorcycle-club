@@ -15,8 +15,10 @@ layout: default
     {%- for slide in t.home.hero %}
     {%- assign idx = forloop.index0 %}
     <div class="hero__slide" role="group" aria-roledescription="slide" aria-label="{{ forloop.index }} / {{ t.home.hero | size }}">
-      <img src="{{ '/assets/img/hero/' | append: hero_images[idx] | append: '.webp' | relative_url }}"
-           width="1400" height="788" alt="{{ slide.title }}"
+      {%- capture hero_src %}/assets/img/hero/{{ hero_images[idx] }}.webp{% endcapture %}
+      <img src="{{ hero_src | relative_url }}"
+           srcset="{{ hero_src | srcset }}" sizes="100vw"
+           width="{{ hero_src | image_width }}" height="{{ hero_src | image_height }}" alt="{{ slide.title }}"
            {% if forloop.first %}loading="eager" fetchpriority="high"{% else %}loading="lazy"{% endif %} decoding="async">
       <div class="hero__caption">
         <div class="shell shell--wide">
@@ -72,7 +74,9 @@ layout: default
           <a class="btn" href="{{ p | append: '/catalog/' | relative_url }}">{{ t.actions.browse }}</a>
         </div>
       </div>
-      <img src="{{ '/assets/img/about.webp' | relative_url }}" width="1000" height="577"
+      <img src="{{ '/assets/img/about.webp' | relative_url }}"
+           srcset="{{ '/assets/img/about.webp' | srcset }}" sizes="(min-width: 900px) 46vw, 92vw"
+           width="1000" height="577"
            alt="{{ t.home.intro_title }}" loading="lazy" decoding="async">
     </div>
   </div>

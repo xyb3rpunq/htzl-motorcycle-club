@@ -468,4 +468,96 @@ class BuildTest < Minitest::Test
       assert_operator entry["h"].to_i, :>, 0
     end
   end
+
+  # --- prioritas gambar ---------------------------------------------------
+
+  def images_in(html)
+    html.scan(/<img[^>]*>/m)
+  end
+
+  # Banner dulu dipasang lewat background-image. Peramban baru menemukan gambar
+  # semacam itu setelah CSS diurai dan tata letak dihitung, padahal ia elemen
+  # terbesar di layar pertama.
+  def test_banner_bukan_lagi_background_image
+    %w[heritage gallery kawasaki vixian].each do |page|
+      html = read_page(page, "index.html")
+
+      refute_includes html, "background-image:url", "#{page}: banner masih background-image"
+      assert_includes html, "page-banner__img", "#{page}: banner tanpa gambar"
+    end
+  end
+
+  def test_banner_dimuat_segera_dan_diprioritaskan
+    %w[heritage gallery kawasaki vixian].each do |page|
+      banner = read_page(page, "index.html")[/<img class="page-banner__img"[^>]*>/m]
+
+      refute_nil banner, page
+      assert_includes banner, 'loading="eager"', page
+      assert_includes banner, 'fetchpriority="high"', page
+      assert_includes banner, 'srcset="', page
+      assert_includes banner, 'sizes="', page
+    end
+  end
+
+  # Banner murni dekoratif: judul halaman sudah ada sebagai teks di atasnya.
+  def test_banner_tidak_menambah_kebisingan_untuk_pembaca_layar
+    banner = read_page("heritage", "index.html")[/<img class="page-banner__img"[^>]*>/m]
+
+    assert_includes banner, 'alt=""'
+  end
+
+  def test_hero_beranda_dikirim_dalam_beberapa_ukuran
+    hero = read_page("index.html")[%r{<img[^>]*/assets/img/hero/[^>]*>}m]
+
+    refute_nil hero
+    assert_includes hero, "srcset="
+    assert_includes hero, 'sizes="100vw"'
+    assert_includes hero, 'fetchpriority="high"'
+  end
+
+  # Terlalu banyak gambar segera justru merebut bandwidth dari elemen LCP.
+  # Diukur: empat kartu segera membuat halaman heritage 396 ms lebih lambat.
+  def test_gambar_segera_dibatasi_dua_per_halaman
+    all_pages.each do |path|
+      eager = images_in(File.read(path, encoding: "utf-8")).count { |img| img.include?('loading="eager"') }
+
+      assert_operator eager, :<=, 2, "#{File.basename(File.dirname(path))}: #{eager} gambar eager"
+    end
+  end
+
+  def test_hanya_satu_gambar_berprioritas_tinggi_per_halaman
+    all_pages.each do |path|
+      high = images_in(File.read(path, encoding: "utf-8")).count { |img| img.include?('fetchpriority="high"') }
+
+      assert_operator high, :<=, 1, "#{path}: #{high} gambar fetchpriority high"
+    end
+  end
+
+  # Kartu pertama halaman katalog adalah elemen LCP-nya, jadi ia tidak boleh
+  # lazy. Di heritage dan merek, elemen LCP adalah banner.
+  def test_kartu_pertama_katalog_dimuat_segera
+    first = read_page("catalog", "index.html")[%r{<article class="card".*?</article>}m]
+
+    assert_includes first, 'loading="eager"'
+    assert_includes first, 'fetchpriority="high"'
+  end
+
+  def test_kartu_pertama_heritage_dan_merek_tetap_lazy
+    %w[heritage kawasaki].each do |page|
+      first = read_page(page, "index.html")[%r{<article class="card".*?</article>}m]
+
+      assert_includes first, 'loading="lazy"', page
+    end
+  end
+
+  def test_semua_kandidat_srcset_di_seluruh_halaman_ada
+    hilang = all_pages.flat_map do |path|
+      File.read(path, encoding: "utf-8").scan(/srcset="([^"]*)"/).flatten
+          .flat_map { |set| set.split(",") }
+          .map { |entry| entry.strip.split(/\s+/).first }
+          .reject { |url| File.exist?(site_path(url.sub(BASEURL, "").sub(%r{\A/}, ""))) }
+    end.uniq
+
+    assert_empty hilang
+  end
 end

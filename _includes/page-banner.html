@@ -1,0 +1,26 @@
+{%- comment -%}
+  Banner besar di puncak halaman merek, galeri, dan heritage.
+
+  Gambarnya dulu dipasang lewat background-image. Peramban baru menemukan
+  gambar semacam itu setelah CSS diurai dan tata letak dihitung, padahal ini
+  elemen terbesar di layar pertama. Sekarang berupa <img> biasa supaya
+  pemindai pramuat menemukannya di awal, dan supaya bisa dikirim dalam
+  beberapa ukuran.
+
+  Parameter: image (jalur situs), eyebrow, title, subtitle.
+{%- endcomment -%}
+{%- assign banner_image = include.image -%}
+<section class="page-banner">
+  <img class="page-banner__img" src="{{ banner_image | relative_url }}"
+       {%- assign banner_srcset = banner_image | srcset %}
+       {%- if banner_srcset != '' %}
+       srcset="{{ banner_srcset }}" sizes="100vw"
+       {%- endif %}
+       width="{{ banner_image | image_width }}" height="{{ banner_image | image_height }}"
+       alt="" aria-hidden="true" loading="eager" fetchpriority="high" decoding="async">
+  <div class="shell shell--wide">
+    <p class="eyebrow" style="color:#ffd7d7;justify-content:center">{{ include.eyebrow }}</p>
+    <h1>{{ include.title }}</h1>
+    <p>{{ include.subtitle }}</p>
+  </div>
+</section>

@@ -7,13 +7,8 @@ layout: default
 {%- assign base = items | where: "trim", "Standard" -%}
 {%- assign cheapest = items | sort: "price" | first -%}
 
-<section class="page-banner" style="background-image:url('{{ '/assets/img/banner-' | append: page.brand_key | append: '.webp' | relative_url }}')">
-  <div class="shell shell--wide">
-    <p class="eyebrow" style="color:#ffd7d7;justify-content:center">{{ site.title }}</p>
-    <h1>{{ page.brand }}</h1>
-    <p>{{ brand.tagline }}</p>
-  </div>
-</section>
+{%- capture banner_src %}/assets/img/banner-{{ page.brand_key }}.webp{% endcapture -%}
+{%- include page-banner.html image=banner_src eyebrow=site.title title=page.brand subtitle=brand.tagline -%}
 
 <section class="section section--tight">
   <div class="shell shell--wide">

@@ -4,13 +4,7 @@ layout: default
 {%- assign t = site.data.i18n[page.lang] -%}
 {%- assign slugs = "goma-preview,norden,custom-build,showcase-id,italian-two-wheel,goma-install,cake-electric,expo-floor,night-ride,museum-hall,museum-closed,sydney-show" | split: "," -%}
 
-<section class="page-banner" style="background-image:url('{{ '/assets/img/gallery/museum-hall.webp' | relative_url }}')">
-  <div class="shell shell--wide">
-    <p class="eyebrow" style="color:#ffd7d7;justify-content:center">{{ site.title }}</p>
-    <h1>{{ t.gallery.title }}</h1>
-    <p>{{ t.gallery.subtitle }}</p>
-  </div>
-</section>
+{%- include page-banner.html image='/assets/img/gallery/museum-hall.webp' eyebrow=site.title title=t.gallery.title subtitle=t.gallery.subtitle -%}
 
 <section class="section">
   <div class="shell shell--wide">

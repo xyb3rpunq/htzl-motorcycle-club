@@ -6,3 +6,4 @@ require_relative "../lib/htzl/filters"
 
 Liquid::Template.register_filter(HTZL::Filters)
 Liquid::Template.register_filter(HTZL::I18nFilters)
+Liquid::Template.register_filter(HTZL::ImageFilters)

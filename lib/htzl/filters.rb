@@ -4,6 +4,8 @@ require "date"
 require_relative "catalog"
 require_relative "locales"
 
+require_relative "image_sources"
+
 module HTZL
   # Filter Liquid khusus HTZL. Berperan seperti helper di app/helpers pada Rails:
   # pemformatan yang berulang di template dikumpulkan di satu tempat.
@@ -265,6 +267,44 @@ module HTZL
 
     def site_data
       site_object.data
+    end
+  end
+
+  # Filter gambar responsif untuk template di luar katalog: hero, banner, dan
+  # foto pendukung. Item katalog sudah membawa daftar ukurannya sendiri di
+  # _data/catalog.yml, jadi template katalog tidak memakai filter ini.
+  module ImageFilters
+    # Daftar srcset lengkap dengan baseurl, siap dipasang di atribut.
+    #   <img srcset="{{ '/assets/img/hero/promo.webp' | srcset }}" ...>
+    def srcset(web_path)
+      variants = HTZL::ImageSources.variants(web_path)
+      return "" if variants.nil? || variants.size < 2
+
+      variants.map { |path, width| "#{with_baseurl(path)} #{width}w" }.join(", ")
+    end
+
+    # Kandidat terkecil yang masuk akal untuk dipreload, dipakai bersama
+    # imagesrcset supaya peramban tetap bebas memilih.
+    def largest_variant(web_path)
+      variants = HTZL::ImageSources.variants(web_path)
+      return with_baseurl(web_path) if variants.nil?
+
+      with_baseurl(variants.last[0])
+    end
+
+    def image_width(web_path)
+      HTZL::ImageSources.dimensions(web_path)&.first
+    end
+
+    def image_height(web_path)
+      HTZL::ImageSources.dimensions(web_path)&.last
+    end
+
+    private
+
+    def with_baseurl(path)
+      base = @context.registers[:site].config["baseurl"].to_s
+      "#{base}#{path}"
     end
   end
 end
