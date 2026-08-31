@@ -1,0 +1,61 @@
+{%- comment -%}
+  Data terstruktur untuk halaman yang memuat daftar produk.
+
+  Sebelumnya hanya halaman katalog yang memilikinya. Halaman heritage dengan
+  seratus unit koleksi dan kedua halaman merek dengan delapan belas model
+  tidak menyatakan produknya sama sekali, sehingga mesin pencari melihatnya
+  sebagai halaman biasa.
+
+  Daftar ini adalah contoh, bukan salinan seluruh katalog: mesin pencari cukup
+  melihat sebagian untuk mengenali jenis halamannya. Jumlah entrinya dibatasi
+  mengikuti berat halaman, sehingga halaman katalog yang sudah memuat 231
+  kartu mendapat contoh paling sedikit.
+
+  Parameter: items, name, lang, limit.
+{%- endcomment -%}
+{%- assign schema_items = include.items -%}
+{%- assign lang = include.lang -%}
+{%- assign schema_limit = include.limit | default: 20 -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": {{ include.name | jsonify }},
+  "numberOfItems": {{ schema_items | size }},
+  "itemListElement": [
+    {%- for item in schema_items limit: schema_limit %}
+    {%- assign detail_url = t.prefix | append: "/catalog/?item=" | append: item.sku -%}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "item": {
+        "@type": "Product",
+        "name": {{ item.name | jsonify }},
+        "sku": {{ item.sku | jsonify }},
+        "url": {{ detail_url | absolute_url | jsonify }},
+        "image": {{ item.image | absolute_url | jsonify }},
+        "brand": { "@type": "Brand", "name": {{ item.brand | jsonify }} },
+        "category": {{ item.category_label | term: 'category', lang | jsonify }},
+        {%- comment -%}
+          aggregateRating sengaja tidak dinyatakan. Nilai bintang pada kartu
+          adalah data contoh untuk portofolio, dan jumlah ulasannya tidak ada.
+          Menyatakannya sebagai penilaian sungguhan bisa memicu cuplikan kaya
+          di hasil pencarian atas dasar angka yang dikarang.
+        {%- endcomment -%}
+        "offers": {
+          "@type": "Offer",
+          "price": {{ item.price }},
+          "priceCurrency": "IDR",
+          {%- comment -%}
+            Penjualnya tidak diulang di tiap penawaran. Halaman ini sudah
+            menyatakan satu entitas AutoDealer, dan mengulanginya dua puluh
+            kali hanya menambah berat tanpa menambah keterangan.
+          {%- endcomment -%}
+          "availability": {% if item.stock and item.stock > 0 %}"https://schema.org/InStock"{% else %}"https://schema.org/PreOrder"{% endif %}
+        }
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ]
+}
+</script>

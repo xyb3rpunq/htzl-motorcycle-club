@@ -156,6 +156,15 @@ export async function launch(port = 9400 + Math.floor(Math.random() * 400)) {
         if(!el) return false; const cs=getComputedStyle(el);
         return cs.display!=="none" && cs.visibility!=="hidden" && el.getClientRects().length>0;})()`);
     },
+    // Mengubah ukuran layar yang diemulasikan. Tanpa ini, seluruh pengukuran
+    // tata letak hanya berlaku untuk satu lebar jendela saja.
+    async resize(width, height = 900, deviceScaleFactor = 1) {
+      await send("Emulation.setDeviceMetricsOverride", {
+        width, height, deviceScaleFactor, mobile: width < 768,
+      });
+      await sleep(160);
+    },
+    resetSize() { return send("Emulation.clearDeviceMetricsOverride"); },
     close() { ws.close(); chrome.kill(); },
   };
 

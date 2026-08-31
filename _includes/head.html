@@ -116,33 +116,18 @@
   ]
 }
 </script>
-{%- if page.page_id == "catalog" %}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": {{ t.catalog.title | jsonify }},
-  "numberOfItems": {{ site.data.catalog | size }},
-  "itemListElement": [
-    {%- for item in site.data.catalog limit: 20 %}
-    {
-      "@type": "ListItem",
-      "position": {{ forloop.index }},
-      "item": {
-        "@type": "Product",
-        "name": {{ item.name | jsonify }},
-        "sku": {{ item.sku | jsonify }},
-        "category": {{ item.category_label | term: 'category', page.lang | jsonify }},
-        "offers": {
-          "@type": "Offer",
-          "price": {{ item.price }},
-          "priceCurrency": "IDR",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    }{% unless forloop.last %},{% endunless %}
-    {%- endfor %}
-  ]
-}
-</script>
-{%- endif %}
+{%- comment -%}
+  Daftar produk terstruktur. Sumber itemnya mengikuti isi halaman, bukan
+  selalu seluruh katalog, supaya yang dinyatakan sama dengan yang dilihat
+  pengunjung.
+{%- endcomment -%}
+{%- case page.page_id -%}
+  {%- when "catalog" -%}
+    {%- include schema-itemlist.html items=site.data.catalog name=t.catalog.title lang=page.lang limit=10 -%}
+  {%- when "heritage" -%}
+    {%- assign heritage_units = site.data.catalog | where: "category", "heritage" -%}
+    {%- include schema-itemlist.html items=heritage_units name=t.nav.heritage lang=page.lang -%}
+  {%- when "kawasaki", "vixian" -%}
+    {%- assign brand_units = site.data.catalog | where: "category", "motor" | where: "brand", page.brand -%}
+    {%- include schema-itemlist.html items=brand_units name=page.brand lang=page.lang -%}
+{%- endcase -%}
