@@ -119,7 +119,10 @@ task e2e: "build:preview" do
   # sebagai proses yang menggantung tanpa keterangan. Angkanya longgar dengan
   # sengaja: satu test tata letak memuat 35 halaman, dan mesin CI berjalan
   # sekitar dua setengah kali lebih lambat daripada mesin pengembangan.
-  sh "node --test --test-timeout=180000 test/e2e/*.e2e.mjs"
+  # Dijalankan berurutan, satu berkas pada satu waktu. Node menjalankan berkas
+  # test secara paralel secara bawaan, dan itu berarti empat Chrome sekaligus
+  # pada mesin CI berinti dua; peluncurannya lalu saling berebut sampai gagal.
+  sh "node --test --test-concurrency=1 --test-timeout=180000 test/e2e/*.e2e.mjs"
 end
 
 desc "Laporan cakupan pengujian untuk kode Ruby di lib/"

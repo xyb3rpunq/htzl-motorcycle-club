@@ -87,8 +87,10 @@ export async function launch(port) {
   }
   if (!chrome) throw new Error("Chrome tidak ditemukan; setel CHROME_PATH");
 
+  // Mesin CI berinti dua membutuhkan waktu jauh lebih lama untuk menyiapkan
+  // profil baru daripada mesin pengembangan.
   let target = null;
-  for (let i = 0; i < 60 && !target; i++) {
+  for (let i = 0; i < 160 && !target; i++) {
     try {
       const list = await (await fetch(`http://127.0.0.1:${port}/json/list`)).json();
       target = list.find((t) => t.type === "page");
