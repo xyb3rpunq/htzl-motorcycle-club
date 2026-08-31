@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative "test_helper"
+require_relative "../lib/htzl/filters"
 
 # Menjaga agar kelima bahasa tetap sinkron: kunci yang sama, tanpa nilai kosong,
 # dan kamus istilah menutupi seluruh data katalog.
@@ -145,5 +146,36 @@ class I18nTest < Minitest::Test
         refute_nil news["topic"][locale], "berita #{news['image']} tidak punya topik #{locale}"
       end
     end
+  end
+
+  # --- nilai spesifikasi -------------------------------------------------
+  def spec_values
+    @spec_values ||= YAML.load_file(File.join(ROOT, "_data", "i18n", "spec_values.yml"))["spec_value"]
+  end
+
+  def test_setiap_nilai_spesifikasi_tercakup
+    used = catalog.flat_map { |i| i["specs"].values }.uniq
+    missing = used.reject { |v| HTZL::Measures.localize(v, "en") || spec_values.key?(v) }
+    assert_empty missing, "nilai belum diterjemahkan: #{missing.first(5).join(', ')}"
+  end
+
+  def test_kamus_nilai_tidak_memuat_entri_usang
+    used = catalog.flat_map { |i| i["specs"].values }.uniq
+    extra = spec_values.keys - used
+    assert_empty extra, "entri kamus tidak terpakai: #{extra.first(5).join(', ')}"
+  end
+
+  def test_setiap_entri_nilai_punya_empat_bahasa
+    target = (TestSupport::LOCALES - [BASE]).sort
+    spec_values.each do |source, translations|
+      assert_equal target, translations.keys.sort, "nilai '#{source}' tidak lengkap"
+      translations.each_value { |v| refute_empty v.to_s.strip }
+    end
+  end
+
+  def test_nilai_yang_ditangani_otomatis_tidak_perlu_masuk_kamus
+    redundant = spec_values.keys.select { |v| HTZL::Measures.localize(v, "en") }
+    assert_empty redundant,
+                 "nilai ini sudah ditangani otomatis, hapus dari kamus: #{redundant.first(5).join(', ')}"
   end
 end

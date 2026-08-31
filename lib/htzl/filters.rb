@@ -85,6 +85,95 @@ module HTZL
     end
   end
 
+  # Pelokalan nilai spesifikasi yang berupa angka dan satuan.
+  #
+  # Nilai seperti "1.362 cc" tidak netral bahasa: Bahasa Indonesia memakai titik
+  # sebagai pemisah ribuan, sehingga di Bahasa Inggris angka itu terbaca 1,362
+  # (satu koma tiga). Modul ini menangani seluruh nilai berpola angka + satuan
+  # secara otomatis, sehingga penambahan produk baru tidak perlu entri kamus.
+  module Measures
+    # Kata satuan Bahasa Indonesia beserta padanannya.
+    UNITS = {
+      "liter"  => { "en" => "litres",  "zh" => "升",     "ru" => "л",        "ja" => "L" },
+      "bulan"  => { "en" => "months",  "zh" => "个月",   "ru" => "мес.",     "ja" => "か月" },
+      "hari"   => { "en" => "days",    "zh" => "天",     "ru" => "дней",     "ja" => "日間" },
+      "jam"    => { "en" => "hours",   "zh" => "小时",   "ru" => "часов",    "ja" => "時間" },
+      "menit"  => { "en" => "minutes", "zh" => "分钟",   "ru" => "минут",    "ja" => "分" },
+      "tahun"  => { "en" => "years",   "zh" => "年",     "ru" => "лет",      "ja" => "年" },
+      "detik"  => { "en" => "seconds", "zh" => "秒",     "ru" => "секунд",   "ja" => "秒" },
+      "mikron" => { "en" => "micron",  "zh" => "微米",   "ru" => "мкм",      "ja" => "ミクロン" },
+      "mata"   => { "en" => "links",   "zh" => "节",     "ru" => "звеньев",  "ja" => "リンク" },
+      "klik"   => { "en" => "clicks",  "zh" => "档",     "ru" => "щелчков",  "ja" => "クリック" },
+      "sumbu"  => { "en" => "axis",    "zh" => "轴",     "ru" => "осей",     "ja" => "軸" },
+      "inci"   => { "en" => "inches",  "zh" => "英寸",   "ru" => "дюйма",    "ja" => "インチ" },
+      "pcs"    => { "en" => "pc",      "zh" => "件",     "ru" => "шт",       "ja" => "個" },
+      "set"    => { "en" => "set",     "zh" => "套",     "ru" => "компл.",   "ja" => "セット" },
+      "sampai" => { "en" => "to",      "zh" => "至",     "ru" => "до",       "ja" => "〜" },
+      "dan"    => { "en" => "and",     "zh" => "和",     "ru" => "и",        "ja" => "・" },
+      "per"    => { "en" => "per",     "zh" => "每",     "ru" => "на",       "ja" => "あたり" }
+    }.freeze
+
+    # Nama diri yang tidak diterjemahkan di bahasa mana pun: merek, standar
+    # sertifikasi, kode material, dan nama generasi mesin.
+    PROPER_NOUNS = %w[
+      Brembo Ohlins Cordura Delrin Vibram Coolmax Pinlock GoPro Kevlar Stylema
+      Photochromic Alcantara Gore-Tex
+      CE DOT ECE SNI FIM API JASO EN ISO GL-5 MA2 SN SL DOT4 IP67 N95
+      TPU EVA ABS PU PD CNC LED USB-C USB-A ECU AFR
+      Atmospheric IOE F-Head Flathead Knucklehead Panhead Shovelhead Ironhead
+      Evolution Sportster Revolution Milwaukee-Eight Twin V-Twin Flat Single
+      Two-Stroke OHV Two-Cam Dyna Softail Springer Hydra-Glide
+      X-Ring O-Ring Spin-on Inline Radial Rotary Piggyback Slick
+      Track Sport Touring Racing Enduro Supermoto Adventure Naked
+    ].freeze
+
+    # Satuan internasional yang sudah sama di semua bahasa.
+    NEUTRAL = /\A(cc|hp|Nm|mm|cm|km|kg|g|ml|l|L|dB|kV|kW|W|V|T|Hz|bar|oz|kgf|psi|C|A|D|S|M|XL|XXL|2XL|3XL|AA|PD|N95|IP\d+|[A-Z]{1,4}\d*|\d+[A-Z]*|[\d.,\/:%+-]+)\z/
+
+    module_function
+
+    # "1.362" -> "1,362" (en/zh/ja) atau "1362" (ru); "0,8" -> "0.8".
+    def localize_number(token, lang)
+      if token.match?(/\A\d{1,3}(?:\.\d{3})+\z/)      # pemisah ribuan
+        digits = token.delete(".")
+        lang == "ru" ? digits : digits.reverse.scan(/\d{1,3}/).join(",").reverse
+      elsif token.match?(/\A\d+,\d+\z/)               # pemisah desimal
+        lang == "ru" ? token : token.tr(",", ".")
+      else
+        token
+      end
+    end
+
+    # Kembalikan nil bila nilainya bukan sekadar angka dan satuan, sehingga
+    # pemanggil bisa jatuh kembali ke kamus istilah.
+    def localize(text, lang)
+      return nil if text.nil? || lang.nil?
+
+      words = text.to_s.split(/(\s+)/)
+      out = words.map do |word|
+        next word if word.strip.empty?
+
+        bare = word.gsub(/[(),.]+\z/, "")
+        suffix = word[bare.length..] || ""
+
+        if bare.match?(/\A[\d.,\/:+-]+\z/)
+          localize_number(bare, lang) + suffix
+        elsif UNITS.key?(bare.downcase)
+          UNITS[bare.downcase][lang] + suffix
+        elsif PROPER_NOUNS.include?(bare) || bare.match?(NEUTRAL)
+          word
+        else
+          return nil # ada kata yang bukan satuan: serahkan ke kamus
+        end
+      end
+
+      joined = out.join
+      # Bahasa yang tidak memakai spasi antara angka dan satuan.
+      joined = joined.gsub(/(\d)\s+(个月|小时|分钟|天|年|秒|微米|节|档|轴|英寸|件|套|升)/, '\1 \2') if lang == "zh"
+      joined
+    end
+  end
+
   # Filter penerjemah. Membaca site.data lewat konteks Liquid.
   module I18nFilters
     # Cari string di _data/i18n/<lang>.yml lewat jalur bertitik.
@@ -102,7 +191,15 @@ module HTZL
     def term(text, kind, lang)
       return text if text.nil? || lang.to_s == HTZL::DEFAULT_LOCALE
 
-      entry = site_data.dig("i18n", "terms", kind.to_s, text.to_s)
+      # Nilai spesifikasi berpola angka dan satuan ditangani secara otomatis,
+      # sehingga produk baru tidak perlu ditambahkan ke kamus.
+      if kind.to_s == "spec_value"
+        measured = HTZL::Measures.localize(text, lang.to_s)
+        return measured if measured
+      end
+
+      entry = site_data.dig("i18n", "terms", kind.to_s, text.to_s) ||
+              site_data.dig("i18n", "spec_values", kind.to_s, text.to_s)
       entry.is_a?(Hash) && entry[lang.to_s] ? entry[lang.to_s] : text
     end
 

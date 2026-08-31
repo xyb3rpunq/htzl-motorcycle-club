@@ -141,4 +141,55 @@ class FiltersTest < Minitest::Test
     assert_equal "/htzl-motorcycle-club/en/catalog/", @subject.locale_url("/catalog/", "en")
     assert_equal "/htzl-motorcycle-club/catalog/", @subject.locale_url("/catalog/", "id")
   end
+
+  # --- Measures: pelokalan angka dan satuan ------------------------------
+  def test_pemisah_ribuan_mengikuti_kebiasaan_tiap_bahasa
+    assert_equal "1,362 cc", HTZL::Measures.localize("1.362 cc", "en")
+    assert_equal "1,362 cc", HTZL::Measures.localize("1.362 cc", "zh")
+    assert_equal "1,362 cc", HTZL::Measures.localize("1.362 cc", "ja")
+    assert_equal "1362 cc",  HTZL::Measures.localize("1.362 cc", "ru")
+  end
+
+  def test_pemisah_desimal_ikut_dibalik
+    assert_equal "0.8 mm", HTZL::Measures.localize("0,8 mm", "en")
+    assert_equal "0,8 mm", HTZL::Measures.localize("0,8 mm", "ru")
+  end
+
+  # Regresi: kode standar seperti "ECE 22.06" dan "DOT 5.1" memakai titik yang
+  # BUKAN pemisah ribuan, jadi tidak boleh ikut diubah.
+  def test_kode_standar_tidak_ikut_diformat_ulang
+    ["ECE 22.06", "DOT 5.1", "120/70 ZR17", "1:100", "525", "58W"].each do |value|
+      assert_equal value, HTZL::Measures.localize(value, "en"),
+                   "#{value} seharusnya tidak berubah"
+    end
+  end
+
+  def test_kata_satuan_diterjemahkan
+    assert_equal "12 months", HTZL::Measures.localize("12 bulan", "en")
+    assert_equal "12 个月",   HTZL::Measures.localize("12 bulan", "zh")
+    assert_equal "2 hours",   HTZL::Measures.localize("2 jam", "en")
+    assert_equal "120 links", HTZL::Measures.localize("120 mata", "en")
+    assert_equal "1 litres",  HTZL::Measures.localize("1 liter", "en")
+  end
+
+  def test_nama_diri_dibiarkan_apa_adanya
+    assert_equal "Knucklehead", HTZL::Measures.localize("Knucklehead", "ja")
+    assert_equal "Cordura 600D", HTZL::Measures.localize("Cordura 600D", "zh")
+    assert_equal "Panhead", HTZL::Measures.localize("Panhead", "ru")
+  end
+
+  # Frasa yang memuat kata Indonesia harus diserahkan ke kamus, bukan
+  # diterjemahkan sebagian.
+  def test_frasa_bukan_satuan_dikembalikan_nil
+    assert_nil HTZL::Measures.localize("Kulit sapi 1,2 mm", "en")
+    assert_nil HTZL::Measures.localize("Rigid, garpu Springer", "en")
+    assert_nil HTZL::Measures.localize(nil, "en")
+  end
+
+  # --- term untuk nilai spesifikasi --------------------------------------
+  def test_term_menggabungkan_lapisan_otomatis_dan_kamus
+    assert_equal "1,362 cc", @subject.term("1.362 cc", "spec_value", "en")
+    assert_equal "1.362 cc", @subject.term("1.362 cc", "spec_value", "id"),
+                 "bahasa dasar tidak diubah"
+  end
 end

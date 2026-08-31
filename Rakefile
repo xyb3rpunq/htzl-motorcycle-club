@@ -28,39 +28,45 @@ desc "Seed, build, lalu jalankan seluruh test (dipakai CI)"
 task ci: %i[seed build test]
 
 namespace :i18n do
-  desc "Laporan cakupan terjemahan per bahasa"
+  desc "Laporan cakupan terjemahan"
   task :report do
     require "yaml"
+    require_relative "lib/htzl/filters"
     require_relative "lib/htzl/catalog"
 
     locales = %w[en zh ru ja]
     terms = YAML.load_file("_data/i18n/terms.yml")
+    values = YAML.load_file("_data/i18n/spec_values.yml")["spec_value"]
     items = HTZL::Catalog.build
 
-    puts "Cakupan kamus istilah"
-    puts "-" * 62
+    puts "Cakupan terjemahan katalog (#{items.length} item, #{locales.length} bahasa)"
+    puts "-" * 64
+
     {
       "category"    => items.map { |i| i["category_label"] }.uniq,
       "subcategory" => items.map { |i| i["subcategory"] }.uniq,
       "spec_key"    => items.flat_map { |i| i["specs"].keys }.uniq
     }.each do |kind, used|
       covered = used.count { |term| terms.dig(kind, term) }
-      pct = used.empty? ? 100 : covered * 100 / used.length
-      puts format("  %-14s %3d/%-3d  %3d%%", kind, covered, used.length, pct)
+      puts format("  %-14s %3d/%-3d  %3d%%  lewat kamus", kind, covered, used.length,
+                  used.empty? ? 100 : covered * 100 / used.length)
     end
 
-    values = items.flat_map { |i| i["specs"].values }.uniq
-    numeric = values.count { |v| v.match?(/\A[\d\s.,\-\/]+\s*[a-zA-Z%]*\z/) }
-    covered = values.count { |v| terms.dig("spec_value", v) }
-    puts format("  %-14s %3d/%-3d  %3d%%  (%d nilai berupa angka/satuan, netral bahasa)",
-                "spec_value", covered + numeric, values.length,
-                (covered + numeric) * 100 / values.length, numeric)
+    used = items.flat_map { |i| i["specs"].values }.uniq
+    auto = used.count { |v| HTZL::Measures.localize(v, "en") }
+    dict = used.count { |v| values.key?(v) }
+    puts format("  %-14s %3d/%-3d  %3d%%  (%d otomatis, %d lewat kamus)",
+                "spec_value", auto + dict, used.length,
+                (auto + dict) * 100 / used.length, auto, dict)
+
+    missing = used.reject { |v| HTZL::Measures.localize(v, "en") || values.key?(v) }
     puts
-    puts "Nilai spesifikasi yang masih memakai teks Indonesia:"
-    todo = values.reject { |v| v.match?(/\A[\d\s.,\-\/]+\s*[a-zA-Z%]*\z/) || terms.dig("spec_value", v) }
-    puts "  #{todo.length} frasa x #{locales.length} bahasa = #{todo.length * locales.length} string"
-    todo.first(10).each { |v| puts "    - #{v}" }
-    puts "    ..." if todo.length > 10
+    if missing.empty?
+      puts "Seluruh nilai spesifikasi tercakup."
+    else
+      puts "Belum diterjemahkan: #{missing.length} frasa x #{locales.length} bahasa"
+      missing.first(10).each { |v| puts "    - #{v}" }
+    end
   end
 end
 

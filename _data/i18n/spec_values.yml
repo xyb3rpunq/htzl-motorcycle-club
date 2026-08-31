@@ -1,0 +1,299 @@
+# Terjemahan nilai spesifikasi produk.
+#
+# Nilai berpola angka dan satuan ("1.362 cc", "12 bulan") TIDAK ada di sini:
+# semuanya ditangani otomatis oleh HTZL::Measures di lib/htzl/filters.rb,
+# sehingga produk baru tidak perlu entri tambahan. Berkas ini hanya memuat
+# frasa yang benar-benar perlu diterjemahkan.
+#
+# Jalankan `rake i18n:report` untuk melihat cakupan.
+
+spec_value:
+  "+120 mm dari standar": { en: "+120 mm over standard", zh: "比原厂高 120 mm", ru: "+120 мм к штатному", ja: "純正比 +120 mm" }
+  "1 masker + 5 filter": { en: "1 mask + 5 filters", zh: "1 个面罩 + 5 片滤芯", ru: "1 маска и 5 фильтров", ja: "マスク1個＋フィルター5枚" }
+  "10W-40": { en: "10W-40", zh: "10W-40", ru: "10W-40", ja: "10W-40" }
+  "110 dB, sensor getar": { en: "110 dB, vibration sensor", zh: "110 dB，震动传感器", ru: "110 дБ, датчик вибрации", ja: "110 dB、振動センサー" }
+  "15W-50": { en: "15W-50", zh: "15W-50", ru: "15W-50", ja: "15W-50" }
+  "18 liter, bisa mengembang": { en: "18 litres, expandable", zh: "18 升，可扩容", ru: "18 л, расширяемая", ja: "18 L、拡張可能" }
+  "25 jam pakai": { en: "25 hours of use", zh: "可用 25 小时", ru: "25 часов работы", ja: "使用 25 時間" }
+  "270 C basah": { en: "270 °C wet", zh: "湿沸点 270 °C", ru: "270 °C влажная", ja: "ウェット 270 °C" }
+  "3 adaptor": { en: "3 adapters", zh: "3 个转接座", ru: "3 адаптера", ja: "アダプター3個" }
+  "3 run dyno + laporan grafik": { en: "3 dyno runs + graph report", zh: "3 次台架测试 + 图表报告", ru: "3 замера на стенде и отчёт", ja: "ダイナモ計測3本＋グラフ報告" }
+  "30 mm piston": { en: "30 mm piston", zh: "30 mm 活塞", ru: "Поршень 30 мм", ja: "ピストン 30 mm" }
+  "310 C kering": { en: "310 °C dry", zh: "干沸点 310 °C", ru: "310 °C сухая", ja: "ドライ 310 °C" }
+  "35 liter per sisi": { en: "35 litres per side", zh: "每侧 35 升", ru: "35 л с каждой стороны", ja: "片側 35 L" }
+  "50 aspal / 50 tanah": { en: "50 road / 50 off-road", zh: "50 公路 / 50 越野", ru: "50 асфальт / 50 бездорожье", ja: "オン50 / オフ50" }
+  "5W-40": { en: "5W-40", zh: "5W-40", ru: "5W-40", ja: "5W-40" }
+  "80W-90": { en: "80W-90", zh: "80W-90", ru: "80W-90", ja: "80W-90" }
+  "ABS injeksi": { en: "Injection-moulded ABS", zh: "注塑 ABS", ru: "Литой ABS", ja: "ABS射出成形" }
+  "Aerodinamis tunduk": { en: "Aerodynamic tuck", zh: "俯身空气动力姿态", ru: "Аэродинамическая посадка", ja: "伏せ姿勢の空力" }
+  "Airbag elektronik": { en: "Electronic airbag", zh: "电子气囊", ru: "Электронная подушка безопасности", ja: "電子制御エアバッグ" }
+  "Akrilik 4 mm": { en: "4 mm acrylic", zh: "4 mm 亚克力", ru: "Акрил 4 мм", ja: "アクリル 4 mm" }
+  "All size": { en: "One size", zh: "均码", ru: "Один размер", ja: "フリーサイズ" }
+  "Aluminium": { en: "Aluminium", zh: "铝合金", ru: "Алюминий", ja: "アルミ" }
+  "Aluminium + karet": { en: "Aluminium and rubber", zh: "铝合金 + 橡胶", ru: "Алюминий и резина", ja: "アルミ＋ラバー" }
+  "Aluminium + plastik": { en: "Aluminium and plastic", zh: "铝合金 + 塑料", ru: "Алюминий и пластик", ja: "アルミ＋樹脂" }
+  "Aluminium 1,5 mm": { en: "1.5 mm aluminium", zh: "1.5 mm 铝合金", ru: "Алюминий 1,5 мм", ja: "アルミ 1.5 mm" }
+  "Aluminium 7075": { en: "7075 aluminium", zh: "7075 铝合金", ru: "Алюминий 7075", ja: "7075 アルミ" }
+  "Aluminium CNC": { en: "CNC-machined aluminium", zh: "CNC 铝合金", ru: "Алюминий, обработка ЧПУ", ja: "CNC削り出しアルミ" }
+  "Aluminium anodize": { en: "Anodised aluminium", zh: "阳极氧化铝", ru: "Анодированный алюминий", ja: "アルマイトアルミ" }
+  "Aluminium laser cut": { en: "Laser-cut aluminium", zh: "激光切割铝合金", ru: "Алюминий, лазерная резка", ja: "レーザーカットアルミ" }
+  "Aman untuk ABS": { en: "Safe for ABS systems", zh: "适用于 ABS 系统", ru: "Безопасно для ABS", ja: "ABS対応" }
+  "Angin, hujan, benturan": { en: "Wind, rain and impact", zh: "防风、防雨、防撞", ru: "Ветер, дождь, удары", ja: "風・雨・衝撃" }
+  "Ankle brace, toe slider": { en: "Ankle brace, toe slider", zh: "护踝与脚趾滑块", ru: "Фиксатор голеностопа, слайдер носка", ja: "アンクルブレース・トゥスライダー" }
+  "Ankle padding": { en: "Ankle padding", zh: "踝部衬垫", ru: "Мягкая защита щиколотки", ja: "アンクルパッド" }
+  "Anti-UV & anti-air": { en: "UV and water resistant", zh: "抗紫外线与防水", ru: "Защита от УФ и влаги", ja: "UVカット・防水" }
+  "Anti-bau, cepat kering": { en: "Odour resistant, quick drying", zh: "抗菌防臭、快干", ru: "Не впитывает запах, быстро сохнет", ja: "防臭・速乾" }
+  "Anti-getar bola karet": { en: "Rubber ball vibration damper", zh: "橡胶球减震", ru: "Резиновый демпфер вибраций", ja: "ラバーボール防振" }
+  "Anti-slip racing": { en: "Racing anti-slip", zh: "赛道防滑", ru: "Гоночная противоскользящая", ja: "レーシング防滑" }
+  "Baja karbon": { en: "Carbon steel", zh: "碳钢", ru: "Углеродистая сталь", ja: "炭素鋼" }
+  "Balancer statis presisi": { en: "Precision static balancer", zh: "精密静态平衡机", ru: "Точный статический балансировщик", ja: "精密スタティックバランサー" }
+  "Ban beli terpisah": { en: "Tyres sold separately", zh: "轮胎另购", ru: "Шины приобретаются отдельно", ja: "タイヤは別売" }
+  "Bar-end + clamp": { en: "Bar-end and clamp", zh: "把端 + 夹具", ru: "Заглушка руля и хомут", ja: "バーエンド＋クランプ" }
+  "Baut mesin bawaan": { en: "Uses factory engine bolts", zh: "使用原厂发动机螺栓", ru: "На штатные болты двигателя", ja: "純正エンジンボルト使用" }
+  "Baut tunggal": { en: "Single bolt", zh: "单螺栓", ru: "Один болт", ja: "ボルト1本" }
+  "Bisa dipakai ulang": { en: "Reusable", zh: "可重复使用", ru: "Многоразовый", ja: "再利用可能" }
+  "Bisa ganti rate": { en: "Spring rate can be changed", zh: "可更换弹簧硬度", ru: "Жёсткость пружины сменная", ja: "スプリングレート交換可" }
+  "Blok mesin & radiator": { en: "Engine block and radiator", zh: "发动机与水箱", ru: "Блок двигателя и радиатор", ja: "エンジンブロックとラジエーター" }
+  "Bongkar, pasang, balancing": { en: "Removal, fitting and balancing", zh: "拆装与动平衡", ru: "Снятие, установка, балансировка", ja: "脱着・バランス調整" }
+  "Braided ikut": { en: "Braided line included", zh: "含编织油管", ru: "Армированный шланг в комплекте", ja: "ブレーキホース付属" }
+  "Brembo M4/M50": { en: "Brembo M4/M50", zh: "Brembo M4/M50", ru: "Brembo M4/M50", ja: "Brembo M4/M50" }
+  "Buang air 32 l/detik": { en: "Sheds 32 l of water per second", zh: "每秒排水 32 升", ru: "Отвод воды 32 л/с", ja: "排水量 毎秒 32 L" }
+  "Bubble visor lepas-pasang": { en: "Removable bubble visor", zh: "可拆泡泡镜片", ru: "Съёмный сферический визор", ja: "着脱式バブルシールド" }
+  "Buckle aluminium 4 titik": { en: "Four aluminium buckles", zh: "四点铝合金卡扣", ru: "Четыре алюминиевые пряжки", ja: "アルミバックル4点" }
+  "Busa anti-kabut": { en: "Anti-fog foam", zh: "防雾泡沫", ru: "Пена против запотевания", ja: "曇り止めフォーム" }
+  "Butuh tyre warmer": { en: "Tyre warmers required", zh: "需使用暖胎器", ru: "Требуются термочехлы", ja: "タイヤウォーマー必須" }
+  "CE Level 1": { en: "CE Level 1", zh: "CE Level 1", ru: "CE Level 1", ja: "CE Level 1" }
+  "CE Level 1 bahu & siku": { en: "CE Level 1 shoulders and elbows", zh: "CE Level 1 肩部与肘部", ru: "CE Level 1: плечи и локти", ja: "CE Level 1 肩・肘" }
+  "CE Level 1 lutut & pinggul": { en: "CE Level 1 knees and hips", zh: "CE Level 1 膝部与髋部", ru: "CE Level 1: колени и бёдра", ja: "CE Level 1 膝・腰" }
+  "CE Level 2": { en: "CE Level 2", zh: "CE Level 2", ru: "CE Level 2", ja: "CE Level 2" }
+  "CE Level 2 + knee slider": { en: "CE Level 2 and knee slider", zh: "CE Level 2 + 膝滑块", ru: "CE Level 2 и слайдер колена", ja: "CE Level 2＋ニースライダー" }
+  "CE Level 2 + speed hump": { en: "CE Level 2 and speed hump", zh: "CE Level 2 + 驼峰", ru: "CE Level 2 и аэрогорб", ja: "CE Level 2＋スピードハンプ" }
+  "CE Level 2 bahu, siku, punggung": { en: "CE Level 2 shoulders, elbows and back", zh: "CE Level 2 肩、肘、背", ru: "CE Level 2: плечи, локти, спина", ja: "CE Level 2 肩・肘・背" }
+  "CR2 tahan 1 tahun": { en: "CR2, lasts one year", zh: "CR2 电池，续航一年", ru: "CR2, хватает на год", ja: "CR2 電池で1年" }
+  "Carbon knuckle + palm slider": { en: "Carbon knuckle and palm slider", zh: "碳纤维指节 + 掌部滑块", ru: "Карбоновые костяшки и слайдер ладони", ja: "カーボンナックル＋パームスライダー" }
+  "Cartridge kit": { en: "Cartridge kit", zh: "阻尼芯筒套件", ru: "Картриджный комплект", ja: "カートリッジキット" }
+  "Cek tekanan gratis": { en: "Free pressure check", zh: "免费胎压检查", ru: "Бесплатная проверка давления", ja: "空気圧点検無料" }
+  "Cek ulang 1x gratis": { en: "One free re-check", zh: "免费复检一次", ru: "Одна бесплатная перепроверка", ja: "再点検1回無料" }
+  "Cocok snow foam": { en: "Snow foam compatible", zh: "适用泡沫炮", ru: "Подходит для снежной пены", ja: "スノーフォーム対応" }
+  "Compression & rebound terpisah": { en: "Separate compression and rebound", zh: "压缩与回弹独立可调", ru: "Раздельные сжатие и отбой", ja: "圧側・伸側 独立調整" }
+  "Coolmax breathable": { en: "Breathable Coolmax", zh: "Coolmax 透气面料", ru: "Дышащий Coolmax", ja: "Coolmax 通気素材" }
+  "Cotton gauze": { en: "Cotton gauze", zh: "棉纱滤材", ru: "Хлопковая марля", ja: "コットンガーゼ" }
+  "Cuci ulang": { en: "Washable and reusable", zh: "可清洗重复使用", ru: "Моется и используется повторно", ja: "洗浄して再使用" }
+  "Cuci ulang gratis 1x": { en: "One free re-wash", zh: "免费重洗一次", ru: "Одна бесплатная мойка", ja: "再洗車1回無料" }
+  "Cuci ulang, 80.000 km": { en: "Washable, 80,000 km", zh: "可清洗，80,000 km", ru: "Моется, ресурс 80000 км", ja: "洗浄可・80,000 km" }
+  "Custom per model": { en: "Made to fit each model", zh: "按车型定制", ru: "Под конкретную модель", ja: "車種別専用" }
+  "Cut-off tegangan rendah": { en: "Low-voltage cut-off", zh: "低电压断电保护", ru: "Отключение при низком напряжении", ja: "低電圧カットオフ" }
+  "DB killer lepas-pasang": { en: "Removable dB killer", zh: "可拆消音塞", ru: "Съёмный дб-киллер", ja: "着脱式インナーサイレンサー" }
+  "Dada, punggung, bahu": { en: "Chest, back and shoulders", zh: "胸部、背部、肩部", ru: "Грудь, спина, плечи", ja: "胸・背・肩" }
+  "Dekontaminasi, poles, coating": { en: "Decontamination, polish and coating", zh: "去污、抛光、镀膜", ru: "Очистка, полировка, покрытие", ja: "除鉄・磨き・コーティング" }
+  "Delrin + baut baja": { en: "Delrin and steel bolts", zh: "Delrin + 钢制螺栓", ru: "Delrin и стальные болты", ja: "Delrin＋スチールボルト" }
+  "Denim 13 oz + aramid": { en: "13 oz denim with aramid", zh: "13 oz 丹宁 + 芳纶", ru: "Деним 13 oz с арамидом", ja: "13 oz デニム＋アラミド" }
+  "Diameter 7 mm": { en: "7 mm diameter", zh: "直径 7 mm", ru: "Диаметр 7 мм", ja: "直径 7 mm" }
+  "Double bubble": { en: "Double bubble", zh: "双泡造型", ru: "Двойной пузырь", ja: "ダブルバブル" }
+  "Dua helm full face": { en: "Two full-face helmets", zh: "可放两顶全盔", ru: "Два интеграла", ja: "フルフェイス2個" }
+  "Dua roda + cek run-out": { en: "Both wheels and run-out check", zh: "双轮并检查跳动", ru: "Два колеса и проверка биения", ja: "前後輪＋振れ点検" }
+  "Dua strap velcro": { en: "Two hook-and-loop straps", zh: "两条魔术贴", ru: "Две липучки", ja: "面ファスナー2本" }
+  "Dual compound": { en: "Dual compound", zh: "双胶配方", ru: "Двойной состав", ja: "デュアルコンパウンド" }
+  "Dyna, garpu lebar": { en: "Dyna frame, wide fork", zh: "Dyna 车架，宽前叉", ru: "Рама Dyna, широкая вилка", ja: "Dyna・ワイドフォーク" }
+  "Empat strap": { en: "Four straps", zh: "四条绑带", ru: "Четыре ремня", ja: "ストラップ4本" }
+  "Enduro block": { en: "Enduro block tread", zh: "越野块状花纹", ru: "Эндуро-протектор", ja: "エンデューロブロック" }
+  "Epoxy tahan panas": { en: "Heat-resistant epoxy", zh: "耐热环氧树脂", ru: "Термостойкая эпоксидная смола", ja: "耐熱エポキシ" }
+  "Ester racing": { en: "Racing ester base", zh: "酯类赛用基础油", ru: "Гоночная эстеровая основа", ja: "エステル系レーシング" }
+  "Ethylene glycol pra-campur": { en: "Pre-mixed ethylene glycol", zh: "预混乙二醇", ru: "Готовый этиленгликоль", ja: "エチレングリコール希釈済" }
+  "Fiberglass komposit": { en: "Composite fibreglass", zh: "复合玻璃纤维", ru: "Композитное стекловолокно", ja: "複合グラスファイバー" }
+  "Filter oli": { en: "Oil filter", zh: "机油滤清器", ru: "Масляный фильтр", ja: "オイルフィルター" }
+  "Fixed": { en: "Fixed", zh: "固定式", ru: "Неплавающий", ja: "フィックス" }
+  "Flash ECU + validasi dyno": { en: "ECU flash and dyno validation", zh: "刷写 ECU 并台架验证", ru: "Прошивка ECU и проверка на стенде", ja: "ECU書換＋ダイナモ検証" }
+  "Floating dua bagian": { en: "Two-piece floating", zh: "两片式浮动", ru: "Двухсоставной плавающий", ja: "2ピース フローティング" }
+  "Foam dua lapis": { en: "Two-layer foam", zh: "双层泡棉", ru: "Двухслойный поролон", ja: "2層フォーム" }
+  "Full mesh panel": { en: "Full mesh panels", zh: "全网眼面板", ru: "Полностью сетчатые панели", ja: "フルメッシュパネル" }
+  "Ganti oli, cek 32 titik": { en: "Oil change and 32-point check", zh: "更换机油并检查 32 项", ru: "Замена масла, проверка 32 пунктов", ja: "オイル交換・32項目点検" }
+  "Gauntlet panjang": { en: "Long gauntlet cuff", zh: "长筒护腕", ru: "Длинная манжета", ja: "ロングガントレット" }
+  "GoPro dan sejenis": { en: "GoPro and similar", zh: "GoPro 及同类", ru: "GoPro и аналоги", ja: "GoPro および同等品" }
+  "Harian": { en: "Daily riding", zh: "日常骑行", ru: "Повседневная езда", ja: "デイリーユース" }
+  "Heat-treated": { en: "Heat-treated", zh: "热处理", ru: "Термообработка", ja: "熱処理済" }
+  "Helm, stang, spion": { en: "Helmet, handlebar, mirror", zh: "头盔、车把、后视镜", ru: "Шлем, руль, зеркало", ja: "ヘルメット・ハンドル・ミラー" }
+  "Ikonik": { en: "Iconic", zh: "标志性车款", ru: "Культовый", ja: "アイコニック" }
+  "Iridium 0,6 mm": { en: "0.6 mm iridium", zh: "0.6 mm 铱金", ru: "Иридий 0,6 мм", ja: "イリジウム 0.6 mm" }
+  "Jendela peta, rain cover": { en: "Map window and rain cover", zh: "地图视窗与防雨罩", ru: "Окно для карты и дождевик", ja: "マップ窓・レインカバー" }
+  "Kabel pengingat": { en: "Reminder cable", zh: "提醒绳", ru: "Тросик-напоминание", ja: "リマインダーケーブル" }
+  "Kaliper 1 piston": { en: "Single-piston caliper", zh: "单活塞卡钳", ru: "Однопоршневой суппорт", ja: "1ポットキャリパー" }
+  "Karet gum": { en: "Gum rubber", zh: "生胶大底", ru: "Каучуковая подошва", ja: "ガムラバー" }
+  "Katup 1,0 bar": { en: "1.0 bar valve", zh: "1.0 bar 阀门", ru: "Клапан 1,0 бар", ja: "1.0 bar バルブ" }
+  "Katup buang udara": { en: "Exhaust valve", zh: "呼气阀", ru: "Выпускной клапан", ja: "排気バルブ" }
+  "Khusus sirkuit": { en: "Track use only", zh: "仅限赛道使用", ru: "Только для трека", ja: "サーキット専用" }
+  "Knalpot aftermarket disarankan": { en: "Aftermarket exhaust recommended", zh: "建议搭配改装排气", ru: "Рекомендуется тюнинг-выхлоп", ja: "社外マフラー推奨" }
+  "Knuckle TPU": { en: "TPU knuckle", zh: "TPU 指节护甲", ru: "Костяшки из TPU", ja: "TPUナックル" }
+  "Kulit + poliuretan": { en: "Leather and polyurethane", zh: "皮革 + 聚氨酯", ru: "Кожа и полиуретан", ja: "レザー＋ポリウレタン" }
+  "Kulit full grain": { en: "Full-grain leather", zh: "全粒面皮革", ru: "Кожа полного дубления", ja: "フルグレインレザー" }
+  "Kulit kambing": { en: "Goatskin", zh: "山羊皮", ru: "Козья кожа", ja: "ゴートスキン" }
+  "Kulit kanguru": { en: "Kangaroo leather", zh: "袋鼠皮", ru: "Кожа кенгуру", ja: "カンガルーレザー" }
+  "Kulit sapi 1,2 mm": { en: "1.2 mm cowhide", zh: "1.2 mm 牛皮", ru: "Воловья кожа 1,2 мм", ja: "牛革 1.2 mm" }
+  "Kulit sapi 1,3 mm": { en: "1.3 mm cowhide", zh: "1.3 mm 牛皮", ru: "Воловья кожа 1,3 мм", ja: "牛革 1.3 mm" }
+  "Langka": { en: "Rare", zh: "稀有", ru: "Редкий", ja: "希少" }
+  "Lap aplikator ikut": { en: "Applicator cloth included", zh: "含涂抹布", ru: "Аппликатор в комплекте", ja: "アプリケーター付属" }
+  "Latch pengaman": { en: "Safety latch", zh: "安全锁扣", ru: "Предохранительная защёлка", ja: "セーフティラッチ" }
+  "Lembar setelan tertulis": { en: "Written setup sheet", zh: "书面调校记录", ru: "Письменный лист настроек", ja: "セッティングシート付" }
+  "Lubang kunci gembok": { en: "Padlock eyelet", zh: "锁扣孔", ru: "Проушина для замка", ja: "南京錠用ホール" }
+  "Lutut & tulang kering": { en: "Knees and shins", zh: "膝部与胫骨", ru: "Колени и голени", ja: "膝・すね" }
+  "Magnet + strap": { en: "Magnets and straps", zh: "磁吸 + 绑带", ru: "Магниты и ремни", ja: "マグネット＋ストラップ" }
+  "Membran waterproof": { en: "Waterproof membrane", zh: "防水膜", ru: "Водонепроницаемая мембрана", ja: "防水メンブレン" }
+  "Memory foam": { en: "Memory foam", zh: "记忆棉", ru: "Пена с памятью формы", ja: "低反発フォーム" }
+  "Mesh poliester": { en: "Polyester mesh", zh: "聚酯网眼", ru: "Полиэфирная сетка", ja: "ポリエステルメッシュ" }
+  "Mesin 2 dan 4 silinder": { en: "Two- and four-cylinder engines", zh: "双缸与四缸发动机", ru: "2- и 4-цилиндровые двигатели", ja: "2気筒・4気筒エンジン" }
+  "Microfiber": { en: "Microfibre", zh: "超细纤维", ru: "Микрофибра", ja: "マイクロファイバー" }
+  "Microfiber + TPU": { en: "Microfibre and TPU", zh: "超细纤维 + TPU", ru: "Микрофибра и TPU", ja: "マイクロファイバー＋TPU" }
+  "Mid-calf": { en: "Mid-calf height", zh: "中筒", ru: "До середины голени", ja: "ミドルカット" }
+  "Midnight Black, Racing Red, Pearl White": { en: "Midnight Black, Racing Red, Pearl White", zh: "午夜黑、竞速红、珍珠白", ru: "Midnight Black, Racing Red, Pearl White", ja: "ミッドナイトブラック、レーシングレッド、パールホワイト" }
+  "Midnight Black, Racing Red, Pearl White, Matte Grey": { en: "Midnight Black, Racing Red, Pearl White, Matte Grey", zh: "午夜黑、竞速红、珍珠白、哑光灰", ru: "Midnight Black, Racing Red, Pearl White, Matte Grey", ja: "ミッドナイトブラック、レーシングレッド、パールホワイト、マットグレー" }
+  "Midnight Black, Racing Red, Pearl White, Matte Grey, Racing Blue": { en: "Midnight Black, Racing Red, Pearl White, Matte Grey, Racing Blue", zh: "午夜黑、竞速红、珍珠白、哑光灰、竞速蓝", ru: "Midnight Black, Racing Red, Pearl White, Matte Grey, Racing Blue", ja: "ミッドナイトブラック、レーシングレッド、パールホワイト、マットグレー、レーシングブルー" }
+  "Model spesifik": { en: "Model specific", zh: "车型专用", ru: "Под конкретную модель", ja: "車種専用" }
+  "Museum": { en: "Museum grade", zh: "博物馆级", ru: "Музейный экземпляр", ja: "ミュージアム級" }
+  "N95 lima lapis": { en: "Five-layer N95", zh: "五层 N95", ru: "Пятислойный N95", ja: "5層 N95" }
+  "Nikel": { en: "Nickel plated", zh: "镀镍", ru: "Никелирование", ja: "ニッケルメッキ" }
+  "Nol korosi": { en: "Zero corrosion", zh: "零腐蚀", ru: "Нулевая коррозия", ja: "腐食ゼロ" }
+  "O/X-ring": { en: "O/X-ring", zh: "O/X 型圈", ru: "O/X-ring", ja: "O/Xリング" }
+  "Off-road berdebu": { en: "Dusty off-road", zh: "多尘越野", ru: "Пыльное бездорожье", ja: "砂塵のオフロード" }
+  "Oli + filter, jasa saja": { en: "Oil and filter, labour only", zh: "机油与滤芯，仅工时", ru: "Масло и фильтр, только работа", ja: "オイル・フィルター、工賃のみ" }
+  "Oli HTZL Street": { en: "HTZL Street oil", zh: "HTZL Street 机油", ru: "Масло HTZL Street", ja: "HTZL Street オイル" }
+  "Oli beli terpisah": { en: "Oil sold separately", zh: "机油另购", ru: "Масло приобретается отдельно", ja: "オイルは別売" }
+  "Oli, filter, busi, sinkronisasi throttle": { en: "Oil, filter, plugs, throttle sync", zh: "机油、滤芯、火花塞、节气门同步", ru: "Масло, фильтр, свечи, синхронизация дросселей", ja: "オイル・フィルター・プラグ・スロットル同調" }
+  "Organik": { en: "Organic", zh: "有机配方", ru: "Органический состав", ja: "オーガニック" }
+  "Padding EVA": { en: "EVA padding", zh: "EVA 衬垫", ru: "Набивка EVA", ja: "EVAパッド" }
+  "Panel stretch aksordion": { en: "Accordion stretch panels", zh: "手风琴弹性褶", ru: "Вставки-гармошка", ja: "アコーディオンストレッチ" }
+  "Peak visor aerodinamis": { en: "Aerodynamic peak visor", zh: "空力遮阳帽檐", ru: "Аэродинамический козырёк", ja: "エアロピークバイザー" }
+  "Pelarut cepat kering": { en: "Fast-drying solvent", zh: "快干溶剂", ru: "Быстросохнущий растворитель", ja: "速乾溶剤" }
+  "Perforasi dada": { en: "Perforated chest", zh: "胸部打孔", ru: "Перфорация на груди", ja: "胸部パンチング" }
+  "Peta AFR optimal": { en: "Optimised AFR map", zh: "优化空燃比图", ru: "Оптимальная карта AFR", ja: "最適AFRマップ" }
+  "Pinlock anti-embun": { en: "Pinlock anti-fog", zh: "Pinlock 防雾", ru: "Pinlock против запотевания", ja: "Pinlock 曇り止め" }
+  "Pipa baja 25 mm": { en: "25 mm steel tube", zh: "25 mm 钢管", ru: "Стальная труба 25 мм", ja: "スチールパイプ 25 mm" }
+  "Poliester 210D lapis PU": { en: "210D polyester with PU coating", zh: "210D 聚酯 PU 涂层", ru: "Полиэстер 210D с PU-покрытием", ja: "210D ポリエステル PUコート" }
+  "Polikarbonat": { en: "Polycarbonate", zh: "聚碳酸酯", ru: "Поликарбонат", ja: "ポリカーボネート" }
+  "Polikarbonat 3 mm": { en: "3 mm polycarbonate", zh: "3 mm 聚碳酸酯", ru: "Поликарбонат 3 мм", ja: "ポリカーボネート 3 mm" }
+  "Poliuretan cetak": { en: "Moulded polyurethane", zh: "模压聚氨酯", ru: "Формованный полиуретан", ja: "成形ポリウレタン" }
+  "Poliuretan ventilasi": { en: "Ventilated polyurethane", zh: "透气聚氨酯", ru: "Вентилируемый полиуретан", ja: "通気ポリウレタン" }
+  "Powder coat hitam": { en: "Black powder coat", zh: "黑色粉末涂层", ru: "Чёрное порошковое покрытие", ja: "ブラックパウダーコート" }
+  "Preload, rebound, compression": { en: "Preload, rebound, compression", zh: "预载、回弹、压缩", ru: "Преднатяг, отбой, сжатие", ja: "プリロード・伸側・圧側" }
+  "Rangka & fairing": { en: "Frame and fairing", zh: "车架与整流罩", ru: "Рама и обтекатель", ja: "フレームとカウル" }
+  "Rangka Dyna pertama": { en: "First Dyna frame", zh: "首款 Dyna 车架", ru: "Первая рама Dyna", ja: "初のDynaフレーム" }
+  "Rangka FXR": { en: "FXR frame", zh: "FXR 车架", ru: "Рама FXR", ja: "FXRフレーム" }
+  "Rangka perimeter": { en: "Perimeter frame", zh: "环抱式车架", ru: "Периметральная рама", ja: "ペリメターフレーム" }
+  "Rangka skuter": { en: "Scooter frame", zh: "踏板车架", ru: "Скутерная рама", ja: "スクーターフレーム" }
+  "Rangka tubular": { en: "Tubular frame", zh: "管状车架", ru: "Трубчатая рама", ja: "チューブラーフレーム" }
+  "Rasio bisa disetel": { en: "Adjustable ratio", zh: "比例可调", ru: "Регулируемое соотношение", ja: "レシオ調整可" }
+  "Revisi 1x gratis": { en: "One free revision", zh: "免费调整一次", ru: "Одна бесплатная доработка", ja: "再調整1回無料" }
+  "Rigid loop": { en: "Rigid loop frame", zh: "刚性环形车架", ru: "Жёсткая рама-петля", ja: "リジッドループ" }
+  "Rigid militer": { en: "Military rigid frame", zh: "军用刚性车架", ru: "Военная жёсткая рама", ja: "ミリタリーリジッド" }
+  "Rigid ringan": { en: "Lightweight rigid frame", zh: "轻量刚性车架", ru: "Лёгкая жёсткая рама", ja: "軽量リジッド" }
+  "Rigid, Ful-Floteing seat": { en: "Rigid, Ful-Floteing seat", zh: "刚性车架，Ful-Floteing 座垫", ru: "Жёсткая рама, седло Ful-Floteing", ja: "リジッド・Ful-Floteingシート" }
+  "Rigid, dua kecepatan": { en: "Rigid, two-speed", zh: "刚性车架，两速", ru: "Жёсткая рама, две передачи", ja: "リジッド・2速" }
+  "Rigid, dudukan senapan": { en: "Rigid, rifle scabbard", zh: "刚性车架，步枪挂架", ru: "Жёсткая рама, крепление винтовки", ja: "リジッド・ライフルホルダー" }
+  "Rigid, gardan poros": { en: "Rigid, shaft drive", zh: "刚性车架，轴传动", ru: "Жёсткая рама, кардан", ja: "リジッド・シャフトドライブ" }
+  "Rigid, garpu Springer": { en: "Rigid, Springer fork", zh: "刚性车架，Springer 前叉", ru: "Жёсткая рама, вилка Springer", ja: "リジッド・スプリンガーフォーク" }
+  "Rigid, garpu teleskopik": { en: "Rigid, telescopic fork", zh: "刚性车架，伸缩前叉", ru: "Жёсткая рама, телескопическая вилка", ja: "リジッド・テレスコピックフォーク" }
+  "Rigid, livery Art Deco": { en: "Rigid, Art Deco livery", zh: "刚性车架，装饰艺术涂装", ru: "Жёсткая рама, ливрея ар-деко", ja: "リジッド・アールデコ塗装" }
+  "Rigid, mesin memanjang": { en: "Rigid, longitudinal engine", zh: "刚性车架，纵置发动机", ru: "Жёсткая рама, продольный двигатель", ja: "リジッド・縦置きエンジン" }
+  "Rigid, piston aluminium": { en: "Rigid, aluminium pistons", zh: "刚性车架，铝活塞", ru: "Жёсткая рама, алюминиевые поршни", ja: "リジッド・アルミピストン" }
+  "Rigid, rangka baru": { en: "Rigid, new frame design", zh: "刚性车架，全新设计", ru: "Жёсткая рама, новая конструкция", ja: "リジッド・新設計フレーム" }
+  "Rigid, rangka rendah": { en: "Rigid, low frame", zh: "刚性车架，低车身", ru: "Жёсткая рама, низкая посадка", ja: "リジッド・ローフレーム" }
+  "Rigid, rem depan": { en: "Rigid, front brake", zh: "刚性车架，前刹车", ru: "Жёсткая рама, передний тормоз", ja: "リジッド・フロントブレーキ" }
+  "Rigid, tangki teardrop": { en: "Rigid, teardrop tank", zh: "刚性车架，泪滴油箱", ru: "Жёсткая рама, каплевидный бак", ja: "リジッド・ティアドロップタンク" }
+  "Rigid, tiga kecepatan": { en: "Rigid, three-speed", zh: "刚性车架，三速", ru: "Жёсткая рама, три передачи", ja: "リジッド・3速" }
+  "Roda tiga": { en: "Three-wheeler", zh: "三轮", ru: "Трёхколёсный", ja: "三輪" }
+  "Roll-top waterproof": { en: "Waterproof roll-top", zh: "防水卷口", ru: "Водонепроницаемый роллтоп", ja: "防水ロールトップ" }
+  "Rp 190.000": { en: "Rp 190,000", zh: "190,000 印尼盾", ru: "190 000 рупий", ja: "190,000 ルピア" }
+  "Sabuk pinggang elastis": { en: "Elastic waist belt", zh: "弹性腰带", ru: "Эластичный пояс", ja: "伸縮ウエストベルト" }
+  "Sag depan-belakang, damping": { en: "Front and rear sag, damping", zh: "前后沉降与阻尼", ru: "Прогиб спереди и сзади, демпфирование", ja: "前後サグ・減衰" }
+  "Sambung ke jaket": { en: "Zips to the jacket", zh: "可与骑行服连接", ru: "Пристёгивается к куртке", ja: "ジャケットと連結可" }
+  "Sangat langka": { en: "Very rare", zh: "极为稀有", ru: "Очень редкий", ja: "極めて希少" }
+  "Satu kunci dengan motor": { en: "Keyed to the bike", zh: "与车共用一把钥匙", ru: "Один ключ с мотоциклом", ja: "車両と同一キー" }
+  "Sealant keramik": { en: "Ceramic sealant", zh: "陶瓷封体剂", ru: "Керамический силант", ja: "セラミックシーラント" }
+  "Semua rantai": { en: "All chain types", zh: "适用所有链条", ru: "Все типы цепей", ja: "全チェーン対応" }
+  "Senyap, minim debu": { en: "Quiet, low dust", zh: "静音、低粉尘", ru: "Тихие, мало пыли", ja: "静粛・低ダスト" }
+  "Sepasang": { en: "Pair", zh: "一对", ru: "Пара", ja: "左右1セット" }
+  "Sepasang (2 kaliper)": { en: "Pair (2 calipers)", zh: "一对（2 个卡钳）", ru: "Пара (2 суппорта)", ja: "1セット（キャリパー2個）" }
+  "Sepasang + bracket": { en: "Pair with brackets", zh: "一对含支架", ru: "Пара с кронштейнами", ja: "1セット＋ブラケット" }
+  "Serat karbon": { en: "Carbon fibre", zh: "碳纤维", ru: "Углеволокно", ja: "カーボンファイバー" }
+  "Serat karbon 3K": { en: "3K carbon fibre", zh: "3K 碳纤维", ru: "Углеволокно 3K", ja: "3K カーボン" }
+  "Set depan": { en: "Front set", zh: "前组套装", ru: "Передний комплект", ja: "フロントセット" }
+  "Setel klep, ganti coolant, rantai keteng": { en: "Valve adjustment, coolant change, cam chain", zh: "调气门、换冷却液、正时链", ru: "Регулировка клапанов, замена ОЖ, цепь ГРМ", ja: "バルブ調整・クーラント交換・カムチェーン" }
+  "Shin plate": { en: "Shin plate", zh: "胫骨护板", ru: "Защита голени", ja: "シンプレート" }
+  "Sikat 3 sisi": { en: "Three-sided brush", zh: "三面刷", ru: "Трёхсторонняя щётка", ja: "3面ブラシ" }
+  "Silinder anti-bor": { en: "Anti-drill cylinder", zh: "防钻锁芯", ru: "Противосверлильный цилиндр", ja: "ドリル対策シリンダー" }
+  "Sintered": { en: "Sintered", zh: "烧结", ru: "Спечённые", ja: "シンタード" }
+  "Sintered HH": { en: "Sintered HH", zh: "HH 级烧结", ru: "Спечённые HH", ja: "シンタード HH" }
+  "Sintetis + mesh": { en: "Synthetic and mesh", zh: "合成材料 + 网眼", ru: "Синтетика и сетка", ja: "シンセティック＋メッシュ" }
+  "Slick beralur": { en: "Grooved slick", zh: "带槽光头胎", ru: "Слик с канавками", ja: "溝付きスリック" }
+  "Slider bahu titanium": { en: "Titanium shoulder sliders", zh: "钛合金肩部滑块", ru: "Титановые слайдеры на плечах", ja: "チタン ショルダースライダー" }
+  "Slip-on HTZL": { en: "HTZL slip-on", zh: "HTZL 直通尾段", ru: "Slip-on HTZL", ja: "HTZL スリップオン" }
+  "Smoke gelap": { en: "Dark smoke", zh: "深色茶片", ru: "Тёмный дымчатый", ja: "ダークスモーク" }
+  "Sneaker riding": { en: "Riding sneaker", zh: "骑行运动鞋", ru: "Кроссовки для езды", ja: "ライディングスニーカー" }
+  "Soft racing": { en: "Soft racing", zh: "赛用软胶", ru: "Мягкий гоночный", ja: "ソフトレーシング" }
+  "Softail minimalis": { en: "Minimalist Softail", zh: "极简 Softail", ru: "Минималистичный Softail", ja: "ミニマルSoftail" }
+  "Softail retro": { en: "Retro Softail", zh: "复古 Softail", ru: "Ретро Softail", ja: "レトロSoftail" }
+  "Softail, ban belakang 240": { en: "Softail, 240 rear tyre", zh: "Softail，240 后胎", ru: "Softail, задняя шина 240", ja: "Softail・240リアタイヤ" }
+  "Softail, garpu Springer": { en: "Softail, Springer fork", zh: "Softail，Springer 前叉", ru: "Softail, вилка Springer", ja: "Softail・スプリンガーフォーク" }
+  "Softail, jok kulit sapi": { en: "Softail, cowhide seat", zh: "Softail，牛皮座垫", ru: "Softail, седло из воловьей кожи", ja: "Softail・牛革シート" }
+  "Softail, kesan rigid": { en: "Softail with rigid look", zh: "Softail，硬尾外观", ru: "Softail с видом жёсткой рамы", ja: "Softail・リジッド風" }
+  "Softail, velg solid": { en: "Softail, solid wheels", zh: "Softail，实心轮圈", ru: "Softail, сплошные диски", ja: "Softail・ソリッドホイール" }
+  "Softshell laminasi": { en: "Laminated softshell", zh: "复合软壳", ru: "Ламинированный софтшелл", ja: "ラミネートソフトシェル" }
+  "Sport touring": { en: "Sport touring", zh: "运动旅行", ru: "Спорт-туризм", ja: "スポーツツーリング" }
+  "Stainless": { en: "Stainless steel", zh: "不锈钢", ru: "Нержавеющая сталь", ja: "ステンレス" }
+  "Stainless + carrier aluminium": { en: "Stainless with aluminium carrier", zh: "不锈钢 + 铝合金浮动座", ru: "Нержавейка с алюминиевым носителем", ja: "ステンレス＋アルミキャリア" }
+  "Stainless 304": { en: "304 stainless steel", zh: "304 不锈钢", ru: "Нержавеющая сталь 304", ja: "SUS304" }
+  "Stainless 420": { en: "420 stainless steel", zh: "420 不锈钢", ru: "Нержавеющая сталь 420", ja: "SUS420" }
+  "Standard": { en: "Standard", zh: "标准版", ru: "Стандарт", ja: "スタンダード" }
+  "Stang 22-32 mm": { en: "22-32 mm handlebars", zh: "22-32 mm 车把", ru: "Руль 22-32 мм", ja: "ハンドル径 22-32 mm" }
+  "Stang atau dashboard": { en: "Handlebar or dashboard", zh: "车把或仪表台", ru: "Руль или панель", ja: "ハンドルまたはダッシュ" }
+  "Suede + kanvas": { en: "Suede and canvas", zh: "麂皮 + 帆布", ru: "Замша и холст", ja: "スエード＋キャンバス" }
+  "Sun visor internal": { en: "Internal sun visor", zh: "内置遮阳镜片", ru: "Встроенный солнцезащитный визор", ja: "インナーサンバイザー" }
+  "Swingarm": { en: "Swingarm", zh: "摇臂式", ru: "Маятниковая подвеска", ja: "スイングアーム" }
+  "Swingarm, buritan boat-tail": { en: "Swingarm, boat-tail rear", zh: "摇臂式，船尾造型", ru: "Маятник, хвост-лодка", ja: "スイングアーム・ボートテール" }
+  "Swingarm, fairing cafe": { en: "Swingarm, cafe fairing", zh: "摇臂式，咖啡骑士整流罩", ru: "Маятник, кафе-обтекатель", ja: "スイングアーム・カフェカウル" }
+  "Swingarm, fairing rangka": { en: "Swingarm, frame-mounted fairing", zh: "摇臂式，车架固定整流罩", ru: "Маятник, обтекатель на раме", ja: "スイングアーム・フレームマウントカウル" }
+  "Swingarm, fairing shark-nose": { en: "Swingarm, shark-nose fairing", zh: "摇臂式，鲨鱼鼻整流罩", ru: "Маятник, обтекатель shark-nose", ja: "スイングアーム・シャークノーズ" }
+  "Swingarm, garpu lebar": { en: "Swingarm, wide fork", zh: "摇臂式，宽前叉", ru: "Маятник, широкая вилка", ja: "スイングアーム・ワイドフォーク" }
+  "Swingarm, injeksi pertama": { en: "Swingarm, first fuel injection", zh: "摇臂式，首款电喷", ru: "Маятник, первый впрыск", ja: "スイングアーム・初の燃料噴射" }
+  "Swingarm, jok rendah": { en: "Swingarm, low seat", zh: "摇臂式，低座垫", ru: "Маятник, низкое седло", ja: "スイングアーム・ローシート" }
+  "Swingarm, penggerak sabuk": { en: "Swingarm, belt drive", zh: "摇臂式，皮带传动", ru: "Маятник, ремённый привод", ja: "スイングアーム・ベルトドライブ" }
+  "Swingarm, starter elektrik": { en: "Swingarm, electric start", zh: "摇臂式，电启动", ru: "Маятник, электростартер", ja: "スイングアーム・セルスターター" }
+  "Swingarm, suspensi ganda": { en: "Swingarm, dual suspension", zh: "摇臂式，双避震", ru: "Маятник, двойная подвеска", ja: "スイングアーム・ツインサス" }
+  "Swingarm, tangki ganda": { en: "Swingarm, twin tanks", zh: "摇臂式，双油箱", ru: "Маятник, сдвоенный бак", ja: "スイングアーム・ツインタンク" }
+  "Swingarm, transmisi unit": { en: "Swingarm, unit transmission", zh: "摇臂式，一体式变速", ru: "Маятник, блочная КПП", ja: "スイングアーム・ユニット構造" }
+  "Swingarm, tur klasik": { en: "Swingarm, classic tourer", zh: "摇臂式，经典旅行", ru: "Маятник, классический турер", ja: "スイングアーム・クラシックツアラー" }
+  "Swingarm, tur lengkap": { en: "Swingarm, full tourer", zh: "摇臂式，全装旅行", ru: "Маятник, полный турер", ja: "スイングアーム・フル装備ツアラー" }
+  "Tahan kerikil": { en: "Stone resistant", zh: "抗碎石", ru: "Защита от щебня", ja: "飛び石対策" }
+  "Tanpa janji temu": { en: "No appointment needed", zh: "无需预约", ru: "Без записи", ja: "予約不要" }
+  "Tarpaulin TPU": { en: "TPU tarpaulin", zh: "TPU 篷布", ru: "Тарпаулин TPU", ja: "TPUターポリン" }
+  "Teflon + jalinan baja": { en: "Teflon with steel braid", zh: "特氟龙 + 钢丝编织", ru: "Тефлон в стальной оплётке", ja: "テフロン＋ステンレスメッシュ" }
+  "Termasuk": { en: "Included", zh: "已包含", ru: "Включено", ja: "込み" }
+  "Thermal lepas-pasang": { en: "Removable thermal liner", zh: "可拆保暖内胆", ru: "Съёмная утепляющая подкладка", ja: "着脱式サーマルライナー" }
+  "Tidak menarik debu": { en: "Does not attract dust", zh: "不吸附灰尘", ru: "Не притягивает пыль", ja: "砂埃が付きにくい" }
+  "Tiga posisi": { en: "Three positions", zh: "三段可调", ru: "Три положения", ja: "3段階調整" }
+  "Titanium + end cap karbon": { en: "Titanium with carbon end cap", zh: "钛合金 + 碳纤维尾盖", ru: "Титан с карбоновой заглушкой", ja: "チタン＋カーボンエンドキャップ" }
+  "Titanium grade 2": { en: "Grade 2 titanium", zh: "2 级钛合金", ru: "Титан Grade 2", ja: "チタン グレード2" }
+  "Titik didih 180 C": { en: "Boiling point 180 °C", zh: "沸点 180 °C", ru: "Температура кипения 180 °C", ja: "沸点 180 °C" }
+  "Touchscreen ready": { en: "Touchscreen ready", zh: "可触屏操作", ru: "Работает с сенсорным экраном", ja: "タッチパネル対応" }
+  "Tri-composite": { en: "Tri-composite", zh: "三重复合材料", ru: "Три-композит", ja: "トライコンポジット" }
+  "Triple stitch aramid": { en: "Triple-stitched aramid", zh: "三线芳纶缝制", ru: "Тройная арамидная строчка", ja: "アラミド3本縫い" }
+  "Tulang belakang penuh": { en: "Full spine coverage", zh: "全脊椎覆盖", ru: "Полная защита позвоночника", ja: "背骨全体をカバー" }
+  "Turbulensi berkurang": { en: "Reduced turbulence", zh: "湍流减少", ru: "Меньше турбулентности", ja: "乱流を低減" }
+  "Turun 2,4 kg": { en: "2.4 kg lighter", zh: "减重 2.4 kg", ru: "Легче на 2,4 кг", ja: "2.4 kg 軽量化" }
+  "Turun 3,0 kg": { en: "3.0 kg lighter", zh: "减重 3.0 kg", ru: "Легче на 3,0 кг", ja: "3.0 kg 軽量化" }
+  "Turun 5,1 kg": { en: "5.1 kg lighter", zh: "减重 5.1 kg", ru: "Легче на 5,1 кг", ja: "5.1 kg 軽量化" }
+  "Turun kurang dari 3 persen": { en: "Less than 3 percent drop", zh: "降幅低于 3%", ru: "Снижение менее 3 процентов", ja: "低下は3パーセント未満" }
+  "Twin Cam 88": { en: "Twin Cam 88", zh: "Twin Cam 88", ru: "Twin Cam 88", ja: "Twin Cam 88" }
+  "Twin Cam 96": { en: "Twin Cam 96", zh: "Twin Cam 96", ru: "Twin Cam 96", ja: "Twin Cam 96" }
+  "Twin tube TTX36": { en: "TTX36 twin tube", zh: "TTX36 双筒", ru: "Двухтрубный TTX36", ja: "TTX36 ツインチューブ" }
+  "Umum": { en: "Common", zh: "常见", ru: "Распространённый", ja: "一般的" }
+  "Untuk visor berlapis": { en: "For coated visors", zh: "适用镀膜镜片", ru: "Для визоров с покрытием", ja: "コート付きシールド用" }
+  "Wajib janji temu": { en: "Appointment required", zh: "需提前预约", ru: "Только по записи", ja: "要予約" }
+  "Waterless": { en: "Waterless", zh: "无水配方", ru: "Безводный", ja: "ウォーターレス" }
+  "Waterproof + thermal liner": { en: "Waterproof with thermal liner", zh: "防水 + 保暖内胆", ru: "Водонепроницаемый с утеплителем", ja: "防水＋サーマルライナー" }
+  "Waterproof + windproof": { en: "Waterproof and windproof", zh: "防水防风", ru: "Водо- и ветронепроницаемый", ja: "防水・防風" }
+  "Waterproof 10.000 mm": { en: "Waterproof 10,000 mm", zh: "防水 10,000 mm", ru: "Водостойкость 10000 мм", ja: "耐水圧 10,000 mm" }
+  "Wax kering": { en: "Dry wax", zh: "干性蜡", ru: "Сухой воск", ja: "ドライワックス" }
+  "Wet racing": { en: "Wet racing", zh: "湿地赛用", ru: "Дождевой гоночный", ja: "ウェットレーシング" }
+  "Wiper visor di jempol": { en: "Visor wiper on the thumb", zh: "拇指镜片刮水条", ru: "Сгон для визора на большом пальце", ja: "親指ワイパー" }
+  "Zip paha": { en: "Thigh zips", zh: "大腿拉链", ru: "Молнии на бёдрах", ja: "腿部ジッパー" }
+  "pH netral": { en: "pH neutral", zh: "中性 pH", ru: "Нейтральный pH", ja: "中性pH" }

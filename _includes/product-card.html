@@ -45,7 +45,7 @@
 
     <ul class="card__specs">
       {%- for pair in item.specs limit: 3 %}
-      <li><span>{{ pair[0] | term: 'spec_key', lang }}</span> <b>{{ pair[1] }}</b></li>
+      <li><span>{{ pair[0] | term: 'spec_key', lang }}</span> <b>{{ pair[1] | term: 'spec_value', lang }}</b></li>
       {%- endfor %}
     </ul>
 
@@ -93,7 +93,7 @@
           {%- for pair in item.specs %}
           <tr>
             <th scope="row">{{ pair[0] | term: 'spec_key', lang }}</th>
-            <td lang="id">{{ pair[1] }}</td>
+            <td>{{ pair[1] | term: 'spec_value', lang }}</td>
           </tr>
           {%- endfor %}
         </tbody>
