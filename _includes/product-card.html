@@ -9,6 +9,9 @@
 {%- assign sub = item.subcategory | term: 'subcategory', lang -%}
 {%- assign cat = item.category_label | term: 'category', lang -%}
 {%- assign badge = t.catalog.badges[item.badge] -%}
+{%- capture spec_search -%}
+{%- for pair in item.specs %} {{ pair[1] }}{% if lang != 'id' %} {{ pair[1] | term: 'spec_value', lang }}{% endif %}{% endfor %}
+{%- endcapture -%}
 
 {%- if item.blurb_type == 'bike' -%}
   {%- assign trim_note = t.catalog.trims[item.trim] -%}
@@ -21,7 +24,7 @@
 <article class="card" data-item
          data-name="{{ item.name }}"
          data-sku="{{ item.sku }}"
-         data-search="{{ item | search_blob }} {{ sub | downcase }} {{ cat | downcase }}"
+         data-search="{{ item | search_blob | append: ' ' | append: sub | append: ' ' | append: cat | append: spec_search | search_tokens }}"
          data-category="{{ item.category }}"
          data-sub="{{ item.subcategory }}"
          data-brand="{{ item.brand }}"
@@ -33,7 +36,12 @@
     <span class="badge {% if item.badge == 'Diskon' %}badge--sale{% elsif item.badge == 'Baru' %}badge--new{% elsif item.badge == 'Stok Terbatas' %}badge--low{% endif %}">{{ badge }}</span>
     {%- endif %}
     {%- if item.image %}
-    <img src="{{ item.image | relative_url }}" width="630" height="390" alt="{{ item.name }}" loading="lazy" decoding="async">
+    <img src="{{ item.image | relative_url }}" width="{{ item.image_size[0] }}" height="{{ item.image_size[1] }}"
+         {%- if item.image_srcset.size > 1 %}
+         srcset="{% for src in item.image_srcset %}{{ src[0] | relative_url }} {{ src[1] }}w{% unless forloop.last %}, {% endunless %}{% endfor %}"
+         sizes="(max-width: 599px) 88vw, (max-width: 899px) 44vw, 300px"
+         {%- endif %}
+         alt="{{ item.name }}" loading="lazy" decoding="async">
     {%- else %}
     <span class="thumb"><svg aria-hidden="true"><use href="#i-{{ item.icon }}"/></svg></span>
     {%- endif %}

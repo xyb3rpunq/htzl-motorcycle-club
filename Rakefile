@@ -102,3 +102,16 @@ desc "Buat artwork SVG untuk produk tanpa foto"
 task :art do
   ruby "lib/generate_art.rb"
 end
+
+namespace :photos do
+  desc "Ambil ulang foto heritage pada resolusi lebih tinggi (butuh Python + Pillow)"
+  task :hires do
+    sh "python lib/refetch_heritage_photos.py"
+  end
+
+  desc "Buat varian 384w dan 640w untuk srcset kartu katalog (butuh Python + Pillow)"
+  task :thumbs do
+    sh "python lib/make_thumbnails.py"
+    Rake::Task["seed"].invoke
+  end
+end

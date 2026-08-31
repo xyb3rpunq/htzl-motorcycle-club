@@ -34,6 +34,8 @@
 "k":{{ cat | append: " · " | append: sub | append: " · " | append: t.catalog.sku | append: " " | append: item.sku | jsonify }},
 "b":{{ blurb | jsonify }},
 "i":{{ item.image | relative_url | jsonify }},
+"w":{{ item.image_size[0] }},
+"h":{{ item.image_size[1] }},
 "p":{{ item.price | rupiah | jsonify }},
 {% if item.price_old %}"o":{{ item.price_old | rupiah | jsonify }},{% endif %}
 "r":{{ item.rating | jsonify }},

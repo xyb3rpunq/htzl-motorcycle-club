@@ -2,6 +2,7 @@
 
 require "yaml"
 require_relative "heritage"
+require_relative "catalog_images"
 
 module HTZL
   # Sumber tunggal katalog HTZL Motorcycle Club.
@@ -175,6 +176,8 @@ module HTZL
     BADGES = ["Terlaris", "Baru", "Stok Terbatas", nil, nil, nil].freeze
 
     class << self
+      include HTZL::CatalogImages
+
       # Bangun seluruh katalog. Mengembalikan array hash siap dump ke YAML.
       def build
         rng = Random.new(SEED)
@@ -279,6 +282,8 @@ module HTZL
           "stock"          => rng.rand(1..9),
           "rating"         => (4.2 + (rng.rand(8) / 10.0)).round(1),
           "image"          => "/assets/img/bikes/#{bike[:image]}.webp",
+          "image_size"     => image_dimensions("/assets/img/bikes/#{bike[:image]}.webp"),
+          "image_srcset"   => image_sources("/assets/img/bikes/#{bike[:image]}.webp"),
           "icon"           => "motorcycle",
           "blurb_type"     => "bike",
           "trim"           => trim[:label],
@@ -332,6 +337,8 @@ module HTZL
           "stock"          => rarity == "Museum" ? 1 : rng.rand(1..3),
           "rating"         => (4.5 + (rng.rand(6) / 10.0)).round(1),
           "image"          => (credit && credit["file"]) || art_path(slug),
+          "image_size"     => image_dimensions((credit && credit["file"]) || art_path(slug)),
+          "image_srcset"   => image_sources((credit && credit["file"]) || art_path(slug)),
           "credit"         => credit&.except("slug", "file"),
           "icon"           => "heritage",
           "blurb_type"     => "generic",
@@ -381,6 +388,8 @@ module HTZL
           "stock"          => category == "layanan" ? 99 : rng.rand(3..40),
           "rating"         => (4.1 + (rng.rand(9) / 10.0)).round(1),
           "image"          => art_path(slug),
+          "image_size"     => image_dimensions(art_path(slug)),
+          "image_srcset"   => image_sources(art_path(slug)),
           "icon"           => icon,
           "blurb_type"     => "generic",
           "trim"           => nil,

@@ -352,8 +352,12 @@
       var img = el("img");
       img.src = data.i;
       img.alt = data.n;
-      img.width = 630;
-      img.height = 390;
+      img.width = data.w;
+      img.height = data.h;
+      // Foto tidak boleh digambar melebihi resolusi aslinya; object-fit
+      // contain akan memperbesarnya untuk memenuhi kotak, dan hasilnya kabur.
+      // SVG dikecualikan karena vektor tetap tajam pada ukuran berapa pun.
+      if (!/\.svg$/i.test(data.i)) img.style.maxWidth = data.w + "px";
       media.appendChild(img);
       frag.appendChild(media);
 

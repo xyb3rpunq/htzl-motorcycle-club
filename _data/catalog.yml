@@ -14,6 +14,14 @@
   stock: 1
   rating: 4.4
   image: "/assets/img/bikes/kawasaki-x56.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/kawasaki-x56-384.webp"
+    - 384
+  - - "/assets/img/bikes/kawasaki-x56.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: Standard
@@ -40,6 +48,14 @@
   stock: 6
   rating: 4.6
   image: "/assets/img/bikes/kawasaki-x56.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/kawasaki-x56-384.webp"
+    - 384
+  - - "/assets/img/bikes/kawasaki-x56.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: S
@@ -66,6 +82,14 @@
   stock: 1
   rating: 4.9
   image: "/assets/img/bikes/kawasaki-x56.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/kawasaki-x56-384.webp"
+    - 384
+  - - "/assets/img/bikes/kawasaki-x56.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: SP
@@ -93,6 +117,14 @@
   stock: 9
   rating: 4.9
   image: "/assets/img/bikes/kawasaki-x57.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/kawasaki-x57-384.webp"
+    - 384
+  - - "/assets/img/bikes/kawasaki-x57.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: Standard
@@ -119,6 +151,14 @@
   stock: 4
   rating: 4.7
   image: "/assets/img/bikes/kawasaki-x57.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/kawasaki-x57-384.webp"
+    - 384
+  - - "/assets/img/bikes/kawasaki-x57.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: S
@@ -145,6 +185,14 @@
   stock: 4
   rating: 4.3
   image: "/assets/img/bikes/kawasaki-x57.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/kawasaki-x57-384.webp"
+    - 384
+  - - "/assets/img/bikes/kawasaki-x57.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: SP
@@ -172,6 +220,14 @@
   stock: 5
   rating: 4.6
   image: "/assets/img/bikes/kawasaki-black-sun.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/kawasaki-black-sun-384.webp"
+    - 384
+  - - "/assets/img/bikes/kawasaki-black-sun.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: Standard
@@ -198,6 +254,14 @@
   stock: 3
   rating: 4.9
   image: "/assets/img/bikes/kawasaki-black-sun.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/kawasaki-black-sun-384.webp"
+    - 384
+  - - "/assets/img/bikes/kawasaki-black-sun.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: S
@@ -224,6 +288,14 @@
   stock: 7
   rating: 4.4
   image: "/assets/img/bikes/kawasaki-black-sun.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/kawasaki-black-sun-384.webp"
+    - 384
+  - - "/assets/img/bikes/kawasaki-black-sun.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: SP
@@ -251,6 +323,14 @@
   stock: 7
   rating: 4.5
   image: "/assets/img/bikes/kawasaki-cross950.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/kawasaki-cross950-384.webp"
+    - 384
+  - - "/assets/img/bikes/kawasaki-cross950.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: Standard
@@ -277,6 +357,14 @@
   stock: 2
   rating: 4.7
   image: "/assets/img/bikes/kawasaki-cross950.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/kawasaki-cross950-384.webp"
+    - 384
+  - - "/assets/img/bikes/kawasaki-cross950.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: S
@@ -303,6 +391,14 @@
   stock: 6
   rating: 4.6
   image: "/assets/img/bikes/kawasaki-cross950.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/kawasaki-cross950-384.webp"
+    - 384
+  - - "/assets/img/bikes/kawasaki-cross950.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: SP
@@ -330,6 +426,14 @@
   stock: 7
   rating: 4.4
   image: "/assets/img/bikes/kawasaki-monster21.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/kawasaki-monster21-384.webp"
+    - 384
+  - - "/assets/img/bikes/kawasaki-monster21.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: Standard
@@ -356,6 +460,14 @@
   stock: 1
   rating: 4.4
   image: "/assets/img/bikes/kawasaki-monster21.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/kawasaki-monster21-384.webp"
+    - 384
+  - - "/assets/img/bikes/kawasaki-monster21.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: S
@@ -382,6 +494,14 @@
   stock: 5
   rating: 4.3
   image: "/assets/img/bikes/kawasaki-monster21.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/kawasaki-monster21-384.webp"
+    - 384
+  - - "/assets/img/bikes/kawasaki-monster21.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: SP
@@ -409,6 +529,14 @@
   stock: 9
   rating: 4.4
   image: "/assets/img/bikes/kawasaki-21sf.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/kawasaki-21sf-384.webp"
+    - 384
+  - - "/assets/img/bikes/kawasaki-21sf.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: Standard
@@ -435,6 +563,14 @@
   stock: 8
   rating: 4.5
   image: "/assets/img/bikes/kawasaki-21sf.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/kawasaki-21sf-384.webp"
+    - 384
+  - - "/assets/img/bikes/kawasaki-21sf.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: S
@@ -461,6 +597,14 @@
   stock: 7
   rating: 4.3
   image: "/assets/img/bikes/kawasaki-21sf.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/kawasaki-21sf-384.webp"
+    - 384
+  - - "/assets/img/bikes/kawasaki-21sf.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: SP
@@ -488,6 +632,14 @@
   stock: 6
   rating: 4.3
   image: "/assets/img/bikes/vixian-xf262.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/vixian-xf262-384.webp"
+    - 384
+  - - "/assets/img/bikes/vixian-xf262.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: Standard
@@ -514,6 +666,14 @@
   stock: 7
   rating: 4.8
   image: "/assets/img/bikes/vixian-xf262.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/vixian-xf262-384.webp"
+    - 384
+  - - "/assets/img/bikes/vixian-xf262.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: S
@@ -540,6 +700,14 @@
   stock: 5
   rating: 4.5
   image: "/assets/img/bikes/vixian-xf262.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/vixian-xf262-384.webp"
+    - 384
+  - - "/assets/img/bikes/vixian-xf262.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: SP
@@ -567,6 +735,14 @@
   stock: 9
   rating: 4.6
   image: "/assets/img/bikes/vixian-cf300.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/vixian-cf300-384.webp"
+    - 384
+  - - "/assets/img/bikes/vixian-cf300.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: Standard
@@ -593,6 +769,14 @@
   stock: 8
   rating: 4.6
   image: "/assets/img/bikes/vixian-cf300.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/vixian-cf300-384.webp"
+    - 384
+  - - "/assets/img/bikes/vixian-cf300.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: S
@@ -619,6 +803,14 @@
   stock: 9
   rating: 4.2
   image: "/assets/img/bikes/vixian-cf300.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/vixian-cf300-384.webp"
+    - 384
+  - - "/assets/img/bikes/vixian-cf300.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: SP
@@ -646,6 +838,14 @@
   stock: 5
   rating: 4.3
   image: "/assets/img/bikes/vixian-lumiere160.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/vixian-lumiere160-384.webp"
+    - 384
+  - - "/assets/img/bikes/vixian-lumiere160.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: Standard
@@ -672,6 +872,14 @@
   stock: 2
   rating: 4.4
   image: "/assets/img/bikes/vixian-lumiere160.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/vixian-lumiere160-384.webp"
+    - 384
+  - - "/assets/img/bikes/vixian-lumiere160.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: S
@@ -698,6 +906,14 @@
   stock: 7
   rating: 4.8
   image: "/assets/img/bikes/vixian-lumiere160.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/vixian-lumiere160-384.webp"
+    - 384
+  - - "/assets/img/bikes/vixian-lumiere160.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: SP
@@ -725,6 +941,14 @@
   stock: 7
   rating: 4.8
   image: "/assets/img/bikes/vixian-mt1260.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/vixian-mt1260-384.webp"
+    - 384
+  - - "/assets/img/bikes/vixian-mt1260.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: Standard
@@ -751,6 +975,14 @@
   stock: 3
   rating: 4.5
   image: "/assets/img/bikes/vixian-mt1260.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/vixian-mt1260-384.webp"
+    - 384
+  - - "/assets/img/bikes/vixian-mt1260.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: S
@@ -777,6 +1009,14 @@
   stock: 9
   rating: 4.2
   image: "/assets/img/bikes/vixian-mt1260.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/vixian-mt1260-384.webp"
+    - 384
+  - - "/assets/img/bikes/vixian-mt1260.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: SP
@@ -804,6 +1044,14 @@
   stock: 7
   rating: 4.2
   image: "/assets/img/bikes/vixian-mtv4.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/vixian-mtv4-384.webp"
+    - 384
+  - - "/assets/img/bikes/vixian-mtv4.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: Standard
@@ -830,6 +1078,14 @@
   stock: 8
   rating: 4.4
   image: "/assets/img/bikes/vixian-mtv4.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/vixian-mtv4-384.webp"
+    - 384
+  - - "/assets/img/bikes/vixian-mtv4.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: S
@@ -856,6 +1112,14 @@
   stock: 3
   rating: 4.6
   image: "/assets/img/bikes/vixian-mtv4.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/vixian-mtv4-384.webp"
+    - 384
+  - - "/assets/img/bikes/vixian-mtv4.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: SP
@@ -883,6 +1147,14 @@
   stock: 1
   rating: 4.9
   image: "/assets/img/bikes/vixian-sp01.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/vixian-sp01-384.webp"
+    - 384
+  - - "/assets/img/bikes/vixian-sp01.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: Standard
@@ -909,6 +1181,14 @@
   stock: 3
   rating: 4.6
   image: "/assets/img/bikes/vixian-sp01.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/vixian-sp01-384.webp"
+    - 384
+  - - "/assets/img/bikes/vixian-sp01.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: S
@@ -935,6 +1215,14 @@
   stock: 6
   rating: 4.5
   image: "/assets/img/bikes/vixian-sp01.webp"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
+  - - "/assets/img/bikes/vixian-sp01-384.webp"
+    - 384
+  - - "/assets/img/bikes/vixian-sp01.webp"
+    - 630
   icon: motorcycle
   blurb_type: bike
   trim: SP
@@ -962,6 +1250,10 @@
   stock: 5
   rating: 4.9
   image: "/assets/img/products/helm-full-face-htzl-aero-r1.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: helmet
   blurb_type: generic
   trim:
@@ -986,6 +1278,10 @@
   stock: 13
   rating: 4.6
   image: "/assets/img/products/helm-full-face-htzl-aero-r1-carbon.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: helmet
   blurb_type: generic
   trim:
@@ -1011,6 +1307,10 @@
   stock: 22
   rating: 4.3
   image: "/assets/img/products/helm-modular-htzl-voyager.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: helmet
   blurb_type: generic
   trim:
@@ -1035,6 +1335,10 @@
   stock: 6
   rating: 4.3
   image: "/assets/img/products/helm-retro-htzl-classic-70.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: helmet
   blurb_type: generic
   trim:
@@ -1059,6 +1363,10 @@
   stock: 7
   rating: 4.8
   image: "/assets/img/products/helm-adventure-htzl-trail-x.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: helmet
   blurb_type: generic
   trim:
@@ -1083,6 +1391,10 @@
   stock: 3
   rating: 4.4
   image: "/assets/img/products/jaket-kulit-htzl-rider-pro.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: jacket
   blurb_type: generic
   trim:
@@ -1108,6 +1420,10 @@
   stock: 4
   rating: 4.9
   image: "/assets/img/products/jaket-tekstil-htzl-tourer-4s.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: jacket
   blurb_type: generic
   trim:
@@ -1132,6 +1448,10 @@
   stock: 29
   rating: 4.4
   image: "/assets/img/products/jaket-mesh-htzl-urban-air.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: jacket
   blurb_type: generic
   trim:
@@ -1156,6 +1476,10 @@
   stock: 5
   rating: 4.6
   image: "/assets/img/products/jaket-balap-htzl-track-one.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: jacket
   blurb_type: generic
   trim:
@@ -1180,6 +1504,10 @@
   stock: 20
   rating: 4.8
   image: "/assets/img/products/rompi-airbag-htzl-guardian.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: protector
   blurb_type: generic
   trim:
@@ -1204,6 +1532,10 @@
   stock: 3
   rating: 4.3
   image: "/assets/img/products/sarung-tangan-kulit-htzl-grip-s.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: gloves
   blurb_type: generic
   trim:
@@ -1228,6 +1560,10 @@
   stock: 3
   rating: 4.8
   image: "/assets/img/products/sarung-tangan-balap-htzl-apex.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: gloves
   blurb_type: generic
   trim:
@@ -1253,6 +1589,10 @@
   stock: 31
   rating: 4.4
   image: "/assets/img/products/sarung-tangan-musim-hujan-htzl-aqua.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: gloves
   blurb_type: generic
   trim:
@@ -1278,6 +1618,10 @@
   stock: 38
   rating: 4.5
   image: "/assets/img/products/sarung-tangan-harian-htzl-daily.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: gloves
   blurb_type: generic
   trim:
@@ -1302,6 +1646,10 @@
   stock: 32
   rating: 4.2
   image: "/assets/img/products/sepatu-riding-htzl-boot-gp.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: boots
   blurb_type: generic
   trim:
@@ -1327,6 +1675,10 @@
   stock: 19
   rating: 4.8
   image: "/assets/img/products/sepatu-touring-htzl-roadster.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: boots
   blurb_type: generic
   trim:
@@ -1351,6 +1703,10 @@
   stock: 13
   rating: 4.8
   image: "/assets/img/products/sepatu-harian-htzl-city-ride.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: boots
   blurb_type: generic
   trim:
@@ -1375,6 +1731,10 @@
   stock: 34
   rating: 4.3
   image: "/assets/img/products/sepatu-adventure-htzl-terra.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: boots
   blurb_type: generic
   trim:
@@ -1400,6 +1760,10 @@
   stock: 15
   rating: 4.1
   image: "/assets/img/products/celana-riding-htzl-kevlar-jeans.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: pants
   blurb_type: generic
   trim:
@@ -1425,6 +1789,10 @@
   stock: 18
   rating: 4.9
   image: "/assets/img/products/celana-touring-htzl-storm-pant.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: pants
   blurb_type: generic
   trim:
@@ -1449,6 +1817,10 @@
   stock: 13
   rating: 4.7
   image: "/assets/img/products/celana-balap-htzl-leather-trk.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: pants
   blurb_type: generic
   trim:
@@ -1474,6 +1846,10 @@
   stock: 12
   rating: 4.6
   image: "/assets/img/products/body-protector-htzl-shell-vest.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: protector
   blurb_type: generic
   trim:
@@ -1499,6 +1875,10 @@
   stock: 24
   rating: 4.9
   image: "/assets/img/products/back-protector-htzl-spine-l2.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: protector
   blurb_type: generic
   trim:
@@ -1524,6 +1904,10 @@
   stock: 25
   rating: 4.5
   image: "/assets/img/products/knee-protector-htzl-guard-k2.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: protector
   blurb_type: generic
   trim:
@@ -1549,6 +1933,10 @@
   stock: 26
   rating: 4.8
   image: "/assets/img/products/balaclava-htzl-coolmax.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: mask
   blurb_type: generic
   trim:
@@ -1574,6 +1962,10 @@
   stock: 9
   rating: 4.5
   image: "/assets/img/products/masker-riding-htzl-filter-n95.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: mask
   blurb_type: generic
   trim:
@@ -1598,6 +1990,10 @@
   stock: 10
   rating: 4.5
   image: "/assets/img/products/knalpot-slip-on-htzl-sc-titan.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: exhaust
   blurb_type: generic
   trim:
@@ -1622,6 +2018,10 @@
   stock: 18
   rating: 4.4
   image: "/assets/img/products/knalpot-full-system-htzl-raceline.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: exhaust
   blurb_type: generic
   trim:
@@ -1646,6 +2046,10 @@
   stock: 26
   rating: 4.1
   image: "/assets/img/products/knalpot-slip-on-htzl-carbon-pro.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: exhaust
   blurb_type: generic
   trim:
@@ -1670,6 +2074,10 @@
   stock: 24
   rating: 4.8
   image: "/assets/img/products/header-pipe-htzl-stainless-2-1.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: exhaust
   blurb_type: generic
   trim:
@@ -1694,6 +2102,10 @@
   stock: 40
   rating: 4.3
   image: "/assets/img/products/db-killer-htzl-silent-insert.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: exhaust
   blurb_type: generic
   trim:
@@ -1718,6 +2130,10 @@
   stock: 17
   rating: 4.4
   image: "/assets/img/products/ban-depan-htzl-sport-120-70-17.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: tire
   blurb_type: generic
   trim:
@@ -1742,6 +2158,10 @@
   stock: 10
   rating: 4.3
   image: "/assets/img/products/ban-belakang-htzl-sport-190-55-17.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: tire
   blurb_type: generic
   trim:
@@ -1766,6 +2186,10 @@
   stock: 19
   rating: 4.5
   image: "/assets/img/products/ban-depan-htzl-track-120-70-17.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: tire
   blurb_type: generic
   trim:
@@ -1790,6 +2214,10 @@
   stock: 27
   rating: 4.6
   image: "/assets/img/products/ban-belakang-htzl-track-200-55-17.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: tire
   blurb_type: generic
   trim:
@@ -1814,6 +2242,10 @@
   stock: 21
   rating: 4.8
   image: "/assets/img/products/ban-adventure-htzl-terra-150-70-17.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: tire
   blurb_type: generic
   trim:
@@ -1838,6 +2270,10 @@
   stock: 39
   rating: 4.1
   image: "/assets/img/products/ban-hujan-htzl-aqua-180-55-17.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: tire
   blurb_type: generic
   trim:
@@ -1862,6 +2298,10 @@
   stock: 10
   rating: 4.7
   image: "/assets/img/products/kampas-rem-depan-htzl-sinter-hh.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: brake
   blurb_type: generic
   trim:
@@ -1886,6 +2326,10 @@
   stock: 23
   rating: 4.7
   image: "/assets/img/products/kampas-rem-belakang-htzl-sinter.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: brake
   blurb_type: generic
   trim:
@@ -1910,6 +2354,10 @@
   stock: 11
   rating: 4.4
   image: "/assets/img/products/kampas-rem-organik-htzl-street.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: brake
   blurb_type: generic
   trim:
@@ -1934,6 +2382,10 @@
   stock: 20
   rating: 4.8
   image: "/assets/img/products/master-rem-radial-htzl-rcs19.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: brake
   blurb_type: generic
   trim:
@@ -1958,6 +2410,10 @@
   stock: 22
   rating: 4.2
   image: "/assets/img/products/cakram-depan-htzl-float-330mm.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: disc
   blurb_type: generic
   trim:
@@ -1982,6 +2438,10 @@
   stock: 9
   rating: 4.6
   image: "/assets/img/products/cakram-belakang-htzl-245mm.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: disc
   blurb_type: generic
   trim:
@@ -2006,6 +2466,10 @@
   stock: 8
   rating: 4.2
   image: "/assets/img/products/selang-rem-braided-htzl-steel.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: brake
   blurb_type: generic
   trim:
@@ -2030,6 +2494,10 @@
   stock: 19
   rating: 4.2
   image: "/assets/img/products/rantai-htzl-x-ring-525.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: chain
   blurb_type: generic
   trim:
@@ -2054,6 +2522,10 @@
   stock: 40
   rating: 4.2
   image: "/assets/img/products/gir-depan-htzl-steel-15t.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: chain
   blurb_type: generic
   trim:
@@ -2078,6 +2550,10 @@
   stock: 25
   rating: 4.9
   image: "/assets/img/products/gir-belakang-htzl-alloy-45t.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: chain
   blurb_type: generic
   trim:
@@ -2102,6 +2578,10 @@
   stock: 21
   rating: 4.1
   image: "/assets/img/products/filter-udara-htzl-flow-k-n.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: filter
   blurb_type: generic
   trim:
@@ -2126,6 +2606,10 @@
   stock: 6
   rating: 4.8
   image: "/assets/img/products/filter-oli-htzl-spin-on.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: filter
   blurb_type: generic
   trim:
@@ -2150,6 +2634,10 @@
   stock: 23
   rating: 4.2
   image: "/assets/img/products/filter-bensin-htzl-inline.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: filter
   blurb_type: generic
   trim:
@@ -2174,6 +2662,10 @@
   stock: 4
   rating: 4.4
   image: "/assets/img/products/filter-udara-htzl-foam-enduro.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: filter
   blurb_type: generic
   trim:
@@ -2198,6 +2690,10 @@
   stock: 18
   rating: 4.3
   image: "/assets/img/products/busi-iridium-htzl-spark-ix.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: spark
   blurb_type: generic
   trim:
@@ -2222,6 +2718,10 @@
   stock: 33
   rating: 4.5
   image: "/assets/img/products/coil-pengapian-htzl-hotspark.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: spark
   blurb_type: generic
   trim:
@@ -2246,6 +2746,10 @@
   stock: 12
   rating: 4.8
   image: "/assets/img/products/shock-belakang-htzl-ohlins-ttx.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: suspension
   blurb_type: generic
   trim:
@@ -2271,6 +2775,10 @@
   stock: 18
   rating: 4.5
   image: "/assets/img/products/cartridge-depan-htzl-nix30.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: suspension
   blurb_type: generic
   trim:
@@ -2295,6 +2803,10 @@
   stock: 24
   rating: 4.2
   image: "/assets/img/products/steering-damper-htzl-stabil-sd.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: suspension
   blurb_type: generic
   trim:
@@ -2319,6 +2831,10 @@
   stock: 28
   rating: 4.4
   image: "/assets/img/products/oli-mesin-htzl-racing-10w-40-full-sintetik.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: oil
   blurb_type: generic
   trim:
@@ -2343,6 +2859,10 @@
   stock: 3
   rating: 4.5
   image: "/assets/img/products/oli-mesin-htzl-street-15w-50-semi-sintetik.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: oil
   blurb_type: generic
   trim:
@@ -2367,6 +2887,10 @@
   stock: 20
   rating: 4.2
   image: "/assets/img/products/oli-mesin-htzl-track-5w-40-ester.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: oil
   blurb_type: generic
   trim:
@@ -2391,6 +2915,10 @@
   stock: 16
   rating: 4.4
   image: "/assets/img/products/paket-oli-mesin-htzl-racing-4-liter.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: oil
   blurb_type: generic
   trim:
@@ -2415,6 +2943,10 @@
   stock: 33
   rating: 4.4
   image: "/assets/img/products/oli-gardan-htzl-gear-80w-90.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: oil
   blurb_type: generic
   trim:
@@ -2439,6 +2971,10 @@
   stock: 39
   rating: 4.1
   image: "/assets/img/products/minyak-rem-htzl-dot-4-racing.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: fluid
   blurb_type: generic
   trim:
@@ -2463,6 +2999,10 @@
   stock: 10
   rating: 4.2
   image: "/assets/img/products/minyak-rem-htzl-dot-5-1.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: fluid
   blurb_type: generic
   trim:
@@ -2487,6 +3027,10 @@
   stock: 34
   rating: 4.6
   image: "/assets/img/products/coolant-htzl-cool-blue-siap-pakai.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: fluid
   blurb_type: generic
   trim:
@@ -2512,6 +3056,10 @@
   stock: 39
   rating: 4.9
   image: "/assets/img/products/coolant-htzl-track-waterless.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: fluid
   blurb_type: generic
   trim:
@@ -2536,6 +3084,10 @@
   stock: 21
   rating: 4.2
   image: "/assets/img/products/chain-lube-htzl-wax-dry.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: lube
   blurb_type: generic
   trim:
@@ -2560,6 +3112,10 @@
   stock: 25
   rating: 4.9
   image: "/assets/img/products/chain-cleaner-htzl-degreaser.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: lube
   blurb_type: generic
   trim:
@@ -2584,6 +3140,10 @@
   stock: 21
   rating: 4.1
   image: "/assets/img/products/poles-bodi-htzl-gloss-ceramic.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: polish
   blurb_type: generic
   trim:
@@ -2608,6 +3168,10 @@
   stock: 23
   rating: 4.1
   image: "/assets/img/products/pembersih-helm-htzl-visor-clean.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: polish
   blurb_type: generic
   trim:
@@ -2632,6 +3196,10 @@
   stock: 14
   rating: 4.7
   image: "/assets/img/products/shampo-motor-htzl-foam-wash.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: polish
   blurb_type: generic
   trim:
@@ -2656,6 +3224,10 @@
   stock: 19
   rating: 4.4
   image: "/assets/img/products/top-box-htzl-trunk-45l.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: topbox
   blurb_type: generic
   trim:
@@ -2680,6 +3252,10 @@
   stock: 27
   rating: 4.4
   image: "/assets/img/products/side-pannier-htzl-alu-35l-set.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: topbox
   blurb_type: generic
   trim:
@@ -2704,6 +3280,10 @@
   stock: 37
   rating: 4.6
   image: "/assets/img/products/tank-bag-htzl-magnet-18l.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: topbox
   blurb_type: generic
   trim:
@@ -2729,6 +3309,10 @@
   stock: 30
   rating: 4.7
   image: "/assets/img/products/tail-bag-htzl-roll-25l.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: topbox
   blurb_type: generic
   trim:
@@ -2753,6 +3337,10 @@
   stock: 14
   rating: 4.8
   image: "/assets/img/products/windshield-htzl-touring-tinggi.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: windshield
   blurb_type: generic
   trim:
@@ -2777,6 +3365,10 @@
   stock: 40
   rating: 4.6
   image: "/assets/img/products/windshield-htzl-sport-bubble.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: windshield
   blurb_type: generic
   trim:
@@ -2801,6 +3393,10 @@
   stock: 33
   rating: 4.7
   image: "/assets/img/products/crash-bar-htzl-engine-guard.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: crashbar
   blurb_type: generic
   trim:
@@ -2825,6 +3421,10 @@
   stock: 14
   rating: 4.9
   image: "/assets/img/products/frame-slider-htzl-impact.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: crashbar
   blurb_type: generic
   trim:
@@ -2849,6 +3449,10 @@
   stock: 26
   rating: 4.6
   image: "/assets/img/products/handguard-htzl-storm.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: handguard
   blurb_type: generic
   trim:
@@ -2874,6 +3478,10 @@
   stock: 10
   rating: 4.4
   image: "/assets/img/products/radiator-guard-htzl-mesh.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: crashbar
   blurb_type: generic
   trim:
@@ -2898,6 +3506,10 @@
   stock: 23
   rating: 4.1
   image: "/assets/img/products/usb-charger-htzl-power-30w.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: usb
   blurb_type: generic
   trim:
@@ -2922,6 +3534,10 @@
   stock: 20
   rating: 4.4
   image: "/assets/img/products/phone-holder-htzl-lock-grip.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: phone
   blurb_type: generic
   trim:
@@ -2947,6 +3563,10 @@
   stock: 23
   rating: 4.9
   image: "/assets/img/products/action-cam-mount-htzl-rig.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: phone
   blurb_type: generic
   trim:
@@ -2972,6 +3592,10 @@
   stock: 20
   rating: 4.9
   image: "/assets/img/products/cover-motor-htzl-shield-outdoor.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: cover
   blurb_type: generic
   trim:
@@ -2997,6 +3621,10 @@
   stock: 19
   rating: 4.5
   image: "/assets/img/products/gembok-cakram-htzl-alarm-110db.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: cover
   blurb_type: generic
   trim:
@@ -3021,6 +3649,10 @@
   stock: 99
   rating: 4.9
   image: "/assets/img/products/servis-berkala-4-000-km.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: wrench
   blurb_type: generic
   trim:
@@ -3045,6 +3677,10 @@
   stock: 99
   rating: 4.3
   image: "/assets/img/products/servis-berkala-12-000-km.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: wrench
   blurb_type: generic
   trim:
@@ -3070,6 +3706,10 @@
   stock: 99
   rating: 4.2
   image: "/assets/img/products/servis-besar-24-000-km.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: wrench
   blurb_type: generic
   trim:
@@ -3095,6 +3735,10 @@
   stock: 99
   rating: 4.9
   image: "/assets/img/products/ganti-oli-ekspres.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: wrench
   blurb_type: generic
   trim:
@@ -3120,6 +3764,10 @@
   stock: 99
   rating: 4.2
   image: "/assets/img/products/tune-up-performa-dyno.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: dyno
   blurb_type: generic
   trim:
@@ -3144,6 +3792,10 @@
   stock: 99
   rating: 4.9
   image: "/assets/img/products/remap-ecu-stage-1.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: dyno
   blurb_type: generic
   trim:
@@ -3168,6 +3820,10 @@
   stock: 99
   rating: 4.1
   image: "/assets/img/products/balancing-spooring-roda.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: wheel
   blurb_type: generic
   trim:
@@ -3192,6 +3848,10 @@
   stock: 99
   rating: 4.8
   image: "/assets/img/products/pasang-ban-sepasang.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: wheel
   blurb_type: generic
   trim:
@@ -3216,6 +3876,10 @@
   stock: 99
   rating: 4.4
   image: "/assets/img/products/setel-suspensi-sesuai-bobot.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: wheel
   blurb_type: generic
   trim:
@@ -3240,6 +3904,10 @@
   stock: 99
   rating: 4.4
   image: "/assets/img/products/detailing-keramik-full-body.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   icon: polish
   blurb_type: generic
   trim:
@@ -3264,6 +3932,16 @@
   stock: 1
   rating: 4.5
   image: "/assets/img/heritage/harley-davidson-1903-model-1-serial-number-one.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1903-model-1-serial-number-one-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1903-model-1-serial-number-one-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1903-model-1-serial-number-one.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum December 2023 39 (c. 1903 'Serial Number One'--Atmospheric-Valve
       Single).jpg
@@ -3300,6 +3978,16 @@
   stock: 1
   rating: 5.0
   image: "/assets/img/heritage/harley-davidson-1905-model-2.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1905-model-2-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1905-model-2-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1905-model-2.webp"
+    - 900
   credit:
     title: Four Lithuanian riflemen in uniforms and policemen behind. Ignas Žiniauskas
       behind the steering wheel, 1939.jpg
@@ -3335,6 +4023,16 @@
   stock: 1
   rating: 4.8
   image: "/assets/img/heritage/harley-davidson-1906-model-3-silent-gray-fellow.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1906-model-3-silent-gray-fellow-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1906-model-3-silent-gray-fellow-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1906-model-3-silent-gray-fellow.webp"
+    - 900
   credit:
     title: 1911HarleyDavidson"SilentGrayFellow".jpg
     author: DrReload
@@ -3370,6 +4068,16 @@
   stock: 1
   rating: 4.8
   image: "/assets/img/heritage/harley-davidson-1907-model-4.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1907-model-4-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1907-model-4-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1907-model-4.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum December 2023 45 (1907 Model 3--Atmospheric-Valve
       Single).jpg
@@ -3405,6 +4113,16 @@
   stock: 1
   rating: 4.5
   image: "/assets/img/heritage/harley-davidson-1908-model-5.webp"
+  image_size:
+  - 873
+  - 540
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1908-model-5-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1908-model-5-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1908-model-5.webp"
+    - 873
   credit:
     title: August Chelini on "Harley-Davison" motorcycle, Race at Tanforan racetrack,
       JULY 4, 1908.jpg
@@ -3440,6 +4158,16 @@
   stock: 1
   rating: 5.0
   image: "/assets/img/heritage/harley-davidson-1909-model-5d-v-twin.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1909-model-5d-v-twin-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1909-model-5d-v-twin-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1909-model-5d-v-twin.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum December 2023 01 (1911 Model 7-A--Atmospheric-Valve
       Single and 1909 Model 5-D--Atmospheric-Valve V-Twin).jpg
@@ -3475,6 +4203,16 @@
   stock: 3
   rating: 4.6
   image: "/assets/img/heritage/harley-davidson-1911-model-7d.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1911-model-7d-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1911-model-7d-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1911-model-7d.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum December 2023 01 (1911 Model 7-A--Atmospheric-Valve
       Single and 1909 Model 5-D--Atmospheric-Valve V-Twin).jpg
@@ -3510,6 +4248,16 @@
   stock: 1
   rating: 5.0
   image: "/assets/img/heritage/harley-davidson-1912-model-x8a.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1912-model-x8a-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1912-model-x8a-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1912-model-x8a.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum December 2023 05 (1912 Model X-8-A--Atmospheric-Valve
       Single).jpg
@@ -3545,6 +4293,16 @@
   stock: 3
   rating: 4.7
   image: "/assets/img/heritage/harley-davidson-1913-model-9a.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1913-model-9a-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1913-model-9a-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1913-model-9a.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum December 2023 06 (1913 Model 9-E--F-Head V-Twin).jpg
     author: Michael Barera
@@ -3579,6 +4337,16 @@
   stock: 3
   rating: 4.5
   image: "/assets/img/heritage/harley-davidson-1914-model-10f.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1914-model-10f-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1914-model-10f-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1914-model-10f.webp"
+    - 900
   credit:
     title: Harley-Davidson US Mail side-car (circa 1914).jpg
     author: Ed Bierman
@@ -3613,6 +4381,16 @@
   stock: 1
   rating: 4.8
   image: "/assets/img/heritage/harley-davidson-1915-model-11f.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1915-model-11f-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1915-model-11f-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1915-model-11f.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum December 2023 07 (1915 Model 11-J--F-Head V-Twin).jpg
     author: Michael Barera
@@ -3647,6 +4425,16 @@
   stock: 3
   rating: 4.8
   image: "/assets/img/heritage/harley-davidson-1916-model-16j.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1916-model-16j-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1916-model-16j-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1916-model-16j.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum December 2023 53 (1916 Model J with Package Truck--F-Head
       V-Twin).jpg
@@ -3682,6 +4470,16 @@
   stock: 1
   rating: 5.0
   image: "/assets/img/heritage/harley-davidson-1917-model-17f.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1917-model-17f-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1917-model-17f-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1917-model-17f.webp"
+    - 900
   credit:
     title: Harley Davidson Modell J, 1917.jpg
     author: Zweiradmuseum Neckarsulm
@@ -3716,6 +4514,16 @@
   stock: 1
   rating: 4.5
   image: "/assets/img/heritage/harley-davidson-1918-model-18j-perang-dunia-i.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1918-model-18j-perang-dunia-i-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1918-model-18j-perang-dunia-i-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1918-model-18j-perang-dunia-i.webp"
+    - 900
   credit:
     title: Motor Vehicles - In Use - Harley Davidson motorcycles, some with side cars
       on the road manufactured by the Harley Davidson Co., Milwaukee, Wis. For the
@@ -3753,6 +4561,16 @@
   stock: 2
   rating: 4.7
   image: "/assets/img/heritage/harley-davidson-1919-model-w-sport-twin.webp"
+  image_size:
+  - 800
+  - 495
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1919-model-w-sport-twin-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1919-model-w-sport-twin-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1919-model-w-sport-twin.webp"
+    - 800
   credit:
     title: 1919 Harley-Davidson Model W Sport Twin (1) - The Art of the Motorcycle
       - Memphis.jpg
@@ -3788,6 +4606,16 @@
   stock: 2
   rating: 4.7
   image: "/assets/img/heritage/harley-davidson-1920-model-20j.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1920-model-20j-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1920-model-20j-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1920-model-20j.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum December 2023 13 (1920 Sport Model--Opposed Twin).jpg
     author: Michael Barera
@@ -3822,6 +4650,16 @@
   stock: 2
   rating: 4.5
   image: "/assets/img/heritage/harley-davidson-1921-model-21jd.webp"
+  image_size:
+  - 800
+  - 495
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1921-model-21jd-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1921-model-21jd-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1921-model-21jd.webp"
+    - 800
   credit:
     title: Harley-Davidson Sport 558 cc 1921.jpg
     author: Lars-Göran Lindgren Sweden
@@ -3856,6 +4694,16 @@
   stock: 3
   rating: 4.8
   image: "/assets/img/heritage/harley-davidson-1922-model-22fd.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1922-model-22fd-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1922-model-22fd-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1922-model-22fd.webp"
+    - 900
   credit:
     title: Jimmy Murphy, winner of 500-mile auto race at Indianapolis, Ind., May 30,
       1922, and Ernie Olson, mechanic, seated on Harley-Davidson motorcycle and in
@@ -3892,6 +4740,16 @@
   stock: 2
   rating: 4.5
   image: "/assets/img/heritage/harley-davidson-1923-model-23jd.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1923-model-23jd-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1923-model-23jd-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1923-model-23jd.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum December 2023 10 (1923 Model JDCA--F-Head V-Twin).jpg
     author: Michael Barera
@@ -3926,6 +4784,16 @@
   stock: 1
   rating: 4.5
   image: "/assets/img/heritage/harley-davidson-1924-model-24fd.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1924-model-24fd-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1924-model-24fd-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1924-model-24fd.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum April 2024 08 (Mama Tried- Bringing it Together--1929
       FHAC with 1924 FLXI side car).jpg
@@ -3961,6 +4829,16 @@
   stock: 2
   rating: 4.5
   image: "/assets/img/heritage/harley-davidson-1925-model-25jd.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1925-model-25jd-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1925-model-25jd-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1925-model-25jd.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum December 2023 49 (1925 JDCB--F-Head V-Twin).jpg
     author: Michael Barera
@@ -3995,6 +4873,16 @@
   stock: 1
   rating: 4.7
   image: "/assets/img/heritage/harley-davidson-1926-model-a-peashooter.webp"
+  image_size:
+  - 800
+  - 495
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1926-model-a-peashooter-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1926-model-a-peashooter-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1926-model-a-peashooter.webp"
+    - 800
   credit:
     title: Harley-Davidson Pearshooter 1926.jpg
     author: Lars-Göran Lindgren Sweden
@@ -4029,6 +4917,16 @@
   stock: 1
   rating: 4.5
   image: "/assets/img/heritage/harley-davidson-1927-model-ba.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1927-model-ba-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1927-model-ba-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1927-model-ba.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum February 2024 40 (Clubs and Competition--1927 Model
       S 'Peashooter'--OHV Single).jpg
@@ -4064,6 +4962,10 @@
   stock: 2
   rating: 5.0
   image: "/assets/img/products/harley-davidson-1928-model-jdh-two-cam.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -4093,6 +4995,10 @@
   stock: 2
   rating: 4.6
   image: "/assets/img/products/harley-davidson-1929-model-d-flathead-45.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -4122,6 +5028,10 @@
   stock: 2
   rating: 4.8
   image: "/assets/img/products/harley-davidson-1930-model-vl.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -4151,6 +5061,16 @@
   stock: 3
   rating: 4.5
   image: "/assets/img/heritage/harley-davidson-1932-model-g-servi-car.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1932-model-g-servi-car-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1932-model-g-servi-car-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1932-model-g-servi-car.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum December 2023 51 (1932 Model G Servi-Car--Side-Valve
       V-Twin).jpg
@@ -4186,6 +5106,16 @@
   stock: 1
   rating: 4.9
   image: "/assets/img/heritage/harley-davidson-1933-model-vld-art-deco.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1933-model-vld-art-deco-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1933-model-vld-art-deco-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1933-model-vld-art-deco.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum December 2023 19 (1933 VLD with 1934 LT Sidecar--Side-Valve
       V-Twin).jpg
@@ -4221,6 +5151,16 @@
   stock: 3
   rating: 4.6
   image: "/assets/img/heritage/harley-davidson-1935-model-rl-45.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1935-model-rl-45-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1935-model-rl-45-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1935-model-rl-45.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum December 2023 20 (1935 Model R--Side-Valve V-Twin).jpg
     author: Michael Barera
@@ -4255,6 +5195,10 @@
   stock: 2
   rating: 4.9
   image: "/assets/img/products/harley-davidson-1936-model-el-knucklehead.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -4284,6 +5228,16 @@
   stock: 3
   rating: 5.0
   image: "/assets/img/heritage/harley-davidson-1937-model-ulh.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1937-model-ulh-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1937-model-ulh-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1937-model-ulh.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum December 2023 22 (1937 UH--Side-Valve V-Twin).jpg
     author: Michael Barera
@@ -4318,6 +5272,10 @@
   stock: 3
   rating: 5.0
   image: "/assets/img/products/harley-davidson-1938-model-el.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -4347,6 +5305,16 @@
   stock: 1
   rating: 4.5
   image: "/assets/img/heritage/harley-davidson-1939-model-wld-sport-solo.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1939-model-wld-sport-solo-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1939-model-wld-sport-solo-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1939-model-wld-sport-solo.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum December 2023 25 (1938 WLD--Side-Valve V-Twin).jpg
     author: Michael Barera
@@ -4381,6 +5349,16 @@
   stock: 2
   rating: 5.0
   image: "/assets/img/heritage/harley-davidson-1940-model-wla-militer.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1940-model-wla-militer-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1940-model-wla-militer-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1940-model-wla-militer.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum December 2023 59 (1942 WLA--Side-Valve V-Twin).jpg
     author: Michael Barera
@@ -4415,6 +5393,10 @@
   stock: 2
   rating: 4.9
   image: "/assets/img/products/harley-davidson-1941-model-fl-knucklehead-74.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -4445,6 +5427,16 @@
   stock: 3
   rating: 5.0
   image: "/assets/img/heritage/harley-davidson-1942-model-xa-shaft-drive.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1942-model-xa-shaft-drive-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1942-model-xa-shaft-drive-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1942-model-xa-shaft-drive.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum December 2023 32 (1942 XA--Opposed Twin).jpg
     author: Michael Barera
@@ -4479,6 +5471,16 @@
   stock: 2
   rating: 4.7
   image: "/assets/img/heritage/harley-davidson-1943-model-wlc-kanada.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1943-model-wlc-kanada-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1943-model-wlc-kanada-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1943-model-wlc-kanada.webp"
+    - 900
   credit:
     title: 1942 Harley Davidson WLC Custom (6401211421).jpg
     author: Tony Hisgett from Birmingham, UK
@@ -4513,6 +5515,10 @@
   stock: 2
   rating: 4.9
   image: "/assets/img/products/harley-davidson-1945-model-wl-pascaperang.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -4542,6 +5548,16 @@
   stock: 3
   rating: 4.7
   image: "/assets/img/heritage/harley-davidson-1946-model-fl.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1946-model-fl-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1946-model-fl-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1946-model-fl.webp"
+    - 900
   credit:
     title: 1946 Harley Knucklehead bobber (6842571943).jpg
     author: Dave_S. from Witney, England
@@ -4576,6 +5592,16 @@
   stock: 3
   rating: 4.6
   image: "/assets/img/heritage/harley-davidson-1947-model-wl-sport-solo.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1947-model-wl-sport-solo-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1947-model-wl-sport-solo-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1947-model-wl-sport-solo.webp"
+    - 900
   credit:
     title: Harley-Davidson-WL.jpg
     author: Liftarn
@@ -4610,6 +5636,16 @@
   stock: 1
   rating: 5.0
   image: "/assets/img/heritage/harley-davidson-1948-model-fl-panhead.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1948-model-fl-panhead-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1948-model-fl-panhead-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1948-model-fl-panhead.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum February 2024 12 (Engine Room--Panhead, 1948-65).jpg
     author: Michael Barera
@@ -4644,6 +5680,16 @@
   stock: 3
   rating: 4.9
   image: "/assets/img/heritage/harley-davidson-1949-model-fl-hydra-glide.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1949-model-fl-hydra-glide-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1949-model-fl-hydra-glide-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1949-model-fl-hydra-glide.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum April 2024 27 (1949 FL Hydra-Glide--OHV V-Twin).jpg
     author: Michael Barera
@@ -4678,6 +5724,16 @@
   stock: 2
   rating: 5.0
   image: "/assets/img/heritage/harley-davidson-1950-model-el-panhead-61.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1950-model-el-panhead-61-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1950-model-el-panhead-61-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1950-model-el-panhead-61.webp"
+    - 900
   credit:
     title: Harley Davidson 1200 Panhead 1950 (14130218107).jpg
     author: order_242 from Chile
@@ -4712,6 +5768,16 @@
   stock: 2
   rating: 4.9
   image: "/assets/img/heritage/harley-davidson-1952-model-k.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1952-model-k-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1952-model-k-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1952-model-k.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum May 2024 05 (Challenge and Opportunity--1957 XL
       Sportster--OHV V-Twin).jpg
@@ -4747,6 +5813,10 @@
   stock: 3
   rating: 4.5
   image: "/assets/img/products/harley-davidson-1953-model-fl-50th-anniversary.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -4777,6 +5847,10 @@
   stock: 2
   rating: 4.6
   image: "/assets/img/products/harley-davidson-1954-model-kh.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -4806,6 +5880,10 @@
   stock: 3
   rating: 4.6
   image: "/assets/img/products/harley-davidson-1955-model-khk.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -4835,6 +5913,10 @@
   stock: 1
   rating: 4.8
   image: "/assets/img/products/harley-davidson-1956-model-flh-panhead.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -4864,6 +5946,16 @@
   stock: 1
   rating: 4.5
   image: "/assets/img/heritage/harley-davidson-1957-sportster-xl.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1957-sportster-xl-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1957-sportster-xl-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1957-sportster-xl.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum February 2024 23 (Engine Room--Ironhead Sportster,
       1957-85).jpg
@@ -4899,6 +5991,16 @@
   stock: 1
   rating: 4.8
   image: "/assets/img/heritage/harley-davidson-1958-duo-glide-flh.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1958-duo-glide-flh-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1958-duo-glide-flh-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1958-duo-glide-flh.webp"
+    - 900
   credit:
     title: 1958 Harley Davidson Duo Glide - Haynes International Motor Museum - Sparkford,
       Yeovil, Somerset (9649535456).jpg
@@ -4934,6 +6036,16 @@
   stock: 1
   rating: 5.0
   image: "/assets/img/heritage/harley-davidson-1959-sportster-xlch.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1959-sportster-xlch-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1959-sportster-xlch-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1959-sportster-xlch.webp"
+    - 900
   credit:
     title: Harley-Davidson XLCH Sportster 1969.jpg
     author: Dick Thompson
@@ -4968,6 +6080,16 @@
   stock: 3
   rating: 4.8
   image: "/assets/img/heritage/harley-davidson-1960-topper-skuter.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1960-topper-skuter-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1960-topper-skuter-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1960-topper-skuter.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum May 2024 13 (The AMF Years--1960 Model A Topper--Horizontal
       Two-Cycle Single).jpg
@@ -5003,6 +6125,16 @@
   stock: 3
   rating: 5.0
   image: "/assets/img/heritage/harley-davidson-1961-sprint-c.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1961-sprint-c-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1961-sprint-c-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1961-sprint-c.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum February 2024 20 (Engine Room--Sprint, 1961-72).jpg
     author: Michael Barera
@@ -5037,6 +6169,16 @@
   stock: 2
   rating: 4.8
   image: "/assets/img/heritage/harley-davidson-1962-duo-glide-fl.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1962-duo-glide-fl-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1962-duo-glide-fl-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1962-duo-glide-fl.webp"
+    - 900
   credit:
     title: Harley063.jpg
     author: Jean-Luc 2005 at German Wikipedia
@@ -5071,6 +6213,10 @@
   stock: 1
   rating: 4.5
   image: "/assets/img/products/harley-davidson-1963-panhead-flh.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -5100,6 +6246,16 @@
   stock: 2
   rating: 4.5
   image: "/assets/img/heritage/harley-davidson-1964-servi-car-ge.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1964-servi-car-ge-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1964-servi-car-ge-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1964-servi-car-ge.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum April 2024 38 (1971 GE Servi-Car Police--Side-Valve
       V-Twin).jpg
@@ -5135,6 +6291,10 @@
   stock: 3
   rating: 5.0
   image: "/assets/img/products/harley-davidson-1965-electra-glide-flh.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -5164,6 +6324,16 @@
   stock: 1
   rating: 4.7
   image: "/assets/img/heritage/harley-davidson-1966-electra-glide-shovelhead.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1966-electra-glide-shovelhead-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1966-electra-glide-shovelhead-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1966-electra-glide-shovelhead.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum February 2024 13 (Engine Room--Shovelhead, 1966-84).jpg
     author: Michael Barera
@@ -5199,6 +6369,10 @@
   stock: 2
   rating: 4.8
   image: "/assets/img/products/harley-davidson-1967-sportster-xlh.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -5228,6 +6402,10 @@
   stock: 1
   rating: 4.9
   image: "/assets/img/products/harley-davidson-1968-sportster-xlch-900.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -5257,6 +6435,10 @@
   stock: 3
   rating: 4.7
   image: "/assets/img/products/harley-davidson-1969-electra-glide-flh-shovelhead.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -5287,6 +6469,10 @@
   stock: 3
   rating: 4.5
   image: "/assets/img/products/harley-davidson-1970-sportster-xlh-900.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -5316,6 +6502,16 @@
   stock: 2
   rating: 4.8
   image: "/assets/img/heritage/harley-davidson-1971-super-glide-fx.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1971-super-glide-fx-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1971-super-glide-fx-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1971-super-glide-fx.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum April 2024 26 (1971 FX Super Glide--OHV V-Twin).jpg
     author: Michael Barera
@@ -5350,6 +6546,10 @@
   stock: 1
   rating: 4.7
   image: "/assets/img/products/harley-davidson-1972-sportster-xlh-1000.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -5379,6 +6579,10 @@
   stock: 1
   rating: 4.5
   image: "/assets/img/products/harley-davidson-1973-super-glide-fx-1200.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -5408,6 +6612,10 @@
   stock: 1
   rating: 4.5
   image: "/assets/img/products/harley-davidson-1974-sportster-xlch-1000.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -5437,6 +6645,10 @@
   stock: 3
   rating: 5.0
   image: "/assets/img/products/harley-davidson-1975-super-glide-fxe.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -5466,6 +6678,16 @@
   stock: 3
   rating: 4.8
   image: "/assets/img/heritage/harley-davidson-1976-liberty-edition-flh.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1976-liberty-edition-flh-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1976-liberty-edition-flh-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1976-liberty-edition-flh.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum April 2024 41 (1976 FLH-1200 Liberty Edition--OHV
       V-Twin).jpg
@@ -5501,6 +6723,16 @@
   stock: 1
   rating: 4.6
   image: "/assets/img/heritage/harley-davidson-1977-low-rider-fxs.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1977-low-rider-fxs-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1977-low-rider-fxs-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1977-low-rider-fxs.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum April 2024 42 (1977 FXS Low Rider--OHV V-Twin).jpg
     author: Michael Barera
@@ -5535,6 +6767,16 @@
   stock: 1
   rating: 4.8
   image: "/assets/img/heritage/harley-davidson-1977-cafe-racer-xlcr.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1977-cafe-racer-xlcr-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1977-cafe-racer-xlcr-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1977-cafe-racer-xlcr.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum April 2024 36 (1977 XLCR-1000 Cafe Racer--OHV V-Twin).jpg
     author: Michael Barera
@@ -5569,6 +6811,10 @@
   stock: 2
   rating: 4.6
   image: "/assets/img/products/harley-davidson-1978-electra-glide-75th-anniversary.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -5599,6 +6845,10 @@
   stock: 3
   rating: 4.5
   image: "/assets/img/products/harley-davidson-1979-fat-bob-fxef.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -5628,6 +6878,10 @@
   stock: 3
   rating: 4.5
   image: "/assets/img/products/harley-davidson-1980-sturgis-fxb.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -5657,6 +6911,16 @@
   stock: 3
   rating: 4.5
   image: "/assets/img/heritage/harley-davidson-1980-wide-glide-fxwg.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1980-wide-glide-fxwg-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1980-wide-glide-fxwg-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1980-wide-glide-fxwg.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum April 2024 43 (1980 FXWG Wide Glide--OHV V-Twin).jpg
     author: Michael Barera
@@ -5691,6 +6955,16 @@
   stock: 2
   rating: 4.7
   image: "/assets/img/heritage/harley-davidson-1980-tour-glide-flt.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1980-tour-glide-flt-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1980-tour-glide-flt-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1980-tour-glide-flt.webp"
+    - 900
   credit:
     title: Harley-Davidson Road Glide (MSP15).JPG
     author: Jakub "Flyz1" Maciejewski
@@ -5725,6 +6999,10 @@
   stock: 3
   rating: 4.6
   image: "/assets/img/products/harley-davidson-1983-low-glide-fxrt.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -5754,6 +7032,16 @@
   stock: 3
   rating: 5.0
   image: "/assets/img/heritage/harley-davidson-1984-softail-fxst.webp"
+  image_size:
+  - 800
+  - 495
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1984-softail-fxst-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1984-softail-fxst-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1984-softail-fxst.webp"
+    - 800
   credit:
     title: Fxstc1998.jpg
     author: Wikimedia Commons
@@ -5788,6 +7076,16 @@
   stock: 1
   rating: 5.0
   image: "/assets/img/heritage/harley-davidson-1985-low-rider-fxsb.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1985-low-rider-fxsb-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1985-low-rider-fxsb-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1985-low-rider-fxsb.webp"
+    - 900
   credit:
     title: Harley-Davidson Softail Breakout FXSB103, Motor (2015-08-25 Sp).jpg
     author: Lothar Spurzem
@@ -5822,6 +7120,16 @@
   stock: 3
   rating: 4.9
   image: "/assets/img/heritage/harley-davidson-1986-heritage-softail-flst.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1986-heritage-softail-flst-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1986-heritage-softail-flst-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1986-heritage-softail-flst.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum May 2024 18 (1993 FLSTN Heritage Softail Nostalgia--OHV
       V-Twin).jpg
@@ -5858,6 +7166,16 @@
   stock: 3
   rating: 4.8
   image: "/assets/img/heritage/harley-davidson-1986-sportster-xlh-883.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1986-sportster-xlh-883-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1986-sportster-xlh-883-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1986-sportster-xlh-883.webp"
+    - 900
   credit:
     title: Harley-Davidson 883 Sportster red.jpg
     author: Addvisor
@@ -5892,6 +7210,10 @@
   stock: 3
   rating: 4.9
   image: "/assets/img/products/harley-davidson-1987-low-rider-custom-fxlr.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -5922,6 +7244,16 @@
   stock: 2
   rating: 4.9
   image: "/assets/img/heritage/harley-davidson-1988-springer-softail-fxsts.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1988-springer-softail-fxsts-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1988-springer-softail-fxsts-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1988-springer-softail-fxsts.webp"
+    - 900
   credit:
     title: 1989 Harley Davidson Softail Springer.jpg
     author: bluescast
@@ -5957,6 +7289,10 @@
   stock: 3
   rating: 4.8
   image: "/assets/img/products/harley-davidson-1988-electra-glide-85th-anniversary.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -5987,6 +7323,16 @@
   stock: 2
   rating: 4.6
   image: "/assets/img/heritage/harley-davidson-1989-ultra-classic-electra-glide.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1989-ultra-classic-electra-glide-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1989-ultra-classic-electra-glide-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1989-ultra-classic-electra-glide.webp"
+    - 900
   credit:
     title: Harley Davidson Electra Glide Ultra Classic.jpg
     author: LKM13
@@ -6022,6 +7368,16 @@
   stock: 2
   rating: 5.0
   image: "/assets/img/heritage/harley-davidson-1990-fat-boy-flstf.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1990-fat-boy-flstf-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1990-fat-boy-flstf-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1990-fat-boy-flstf.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum May 2024 17 (1990 FLSTF Fat Boy--OHV V-Twin).jpg
     author: Michael Barera
@@ -6056,6 +7412,10 @@
   stock: 2
   rating: 4.9
   image: "/assets/img/products/harley-davidson-1991-dyna-sturgis-fxdb.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -6085,6 +7445,10 @@
   stock: 1
   rating: 4.5
   image: "/assets/img/products/harley-davidson-1992-bad-boy-fxstsb.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -6114,6 +7478,16 @@
   stock: 1
   rating: 4.5
   image: "/assets/img/heritage/harley-davidson-1993-heritage-nostalgia-flstn.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1993-heritage-nostalgia-flstn-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1993-heritage-nostalgia-flstn-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1993-heritage-nostalgia-flstn.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum May 2024 18 (1993 FLSTN Heritage Softail Nostalgia--OHV
       V-Twin).jpg
@@ -6150,6 +7524,16 @@
   stock: 1
   rating: 4.7
   image: "/assets/img/heritage/harley-davidson-1994-road-king-flhr.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1994-road-king-flhr-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1994-road-king-flhr-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1994-road-king-flhr.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum May 2024 22 (2001 FLHRCI Road King Classic--OHV
       V-Twin).jpg
@@ -6185,6 +7569,16 @@
   stock: 3
   rating: 5.0
   image: "/assets/img/heritage/harley-davidson-1995-electra-glide-flhtcui.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1995-electra-glide-flhtcui-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1995-electra-glide-flhtcui-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1995-electra-glide-flhtcui.webp"
+    - 900
   credit:
     title: Harley-Davidson Electra Glide dashboard.jpg
     author: Tobias "ToMar" Maier
@@ -6220,6 +7614,16 @@
   stock: 1
   rating: 4.7
   image: "/assets/img/heritage/harley-davidson-1996-dyna-wide-glide-fxdwg.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1996-dyna-wide-glide-fxdwg-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1996-dyna-wide-glide-fxdwg-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1996-dyna-wide-glide-fxdwg.webp"
+    - 900
   credit:
     title: Harley-Davidson FXDWG Dyna Wide Glide used in ABUDEKA IS BACK and Nissan
       LEOPARD Ultima V30 TWINCAM TURBO (E-UF31) ver.Minato 302.jpg
@@ -6256,6 +7660,16 @@
   stock: 1
   rating: 4.7
   image: "/assets/img/heritage/harley-davidson-1997-heritage-springer-flsts.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1997-heritage-springer-flsts-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1997-heritage-springer-flsts-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1997-heritage-springer-flsts.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum May 2024 21 (1997 FLSTS Heritage Springer--OHV V-Twin).jpg
     author: Michael Barera
@@ -6291,6 +7705,16 @@
   stock: 1
   rating: 4.8
   image: "/assets/img/heritage/harley-davidson-1998-road-glide-fltr.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1998-road-glide-fltr-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1998-road-glide-fltr-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1998-road-glide-fltr.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum May 2024 20 (1998 FLTRI Road Glide--OHV V-Twin).jpg
     author: Michael Barera
@@ -6325,6 +7749,16 @@
   stock: 3
   rating: 4.9
   image: "/assets/img/heritage/harley-davidson-1999-dyna-super-glide-twin-cam-88.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-1999-dyna-super-glide-twin-cam-88-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-1999-dyna-super-glide-twin-cam-88-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-1999-dyna-super-glide-twin-cam-88.webp"
+    - 900
   credit:
     title: Harley-Davidson Museum February 2024 15 (Engine Room--Twin Cam, 1999-2017).jpg
     author: Michael Barera
@@ -6360,6 +7794,16 @@
   stock: 3
   rating: 5.0
   image: "/assets/img/heritage/harley-davidson-2001-v-rod-vrsca.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-2001-v-rod-vrsca-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-2001-v-rod-vrsca-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-2001-v-rod-vrsca.webp"
+    - 900
   credit:
     title: Harley-Davidson V-Rod front-right Porsche Museum.jpg
     author: Morio
@@ -6394,6 +7838,16 @@
   stock: 3
   rating: 4.7
   image: "/assets/img/heritage/harley-davidson-2006-street-rod-vrscr.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-2006-street-rod-vrscr-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-2006-street-rod-vrscr-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-2006-street-rod-vrscr.webp"
+    - 900
   credit:
     title: Ms-vrscr.jpg
     author: Von Mitch
@@ -6428,6 +7882,16 @@
   stock: 3
   rating: 5.0
   image: "/assets/img/heritage/harley-davidson-2008-rocker-c-fxcwc.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-2008-rocker-c-fxcwc-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-2008-rocker-c-fxcwc-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-2008-rocker-c-fxcwc.webp"
+    - 900
   credit:
     title: 2008 Harley-Davidson Rocker in Athens on 11-14-2023.jpg
     author: George E. Koronaios
@@ -6462,6 +7926,10 @@
   stock: 1
   rating: 4.7
   image: "/assets/img/products/harley-davidson-2011-blackline-fxs.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
@@ -6491,6 +7959,16 @@
   stock: 3
   rating: 4.9
   image: "/assets/img/heritage/harley-davidson-2014-street-750-xg750.webp"
+  image_size:
+  - 900
+  - 557
+  image_srcset:
+  - - "/assets/img/heritage/harley-davidson-2014-street-750-xg750-384.webp"
+    - 384
+  - - "/assets/img/heritage/harley-davidson-2014-street-750-xg750-640.webp"
+    - 640
+  - - "/assets/img/heritage/harley-davidson-2014-street-750-xg750.webp"
+    - 900
   credit:
     title: 2014 Harley-Davidson Street 750 front.jpg
     author: Ryan Urlacher from USA
@@ -6525,6 +8003,10 @@
   stock: 2
   rating: 4.6
   image: "/assets/img/products/harley-davidson-2017-road-king-milwaukee-eight-flhr.svg"
+  image_size:
+  - 630
+  - 390
+  image_srcset:
   credit:
   icon: heritage
   blurb_type: generic
