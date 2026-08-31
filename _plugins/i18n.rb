@@ -19,13 +19,13 @@ module HTZL
         end
       end
 
-      site.pages << build_404(site)
+      site.pages << build_not_found(site)
     end
 
     private
 
     def build_page(site, locale, dict, blueprint)
-      permalink = "#{dict['prefix']}/#{blueprint[:path]}"
+      permalink = "#{dict["prefix"]}/#{blueprint[:path]}"
       page = Jekyll::PageWithoutAFile.new(site, site.source, "", "#{locale}-#{blueprint[:id]}.html")
 
       page.data.merge!(
@@ -39,6 +39,7 @@ module HTZL
         "brand_key"   => blueprint[:brand_key],
         "title"       => page_title(dict, blueprint),
         "description" => dict.dig("meta", blueprint[:meta]),
+        "og_image"    => "/assets/img/#{blueprint[:og]}",
         "alternates"  => alternates(site, blueprint),
         "is_default"  => locale == HTZL::DEFAULT_LOCALE
       )
@@ -66,18 +67,18 @@ module HTZL
           "name"      => dict["name"],
           "short"     => dict["short"],
           "flag"      => dict["flag"],
-          "url"       => "#{dict['prefix']}/#{blueprint[:path]}"
+          "url"       => "#{dict["prefix"]}/#{blueprint[:path]}"
         }
       end
     end
 
-    def build_404(site)
+    def build_not_found(site)
       page = Jekyll::PageWithoutAFile.new(site, site.source, "", "404.html")
       page.data.merge!(
-        "layout"    => "notfound",
-        "permalink" => "/404.html",
-        "lang"      => HTZL::DEFAULT_LOCALE,
-        "html_lang" => "id",
+        "layout"      => "notfound",
+        "permalink"   => "/404.html",
+        "lang"        => HTZL::DEFAULT_LOCALE,
+        "html_lang"   => "id",
         "page_id"     => "notfound",
         "title"       => site.data.dig("i18n", HTZL::DEFAULT_LOCALE, "notfound", "title"),
         "description" => site.data.dig("i18n", HTZL::DEFAULT_LOCALE, "notfound", "text"),

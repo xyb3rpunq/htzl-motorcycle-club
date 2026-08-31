@@ -246,6 +246,23 @@ footer:
     本网站是出于学习目的制作的虚构作品集项目。HTZL Motorcycle Club 并非真实公司，
     所使用的品牌名称与图片均归各自权利人所有，不存在任何关联关系。
 
+# Penulisan tanggal mengikuti kebiasaan tiap bahasa.
+date:
+  pattern: "%{y}年%{m}%{d}日"
+  months:
+    - "1月"
+    - "2月"
+    - "3月"
+    - "4月"
+    - "5月"
+    - "6月"
+    - "7月"
+    - "8月"
+    - "9月"
+    - "10月"
+    - "11月"
+    - "12月"
+
 meta:
   home_title: 值得信赖的摩托车经销商
   home_desc: 雅加达 Kawasaki 与 Vixian 官方经销商。%{count} 件目录商品，价格透明，官方保修，快速配送。

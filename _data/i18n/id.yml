@@ -249,6 +249,23 @@ footer:
     Motorcycle Club bukan perusahaan sungguhan, dan nama merek serta gambar yang
     dipakai adalah milik pemegang hak masing-masing tanpa afiliasi apa pun.
 
+# Penulisan tanggal mengikuti kebiasaan tiap bahasa.
+date:
+  pattern: "%{d} %{m} %{y}"
+  months:
+    - "Januari"
+    - "Februari"
+    - "Maret"
+    - "April"
+    - "Mei"
+    - "Juni"
+    - "Juli"
+    - "Agustus"
+    - "September"
+    - "Oktober"
+    - "November"
+    - "Desember"
+
 meta:
   home_title: Dealer Sepeda Motor Terpercaya
   home_desc: Dealer resmi Kawasaki dan Vixian di Jakarta. %{count} item katalog dengan harga transparan, garansi resmi, dan pengiriman cepat.

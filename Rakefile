@@ -22,6 +22,11 @@ end
 desc "Jalankan seluruh test, Ruby dan JavaScript"
 task test: ["test:ruby", "test:js"]
 
+desc "Periksa gaya dan kualitas kode Ruby"
+task :lint do
+  sh "bundle exec rubocop"
+end
+
 desc "Build situs statis ke _site"
 task build: :seed do
   sh "bundle exec jekyll build --trace"
@@ -32,8 +37,8 @@ task serve: :seed do
   sh "bundle exec jekyll serve --livereload --trace"
 end
 
-desc "Seed, build, lalu jalankan seluruh test (dipakai CI)"
-task ci: %i[seed build test]
+desc "Seed, build, test, lalu lint (dipakai CI)"
+task ci: %i[seed build test lint]
 
 namespace :i18n do
   desc "Laporan cakupan terjemahan"

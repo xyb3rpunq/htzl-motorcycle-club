@@ -20,6 +20,7 @@ class CssTest < Minitest::Test
   # ikut terpotong setinggi header (60 px) dan menunya tidak terlihat.
   def test_site_header_tidak_memakai_backdrop_filter_langsung
     header = block(".site-header")
+
     refute_nil header, "blok .site-header tidak ditemukan"
     refute_match(/backdrop-filter/, header,
                  "backdrop-filter harus dipindah ke pseudo-element, bukan di .site-header")
@@ -31,6 +32,7 @@ class CssTest < Minitest::Test
 
   def test_blur_header_tetap_ada_lewat_pseudo_element
     pseudo = block(".site-header::before")
+
     refute_nil pseudo, "pseudo-element latar header hilang"
     assert_match(/backdrop-filter/, pseudo, "efek blur header hilang")
     assert_match(/z-index:\s*-1/, pseudo, "lapisan blur harus berada di belakang isi header")
@@ -40,6 +42,7 @@ class CssTest < Minitest::Test
   # digeser mendatar di ponsel.
   def test_body_mencegah_gulir_horizontal
     body = block("body")
+
     assert_match(/overflow-x:\s*clip/, body,
                  "body butuh overflow-x: clip agar drawer tidak membuat gulir mendatar")
     refute_match(/overflow-x:\s*hidden/, body,
@@ -50,6 +53,7 @@ class CssTest < Minitest::Test
   # viewport di layar 1366 px.
   def test_dropdown_tepi_kanan_dibuka_ke_dalam
     rule = block('.dropdown[data-align="end"] .dropdown__panel')
+
     refute_nil rule, "aturan perataan dropdown tepi kanan hilang"
     assert_match(/inset-inline-end:\s*0/, rule)
     assert_match(/inset-inline-start:\s*auto/, rule)
@@ -58,6 +62,7 @@ class CssTest < Minitest::Test
   def test_dropdown_bahasa_memakai_perataan_tepi
     header = File.read(File.join(ROOT, "_includes", "header.html"), encoding: "utf-8")
     lang_block = header[/<div class="dropdown"[^>]*>\s*<button[^>]*aria-controls="menu-lang"/m]
+
     refute_nil lang_block, "dropdown bahasa tidak ditemukan di header"
     assert_match(/data-align="end"/, lang_block,
                  "dropdown bahasa harus memakai data-align=\"end\"")
@@ -99,7 +104,8 @@ class CssTest < Minitest::Test
     )}x
     Dir[File.join(ROOT, "_site", "**", "*.html")].each do |path|
       html = File.read(path, encoding: "utf-8")
-      html.scan(/(?:src|href)="(https?:\/\/[^"]+)"/).flatten.uniq.each do |url|
+
+      html.scan(%r{(?:src|href)="(https?://[^"]+)"}).flatten.uniq.each do |url|
         assert_match izin, url, "#{File.basename(File.dirname(path))} memuat aset eksternal: #{url}"
       end
     end
@@ -110,6 +116,7 @@ class CssTest < Minitest::Test
   # kiri layar alih-alih berada di tengah.
   def test_dialog_dinyatakan_rata_tengah
     rule = block("dialog")
+
     refute_nil rule, "blok dialog tidak ditemukan"
     assert_match(/margin:\s*auto/, rule,
                  "dialog wajib menyatakan margin: auto karena reset global menimpanya")

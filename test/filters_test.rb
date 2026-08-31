@@ -4,6 +4,7 @@ require_relative "test_helper"
 
 # Filter Liquid diuji tanpa menjalankan Jekyll. Konteks Liquid dipalsukan
 # dengan objek sederhana supaya filter yang membaca site.data tetap bisa diuji.
+require "date"
 require_relative "../lib/htzl/filters"
 
 class FiltersTest < Minitest::Test
@@ -75,6 +76,7 @@ class FiltersTest < Minitest::Test
   # --- whatsapp_link -----------------------------------------------------
   def test_whatsapp_link_membersihkan_nomor_dan_menyandi_pesan
     url = @subject.whatsapp_link("+62 812-3456-7890", "Halo HTZL, pesan Kawasaki x56")
+
     assert url.start_with?("https://wa.me/6281234567890?text="), "nomor harus dibersihkan"
     refute_includes url, " ", "spasi wajib tersandi"
     assert_includes url, "Halo%20HTZL"
@@ -82,6 +84,7 @@ class FiltersTest < Minitest::Test
 
   def test_whatsapp_link_menyandi_karakter_non_latin
     url = @subject.whatsapp_link("6281", "Здравствуйте")
+
     assert_includes url, "%D0%97", "huruf Kiril harus tersandi UTF-8"
   end
 
@@ -93,9 +96,10 @@ class FiltersTest < Minitest::Test
   # --- search_blob -------------------------------------------------------
   def test_search_blob_menggabungkan_kolom_pencarian_dalam_huruf_kecil
     blob = @subject.search_blob({
-      "name" => "Kawasaki x56", "brand" => "Kawasaki",
+                                  "name" => "Kawasaki x56", "brand" => "Kawasaki",
       "subcategory" => "Superbike", "category_label" => "Motor", "sku" => "HTZ-MOT-001"
-    })
+                                })
+
     assert_equal "kawasaki x56 kawasaki superbike motor htz-mot-001", blob
   end
 
@@ -166,7 +170,7 @@ class FiltersTest < Minitest::Test
 
   def test_kata_satuan_diterjemahkan
     assert_equal "12 months", HTZL::Measures.localize("12 bulan", "en")
-    assert_equal "12 个月",   HTZL::Measures.localize("12 bulan", "zh")
+    assert_equal "12 个月", HTZL::Measures.localize("12 bulan", "zh")
     assert_equal "2 hours",   HTZL::Measures.localize("2 jam", "en")
     assert_equal "120 links", HTZL::Measures.localize("120 mata", "en")
     assert_equal "1 litres",  HTZL::Measures.localize("1 liter", "en")
@@ -191,5 +195,23 @@ class FiltersTest < Minitest::Test
     assert_equal "1,362 cc", @subject.term("1.362 cc", "spec_value", "en")
     assert_equal "1.362 cc", @subject.term("1.362 cc", "spec_value", "id"),
                  "bahasa dasar tidak diubah"
+  end
+
+  # --- localize_date -----------------------------------------------------
+  def test_tanggal_ditulis_sesuai_kebiasaan_bahasa
+    date = Date.new(2022, 5, 29)
+
+    assert_equal "29 Mei 2022", @subject.localize_date(date, "id")
+    assert_equal "29 May 2022", @subject.localize_date(date, "en")
+  end
+
+  def test_tanggal_menerima_teks_maupun_objek
+    assert_equal "1 Januari 2016", @subject.localize_date("2016-01-01", "id")
+    assert_equal "1 Januari 2016", @subject.localize_date(Date.new(2016, 1, 1), "id")
+  end
+
+  def test_tanggal_tidak_sah_dikembalikan_kosong
+    assert_equal "", @subject.localize_date("bukan tanggal", "id")
+    assert_equal "", @subject.localize_date(nil, "id")
   end
 end

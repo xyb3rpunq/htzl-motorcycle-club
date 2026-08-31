@@ -22,6 +22,7 @@ class ContrastTest < Minitest::Test
     @tokens ||= {}
     @tokens[theme] ||= begin
       block = theme == :dark ? css[/:root\[data-theme="dark"\]\s*\{(.+?)\n\}/m, 1] : css[/^:root \{(.+?)\n\}/m, 1]
+
       refute_nil block, "blok token #{theme} tidak ditemukan"
       block.scan(/--([\w-]+):\s*(#[0-9a-fA-F]{6})/).to_h
     end
@@ -40,7 +41,7 @@ class ContrastTest < Minitest::Test
   def contrast(foreground, background)
     a = luminance(foreground)
     b = luminance(background)
-    ((([a, b].max) + 0.05) / (([a, b].min) + 0.05)).round(2)
+    (([a, b].max + 0.05) / ([a, b].min + 0.05)).round(2)
   end
 
   # Pasangan warna yang benar-benar dipakai di antarmuka.
@@ -85,6 +86,7 @@ class ContrastTest < Minitest::Test
   # yang sudah digelapkan. Test ini mencegahnya dikembalikan.
   def test_tombol_whatsapp_cukup_kontras
     hex = css[/\.btn--wa \{ --btn-bg: (#[0-9a-fA-F]{6});/, 1]
+
     refute_nil hex, "warna tombol WhatsApp tidak ditemukan"
     assert_operator contrast("#ffffff", hex), :>=, AA_NORMAL,
                     "tombol WhatsApp #{hex} tidak cukup kontras dengan teks putih"
@@ -92,8 +94,10 @@ class ContrastTest < Minitest::Test
 
   def test_tombol_mengambang_memakai_warna_yang_sama
     fab = css[/\.fab \{(.+?)\n\}/m, 1]
+
     refute_nil fab
     hex = fab[/background:\s*(#[0-9a-fA-F]{6})/, 1]
+
     assert_operator contrast("#ffffff", hex), :>=, AA_NORMAL,
                     "tombol mengambang #{hex} tidak cukup kontras"
   end
@@ -102,8 +106,10 @@ class ContrastTest < Minitest::Test
   # mencapai 4,48.
   def test_disclaimer_footer_cukup_kontras
     rule = css[/\.disclaimer \{(.+?)\}/m, 1]
+
     refute_nil rule
-    alpha = rule[/rgb\(255 255 255 \/ (\d+)%\)/, 1].to_i
+    alpha = rule[%r{rgb\(255 255 255 / (\d+)%\)}, 1].to_i
+
     assert_operator alpha, :>=, 46, "opasitas #{alpha}% terlalu rendah untuk teks di atas footer gelap"
   end
 end

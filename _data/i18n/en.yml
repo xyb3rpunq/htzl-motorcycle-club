@@ -249,6 +249,23 @@ footer:
     Motorcycle Club is not a real company, and the brand names and images used
     belong to their respective owners with no affiliation implied.
 
+# Penulisan tanggal mengikuti kebiasaan tiap bahasa.
+date:
+  pattern: "%{d} %{m} %{y}"
+  months:
+    - "January"
+    - "February"
+    - "March"
+    - "April"
+    - "May"
+    - "June"
+    - "July"
+    - "August"
+    - "September"
+    - "October"
+    - "November"
+    - "December"
+
 meta:
   home_title: Trusted Motorcycle Dealership
   home_desc: Official Kawasaki and Vixian dealer in Jakarta. %{count} catalogue items with transparent pricing, official warranty and fast delivery.

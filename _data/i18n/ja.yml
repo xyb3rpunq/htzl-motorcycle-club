@@ -248,6 +248,23 @@ footer:
     は実在の企業ではなく、使用しているブランド名および画像の権利は各権利者に帰属します。
     いかなる提携関係もありません。
 
+# Penulisan tanggal mengikuti kebiasaan tiap bahasa.
+date:
+  pattern: "%{y}年%{m}%{d}日"
+  months:
+    - "1月"
+    - "2月"
+    - "3月"
+    - "4月"
+    - "5月"
+    - "6月"
+    - "7月"
+    - "8月"
+    - "9月"
+    - "10月"
+    - "11月"
+    - "12月"
+
 meta:
   home_title: 信頼できるバイク販売店
   home_desc: ジャカルタのKawasaki・Vixian正規販売店。明朗価格のカタログ%{count}点、正規保証、迅速配送。

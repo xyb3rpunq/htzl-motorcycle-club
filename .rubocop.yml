@@ -1,0 +1,119 @@
+# Konfigurasi RuboCop untuk HTZL Motorcycle Club.
+#
+# Prinsipnya: nyalakan cop yang menangkap kesalahan nyata, dan longgarkan cop
+# gaya yang bertabrakan dengan bentuk kode ini — terutama tabel data produk
+# yang sengaja ditulis sejajar agar perbedaan antarbaris langsung terlihat.
+
+plugins:
+  - rubocop-minitest
+
+AllCops:
+  TargetRubyVersion: 3.1
+  NewCops: enable
+  Exclude:
+    - "vendor/**/*"
+    - "_site/**/*"
+    - "_preview/**/*"
+
+# --- Gaya yang memang dipakai di seluruh kode ---------------------------
+# Kodebase ini konsisten memakai kutip ganda; itu keputusan, bukan kelalaian.
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: double_quotes
+
+# format("%-10s %3d") dipakai merapikan keluaran terminal; token bernama justru
+# menyulitkan pembacaan di sana.
+Style/FormatStringToken:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Layout/EndOfLine:
+  EnforcedStyle: lf
+
+# --- Tabel data produk ---------------------------------------------------
+# Perataan spasi di dua berkas ini disengaja dan dijaga manual.
+Layout/ExtraSpacing:
+  AllowForAlignment: true
+  Exclude:
+    - "lib/htzl/catalog.rb"
+    - "lib/htzl/heritage.rb"
+
+Layout/SpaceAfterComma:
+  Exclude:
+    - "lib/htzl/catalog.rb"
+    - "lib/htzl/heritage.rb"
+
+Layout/HashAlignment:
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
+  Exclude:
+    - "lib/htzl/catalog.rb"
+
+Layout/LineLength:
+  Max: 120
+  Exclude:
+    - "lib/htzl/catalog.rb"
+    - "lib/htzl/heritage.rb"
+    - "lib/htzl/filters.rb"
+    - "test/**/*"
+
+# --- Ukuran ---------------------------------------------------------------
+# Ambang dinaikkan seperlunya: yang panjang di sini adalah data dan daftar
+# pemeriksaan, bukan logika bercabang.
+Metrics/BlockLength:
+  Exclude:
+    - "test/**/*"
+    - "Rakefile"
+
+Metrics/ClassLength:
+  Max: 200
+  # Satu kelas test memeriksa satu topik secara menyeluruh; memecahnya hanya
+  # demi jumlah baris justru menyulitkan pencarian saat ada yang gagal.
+  Exclude:
+    - "test/**/*"
+
+Metrics/ModuleLength:
+  Max: 400
+
+Metrics/MethodLength:
+  Max: 45
+
+Metrics/AbcSize:
+  Max: 45
+
+Metrics/CyclomaticComplexity:
+  Max: 12
+
+Metrics/PerceivedComplexity:
+  Max: 12
+
+Metrics/ParameterLists:
+  Max: 9
+
+# --- Penamaan --------------------------------------------------------------
+# Nama test ditulis dalam Bahasa Indonesia dan panjang; itu disengaja supaya
+# pesan kegagalannya langsung menjelaskan apa yang rusak.
+Naming/MethodName:
+  Exclude:
+    - "test/**/*"
+
+Naming/VariableName:
+  Exclude:
+    - "test/**/*"
+
+Naming/VariableNumber:
+  Exclude:
+    - "test/**/*"
+
+Minitest/MultipleAssertions:
+  Max: 25
+
+# Berkas seed dan generator adalah skrip, bukan pustaka.
+Style/TopLevelMethodDefinition:
+  Exclude:
+    - "lib/generate_art.rb"
+    - "lib/seed_catalog.rb"

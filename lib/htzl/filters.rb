@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require "date"
 require_relative "catalog"
 require_relative "locales"
 
@@ -56,7 +57,7 @@ module HTZL
 
     # Susun deep link WhatsApp lengkap dengan pesan siap kirim.
     def whatsapp_link(number, message)
-      "https://wa.me/#{number.to_s.gsub(/\D/, '')}?text=#{escape_component(message.to_s)}"
+      "https://wa.me/#{number.to_s.gsub(/\D/, "")}?text=#{escape_component(message.to_s)}"
     end
 
     # Ringkas hash spesifikasi jadi satu baris.
@@ -94,18 +95,18 @@ module HTZL
   module Measures
     # Kata satuan Bahasa Indonesia beserta padanannya.
     UNITS = {
-      "liter"  => { "en" => "litres",  "zh" => "升",     "ru" => "л",        "ja" => "L" },
-      "bulan"  => { "en" => "months",  "zh" => "个月",   "ru" => "мес.",     "ja" => "か月" },
-      "hari"   => { "en" => "days",    "zh" => "天",     "ru" => "дней",     "ja" => "日間" },
+      "liter"  => { "en" => "litres",  "zh" => "升", "ru" => "л", "ja" => "L" },
+      "bulan"  => { "en" => "months",  "zh" => "个月", "ru" => "мес.", "ja" => "か月" },
+      "hari"   => { "en" => "days",    "zh" => "天", "ru" => "дней", "ja" => "日間" },
       "jam"    => { "en" => "hours",   "zh" => "小时",   "ru" => "часов",    "ja" => "時間" },
       "menit"  => { "en" => "minutes", "zh" => "分钟",   "ru" => "минут",    "ja" => "分" },
       "tahun"  => { "en" => "years",   "zh" => "年",     "ru" => "лет",      "ja" => "年" },
       "detik"  => { "en" => "seconds", "zh" => "秒",     "ru" => "секунд",   "ja" => "秒" },
-      "mikron" => { "en" => "micron",  "zh" => "微米",   "ru" => "мкм",      "ja" => "ミクロン" },
+      "mikron" => { "en" => "micron",  "zh" => "微米", "ru" => "мкм", "ja" => "ミクロン" },
       "mata"   => { "en" => "links",   "zh" => "节",     "ru" => "звеньев",  "ja" => "リンク" },
       "klik"   => { "en" => "clicks",  "zh" => "档",     "ru" => "щелчков",  "ja" => "クリック" },
       "sumbu"  => { "en" => "axis",    "zh" => "轴",     "ru" => "осей",     "ja" => "軸" },
-      "inci"   => { "en" => "inches",  "zh" => "英寸",   "ru" => "дюйма",    "ja" => "インチ" },
+      "inci"   => { "en" => "inches",  "zh" => "英寸", "ru" => "дюйма", "ja" => "インチ" },
       "pcs"    => { "en" => "pc",      "zh" => "件",     "ru" => "шт",       "ja" => "個" },
       "set"    => { "en" => "set",     "zh" => "套",     "ru" => "компл.",   "ja" => "セット" },
       "sampai" => { "en" => "to",      "zh" => "至",     "ru" => "до",       "ja" => "〜" },
@@ -128,7 +129,7 @@ module HTZL
     ].freeze
 
     # Satuan internasional yang sudah sama di semua bahasa.
-    NEUTRAL = /\A(cc|hp|Nm|mm|cm|km|kg|g|ml|l|L|dB|kV|kW|W|V|T|Hz|bar|oz|kgf|psi|C|A|D|S|M|XL|XXL|2XL|3XL|AA|PD|N95|IP\d+|[A-Z]{1,4}\d*|\d+[A-Z]*|[\d.,\/:%+-]+)\z/
+    NEUTRAL = %r{\A(cc|hp|Nm|mm|cm|km|kg|g|ml|l|L|dB|kV|kW|W|V|T|Hz|bar|oz|kgf|psi|C|A|D|S|M|XL|XXL|2XL|3XL|AA|PD|N95|IP\d+|[A-Z]{1,4}\d*|\d+[A-Z]*|[\d.,/:%+-]+)\z}
 
     module_function
 
@@ -156,7 +157,7 @@ module HTZL
         bare = word.gsub(/[(),.]+\z/, "")
         suffix = word[bare.length..] || ""
 
-        if bare.match?(/\A[\d.,\/:+-]+\z/)
+        if bare.match?(%r{\A[\d.,/:+-]+\z})
           localize_number(bare, lang) + suffix
         elsif UNITS.key?(bare.downcase)
           UNITS[bare.downcase][lang] + suffix
@@ -203,6 +204,21 @@ module HTZL
       entry.is_a?(Hash) && entry[lang.to_s] ? entry[lang.to_s] : text
     end
 
+    # Tulis tanggal mengikuti kebiasaan bahasanya.
+    #   29 Mei 2022 | 29 May 2022 | 2022年5月29日 | 29 мая 2022
+    def localize_date(value, lang)
+      date = to_date(value)
+      return "" if date.nil?
+
+      dict = site_data.dig("i18n", lang.to_s, "date")
+      return date.strftime("%-d %B %Y") if dict.nil? || dict["months"].nil?
+
+      dict["pattern"].to_s
+                     .gsub("%{d}", date.day.to_s)
+                     .gsub("%{m}", dict["months"][date.month - 1].to_s)
+                     .gsub("%{y}", date.year.to_s)
+    end
+
     # Isi placeholder gaya %{nama} pada string terjemahan.
     #   {{ template | fill: 'type', 'Superbike', 'cc', 1362 }}
     def fill(template, *pairs)
@@ -219,6 +235,18 @@ module HTZL
     end
 
     private
+
+    def to_date(value)
+      case value
+      when Date, Time, DateTime then value
+      when String then begin
+        Date.parse(value)
+      rescue StandardError
+        nil
+      end
+      else value.respond_to?(:to_date) ? value.to_date : nil
+      end
+    end
 
     def site_object
       @context.registers[:site]

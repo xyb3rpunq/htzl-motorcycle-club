@@ -48,6 +48,9 @@ jobs:
         env:
           JEKYLL_ENV: production
 
+      - name: Periksa gaya kode Ruby
+        run: bundle exec rubocop
+
       - name: Jalankan seluruh test
         run: bundle exec rake test
 

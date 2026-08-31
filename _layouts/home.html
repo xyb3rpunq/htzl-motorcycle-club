@@ -172,7 +172,7 @@ layout: default
         <div class="news-card__body">
           <p class="news-card__topic">{{ news.topic[page.lang] }}</p>
           <h3>{{ news.title[page.lang] }}</h3>
-          <time datetime="{{ news.date }}">{{ news.date | date: '%d %b %Y' }}</time>
+          <time datetime="{{ news.date | date: '%Y-%m-%d' }}">{{ news.date | localize_date: page.lang }}</time>
         </div>
       </a>
       {%- endfor %}

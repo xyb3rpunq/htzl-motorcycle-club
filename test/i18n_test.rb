@@ -13,7 +13,8 @@ class I18nTest < Minitest::Test
   def test_semua_berkas_bahasa_ada
     TestSupport::LOCALES.each do |locale|
       path = File.join(ROOT, "_data", "i18n", "#{locale}.yml")
-      assert File.exist?(path), "berkas bahasa hilang: #{locale}.yml"
+
+      assert_path_exists path, "berkas bahasa hilang: #{locale}.yml"
     end
   end
 
@@ -38,6 +39,7 @@ class I18nTest < Minitest::Test
 
   def test_awalan_url_unik_dan_bahasa_dasar_di_akar
     prefixes = TestSupport::LOCALES.map { |l| i18n(l)["prefix"] }
+
     assert_equal prefixes.length, prefixes.uniq.length, "awalan URL tidak boleh kembar"
     assert_equal "", i18n(BASE)["prefix"], "bahasa dasar harus berada di akar situs"
     TestSupport::LOCALES.reject { |l| l == BASE }.each do |locale|
@@ -53,8 +55,8 @@ class I18nTest < Minitest::Test
       missing = reference - current
       extra = current - reference
 
-      assert_empty missing, "#{locale}.yml kehilangan kunci: #{missing.first(8).join(', ')}"
-      assert_empty extra, "#{locale}.yml punya kunci berlebih: #{extra.first(8).join(', ')}"
+      assert_empty missing, "#{locale}.yml kehilangan kunci: #{missing.first(8).join(", ")}"
+      assert_empty extra, "#{locale}.yml punya kunci berlebih: #{extra.first(8).join(", ")}"
     end
   end
 
@@ -70,7 +72,8 @@ class I18nTest < Minitest::Test
         end
         value.to_s.strip.empty? && path != "prefix"
       end
-      assert_empty kosong, "#{locale}.yml punya nilai kosong: #{kosong.first(5).join(', ')}"
+
+      assert_empty kosong, "#{locale}.yml punya nilai kosong: #{kosong.first(5).join(", ")}"
     end
   end
 
@@ -79,6 +82,7 @@ class I18nTest < Minitest::Test
       reference = i18n(BASE)["catalog"][key].scan(/%\{(\w+)\}/).flatten.sort
       TestSupport::LOCALES.each do |locale|
         current = i18n(locale)["catalog"][key].scan(/%\{(\w+)\}/).flatten.sort
+
         assert_equal reference, current, "#{locale}.yml: placeholder #{key} tidak cocok"
       end
     end
@@ -87,17 +91,20 @@ class I18nTest < Minitest::Test
   def test_kamus_menutupi_semua_subkategori
     used = catalog.map { |i| i["subcategory"] }.uniq
     covered = terms["subcategory"].keys
-    assert_empty used - covered, "subkategori belum ada di kamus: #{(used - covered).join(', ')}"
+
+    assert_empty used - covered, "subkategori belum ada di kamus: #{(used - covered).join(", ")}"
   end
 
   def test_kamus_menutupi_semua_nama_spesifikasi
     used = catalog.flat_map { |i| i["specs"].keys }.uniq
     covered = terms["spec_key"].keys
-    assert_empty used - covered, "nama spesifikasi belum ada di kamus: #{(used - covered).join(', ')}"
+
+    assert_empty used - covered, "nama spesifikasi belum ada di kamus: #{(used - covered).join(", ")}"
   end
 
   def test_kamus_menutupi_semua_label_kategori
     used = catalog.map { |i| i["category_label"] }.uniq
+
     assert_empty used - terms["category"].keys
   end
 
@@ -118,7 +125,8 @@ class I18nTest < Minitest::Test
     bands = catalog.map { |i| i["price_band"] }.uniq
     TestSupport::LOCALES.each do |locale|
       keys = i18n(locale)["catalog"]["price_bands"].keys
-      assert_empty bands - keys, "#{locale}.yml kehilangan label rentang harga: #{(bands - keys).join(', ')}"
+
+      assert_empty bands - keys, "#{locale}.yml kehilangan label rentang harga: #{(bands - keys).join(", ")}"
     end
   end
 
@@ -126,7 +134,8 @@ class I18nTest < Minitest::Test
     badges = catalog.map { |i| i["badge"] }.compact.uniq
     TestSupport::LOCALES.each do |locale|
       keys = i18n(locale)["catalog"]["badges"].keys
-      assert_empty badges - keys, "#{locale}.yml kehilangan label lencana: #{(badges - keys).join(', ')}"
+
+      assert_empty badges - keys, "#{locale}.yml kehilangan label lencana: #{(badges - keys).join(", ")}"
     end
   end
 
@@ -135,15 +144,16 @@ class I18nTest < Minitest::Test
             .map { |p| File.basename(p, "-thumb.webp") }
     TestSupport::LOCALES.each do |locale|
       captions = i18n(locale)["gallery"]["captions"].keys
-      assert_empty slugs - captions, "#{locale}.yml kehilangan judul galeri: #{(slugs - captions).join(', ')}"
+
+      assert_empty slugs - captions, "#{locale}.yml kehilangan judul galeri: #{(slugs - captions).join(", ")}"
     end
   end
 
   def test_berita_tersedia_dalam_semua_bahasa
     data_file("news.yml").each do |news|
       TestSupport::LOCALES.each do |locale|
-        refute_nil news["title"][locale], "berita #{news['image']} tidak punya judul #{locale}"
-        refute_nil news["topic"][locale], "berita #{news['image']} tidak punya topik #{locale}"
+        refute_nil news["title"][locale], "berita #{news["image"]} tidak punya judul #{locale}"
+        refute_nil news["topic"][locale], "berita #{news["image"]} tidak punya topik #{locale}"
       end
     end
   end
@@ -156,13 +166,15 @@ class I18nTest < Minitest::Test
   def test_setiap_nilai_spesifikasi_tercakup
     used = catalog.flat_map { |i| i["specs"].values }.uniq
     missing = used.reject { |v| HTZL::Measures.localize(v, "en") || spec_values.key?(v) }
-    assert_empty missing, "nilai belum diterjemahkan: #{missing.first(5).join(', ')}"
+
+    assert_empty missing, "nilai belum diterjemahkan: #{missing.first(5).join(", ")}"
   end
 
   def test_kamus_nilai_tidak_memuat_entri_usang
     used = catalog.flat_map { |i| i["specs"].values }.uniq
     extra = spec_values.keys - used
-    assert_empty extra, "entri kamus tidak terpakai: #{extra.first(5).join(', ')}"
+
+    assert_empty extra, "entri kamus tidak terpakai: #{extra.first(5).join(", ")}"
   end
 
   def test_setiap_entri_nilai_punya_empat_bahasa
@@ -175,7 +187,30 @@ class I18nTest < Minitest::Test
 
   def test_nilai_yang_ditangani_otomatis_tidak_perlu_masuk_kamus
     redundant = spec_values.keys.select { |v| HTZL::Measures.localize(v, "en") }
+
     assert_empty redundant,
-                 "nilai ini sudah ditangani otomatis, hapus dari kamus: #{redundant.first(5).join(', ')}"
+                 "nilai ini sudah ditangani otomatis, hapus dari kamus: #{redundant.first(5).join(", ")}"
+  end
+
+  # --- penulisan tanggal -------------------------------------------------
+  def test_setiap_bahasa_punya_dua_belas_nama_bulan
+    TestSupport::LOCALES.each do |locale|
+      months = i18n(locale).dig("date", "months")
+
+      refute_nil months, "#{locale}.yml tidak punya nama bulan"
+      assert_equal 12, months.length, "#{locale}.yml: jumlah bulan salah"
+      months.each { |m| refute_empty m.to_s.strip }
+    end
+  end
+
+  def test_pola_tanggal_memuat_placeholder_yang_dibutuhkan
+    TestSupport::LOCALES.each do |locale|
+      pattern = i18n(locale).dig("date", "pattern")
+
+      refute_nil pattern, "#{locale}.yml tidak punya pola tanggal"
+      ["%{d}", "%{m}", "%{y}"].each do |token|
+        assert_includes pattern, token, "#{locale}.yml: pola tanggal kehilangan #{token}"
+      end
+    end
   end
 end

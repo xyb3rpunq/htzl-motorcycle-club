@@ -11,10 +11,12 @@ gem "jekyll", "~> 4.3"
 # supaya anotasi hreflang lima bahasa bisa dikendalikan sepenuhnya.
 
 group :development, :test do
-  gem "minitest", "~> 5.20"        # test suite (padanan Rails test)
+  gem "minitest", "~> 5.20" # test suite (padanan Rails test)
   gem "rake", "~> 13.1"
+  gem "rubocop", "~> 1.60", require: false # linter gaya dan kualitas
+  gem "rubocop-minitest", "~> 0.34", require: false
 end
 
 # Dependensi Windows
-gem "tzinfo-data", platforms: [:windows, :jruby]
+gem "tzinfo-data", platforms: %i[windows jruby]
 gem "wdm", "~> 0.1", platforms: [:windows]

@@ -20,18 +20,20 @@ class CatalogTest < Minitest::Test
     wajib = %w[name slug category category_label subcategory brand price price_band
                badge stock rating blurb specs blurb_type]
     catalog.each do |item|
-      wajib.each { |key| assert item.key?(key), "#{item['name']} kehilangan kolom #{key}" }
+      wajib.each { |key| assert item.key?(key), "#{item["name"]} kehilangan kolom #{key}" }
     end
   end
 
   def test_sku_unik_dan_berformat_benar
     skus = catalog.map { |i| i["sku"] }
+
     assert_equal skus.length, skus.uniq.length, "SKU tidak boleh kembar"
     skus.each { |sku| assert_match(/\AHTZ-[A-Z]{3}-\d{3}\z/, sku) }
   end
 
   def test_slug_unik_dan_aman_untuk_url
     slugs = catalog.map { |i| i["slug"] }
+
     assert_equal slugs.length, slugs.uniq.length
     slugs.each { |slug| assert_match(/\A[a-z0-9-]+\z/, slug) }
   end
@@ -39,33 +41,34 @@ class CatalogTest < Minitest::Test
   def test_harga_selalu_bilangan_positif
     catalog.each do |item|
       assert_kind_of Integer, item["price"]
-      assert_operator item["price"], :>, 0, "#{item['name']} punya harga tidak wajar"
+      assert_operator item["price"], :>, 0, "#{item["name"]} punya harga tidak wajar"
     end
   end
 
   def test_harga_coret_selalu_lebih_tinggi_dari_harga_jual
     catalog.select { |i| i["price_old"] }.each do |item|
       assert_operator item["price_old"], :>, item["price"],
-                      "#{item['name']}: harga coret harus lebih tinggi"
+                      "#{item["name"]}: harga coret harus lebih tinggi"
     end
   end
 
   def test_rating_dalam_rentang_wajar
     catalog.each do |item|
-      assert_includes 4.0..5.0, item["rating"], "#{item['name']} punya rating di luar rentang"
+      assert_includes 4.0..5.0, item["rating"], "#{item["name"]} punya rating di luar rentang"
     end
   end
 
   def test_setiap_item_punya_gambar_atau_ikon
     catalog.each do |item|
-      assert item["image"] || item["icon"], "#{item['name']} tidak punya gambar maupun ikon"
+      assert item["image"] || item["icon"], "#{item["name"]} tidak punya gambar maupun ikon"
     end
   end
 
   def test_berkas_gambar_motor_benar_benar_ada
     catalog.select { |i| i["image"] }.each do |item|
       path = File.join(ROOT, item["image"].sub(%r{\A/}, ""))
-      assert File.exist?(path), "gambar hilang: #{item['image']}"
+
+      assert_path_exists path, "gambar hilang: #{item["image"]}"
     end
   end
 
@@ -78,15 +81,17 @@ class CatalogTest < Minitest::Test
   def test_setiap_kategori_terisi
     HTZL::Catalog::CATEGORIES.each_key do |key|
       count = catalog.count { |i| i["category"] == key }
+
       assert_operator count, :>, 0, "kategori #{key} kosong"
     end
   end
 
   def test_motor_punya_tiga_trim_per_model
     motors = catalog.select { |i| i["category"] == "motor" }
+
     assert_equal HTZL::Catalog::BIKES.length * HTZL::Catalog::TRIMS.length, motors.length
     %w[Standard S SP].each do |trim|
-      assert_equal HTZL::Catalog::BIKES.length, motors.count { |i| i["trim"] == trim }
+      assert_equal(HTZL::Catalog::BIKES.length, motors.count { |i| i["trim"] == trim })
     end
   end
 
@@ -95,13 +100,14 @@ class CatalogTest < Minitest::Test
       variants = catalog.select { |i| i["name"].start_with?(bike[:name]) && i["category"] == "motor" }
       standard = variants.find { |i| i["trim"] == "Standard" }
       sp = variants.find { |i| i["trim"] == "SP" }
+
       assert_operator sp["price"], :>, standard["price"], "#{bike[:name]}: SP harus lebih mahal dari Standard"
     end
   end
 
   def test_spesifikasi_tidak_pernah_kosong
     catalog.each do |item|
-      refute_empty item["specs"], "#{item['name']} tidak punya spesifikasi"
+      refute_empty item["specs"], "#{item["name"]} tidak punya spesifikasi"
       item["specs"].each do |key, value|
         refute_empty key.to_s.strip
         refute_empty value.to_s.strip
@@ -133,6 +139,7 @@ class CatalogTest < Minitest::Test
   # --- spec_summary ------------------------------------------------------
   def test_spec_summary_membatasi_jumlah_dan_memakai_pemisah
     specs = { "Bahan" => "Kulit", "Berat" => "1 kg", "Ukuran" => "L", "Warna" => "Hitam" }
+
     assert_equal "Bahan: Kulit | Berat: 1 kg", HTZL::Catalog.spec_summary(specs, 2)
     assert_equal 3, HTZL::Catalog.spec_summary(specs).split(" | ").length
   end
@@ -158,13 +165,14 @@ class CatalogTest < Minitest::Test
   def test_price_band_setiap_item_konsisten_dengan_harganya
     catalog.each do |item|
       assert_equal HTZL::Catalog.price_band(item["price"]), item["price_band"],
-                   "#{item['name']}: rentang harga tidak sesuai"
+                   "#{item["name"]}: rentang harga tidak sesuai"
     end
   end
 
   # --- stats -------------------------------------------------------------
   def test_stats_menghitung_total_dan_rentang_harga
     stats = HTZL::Catalog.stats(catalog)
+
     assert_equal catalog.length, stats["total"]
     assert_equal catalog.map { |i| i["price"] }.min, stats["min_price"]
     assert_equal catalog.map { |i| i["price"] }.max, stats["max_price"]
@@ -174,6 +182,7 @@ class CatalogTest < Minitest::Test
   # --- berkas hasil seed -------------------------------------------------
   def test_data_catalog_yml_sinkron_dengan_generator
     skip "jalankan `rake seed` lebih dulu" unless File.exist?(File.join(ROOT, "_data", "catalog.yml"))
+
     assert_equal catalog, data_file("catalog.yml"),
                  "_data/catalog.yml sudah usang, jalankan `rake seed`"
   end
@@ -181,9 +190,10 @@ class CatalogTest < Minitest::Test
   def test_catalog_meta_sinkron_dengan_katalog
     skip "jalankan `rake seed` lebih dulu" unless File.exist?(File.join(ROOT, "_data", "catalog_meta.yml"))
     meta = data_file("catalog_meta.yml")
+
     assert_equal catalog.length, meta["total"]
     assert_equal catalog.map { |i| i["brand"] }.uniq.sort, meta["brands"]
-    assert_equal catalog.length, meta["categories"].sum { |c| c["count"] }
+    assert_equal(catalog.length, meta["categories"].sum { |c| c["count"] })
   end
 
   # Kontrak lintas bahasa: berkas fixture yang sama juga dibaca oleh

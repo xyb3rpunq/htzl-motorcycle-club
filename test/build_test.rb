@@ -15,7 +15,7 @@ class BuildTest < Minitest::Test
   end
 
   def all_pages
-    @all_pages ||= Dir[File.join(ROOT, "_site", "**", "*.html")].sort
+    @all_pages ||= Dir[File.join(ROOT, "_site", "**", "*.html")]
   end
 
   def read_page(*parts)
@@ -32,20 +32,22 @@ class BuildTest < Minitest::Test
     TestSupport::LOCALES.each do |locale|
       PAGES.each do |id|
         path = page_path_for(locale, id)
-        assert File.exist?(path), "halaman hilang: #{locale}/#{id}"
+
+        assert_path_exists path, "halaman hilang: #{locale}/#{id}"
       end
     end
   end
 
   def test_jumlah_halaman_sesuai_perkiraan
-    expected = TestSupport::LOCALES.length * PAGES.length + 1 # +1 untuk 404
+    expected = (TestSupport::LOCALES.length * PAGES.length) + 1 # +1 untuk 404
+
     assert_equal expected, all_pages.length,
                  "jumlah halaman tidak sesuai: #{all_pages.length} bukan #{expected}"
   end
 
   def test_halaman_pendukung_terbentuk
     %w[404.html robots.txt sitemap.xml site.webmanifest .nojekyll assets/catalog.json].each do |file|
-      assert File.exist?(site_path(file)), "berkas hilang: #{file}"
+      assert_path_exists site_path(file), "berkas hilang: #{file}"
     end
   end
 
@@ -54,6 +56,7 @@ class BuildTest < Minitest::Test
     TestSupport::LOCALES.each do |locale|
       html = File.read(page_path_for(locale, "home"), encoding: "utf-8")
       expected = i18n(locale)["html_lang"]
+
       assert_includes html, %(<html lang="#{expected}"), "atribut lang salah di #{locale}"
     end
   end
@@ -63,6 +66,7 @@ class BuildTest < Minitest::Test
       PAGES.each do |id|
         html = File.read(page_path_for(locale, id), encoding: "utf-8")
         alternates = html.scan(/<link rel="alternate" hreflang="([^"]+)"/).flatten
+
         assert_equal 6, alternates.length, "#{locale}/#{id}: jumlah hreflang salah"
         assert_includes alternates, "x-default"
       end
@@ -73,6 +77,7 @@ class BuildTest < Minitest::Test
     canonicals = all_pages.map do |path|
       File.read(path, encoding: "utf-8")[/<link rel="canonical" href="([^"]+)"/, 1]
     end.compact
+
     assert_equal all_pages.length, canonicals.length, "ada halaman tanpa canonical"
     assert_equal canonicals.length, canonicals.uniq.length, "canonical tidak boleh kembar"
   end
@@ -82,6 +87,7 @@ class BuildTest < Minitest::Test
       html = File.read(path, encoding: "utf-8")
       title = html[%r{<title>(.*?)</title>}m, 1]
       desc = html[/<meta name="description" content="([^"]*)"/, 1]
+
       refute_nil title, "#{path} tanpa <title>"
       refute_empty title.to_s.strip, "#{path} punya <title> kosong"
       refute_empty desc.to_s.strip, "#{path} punya deskripsi kosong"
@@ -92,6 +98,7 @@ class BuildTest < Minitest::Test
   def test_tidak_ada_sisa_sintaks_liquid
     all_pages.each do |path|
       html = File.read(path, encoding: "utf-8")
+
       refute_match(/\{\{|\{%/, html, "#{File.basename(File.dirname(path))} masih memuat sintaks Liquid")
     end
   end
@@ -99,6 +106,7 @@ class BuildTest < Minitest::Test
   def test_tidak_ada_teks_nil_atau_hash_bocor_ke_html
     all_pages.each do |path|
       html = File.read(path, encoding: "utf-8")
+
       refute_match(/>\s*\{"[a-z_]+"=>/, html, "#{path} membocorkan struktur Hash Ruby")
     end
   end
@@ -108,12 +116,13 @@ class BuildTest < Minitest::Test
     missing = []
     all_pages.each do |path|
       html = File.read(path, encoding: "utf-8")
-      html.scan(/(?:src|href)="(#{Regexp.escape(BASEURL)}\/[^"#?]+)"/).flatten.uniq.each do |url|
+      html.scan(%r{(?:src|href)="(#{Regexp.escape(BASEURL)}/[^"#?]+)"}).flatten.uniq.each do |url|
         target = site_path(url.sub(BASEURL, "").sub(%r{\A/}, ""))
         missing << "#{File.basename(path)} -> #{url}" unless File.exist?(target) || File.directory?(target)
       end
     end
-    assert_empty missing.uniq.first(10), "aset tidak ditemukan: #{missing.uniq.first(10).join(', ')}"
+
+    assert_empty missing.uniq.first(10), "aset tidak ditemukan: #{missing.uniq.first(10).join(", ")}"
   end
 
   def test_setiap_gambar_punya_alt_lebar_dan_tinggi
@@ -128,19 +137,22 @@ class BuildTest < Minitest::Test
         tanpa_dimensi << File.basename(path) unless tag.include?("width=") && tag.include?("height=")
       end
     end
-    assert_empty tanpa_alt.uniq, "gambar tanpa atribut alt di: #{tanpa_alt.uniq.join(', ')}"
-    assert_empty tanpa_dimensi.uniq, "gambar tanpa width/height di: #{tanpa_dimensi.uniq.join(', ')}"
+
+    assert_empty tanpa_alt.uniq, "gambar tanpa atribut alt di: #{tanpa_alt.uniq.join(", ")}"
+    assert_empty tanpa_dimensi.uniq, "gambar tanpa width/height di: #{tanpa_dimensi.uniq.join(", ")}"
   end
 
   def test_semua_ikon_yang_dipakai_terdefinisi_di_sprite
     html = read_page("catalog", "index.html")
     defined_ids = html.scan(/<symbol id="(i-[a-z0-9-]+)"/).flatten.uniq
+
     refute_empty defined_ids, "sprite ikon tidak ditemukan"
 
     all_pages.each do |path|
       used = File.read(path, encoding: "utf-8").scan(/<use href="#(i-[a-z0-9-]+)"/).flatten.uniq
       missing = used - defined_ids
-      assert_empty missing, "#{File.basename(File.dirname(path))} memakai ikon tak terdefinisi: #{missing.join(', ')}"
+
+      assert_empty missing, "#{File.basename(File.dirname(path))} memakai ikon tak terdefinisi: #{missing.join(", ")}"
     end
   end
 
@@ -148,6 +160,7 @@ class BuildTest < Minitest::Test
   def test_halaman_katalog_merender_seluruh_item
     TestSupport::LOCALES.each do |locale|
       html = File.read(page_path_for(locale, "catalog"), encoding: "utf-8")
+
       assert_equal catalog.length, html.scan(/data-item\b/).length,
                    "katalog #{locale} tidak merender semua item"
     end
@@ -155,7 +168,8 @@ class BuildTest < Minitest::Test
 
   def test_kartu_katalog_membawa_atribut_penyaring
     html = read_page("catalog", "index.html")
-    card = html[/<article class="card" data-item.*?<\/article>/m]
+    card = html[%r{<article class="card" data-item.*?</article>}m]
+
     %w[data-name data-search data-category data-brand data-price data-band data-rating].each do |attr|
       assert_includes card, attr, "kartu katalog kehilangan #{attr}"
     end
@@ -163,6 +177,7 @@ class BuildTest < Minitest::Test
 
   def test_catalog_json_berisi_seluruh_item
     payload = JSON.parse(File.read(site_path("assets", "catalog.json"), encoding: "utf-8"))
+
     assert_equal catalog.length, payload["count"]
     assert_equal catalog.length, payload["items"].length
     assert_equal "IDR", payload["currency"]
@@ -172,7 +187,8 @@ class BuildTest < Minitest::Test
     { "kawasaki" => "Kawasaki", "vixian" => "Vixian" }.each do |page, brand|
       html = read_page(page, "index.html")
       brands = html.scan(/data-brand="([^"]+)"/).flatten.uniq
-      assert_equal [brand], brands, "halaman #{page} memuat merek lain: #{brands.join(', ')}"
+
+      assert_equal [brand], brands, "halaman #{page} memuat merek lain: #{brands.join(", ")}"
     end
   end
 
@@ -183,6 +199,7 @@ class BuildTest < Minitest::Test
       PAGES.each do |id|
         prefix = locale == "id" ? "" : "/#{locale}"
         path = id == "home" ? "#{prefix}/" : "#{prefix}/#{id}/"
+
         assert_includes sitemap, "#{BASEURL}#{path}</loc>", "sitemap kehilangan #{path}"
       end
     end
@@ -195,6 +212,7 @@ class BuildTest < Minitest::Test
   # --- anggaran ukuran ---------------------------------------------------
   def test_halaman_beranda_tetap_ringan
     size = File.size(site_path("index.html"))
+
     assert_operator size, :<, 120_000, "beranda membengkak jadi #{size} byte"
   end
 
@@ -202,7 +220,8 @@ class BuildTest < Minitest::Test
     besar = Dir[File.join(ROOT, "_site", "assets", "img", "**", "*.{webp,jpg,png}")]
             .select { |f| File.size(f) > 200 * 1024 }
             .map { |f| "#{File.basename(f)} (#{File.size(f) / 1024} KB)" }
-    assert_empty besar, "gambar terlalu besar: #{besar.join(', ')}"
+
+    assert_empty besar, "gambar terlalu besar: #{besar.join(", ")}"
   end
 
   # Sitemap ditulis sendiri agar bisa memuat anotasi bahasa; plugin bawaan
@@ -217,6 +236,7 @@ class BuildTest < Minitest::Test
 
     blocks.each do |block|
       langs = block.scan(/xhtml:link rel="alternate" hreflang="([^"]+)"/).flatten
+
       assert_equal 6, langs.length, "entri sitemap kurang anotasi bahasa"
       assert_includes langs, "x-default"
     end
@@ -225,20 +245,23 @@ class BuildTest < Minitest::Test
   def test_halaman_heritage_hanya_memuat_harley
     html = read_page("heritage", "index.html")
     brands = html.scan(/data-brand="([^"]+)"/).flatten.uniq
+
     assert_equal ["Harley-Davidson"], brands
-    assert_equal 100, html.scan(/<article class="card"/).length
+    assert_equal 100, html.scan('<article class="card"').length
   end
 
   def test_garis_waktu_heritage_urut_menaik
     html = read_page("heritage", "index.html")
     years = html.scan(/timeline__years">(\d{4})/).flatten.map(&:to_i)
+
     assert_equal 11, years.length, "jumlah generasi mesin tidak sesuai"
     assert_equal years.sort, years, "garis waktu harus urut dari tahun tertua"
   end
 
   def test_halaman_404_memuat_kelima_bahasa
     html = read_page("404.html")
-    payload = html[/id="notfound-i18n">(.*?)<\/script>/m, 1]
+    payload = html[%r{id="notfound-i18n">(.*?)</script>}m, 1]
+
     refute_nil payload, "data terjemahan 404 tidak ditemukan"
     TestSupport::LOCALES.each do |locale|
       assert_includes payload, %("#{locale}":), "404 tidak memuat bahasa #{locale}"
@@ -251,12 +274,14 @@ class BuildTest < Minitest::Test
   def detail_payload(*parts)
     html = read_page(*parts)
     raw = html[%r{id="catalog-details">(.*?)</script>}m, 1]
-    refute_nil raw, "blok JSON detail tidak ditemukan di #{parts.join('/')}"
+
+    refute_nil raw, "blok JSON detail tidak ditemukan di #{parts.join("/")}"
     JSON.parse(raw)
   end
 
   def test_detail_produk_dikirim_sebagai_json
     payload = detail_payload("catalog", "index.html")
+
     assert_equal catalog.length, payload.length
     assert_equal catalog.map { |i| i["sku"] }.sort, payload.keys.sort
   end
@@ -264,6 +289,7 @@ class BuildTest < Minitest::Test
   def test_tidak_ada_lagi_template_per_kartu
     all_pages.each do |path|
       html = File.read(path, encoding: "utf-8")
+
       refute_includes html, "data-detail-content",
                       "#{File.basename(File.dirname(path))} masih memakai <template> per kartu"
     end
@@ -284,6 +310,7 @@ class BuildTest < Minitest::Test
   def test_detail_heritage_membawa_atribusi_foto
     payload = detail_payload("heritage", "index.html")
     berkredit = payload.values.select { |d| d["c"] }
+
     assert_equal catalog.count { |i| i["credit"] }, berkredit.length
 
     berkredit.each do |data|
@@ -304,7 +331,57 @@ class BuildTest < Minitest::Test
   # seluruh item sekaligus.
   def test_halaman_katalog_tetap_dalam_anggaran
     size = File.size(site_path("catalog", "index.html"))
+
     assert_operator size, :<, 500_000,
                     "katalog membengkak jadi #{size / 1024} KB; periksa apakah markup per kartu bertambah"
+  end
+
+  # --- metadata berbagi --------------------------------------------------
+  def test_setiap_halaman_punya_gambar_berbagi_sendiri
+    harapan = {
+      "home" => "og-image.jpg", "catalog" => "og-image.jpg",
+      "kawasaki" => "og-kawasaki.jpg", "vixian" => "og-vixian.jpg",
+      "heritage" => "og-heritage.jpg", "gallery" => "og-gallery.jpg",
+      "reserve" => "og-reserve.jpg"
+    }
+
+    TestSupport::LOCALES.each do |locale|
+      harapan.each do |id, file|
+        html = File.read(page_path_for(locale, id), encoding: "utf-8")
+        og = html[/<meta property="og:image" content="([^"]+)"/, 1]
+
+        assert_includes og.to_s, file, "#{locale}/#{id}: gambar berbagi salah"
+      end
+    end
+  end
+
+  def test_berkas_gambar_berbagi_ada_dan_wajar
+    %w[og-image og-kawasaki og-vixian og-heritage og-gallery og-reserve].each do |name|
+      path = File.join(ROOT, "assets", "img", "#{name}.jpg")
+
+      assert_path_exists path, "gambar berbagi hilang: #{name}.jpg"
+      assert_operator File.size(path), :<, 300 * 1024, "#{name}.jpg terlalu besar"
+    end
+  end
+
+  # Regresi: tanggal berita sempat tampil dalam Bahasa Inggris di kelima
+  # bahasa karena memakai filter `date` bawaan Liquid.
+  def test_tanggal_berita_mengikuti_bahasa_halaman
+    hasil = TestSupport::LOCALES.to_h do |locale|
+      html = File.read(page_path_for(locale, "home"), encoding: "utf-8")
+      [locale, html[%r{<time datetime="[^"]+">([^<]+)</time>}, 1]]
+    end
+
+    hasil.each { |locale, text| refute_nil text, "#{locale}: tanggal berita tidak ditemukan" }
+
+    # Jepang dan Mandarin memakai penulisan angka yang sama, jadi yang diuji
+    # adalah bahwa tanggalnya tidak seragam di semua bahasa.
+    assert_operator hasil.values.uniq.length, :>=, 4,
+                    "tanggal seharusnya mengikuti bahasa, bukan seragam"
+    assert_includes hasil["id"], "Mei"
+    assert_includes hasil["en"], "May"
+    assert_includes hasil["ru"], "мая"
+    assert_includes hasil["ja"], "年"
+    assert_includes hasil["zh"], "年"
   end
 end

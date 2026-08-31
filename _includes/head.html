@@ -1,6 +1,7 @@
 {%- assign t = site.data.i18n[page.lang] -%}
 {%- assign catalog_total = site.data.catalog | size -%}
 {%- assign page_desc = page.description | fill: 'count', catalog_total -%}
+{%- assign og_image = page.og_image | default: site.image -%}
 {%- assign price_min = site.data.catalog_meta.min_price | rupiah -%}
 {%- assign price_max = site.data.catalog_meta.max_price | rupiah -%}
 {%- assign price_range = price_min | append: ' - ' | append: price_max -%}
@@ -36,13 +37,13 @@
 <meta property="og:title" content="{{ page.title }} | {{ site.title }}">
 <meta property="og:description" content="{{ page_desc | strip_newlines | strip }}">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
-<meta property="og:image" content="{{ site.image | absolute_url }}">
+<meta property="og:image" content="{{ og_image | absolute_url }}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ page.title }} | {{ site.title }}">
 <meta name="twitter:description" content="{{ page_desc | strip_newlines | strip }}">
-<meta name="twitter:image" content="{{ site.image | absolute_url }}">
+<meta name="twitter:image" content="{{ og_image | absolute_url }}">
 
 {%- comment -%} Ikon {%- endcomment -%}
 <link rel="icon" href="{{ '/assets/icons/favicon.ico' | relative_url }}" sizes="any">
@@ -78,7 +79,7 @@
   "description": {{ page_desc | strip_newlines | strip | jsonify }},
   "url": {{ page.url | absolute_url | jsonify }},
   "logo": {{ site.logo | absolute_url | jsonify }},
-  "image": {{ site.image | absolute_url | jsonify }},
+  "image": {{ og_image | absolute_url | jsonify }},
   "telephone": {{ site.contact.phone_display | jsonify }},
   "email": {{ site.contact.email | jsonify }},
   "priceRange": {{ price_range | jsonify }},
