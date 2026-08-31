@@ -100,21 +100,45 @@
 
   function apply() {
     var visible = [];
+
     cards.forEach(function (card) {
       var ok = matches(card);
-      card.hidden = !ok;
+      // Menyentuh `hidden` selalu membatalkan gaya elemen, jadi hanya diubah
+      // kalau nilainya memang berbeda.
+      if (card.hidden === ok) card.hidden = !ok;
       if (ok) visible.push(card);
     });
 
-    // Susun ulang sekali lewat DocumentFragment agar tidak memicu banyak reflow.
-    var fragment = document.createDocumentFragment();
-    sortCards(visible).forEach(function (card) { fragment.appendChild(card); });
-    grid.appendChild(fragment);
+    var sorted = sortCards(visible);
+
+    // Saat halaman baru dimuat tanpa penyaringan, urutan di DOM sudah benar
+    // karena server merendernya begitu. Memindahkan 231 kartu ke tempat yang
+    // sama persis hanya membuang waktu utas utama.
+    if (orderChanged(sorted)) {
+      var fragment = document.createDocumentFragment();
+      sorted.forEach(function (card) { fragment.appendChild(card); });
+      grid.appendChild(fragment);
+    }
 
     if (countEl) countEl.textContent = String(visible.length);
     if (emptyState) emptyState.dataset.show = visible.length === 0 ? "true" : "false";
     grid.dataset.view = state.view;
     writeUrl();
+  }
+
+  // Bandingkan urutan yang diinginkan dengan anak-anak grid yang terlihat.
+  function orderChanged(sorted) {
+    var child = grid.firstElementChild;
+    var i = 0;
+
+    while (child) {
+      if (!child.hidden) {
+        if (child !== sorted[i]) return true;
+        i++;
+      }
+      child = child.nextElementSibling;
+    }
+    return i !== sorted.length;
   }
 
   /* ---------------------------------------------------------------- *
@@ -282,12 +306,115 @@
                        "?text=" + encodeURIComponent(lines.join("\n"));
     }
 
+    // Data detail dikirim sekali sebagai JSON, bukan sebagai <template> di
+    // tiap kartu. Pada halaman katalog cara lama menyumbang 55 persen berat
+    // halaman, padahal isinya tidak pernah tampil tanpa JavaScript.
+    var details = {};
+    var payload = document.getElementById("catalog-details");
+    if (payload) {
+      try {
+        details = JSON.parse(payload.textContent);
+      } catch (error) {
+        details = {};
+      }
+    }
+
+    function el(tag, className, text) {
+      var node = document.createElement(tag);
+      if (className) node.className = className;
+      if (text != null) node.textContent = text;
+      return node;
+    }
+
+    function icon(id) {
+      var ns = "http://www.w3.org/2000/svg";
+      var svg = document.createElementNS(ns, "svg");
+      var use = document.createElementNS(ns, "use");
+      use.setAttribute("href", "#" + id);
+      svg.setAttribute("aria-hidden", "true");
+      svg.appendChild(use);
+      return svg;
+    }
+
+    function link(href, text) {
+      var a = el("a", null, text);
+      a.href = href;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      return a;
+    }
+
+    // Isi dialog disusun dengan API DOM, bukan innerHTML.
+    function buildDetail(data) {
+      var frag = document.createDocumentFragment();
+
+      var media = el("div", "dialog__media");
+      var img = el("img");
+      img.src = data.i;
+      img.alt = data.n;
+      img.width = 630;
+      img.height = 390;
+      media.appendChild(img);
+      frag.appendChild(media);
+
+      var content = el("div", "dialog__content");
+
+      var head = el("div");
+      head.appendChild(el("p", "card__kicker", data.k));
+      var title = el("h2", null, data.n);
+      title.id = "detail-title";
+      head.appendChild(title);
+      var blurb = el("p", null, data.b);
+      blurb.style.color = "var(--ink-2)";
+      blurb.style.marginTop = ".4rem";
+      head.appendChild(blurb);
+      content.appendChild(head);
+
+      var prices = el("div", "price-block");
+      prices.appendChild(el("span", "now", data.p));
+      if (data.o) prices.appendChild(el("span", "was", data.o));
+      var rating = el("span", "rating");
+      rating.appendChild(icon("i-star"));
+      rating.appendChild(document.createTextNode(data.r));
+      prices.appendChild(rating);
+      prices.appendChild(el("span", "pill pill--" + data.st, data.s));
+      content.appendChild(prices);
+
+      var table = el("table", "spec-table");
+      table.appendChild(el("caption", "visually-hidden", dd.labelSpecs + " " + data.n));
+      var tbody = el("tbody");
+      data.sp.forEach(function (pair) {
+        var row = el("tr");
+        var key = el("th", null, pair[0]);
+        key.scope = "row";
+        row.appendChild(key);
+        row.appendChild(el("td", null, pair[1]));
+        tbody.appendChild(row);
+      });
+      table.appendChild(tbody);
+      content.appendChild(table);
+
+      // Lisensi Creative Commons mensyaratkan atribusi ditampilkan.
+      if (data.c) {
+        var credit = el("p", "credit");
+        credit.appendChild(document.createTextNode(dd.labelPhoto + ": "));
+        credit.appendChild(link(data.c.u, data.c.t));
+        credit.appendChild(document.createTextNode(" \u00b7 " + data.c.a + " \u00b7 "));
+        credit.appendChild(link(data.c.lu || data.c.u, data.c.l));
+        credit.appendChild(document.createTextNode(" \u00b7 Wikimedia Commons"));
+        content.appendChild(credit);
+      }
+
+      frag.appendChild(content);
+      return frag;
+    }
+
     function show(card) {
-      var template = $("[data-detail-content]", card);
-      if (!template) return;
+      var data = details[card.dataset.sku];
+      if (!data) return;
 
       currentCard = card;
-      body.replaceChildren(template.content.cloneNode(true));
+      body.replaceChildren(buildDetail(data));
       body.scrollTop = 0;
       qtyInput.value = 1;
 
@@ -354,14 +481,15 @@
     window.HTZL.initDialogDismiss(dialog);
 
     // Tautan dalam seperti ?item=HTZ-MOT-001 langsung membuka produknya.
+    // Dipanggil langsung, bukan lewat requestAnimationFrame: peramban tidak
+    // menjalankan rAF pada dokumen yang tidak terlihat, sehingga tautan yang
+    // dibuka di tab latar tidak akan pernah menampilkan dialognya.
     var deepLink = new URLSearchParams(window.location.search).get("item");
     if (deepLink) {
       var target = cards.find(function (card) { return card.dataset.sku === deepLink; });
       if (target) {
-        window.requestAnimationFrame(function () {
-          show(target);
-          dialog.showModal();
-        });
+        show(target);
+        dialog.showModal();
       }
     }
   }

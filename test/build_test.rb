@@ -244,4 +244,67 @@ class BuildTest < Minitest::Test
       assert_includes payload, %("#{locale}":), "404 tidak memuat bahasa #{locale}"
     end
   end
+
+  # Detail produk dikirim sebagai satu blok JSON, bukan <template> per kartu.
+  # Cara lama menyumbang 55 persen berat halaman katalog padahal isinya tidak
+  # pernah tampil tanpa JavaScript.
+  def detail_payload(*parts)
+    html = read_page(*parts)
+    raw = html[%r{id="catalog-details">(.*?)</script>}m, 1]
+    refute_nil raw, "blok JSON detail tidak ditemukan di #{parts.join('/')}"
+    JSON.parse(raw)
+  end
+
+  def test_detail_produk_dikirim_sebagai_json
+    payload = detail_payload("catalog", "index.html")
+    assert_equal catalog.length, payload.length
+    assert_equal catalog.map { |i| i["sku"] }.sort, payload.keys.sort
+  end
+
+  def test_tidak_ada_lagi_template_per_kartu
+    all_pages.each do |path|
+      html = File.read(path, encoding: "utf-8")
+      refute_includes html, "data-detail-content",
+                      "#{File.basename(File.dirname(path))} masih memakai <template> per kartu"
+    end
+  end
+
+  def test_setiap_entri_detail_lengkap
+    payload = detail_payload("catalog", "index.html")
+    payload.each do |sku, data|
+      %w[n k b i p r s st sp].each do |field|
+        refute_nil data[field], "#{sku}: kolom #{field} hilang"
+      end
+      refute_empty data["sp"], "#{sku}: tanpa spesifikasi"
+      data["sp"].each { |pair| assert_equal 2, pair.length }
+      assert_includes %w[ok warn], data["st"], "#{sku}: nada stok tidak dikenal"
+    end
+  end
+
+  def test_detail_heritage_membawa_atribusi_foto
+    payload = detail_payload("heritage", "index.html")
+    berkredit = payload.values.select { |d| d["c"] }
+    assert_equal catalog.count { |i| i["credit"] }, berkredit.length
+
+    berkredit.each do |data|
+      %w[t a l u].each { |field| refute_empty data["c"][field].to_s }
+    end
+  end
+
+  def test_detail_ikut_diterjemahkan
+    id = detail_payload("catalog", "index.html")["HTZ-MOT-001"]
+    ja = detail_payload("ja", "catalog", "index.html")["HTZ-MOT-001"]
+
+    assert_equal id["n"], ja["n"], "nama produk tidak diterjemahkan"
+    refute_equal id["k"], ja["k"], "keterangan kategori harus mengikuti bahasa"
+    refute_equal id["sp"][0][0], ja["sp"][0][0], "nama spesifikasi harus mengikuti bahasa"
+  end
+
+  # Anggaran berat halaman. Katalog adalah halaman terberat karena memuat
+  # seluruh item sekaligus.
+  def test_halaman_katalog_tetap_dalam_anggaran
+    size = File.size(site_path("catalog", "index.html"))
+    assert_operator size, :<, 500_000,
+                    "katalog membengkak jadi #{size / 1024} KB; periksa apakah markup per kartu bertambah"
+  end
 end

@@ -1,0 +1,54 @@
+{%- comment -%}
+  Data untuk dialog detail produk.
+
+  Sebelumnya tiap kartu membawa <template> berisi markup dialog yang lengkap.
+  Isi itu tidak pernah tampil tanpa JavaScript, tetapi tetap harus diurai
+  peramban, dan pada halaman katalog jumlahnya mencapai 55 persen berat
+  halaman. Sekarang datanya dikirim sekali sebagai JSON dan dialognya disusun
+  catalog.js saat dibutuhkan.
+
+  Parameter: items, t (kamus bahasa), lang.
+{%- endcomment -%}
+{%- assign t = include.t -%}
+{%- assign lang = include.lang -%}
+<script type="application/json" id="catalog-details">
+{
+{%- for item in include.items -%}
+{%- assign sub = item.subcategory | term: 'subcategory', lang -%}
+{%- assign cat = item.category_label | term: 'category', lang -%}
+{%- if item.blurb_type == 'bike' -%}
+  {%- assign blurb = t.catalog.blurb_bike | fill: 'type', sub, 'cc', item.cc, 'trim', item.trim -%}
+  {%- assign blurb = blurb | append: ' ' | append: t.catalog.trims[item.trim] -%}
+{%- else -%}
+  {%- assign blurb = t.catalog.blurb_generic | fill: 'sub', sub -%}
+{%- endif -%}
+{%- if item.category == 'layanan' -%}
+  {%- assign stock_label = t.catalog.always_available -%}{%- assign stock_tone = 'ok' -%}
+{%- elsif item.stock <= 3 -%}
+  {%- capture stock_label %}{{ t.catalog.low_stock }} · {{ item.stock }}{% endcapture -%}{%- assign stock_tone = 'warn' -%}
+{%- else -%}
+  {%- capture stock_label %}{{ t.catalog.in_stock }} · {{ item.stock }}{% endcapture -%}{%- assign stock_tone = 'ok' -%}
+{%- endif -%}
+{{ item.sku | jsonify }}:{
+"n":{{ item.name | jsonify }},
+"k":{{ cat | append: " · " | append: sub | append: " · " | append: t.catalog.sku | append: " " | append: item.sku | jsonify }},
+"b":{{ blurb | jsonify }},
+"i":{{ item.image | relative_url | jsonify }},
+"p":{{ item.price | rupiah | jsonify }},
+{% if item.price_old %}"o":{{ item.price_old | rupiah | jsonify }},{% endif %}
+"r":{{ item.rating | jsonify }},
+"s":{{ stock_label | strip | jsonify }},
+"st":{{ stock_tone | jsonify }},
+"sp":[{% for pair in item.specs %}[{{ pair[0] | term: 'spec_key', lang | jsonify }},{{ pair[1] | term: 'spec_value', lang | jsonify }}]{% unless forloop.last %},{% endunless %}{% endfor %}]
+{%- if item.credit -%}
+,"c":{
+"t":{{ item.credit.title | jsonify }},
+"a":{{ item.credit.author | jsonify }},
+"l":{{ item.credit.license | jsonify }},
+"lu":{{ item.credit.license_url | jsonify }},
+"u":{{ item.credit.source | jsonify }}}
+{%- endif -%}
+}{% unless forloop.last %},{% endunless %}
+{%- endfor -%}
+}
+</script>
