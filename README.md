@@ -306,9 +306,9 @@ penerbitan dibatalkan bila ada satu saja yang gagal.
 
 | Lapis | Jumlah | Yang dijaga |
 |---|--:|---|
-| Ruby | 227 | Data katalog, terjemahan, hasil build, tautan, dan kontras warna |
+| Ruby | 241 | Data katalog, terjemahan, hasil build, tautan, data terstruktur, dan kontras warna |
 | JavaScript | 23 | Fungsi murni pada kode yang benar-benar dikirim ke peramban |
-| End-to-end | 34 | Antarmukanya ditekan sungguhan di Chrome |
+| End-to-end | 46 | Antarmukanya ditekan sungguhan di Chrome, termasuk tata letak di 5 bahasa dan 4 lebar layar |
 
 Kode Ruby tercakup **100 persen baris dan 100 persen cabang**, diukur dengan
 pustaka standar dan diperiksa ulang di setiap penerbitan. Angka cabang dipakai
@@ -319,6 +319,17 @@ Uji end-to-end menjalankan Chrome sungguhan tanpa satu pun dependensi
 tambahan, lalu menekan tombolnya: menyaring, mengurutkan, membuka panel
 detail, mengisi formulir reservasi sampai tautan pemesanannya terbentuk,
 mengganti bahasa, dan memastikan tidak ada halaman yang memunculkan galat.
+Tata letak ikut diperiksa pada 140 kombinasi halaman, bahasa, dan lebar layar:
+tidak satu pun bisa digulir mendatar atau memotong teksnya sendiri. Dua test
+pertama membuktikan alat ukurnya memang bisa menemukan cacat, karena angka nol
+dari alat yang tidak berfungsi tidak membuktikan apa pun.
+
+**Ditemukan mesin pencari.** Setiap halaman yang memuat daftar produk
+menyatakan isinya sebagai data terstruktur, lengkap dengan harga, mata uang,
+ketersediaan, gambar, dan merek: 231 item di katalog, 100 unit koleksi di
+halaman heritage, dan 18 model di tiap halaman merek. Penilaian bintang
+sengaja tidak ikut dinyatakan, karena angkanya data contoh dan tidak ada
+ulasan sungguhan di baliknya.
 
 ---
 
