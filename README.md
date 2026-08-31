@@ -308,7 +308,7 @@ penerbitan dibatalkan bila ada satu saja yang gagal.
 |---|--:|---|
 | Ruby | 241 | Data katalog, terjemahan, hasil build, tautan, data terstruktur, dan kontras warna |
 | JavaScript | 23 | Fungsi murni pada kode yang benar-benar dikirim ke peramban |
-| End-to-end | 46 | Antarmukanya ditekan sungguhan di Chrome, termasuk tata letak di 5 bahasa dan 4 lebar layar |
+| End-to-end | 49 | Antarmukanya ditekan sungguhan di Chrome, termasuk tata letak di 5 bahasa dan 4 lebar layar |
 
 Kode Ruby tercakup **100 persen baris dan 100 persen cabang**, diukur dengan
 pustaka standar dan diperiksa ulang di setiap penerbitan. Angka cabang dipakai
@@ -323,6 +323,11 @@ Tata letak ikut diperiksa pada 140 kombinasi halaman, bahasa, dan lebar layar:
 tidak satu pun bisa digulir mendatar atau memotong teksnya sendiri. Dua test
 pertama membuktikan alat ukurnya memang bisa menemukan cacat, karena angka nol
 dari alat yang tidak berfungsi tidak membuktikan apa pun.
+
+**Responsif saat ditekan.** Interaction to Next Paint diukur untuk enam
+interaksi pada ponsel 390 piksel dengan CPU empat kali lebih lambat: yang
+terburuk 136 milidetik, seluruhnya di bawah ambang 200 milidetik. Menyaring
+seluruh 231 produk memakan sekitar 60 milidetik kerja nyata.
 
 **Ditemukan mesin pencari.** Setiap halaman yang memuat daftar produk
 menyatakan isinya sebagai data terstruktur, lengkap dengan harga, mata uang,
